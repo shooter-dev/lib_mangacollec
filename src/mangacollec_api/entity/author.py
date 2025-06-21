@@ -9,8 +9,6 @@ class Author:
     first_name: str| None
     tasks_count: int
 
-
-
     def __srt__(self):
         return self.name + " " + self.first_name
 

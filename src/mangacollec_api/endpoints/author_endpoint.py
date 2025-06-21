@@ -1,9 +1,11 @@
 import os
-from typing import Dict, Any
+from typing import Dict, Any, List
 
 from mangacollec_api.client import MangaCollecAPIClient
+from mangacollec_api.entity.endpoint.author_endpoint_entity import AuthorEndpointEntity, AuthorsEndpointEntity
 from mangacollec_api.interfaces.client.client_interface import IMangaCollecAPIClient
 from mangacollec_api.interfaces.endpoints.author_endpoint_interface import IAuthorsEndpoint
+from src.mangacollec_api.entity.author import Author
 
 
 class AuthorsEndpoint(IAuthorsEndpoint):
@@ -28,15 +30,18 @@ class AuthorsEndpoint(IAuthorsEndpoint):
         """
         return self.client.get(f"/v1/authors/{author_id}")
 
-    def get_all_authors_v2(self) -> Dict[str, Any]:
+    def get_all_authors_v2(self) -> list[Author]:
         """
         Récupère la liste complète des auteurs disponibles sur MangaCollec (API v2).
 
         :return: Liste des auteurs
         """
-        return self.client.get("/v2/authors")
+        result = self.client.get("/v2/authors")
 
-    def get_author_by_id_v2(self, author_id: str) -> Dict[str, Any]:
+        return AuthorsEndpointEntity.to_list_object(result)
+
+
+    def get_author_by_id_v2(self, author_id: str) -> AuthorEndpointEntity:
         """
         Récupère un auteur spécifique à partir de son ID (API v2).
 
@@ -57,11 +62,12 @@ if __name__ == '__main__':
     authors_endpoint = AuthorsEndpoint(client)
 
     # Test des méthodes
-    print("Liste des auteurs (v1):")
-    print(authors_endpoint.get_all_authors())
-    print("Auteur spécifique (v1):")
-    print(authors_endpoint.get_author_by_id("edad2d63-cc34-42b8-9bc2-ca9e210b670d"))
+    #print("Liste des auteurs (v1):")
+    #print(authors_endpoint.get_all_authors())
+    #print("Auteur spécifique (v1):")
+    #print(authors_endpoint.get_author_by_id("edad2d63-cc34-42b8-9bc2-ca9e210b670d"))
     print("Liste des auteurs (v2):")
     print(authors_endpoint.get_all_authors_v2())
-    print("Auteur spécifique (v2):")
-    print(authors_endpoint.get_author_by_id_v2("edad2d63-cc34-42b8-9bc2-ca9e210b670d")) 
+
+    #print("Auteur spécifique (v2):")
+    #print(authors_endpoint.get_author_by_id_v2("edad2d63-cc34-42b8-9bc2-ca9e210b670d"))
