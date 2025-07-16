@@ -14,7 +14,8 @@ typecheck:
 
 ## Lance les tests avec pytest
 test:
-	poetry run pytest -v --maxfail=5 --disable-warnings
+	  poetry run pytest src/mangacollec_api/**/tests/
+
 
 ## Vérifie tout (format, lint, typecheck, test)
 check: format lint typecheck test
