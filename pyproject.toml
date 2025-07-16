@@ -19,6 +19,13 @@ requests = "^2.32.3"
 pytest = "^8.3.5"
 pytest-mock = "^3.14.0"
 requests-mock = "^1.12.1"
+flake8 = "^1.7.0"
+black = "^25.1.0"
+mypy = "^1.17.0"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["src", "tests"]
 
 [build-system]
 requires = ["poetry-core"]
