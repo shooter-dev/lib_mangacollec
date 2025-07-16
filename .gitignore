@@ -5,4 +5,10 @@ dist/
 
 .env
 
+#macOS
 *DS_Store
+
+#IA
+.claude/
+CLAUDE.md
+.mcp.json
