@@ -1,25 +1,37 @@
-# MangaCollec API
+# MangaCollec API Client
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Poetry](https://img.shields.io/badge/poetry-dependency%20management-blue.svg)](https://python-poetry.org/)
 [![Version](https://img.shields.io/badge/version-0.1.78-green.svg)](https://github.com/shooter-dev/mangacollec_api)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/shooter-dev/mangacollec_api)
+[![Architecture](https://img.shields.io/badge/architecture-DDD-orange.svg)](https://github.com/shooter-dev/mangacollec_api)
 
-Une bibliothèque Python pour interagir avec l'API MangaCollec, permettant de récupérer des informations sur les mangas, séries, auteurs, éditeurs et plus encore.
+Une bibliothèque Python moderne pour interagir avec l'API MangaCollec, suivant les principes du Domain-Driven Design (DDD) avec une architecture modulaire et une couverture de tests complète.
 
-## Table des matières
+## 🎯 Fonctionnalités
+
+- **🔐 Authentification OAuth2** - Support `client_credentials` et `password` grant types
+- **🏗️ Architecture DDD** - Domain-Driven Design avec séparation claire des responsabilités
+- **🔄 Multi-version API** - Support des endpoints v1 (legacy) et v2 (typés)
+- **🔧 Interface-based Design** - Interfaces pour une meilleure testabilité et extensibilité
+- **⚡ Gestion automatique** - Refresh de tokens et gestion d'erreurs transparente
+- **🧪 Tests complets** - Couverture de tests optimisée avec pytest
+- **🌐 Support proxy** - Configuration proxy pour environnements d'entreprise
+
+## 📋 Table des matières
 
 - [Installation](#installation)
-- [Configuration](#configuration)
-- [Authentification](#authentification)
-- [Utilisation rapide](#utilisation-rapide)
-- [Endpoints disponibles](#endpoints-disponibles)
-- [Entités](#entités)
-- [Gestion des erreurs](#gestion-des-erreurs)
+- [Configuration rapide](#configuration-rapide)
 - [Architecture](#architecture)
+- [Authentification](#authentification)
+- [Utilisation](#utilisation)
+- [Domaines disponibles](#domaines-disponibles)
+- [Tests](#tests)
 - [Développement](#développement)
-- [Licence](#licence)
+- [API Reference](#api-reference)
+- [Contribution](#contribution)
 
-## Installation
+## 🚀 Installation
 
 ### Avec Poetry (recommandé)
 
@@ -33,73 +45,28 @@ poetry add mangacollec_api
 pip install mangacollec_api
 ```
 
-## Configuration
+## ⚙️ Configuration rapide
 
 ### Variables d'environnement
 
-Créez un fichier `.env` ou définissez les variables d'environnement suivantes :
-
 ```bash
 # Obligatoire
-CLIENT_ID=votre_client_id
-CLIENT_SECRET=votre_client_secret
+CLIENT_ID=your_client_id
+CLIENT_SECRET=your_client_secret
 
-# Optionnel (pour l'authentification utilisateur)
-USERNAME_DEV=votre_email@example.com
-PASSWORD=votre_mot_de_passe
+# Optionnel (authentification utilisateur)
+USERNAME_DEV=your_email@example.com
+PASSWORD=your_password
 ```
 
-## Authentification
-
-L'API MangaCollec supporte deux modes d'authentification OAuth2 :
-
-### 1. Authentification anonyme (client_credentials)
-
-```python
-from mangacollec_api.client import MangaCollecAPIClient
-
-client = MangaCollecAPIClient(
-    client_id="votre_client_id",
-    client_secret="votre_client_secret"
-)
-```
-
-### 2. Authentification utilisateur (password)
-
-```python
-from mangacollec_api.client import MangaCollecAPIClient
-
-client = MangaCollecAPIClient(
-    client_id="votre_client_id",
-    client_secret="votre_client_secret",
-    email="votre_email@example.com",
-    password="votre_mot_de_passe"
-)
-```
-
-### 3. Avec proxy (optionnel)
-
-```python
-client = MangaCollecAPIClient(
-    client_id="votre_client_id",
-    client_secret="votre_client_secret",
-    proxy={
-        "http": "http://proxy-server:port",
-        "https": "https://proxy-server:port"
-    }
-)
-```
-
-## Utilisation rapide
-
-### Récupérer toutes les séries
+### Utilisation basique
 
 ```python
 import os
-from mangacollec_api.client import MangaCollecAPIClient
+from mangacollec_api.client.client import MangaCollecAPIClient
 from mangacollec_api.serie.endpoint.serie_endpoint import SerieEndpoint
 
-# Initialisation du client
+# Client anonyme
 client = MangaCollecAPIClient(
     client_id=os.environ.get("CLIENT_ID"),
     client_secret=os.environ.get("CLIENT_SECRET")
@@ -111,131 +78,215 @@ serie_endpoint = SerieEndpoint(client)
 # Récupérer toutes les séries (API v2)
 series = serie_endpoint.get_all_series_v2()
 print(f"Nombre de séries : {len(series)}")
-
-for serie in series[:5]:  # Afficher les 5 premières
-    print(f"- {serie.title} (ID: {serie.id})")
 ```
 
-### Récupérer une série spécifique
+## 🏛️ Architecture
 
-```python
-# Récupérer une série par son ID avec toutes les informations associées
-serie_id = "a320ac19-4318-4471-9e4e-eb017f4584d5"
-serie_complete = serie_endpoint.get_series_by_id_v2(serie_id)
+Ce projet suit une **architecture Domain-Driven Design (DDD)** avec une séparation claire des responsabilités :
 
-# Informations de base
-serie = serie_complete.serie
-print(f"Titre: {serie.title}")
-print(f"Contenu adulte: {serie.adult_content}")
-print(f"Nombre d'éditions: {serie.editions_count}")
-
-# Informations associées
-print(f"Genres: {[kind.name for kind in serie_complete.kinds]}")
-print(f"Auteurs: {[author.name for author in serie_complete.authors]}")
-print(f"Éditeurs: {[pub.name for pub in serie_complete.publishers]}")
-```
-
-## Endpoints disponibles
-
-La bibliothèque propose plusieurs endpoints pour interagir avec l'API :
-
-### SerieEndpoint
-- `get_all_series()` - Récupère toutes les séries (API v1)
-- `get_all_series_v2()` - Récupère toutes les séries (API v2)
-- `get_series_by_id(series_id)` - Récupère une série par ID (API v1)
-- `get_series_by_id_v2(series_id)` - Récupère une série complète par ID (API v2)
-
-### Autres endpoints disponibles
-- `AuthorEndpoint` - Gestion des auteurs
-- `EditionEndpoint` - Gestion des éditions
-- `GenreEndpoint` - Gestion des genres
-- `JobEndpoint` - Gestion des métiers
-- `KindEndpoint` - Gestion des types
-- `PublisherEndpoint` - Gestion des éditeurs
-- `UserEndpoint` - Gestion des utilisateurs
-- `VolumeEndpoint` - Gestion des volumes
-
-## Entités
-
-### Serie
-```python
-class Serie:
-    id: str                    # Identifiant unique
-    title: str                 # Titre de la série
-    type_id: str              # ID du type/genre
-    adult_content: bool       # Contenu adulte
-    editions_count: int       # Nombre d'éditions
-    tasks_count: int          # Nombre de tâches
-    kinds_ids: List[str]      # IDs des types associés
-```
-
-### Autres entités disponibles
-- `Author` - Informations sur les auteurs
-- `Edition` - Détails des éditions
-- `Volume` - Informations sur les volumes
-- `Publisher` - Données des éditeurs
-- `Genre` - Types et genres
-- `Box` - Informations sur les coffrets
-- `Task` - Tâches associées
-
-## Gestion des erreurs
-
-La bibliothèque définit plusieurs exceptions personnalisées :
-
-```python
-from mangacollec_api.exceptions import (
-    MangaCollecAPIError,
-    AuthenticationError,
-    AuthorizationError,
-    NotFoundError,
-    BadRequestError,
-    ServerError,
-    RateLimitExceededError
-)
-
-try:
-    serie = serie_endpoint.get_series_by_id_v2("invalid-id")
-except NotFoundError:
-    print("Série non trouvée")
-except AuthenticationError:
-    print("Erreur d'authentification")
-except MangaCollecAPIError as e:
-    print(f"Erreur API: {e}")
-```
-
-## Architecture
-
-Le projet suit une architecture modulaire avec des interfaces :
+### Structure générale
 
 ```
 src/mangacollec_api/
-├── client.py              # Client principal API
-├── auth.py               # Gestion authentification OAuth2
-├── exceptions.py         # Exceptions personnalisées
-├── endpoints/            # Endpoints API
-│   ├── serie_endpoint.py
-│   ├── author_endpoint.py
-│   └── ...
-├── entity/              # Modèles de données
-│   ├── serie.py
-│   ├── author.py
-│   └── ...
-└── interfaces/          # Interfaces abstraites
-    ├── auth/
-    ├── client/
-    └── endpoints/
+├── core/                     # Infrastructure centrale
+│   ├── exception/           # Exceptions de base
+│   └── interfaces/          # Interfaces centralisées
+├── client/                  # Client API et authentification
+├── auth/                    # Gestion OAuth2
+└── {domain}/               # Domaines métier (serie, author, etc.)
+    ├── endpoint/           # Points d'accès API
+    ├── entity/             # Entités métier
+    ├── converter/          # Transformation de données
+    ├── exception/          # Exceptions spécifiques
+    └── tests/              # Tests unitaires du domaine
 ```
 
-### Fonctionnalités clés
+### Domaines disponibles
 
-- **Authentification automatique** : Gestion transparente des tokens OAuth2
-- **Refresh automatique** : Renouvellement automatique des tokens expirés
-- **Support multi-version** : API v1 et v2 supportées
-- **Gestion d'erreurs** : Exceptions spécifiques pour chaque type d'erreur
-- **Architecture modulaire** : Interfaces pour faciliter les tests et l'extension
-- **Support proxy** : Configuration proxy pour les environnements d'entreprise
+Chaque domaine suit la même structure modulaire :
 
-## Développement
+- **author/** - Gestion des auteurs
+- **serie/** - Gestion des séries
+- **genre/** - Gestion des genres (type)
+- **edition/** - Gestion des éditions
+- **volume/** - Gestion des volumes
+- **publisher/** - Gestion des éditeurs
+- **job/** - Gestion des métiers
+- **kind/** - Gestion des types
+- **users/** - Gestion des utilisateurs
+- **box/** - Gestion des coffrets
+- **task/** - Gestion des tâches
+
+## 🔐 Authentification
+
+### Authentification anonyme (client_credentials)
+
+```python
+from mangacollec_api.client.client import MangaCollecAPIClient
+
+client = MangaCollecAPIClient(
+    client_id="your_client_id",
+    client_secret="your_client_secret"
+)
+```
+
+### Authentification utilisateur (password)
+
+```python
+client = MangaCollecAPIClient(
+    client_id="your_client_id",
+    client_secret="your_client_secret",
+    email="your_email@example.com",
+    password="your_password"
+)
+```
+
+### Avec configuration proxy
+
+```python
+client = MangaCollecAPIClient(
+    client_id="your_client_id",
+    client_secret="your_client_secret",
+    proxy={
+        "http": "http://proxy-server:port",
+        "https": "https://proxy-server:port"
+    }
+)
+```
+
+## 💻 Utilisation
+
+### Exemple complet avec le domaine Serie
+
+```python
+import os
+from mangacollec_api.client.client import MangaCollecAPIClient
+from mangacollec_api.serie.endpoint.serie_endpoint import SerieEndpoint
+
+def main():
+    # Configuration du client
+    client = MangaCollecAPIClient(
+        client_id=os.environ.get("CLIENT_ID"),
+        client_secret=os.environ.get("CLIENT_SECRET")
+    )
+    
+    # Endpoint des séries
+    serie_endpoint = SerieEndpoint(client)
+    
+    try:
+        # API v2 - Récupérer toutes les séries (objets typés)
+        series = serie_endpoint.get_all_series_v2()
+        print(f"Total des séries : {len(series)}")
+        
+        # API v2 - Récupérer une série avec données enrichies
+        if series:
+            serie_complete = serie_endpoint.get_series_by_id_v2(series[0].id)
+            
+            # Informations de base
+            serie = serie_complete.serie
+            print(f"Titre: {serie.title}")
+            print(f"Type: {serie_complete.type.title}")
+            
+            # Données associées
+            print(f"Auteurs: {[author.name for author in serie_complete.authors]}")
+            print(f"Éditeurs: {[pub.name for pub in serie_complete.publishers]}")
+            print(f"Genres: {[kind.title for kind in serie_complete.kinds]}")
+            
+    except Exception as e:
+        print(f"Erreur : {e}")
+
+if __name__ == "__main__":
+    main()
+```
+
+### Support multi-version
+
+```python
+# API v1 - Retourne des dictionnaires bruts
+series_dict = serie_endpoint.get_all_series()  # Dict[str, Any]
+
+# API v2 - Retourne des objets typés
+series_objects = serie_endpoint.get_all_series_v2()  # List[Serie]
+```
+
+## 🌐 Domaines disponibles
+
+### SerieEndpoint
+```python
+from mangacollec_api.serie.endpoint.serie_endpoint import SerieEndpoint
+
+# API v1 (legacy)
+series_dict = endpoint.get_all_series()
+serie_dict = endpoint.get_series_by_id(serie_id)
+
+# API v2 (moderne)
+series_list = endpoint.get_all_series_v2()           # List[Serie]
+serie_complete = endpoint.get_series_by_id_v2(serie_id)  # SerieEndpointEntity
+```
+
+### AuthorEndpoint
+```python
+from mangacollec_api.author.endpoint.author_endpoint import AuthorsEndpoint
+
+# API v1
+authors_dict = endpoint.get_all_authors()
+author_dict = endpoint.get_author_by_id(author_id)
+
+# API v2
+authors_list = endpoint.get_all_authors_v2()         # List[Author]
+author_complete = endpoint.get_author_by_id_v2(author_id)  # AuthorEndpointEntity
+```
+
+### Autres domaines
+Tous les domaines suivent le même pattern avec des endpoints v1 et v2.
+
+## 🧪 Tests
+
+### Structure des tests
+
+Le projet utilise une architecture de tests optimisée avec séparation par responsabilité :
+
+```
+src/mangacollec_api/{domain}/tests/
+├── converter/              # Tests de transformation de données
+├── endpoints/              # Tests d'API
+│   ├── test_{domain}_endpoint_v1.py  # Tests API v1
+│   └── test_{domain}_endpoint_v2.py  # Tests API v2
+├── entity/                 # Tests de logique métier
+└── exception/              # Tests d'exceptions
+```
+
+### Exécution des tests
+
+```bash
+# Tous les tests
+poetry run pytest
+
+# Tests d'un domaine spécifique
+poetry run pytest src/mangacollec_api/serie/tests/
+
+# Tests par version d'API
+poetry run pytest src/mangacollec_api/serie/tests/endpoints/test_serie_endpoint_v1.py
+poetry run pytest src/mangacollec_api/serie/tests/endpoints/test_serie_endpoint_v2.py
+
+# Avec verbose
+poetry run pytest -v
+
+# Avec couverture
+poetry run pytest --cov=src/mangacollec_api
+```
+
+### Configuration des tests
+
+Les tests utilisent une configuration centralisée dans `pyproject.toml` :
+
+```toml
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["src", "tests"]
+```
+
+## 🛠️ Développement
 
 ### Installation pour le développement
 
@@ -245,45 +296,152 @@ cd mangacollec_api
 poetry install
 ```
 
-### Lancer les tests
+### Commandes de développement
 
 ```bash
+# Tests
 poetry run pytest
+
+# Tests spécifiques
+poetry run pytest src/mangacollec_api/serie/tests/
+
+# Build
+poetry build
+
+# Linting (si configuré)
+poetry run black .
+poetry run mypy .
 ```
 
-### Structure des tests
+### Ajouter un nouveau domaine
 
-```
-tests/
-├── endpoints/
-│   ├── test_series.py
-│   └── test_volumes.py
-└── ...
+1. Créer la structure du domaine :
+```bash
+mkdir -p src/mangacollec_api/{domain}/{endpoint,entity,converter,exception,tests}
 ```
 
-### Contribuer
+2. Implémenter les interfaces :
+- `endpoint/`: Définir interface et implémentation
+- `entity/`: Créer entités et endpoint entities
+- `converter/`: Implémenter `IConverterEntity<T>`
+- `exception/`: Ajouter exceptions spécifiques
+- `tests/`: Écrire tests par couche
 
-1. Fork le projet
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/nouvelle-fonctionnalite`)
-3. Committez vos changements (`git commit -am 'Ajout nouvelle fonctionnalité'`)
-4. Push vers la branche (`git push origin feature/nouvelle-fonctionnalite`)
-5. Créez une Pull Request
+## 📚 API Reference
 
-## Dépendances
+### Entités principales
 
-- **Python** : 3.10+
-- **requests** : ^2.32.3
+#### Serie
+```python
+@dataclass
+class Serie:
+    id: str                    # Identifiant unique
+    title: str                 # Titre de la série
+    type_id: str              # ID du type/genre
+    adult_content: bool       # Contenu adulte
+    editions_count: int       # Nombre d'éditions
+    tasks_count: int          # Nombre de tâches
+    kinds_ids: List[str]      # IDs des types associés (optionnel)
+```
 
-### Dépendances de développement
-- **pytest** : ^8.3.5
-- **pytest-mock** : ^3.14.0
-- **requests-mock** : ^1.12.1
+#### Author
+```python
+@dataclass  
+class Author:
+    id: str                    # Identifiant unique
+    name: str                  # Nom de famille
+    first_name: str | None     # Prénom (optionnel)
+    tasks_count: int          # Nombre de tâches
+```
 
-## Licence
+### Endpoint Entities
+
+Les endpoints v2 retournent des entités enrichies avec toutes les données associées :
+
+```python
+class SerieEndpointEntity:
+    serie: Serie              # Série principale
+    type: Genre              # Type/genre de la série
+    kinds: List[Kind]        # Types associés
+    tasks: List[Task]        # Tâches
+    jobs: List[Job]          # Métiers
+    authors: List[Author]    # Auteurs
+    editions: List[Edition]  # Éditions
+    publishers: List[Publisher]  # Éditeurs
+    volumes: List[Volume]    # Volumes
+    # ... autres relations
+```
+
+### Gestion des erreurs
+
+```python
+from mangacollec_api.core.exception.exception import (
+    MangaCollecAPIError,
+    NotFoundError,
+    BadRequestError
+)
+
+from mangacollec_api.serie.exception.serie_exceptions import (
+    SerieError,
+    SerieNotFoundError,
+    SerieValidationError
+)
+
+try:
+    serie = serie_endpoint.get_series_by_id_v2("invalid-id")
+except SerieNotFoundError as e:
+    print(f"Série non trouvée: {e.serie_id}")
+except NotFoundError:
+    print("Ressource non trouvée")
+except MangaCollecAPIError as e:
+    print(f"Erreur API: {e}")
+```
+
+## 🤝 Contribution
+
+### Workflow de contribution
+
+1. **Fork** le projet
+2. **Créer une branche** : `git checkout -b feature/nouvelle-fonctionnalite`
+3. **Implémenter** en suivant l'architecture DDD
+4. **Ajouter des tests** pour toutes les nouvelles fonctionnalités
+5. **Tester** : `poetry run pytest`
+6. **Commit** : `git commit -am 'feat: ajouter nouvelle fonctionnalité'`
+7. **Push** : `git push origin feature/nouvelle-fonctionnalite`
+8. **Créer une Pull Request**
+
+### Standards de code
+
+- **Architecture** : Suivre les principes DDD
+- **Tests** : Couverture complète avec responsabilités séparées
+- **Interfaces** : Utiliser les interfaces pour l'extensibilité
+- **Types** : Code entièrement typé
+- **Documentation** : Docstrings et commentaires appropriés
+
+## 📄 Informations du projet
+
+### Dépendances
+
+**Runtime :**
+- Python 3.10+
+- requests ^2.32.3
+
+**Développement :**
+- pytest ^8.3.5
+- pytest-mock ^3.14.0
+- requests-mock ^1.12.1
+- black ^25.1.0
+- mypy ^1.17.0
+
+### Versioning
+
+Ce projet suit [Semantic Versioning](https://semver.org/).
+
+### Licence
 
 Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
-## Contact
+### Contact
 
 - **Auteur** : shooter-dev
 - **Email** : vincentbleach@gmail.com
@@ -291,40 +449,4 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 
-## Exemple complet
-
-```python
-import os
-from mangacollec_api.client import MangaCollecAPIClient
-from mangacollec_api.serie.endpoint.serie_endpoint import SerieEndpoint
-
-def main():
-    # Configuration du client
-    client = MangaCollecAPIClient(
-        client_id=os.environ.get("CLIENT_ID"),
-        client_secret=os.environ.get("CLIENT_SECRET"),
-        # Optionnel pour l'authentification utilisateur
-        email=os.environ.get("USERNAME_DEV"),
-        password=os.environ.get("PASSWORD")
-    )
-    
-    # Initialisation de l'endpoint
-    serie_endpoint = SerieEndpoint(client)
-    
-    # Récupération des données
-    try:
-        # Liste des séries
-        series = serie_endpoint.get_all_series_v2()
-        print(f"Total des séries : {len(series)}")
-        
-        # Détail d'une série
-        if series:
-            serie_detail = serie_endpoint.get_series_by_id_v2(series[0].id)
-            print(f"Série : {serie_detail.serie.title}")
-            print(f"Auteurs : {[a.name for a in serie_detail.authors]}")
-            
-    except Exception as e:
-        print(f"Erreur : {e}")
-
-if __name__ == "__main__":
-    main()
+**Note** : Cette bibliothèque n'est pas officiellement affiliée à MangaCollec. Elle fournit une interface Python pour interagir avec leur API publique.
