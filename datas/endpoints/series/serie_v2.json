@@ -1,0 +1,4213 @@
+{
+    "series": [
+        {
+            "id": "a02cf154-af6c-4f08-9a7a-32f7bc229ac8",
+            "title": "One Piece",
+            "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+            "adult_content": false,
+            "editions_count": 5,
+            "tasks_count": 1,
+            "kinds_ids": [
+                "5f2df76f-b8d1-4db6-9e36-506cabdbb1db",
+                "7673ab04-ceca-4388-b52b-7b4d2af58e45",
+                "801bd235-3c3b-4b07-8912-01853f49a948",
+                "b19c9c05-2e40-4821-bf87-3bf9822ea6eb",
+                "59a6ad18-392a-4e22-98ad-61fe58f0fee5",
+                "e2133aad-0b37-4ad7-ba95-07325253e56c",
+                "2597a4da-1a45-4433-a95a-3d7774b3b3cf",
+                "d5a3385a-cfcd-45f6-8f82-0c80956b084d",
+                "ea05bf0a-f1f5-4b27-9bc7-7c7ca5f5a21a",
+                "049fbf8b-c981-4291-bdbd-0265c93a44ae"
+            ]
+        }
+    ],
+    "types": [
+        {
+            "id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+            "title": "Manga",
+            "to_display": false
+        }
+    ],
+    "kinds": [
+        {
+            "id": "5f2df76f-b8d1-4db6-9e36-506cabdbb1db",
+            "title": "Action"
+        },
+        {
+            "id": "7673ab04-ceca-4388-b52b-7b4d2af58e45",
+            "title": "Aventure"
+        },
+        {
+            "id": "801bd235-3c3b-4b07-8912-01853f49a948",
+            "title": "Combat"
+        },
+        {
+            "id": "b19c9c05-2e40-4821-bf87-3bf9822ea6eb",
+            "title": "Comédie"
+        },
+        {
+            "id": "59a6ad18-392a-4e22-98ad-61fe58f0fee5",
+            "title": "Fantasy"
+        },
+        {
+            "id": "e2133aad-0b37-4ad7-ba95-07325253e56c",
+            "title": "Pirate"
+        },
+        {
+            "id": "2597a4da-1a45-4433-a95a-3d7774b3b3cf",
+            "title": "Série fleuve"
+        },
+        {
+            "id": "d5a3385a-cfcd-45f6-8f82-0c80956b084d",
+            "title": "Shōnen"
+        },
+        {
+            "id": "ea05bf0a-f1f5-4b27-9bc7-7c7ca5f5a21a",
+            "title": "Super-pouvoirs"
+        },
+        {
+            "id": "049fbf8b-c981-4291-bdbd-0265c93a44ae",
+            "title": "Voyage"
+        }
+    ],
+    "tasks": [
+        {
+            "id": "24256ce3-9915-46e7-a58a-7c954be2352b",
+            "job_id": "dc7b6062-6aae-49ee-87a2-95d47ab52600",
+            "series_id": "a02cf154-af6c-4f08-9a7a-32f7bc229ac8",
+            "author_id": "e6cc4590-0b5e-4122-9428-b9b185bdb221"
+        }
+    ],
+    "jobs": [
+        {
+            "id": "dc7b6062-6aae-49ee-87a2-95d47ab52600",
+            "title": "Auteur"
+        }
+    ],
+    "authors": [
+        {
+            "id": "e6cc4590-0b5e-4122-9428-b9b185bdb221",
+            "name": "Oda",
+            "first_name": "Eiichirō",
+            "tasks_count": 30
+        }
+    ],
+    "editions": [
+        {
+            "id": "8078d40e-b965-4d02-9942-9e3de4ff2937",
+            "title": "Edition collector",
+            "series_id": "a02cf154-af6c-4f08-9a7a-32f7bc229ac8",
+            "publisher_id": "5e961f4c-9954-452a-961f-4d3d922c370d",
+            "parent_edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "volumes_count": 3,
+            "last_volume_number": null,
+            "commercial_stop": false,
+            "not_finished": false,
+            "follow_editions_count": 24695
+        },
+        {
+            "id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "title": null,
+            "series_id": "a02cf154-af6c-4f08-9a7a-32f7bc229ac8",
+            "publisher_id": "5e961f4c-9954-452a-961f-4d3d922c370d",
+            "parent_edition_id": null,
+            "volumes_count": 111,
+            "last_volume_number": null,
+            "commercial_stop": false,
+            "not_finished": false,
+            "follow_editions_count": 153296
+        },
+        {
+            "id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "title": "Edition Log",
+            "series_id": "a02cf154-af6c-4f08-9a7a-32f7bc229ac8",
+            "publisher_id": "be9f45ed-651f-425b-b7cf-fecbf45cc0b7",
+            "parent_edition_id": null,
+            "volumes_count": 40,
+            "last_volume_number": 40,
+            "commercial_stop": false,
+            "not_finished": false,
+            "follow_editions_count": 2680
+        },
+        {
+            "id": "a315f0e1-c6cc-4dc3-9945-ee326d743f26",
+            "title": "Edition 20 ans",
+            "series_id": "a02cf154-af6c-4f08-9a7a-32f7bc229ac8",
+            "publisher_id": "5e961f4c-9954-452a-961f-4d3d922c370d",
+            "parent_edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "volumes_count": 4,
+            "last_volume_number": 86,
+            "commercial_stop": false,
+            "not_finished": false,
+            "follow_editions_count": 17669
+        },
+        {
+            "id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "title": "1re édition (numéros blancs)",
+            "series_id": "a02cf154-af6c-4f08-9a7a-32f7bc229ac8",
+            "publisher_id": "5e961f4c-9954-452a-961f-4d3d922c370d",
+            "parent_edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "volumes_count": 66,
+            "last_volume_number": 66,
+            "commercial_stop": true,
+            "not_finished": true,
+            "follow_editions_count": 9980
+        }
+    ],
+    "publishers": [
+        {
+            "id": "5e961f4c-9954-452a-961f-4d3d922c370d",
+            "title": "Glénat",
+            "closed": false,
+            "editions_count": 525,
+            "no_amazon": false
+        },
+        {
+            "id": "be9f45ed-651f-425b-b7cf-fecbf45cc0b7",
+            "title": "Hachette",
+            "closed": false,
+            "editions_count": 21,
+            "no_amazon": false
+        }
+    ],
+    "volumes": [
+        {
+            "id": "9422111b-848a-4a29-a1a7-8474736a80ba",
+            "title": null,
+            "number": 95,
+            "release_date": "2020-07-01",
+            "isbn": "9782344043301",
+            "asin": "2344043306",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 44492,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/61bei1me2CL.jpg"
+        },
+        {
+            "id": "5822ea5c-e86d-4ec1-bf45-69826de86a31",
+            "title": null,
+            "number": 111,
+            "release_date": "2025-12-03",
+            "isbn": "9782344065662",
+            "asin": "2344065660",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 135,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51gj2vl1jBL.jpg"
+        },
+        {
+            "id": "7c8db2b2-36a1-4944-ab78-3e00ab1cfdd4",
+            "title": null,
+            "number": 38,
+            "release_date": "2017-01-25",
+            "isbn": "M1258038",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 622,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt5WTJKbU1UUTNPQzB6TldNeExUUXhOVFl0T1dNMFpTMHpNbVZpTnpabU1USTJZVE1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--c45b4bc400fa37b50428faaa6b5defdb07c5e9e7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/7c8db2b2-36a1-4944-ab78-3e00ab1cfdd4.jpg"
+        },
+        {
+            "id": "1e69265e-eea6-4a48-8376-6303667b96a9",
+            "title": null,
+            "number": 25,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494816",
+            "asin": "2723494810",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 66796,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51Z5puXbHFL.jpg"
+        },
+        {
+            "id": "4f7e9a92-1b4d-4ebe-89be-4962f4f3fe2c",
+            "title": null,
+            "number": 13,
+            "release_date": "2016-02-10",
+            "isbn": "M1258013",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1104,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxpTnpBeE0ySTVOaTB6TUdJMUxUUmlaVGN0WVRkaFlpMDJZVFJrT0RnM09XSTJNVElHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--49fd8c64b15ce48fde2cae07d59d0243f1532815/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/4f7e9a92-1b4d-4ebe-89be-4962f4f3fe2c.jpg"
+        },
+        {
+            "id": "edd3fb43-1e7a-4cfc-95b4-cef98e534f01",
+            "title": null,
+            "number": 1,
+            "release_date": "2015-08-27",
+            "isbn": "M1258001",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 2464,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWszTURjelptTmhPQzAwTkdRd0xUUmhabVl0T0dRNFl5MHdNMkpoTVRFMlpERm1ZMllHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--4b470a6819f411b24b2ba5d95971b6206ae9fc98/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/edd3fb43-1e7a-4cfc-95b4-cef98e534f01.jpg"
+        },
+        {
+            "id": "68022a74-7941-4ae8-bb69-e5d5b7a676c5",
+            "title": null,
+            "number": 15,
+            "release_date": "2003-03-19",
+            "isbn": "9782723442138",
+            "asin": "2723442136",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3597,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51XQ0NQNYSL.jpg"
+        },
+        {
+            "id": "0df10b7c-d3ec-481c-ab6e-bc595d2dd3f3",
+            "title": null,
+            "number": 4,
+            "release_date": "2015-10-08",
+            "isbn": "M1258004",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1480,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWs1TkRSaE56QmpZaTB6T1RNMExUUTRaakl0WWpReFpTMHlZbU15WlRVellqRm1PREFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--c056d1df8c1536315834d2a3432bf80b177241d5/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/0df10b7c-d3ec-481c-ab6e-bc595d2dd3f3.jpg"
+        },
+        {
+            "id": "fc08a11c-a9b0-46a7-901f-7f60e69fb125",
+            "title": null,
+            "number": 5,
+            "release_date": "2013-07-03",
+            "isbn": "9782723489928",
+            "asin": "2723489922",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 104562,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61vyL1dxRpL.jpg"
+        },
+        {
+            "id": "22a3b853-77bb-40c1-b1ec-e5ecf8ef7ce2",
+            "title": null,
+            "number": 97,
+            "release_date": "2021-01-06",
+            "isbn": "9782344046388",
+            "asin": "2344046380",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 45614,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/61rJ2gIHTWL.jpg"
+        },
+        {
+            "id": "1545758c-7e04-4c44-89d8-74aef4621f66",
+            "title": null,
+            "number": 72,
+            "release_date": "2014-10-01",
+            "isbn": "9782344004319",
+            "asin": "2344004319",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 46600,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61p76MSsexL.jpg"
+        },
+        {
+            "id": "1178efba-95e1-4dd5-9484-e939889496b3",
+            "title": null,
+            "number": 2,
+            "release_date": "2015-09-10",
+            "isbn": "M1258002",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1814,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxtTURrNFptSTROaTB6TURNd0xUUm1NekF0WWpjNE1DMWxNV0ZtTnpJeE9USTJNemtHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--45cb069392eee7a43b8fdc35e229e72df64182e9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/1178efba-95e1-4dd5-9484-e939889496b3.jpg"
+        },
+        {
+            "id": "faa65d6a-d489-4f95-b944-5ad2da1d3d5f",
+            "title": null,
+            "number": 23,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494793",
+            "asin": "2723494799",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 69842,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51BxRBIaNrL.jpg"
+        },
+        {
+            "id": "8ba9ed2d-ac99-47dc-af7f-712b5dcbabc5",
+            "title": null,
+            "number": 2,
+            "release_date": "2013-07-03",
+            "isbn": "9782723489898",
+            "asin": "2723489892",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 120317,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61E7PIk-R9L.jpg"
+        },
+        {
+            "id": "46c0575c-32e5-4561-948c-81c26880828e",
+            "title": null,
+            "number": 27,
+            "release_date": "2005-05-01",
+            "isbn": "9782723448314",
+            "asin": "2723448312",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2954,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61V9T6CZW4L.jpg"
+        },
+        {
+            "id": "5dd03a4d-860e-4117-aff8-8f49df1d3b58",
+            "title": null,
+            "number": 17,
+            "release_date": "2003-09-17",
+            "isbn": "9782723440868",
+            "asin": "2723440869",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3445,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61AWXT5RNBL.jpg"
+        },
+        {
+            "id": "99d309b2-8046-49ce-9f3c-cd18da1ad5e8",
+            "title": null,
+            "number": 80,
+            "release_date": "2016-10-05",
+            "isbn": "9782344017470",
+            "asin": "234401747X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 44472,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61zcsZ-cWJL.jpg"
+        },
+        {
+            "id": "7891dc1e-1e61-470a-a42b-fd13bd409e5d",
+            "title": null,
+            "number": 94,
+            "release_date": "2020-05-27",
+            "isbn": "9782344042632",
+            "asin": "2344042636",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 43652,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51NAb03WrBL.jpg"
+        },
+        {
+            "id": "c37bd04c-1687-42a7-ab3d-9dd47e2aae9f",
+            "title": null,
+            "number": 11,
+            "release_date": "2013-07-03",
+            "isbn": "9782723492560",
+            "asin": "2723492567",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 88143,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51a-ILYkG%2BL.jpg"
+        },
+        {
+            "id": "c8f3e2a6-2265-47e0-bce1-b4412b1a6a1f",
+            "title": null,
+            "number": 7,
+            "release_date": "2013-07-03",
+            "isbn": "9782723489942",
+            "asin": "2723489949",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 96620,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51CN6sO8JGL.jpg"
+        },
+        {
+            "id": "c3460761-1f85-4dd2-9207-46a5df368d50",
+            "title": null,
+            "number": 110,
+            "release_date": "2025-09-27",
+            "isbn": "9782344062814",
+            "asin": "2344062815",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 9785,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51jnVQbnp7L.jpg"
+        },
+        {
+            "id": "53f65b12-e47b-4ebd-9c7c-faecd694f6f4",
+            "title": null,
+            "number": 100,
+            "release_date": "2021-12-08",
+            "isbn": "9782344049020",
+            "asin": "2344049029",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 51557,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51Mt-Xvf4ML.jpg"
+        },
+        {
+            "id": "57b788fb-32cf-4bc7-a4c0-7cd20e212e3e",
+            "title": null,
+            "number": 71,
+            "release_date": "2014-07-02",
+            "isbn": "9782723499347",
+            "asin": "2723499340",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 47111,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61ZGP5WNE9L.jpg"
+        },
+        {
+            "id": "a847ff41-dcf5-4bd0-90c2-eb3f53303bee",
+            "title": null,
+            "number": 31,
+            "release_date": "2006-02-23",
+            "isbn": "9782723453684",
+            "asin": "2723453685",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2784,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/613A2ZKKX0L.jpg"
+        },
+        {
+            "id": "bbea44db-afca-4309-a798-c2d59a0782ec",
+            "title": null,
+            "number": 56,
+            "release_date": "2014-11-19",
+            "isbn": "9782344002001",
+            "asin": "2344002006",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 50868,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61IUGU4vtvL.jpg"
+        },
+        {
+            "id": "a14ee4e2-543c-4b60-b8b7-e47a70bb7c52",
+            "title": null,
+            "number": 27,
+            "release_date": "2016-08-24",
+            "isbn": "M1258027",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 703,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt4WVRGak1XTmlaUzAxWkdaakxUUmtOVGt0WW1SbE15MDFPV1prWkRRMU1HTmxaRGNHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--b380a56c2b3adb43fc3b53ded3b6d076863a3599/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/a14ee4e2-543c-4b60-b8b7-e47a70bb7c52.jpg"
+        },
+        {
+            "id": "e345a839-805b-418a-a5de-0155ab4ea6f2",
+            "title": null,
+            "number": 47,
+            "release_date": "2009-01-07",
+            "isbn": "9782723465137",
+            "asin": "2723465136",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2516,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/611A20-Bv4L.jpg"
+        },
+        {
+            "id": "328326b5-5387-4e55-8d07-7f6588dfc78e",
+            "title": null,
+            "number": 107,
+            "release_date": "2024-04-03",
+            "isbn": "9782344058916",
+            "asin": "2344058915",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 34314,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/517885HrrPL.jpg"
+        },
+        {
+            "id": "30de6db1-033a-4ed7-b3e3-678e5c4a4a80",
+            "title": null,
+            "number": 98,
+            "release_date": "2021-05-19",
+            "isbn": "9782344047576",
+            "asin": "2344047573",
+            "edition_id": "8078d40e-b965-4d02-9942-9e3de4ff2937",
+            "possessions_count": 11634,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51YYExNqHNL.jpg"
+        },
+        {
+            "id": "63b5bd64-97e4-428e-9daf-5cb81f740e79",
+            "title": null,
+            "number": 51,
+            "release_date": "2014-08-27",
+            "isbn": "9782344001950",
+            "asin": "2344001956",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 52832,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61xC0hx66GL.jpg"
+        },
+        {
+            "id": "765e66a9-4fb1-44ac-a91a-b25b84f05ef9",
+            "title": null,
+            "number": 29,
+            "release_date": "2005-09-01",
+            "isbn": "9782723448338",
+            "asin": "2723448339",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2866,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51WY45B7BYL.jpg"
+        },
+        {
+            "id": "29b8019f-b248-49a2-af08-0eeb1cbb3280",
+            "title": null,
+            "number": 59,
+            "release_date": "2011-11-30",
+            "isbn": "9782723483513",
+            "asin": "2723483517",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2529,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61d-5UilNGL.jpg"
+        },
+        {
+            "id": "5d9f924c-0c2f-4e54-8659-6308c7899a54",
+            "title": null,
+            "number": 49,
+            "release_date": "2009-05-20",
+            "isbn": "9782723468794",
+            "asin": "2723468798",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2516,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61VzRWbgrBL.jpg"
+        },
+        {
+            "id": "b26812a7-84fd-44a1-ac62-b5e6f6917459",
+            "title": null,
+            "number": 17,
+            "release_date": "2013-07-03",
+            "isbn": "9782723494731",
+            "asin": "272349473X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 75809,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51OqG8dON1L.jpg"
+        },
+        {
+            "id": "0d38b8cd-e40f-489a-9313-a99a5ecb7f6f",
+            "title": null,
+            "number": 31,
+            "release_date": "2014-01-03",
+            "isbn": "9782723498593",
+            "asin": "272349859X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 61757,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61A1SfscycL.jpg"
+        },
+        {
+            "id": "eb0f1f38-eb57-42f7-8904-dcb67c2624ec",
+            "title": null,
+            "number": 19,
+            "release_date": "2013-07-03",
+            "isbn": "9782723494755",
+            "asin": "2723494756",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 73833,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51RBvyZYeUL.jpg"
+        },
+        {
+            "id": "bbd25a66-aa7e-41a2-bcc6-1f6baf1f218e",
+            "title": null,
+            "number": 32,
+            "release_date": "2016-11-02",
+            "isbn": "M1258032",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 658,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxqT0dRek1qRXhZUzB4TldObUxUUTFNR0V0T1RRMU9DMHhObVkwWVdVM1pUSTJaR0VHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--61fd54b6c65bce81260fd5df6f4b439b12d2f230/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--7c73e8a32db9248865f33012a40f867d228b3b7c/bbd25a66-aa7e-41a2-bcc6-1f6baf1f218e.png"
+        },
+        {
+            "id": "e34eac70-8d3b-4a93-8a2d-8257bcb15233",
+            "title": null,
+            "number": 22,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494786",
+            "asin": "2723494780",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 70800,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/517eejVtxPL.jpg"
+        },
+        {
+            "id": "6135b2be-3eb9-4192-a2a1-faef82af3c86",
+            "title": null,
+            "number": 47,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001912",
+            "asin": "2344001913",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 53138,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61t%2BNZz-lGL.jpg"
+        },
+        {
+            "id": "4a3118b4-bf6a-423f-acd7-5d0f1eaa7741",
+            "title": null,
+            "number": 66,
+            "release_date": "2013-04-03",
+            "isbn": "9782723493260",
+            "asin": "2723493261",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 1422,
+            "not_sold": true,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61mnDsLNOSL.jpg"
+        },
+        {
+            "id": "bf4324c7-d911-4106-b8c9-488d7bc81ee5",
+            "title": null,
+            "number": 64,
+            "release_date": "2012-10-03",
+            "isbn": "9782723487702",
+            "asin": "2723487709",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 1506,
+            "not_sold": true,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61RC4UQdvTL.jpg"
+        },
+        {
+            "id": "75b6a805-b68f-4605-8679-09ee56908f4c",
+            "title": null,
+            "number": 93,
+            "release_date": "2020-01-02",
+            "isbn": "9782344041451",
+            "asin": "2344041451",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 43546,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61%2BWkFie4nL.jpg"
+        },
+        {
+            "id": "c6cf36a8-23ba-4490-bd93-ef08fd7ce3ce",
+            "title": null,
+            "number": 37,
+            "release_date": "2017-01-11",
+            "isbn": "M1258037",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 636,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxrWVRNM09EZGxZaTFtWm1NekxUUTBNRFV0WWpNeVlpMDBZMkUyWkRFd09EUmxNelVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--e00e89f65b6443b1ae880956fa95e1227ead6d6b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/c6cf36a8-23ba-4490-bd93-ef08fd7ce3ce.jpg"
+        },
+        {
+            "id": "e7cbe32c-cf03-49dc-be4c-40c900ea1f5f",
+            "title": null,
+            "number": 65,
+            "release_date": "2013-01-03",
+            "isbn": "9782723493062",
+            "asin": "2723493067",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 1519,
+            "not_sold": true,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61nJxl9z9bL.jpg"
+        },
+        {
+            "id": "2bf46a7c-cc94-4c7d-814c-2caf701a3fdf",
+            "title": null,
+            "number": 3,
+            "release_date": "2015-09-24",
+            "isbn": "M1258003",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1619,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsyTXpVNFlUZzNZaTA1T0dSbUxUUTFOek10WVdJd09TMHhNVFZrTWpNME4yWmpOeklHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--f10cb15716760d06fbade3942a79dded1766b81e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/2bf46a7c-cc94-4c7d-814c-2caf701a3fdf.jpg"
+        },
+        {
+            "id": "80cfe8d1-84ab-4a59-8956-4cdb416c8fd2",
+            "title": null,
+            "number": 36,
+            "release_date": "2016-12-28",
+            "isbn": "M1258036",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 628,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxtTVdSaFl6azBOaTAwWXpGa0xUUTRaV1V0T0RNMU15MDFNV0prWXpkbE0yVTBaVE1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--bddacf692e145ff409438ca3c4d343f8c536cc69/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/80cfe8d1-84ab-4a59-8956-4cdb416c8fd2.jpg"
+        },
+        {
+            "id": "e2140775-71c5-408c-b8aa-95e66799cbc7",
+            "title": null,
+            "number": 68,
+            "release_date": "2013-10-09",
+            "isbn": "9782723496766",
+            "asin": "2723496767",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 49140,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61gPQEe66QL.jpg"
+        },
+        {
+            "id": "1a8b91a5-ab0a-4514-98ea-fb6a96feaaae",
+            "title": null,
+            "number": 34,
+            "release_date": "2014-01-03",
+            "isbn": "9782723498623",
+            "asin": "272349862X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 57905,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51uZazT2yqL.jpg"
+        },
+        {
+            "id": "14c64763-d518-4c9d-bc96-c47a8dc5f03d",
+            "title": null,
+            "number": 33,
+            "release_date": "2014-01-03",
+            "isbn": "9782723498616",
+            "asin": "2723498611",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 58323,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61Z-UzpxKcL.jpg"
+        },
+        {
+            "id": "bdbb8509-0305-4872-90e7-7d430ff1c616",
+            "title": null,
+            "number": 21,
+            "release_date": "2016-06-01",
+            "isbn": "M1258021",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 894,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxsWmpZeE1UazBZaTA0TVdaa0xUUTJZVEl0WVdOaU5pMDRPR1E1T0RSbE1EaGlOMklHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--95ecb16cf473d57bf615570281f729c85d0dc9ec/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/bdbb8509-0305-4872-90e7-7d430ff1c616.jpg"
+        },
+        {
+            "id": "e7428b27-2aa6-4468-9374-043d2f5c243b",
+            "title": null,
+            "number": 45,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001899",
+            "asin": "2344001891",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 54557,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61DHktgkdiL.jpg"
+        },
+        {
+            "id": "a6a628ec-bc4f-4190-a98c-defc0e7f0d0f",
+            "title": null,
+            "number": 12,
+            "release_date": "2016-01-27",
+            "isbn": "M1258012",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1106,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsxT0dFME9EaGpNQzAyWWpRekxUUmtaalV0WW1KaE9DMDRNVFUzWXpNM05XVTBOR1VHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--5df9be66d58d638ee7d35be754b5ca754a2c74fc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/a6a628ec-bc4f-4190-a98c-defc0e7f0d0f.jpg"
+        },
+        {
+            "id": "e321dafa-8be3-4c0d-82bc-cef9c830eef3",
+            "title": null,
+            "number": 7,
+            "release_date": "2015-11-19",
+            "isbn": "M1258007",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1341,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt5WTJFek9UZGtNUzFpTTJVekxUUTFOakF0WWpnNU1DMWlZemt5TkdFMk4yWTBOVElHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--78b899dbe79ebdedc38f5501615331219b3360e9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/e321dafa-8be3-4c0d-82bc-cef9c830eef3.jpg"
+        },
+        {
+            "id": "ac410c1a-782c-40c4-ae1b-053c913aac57",
+            "title": null,
+            "number": 18,
+            "release_date": "2003-11-13",
+            "isbn": "9782723443845",
+            "asin": "2723443841",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3427,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51K761F6EVL.jpg"
+        },
+        {
+            "id": "ed31d7eb-f4e0-4242-a6c3-b01736c696e1",
+            "title": null,
+            "number": 52,
+            "release_date": "2014-08-27",
+            "isbn": "9782344001967",
+            "asin": "2344001964",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 52619,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61a3BTdog3L.jpg"
+        },
+        {
+            "id": "2ff7222e-4c15-41a3-b353-2073d3ec49b5",
+            "title": null,
+            "number": 26,
+            "release_date": "2016-08-10",
+            "isbn": "M1258026",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 712,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsyT1Rka05XSmlOeTFrT1dFMExUUmxaREF0T0dZellTMHlabUpoWXpobE1tSmhNVEFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--b2980a7f4a19227316615adda509cbc2b42d3b03/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/2ff7222e-4c15-41a3-b353-2073d3ec49b5.jpg"
+        },
+        {
+            "id": "936bca9d-b10e-47a9-9962-babb2994fddd",
+            "title": null,
+            "number": 85,
+            "release_date": "2018-01-03",
+            "isbn": "9782344027509",
+            "asin": "2344027505",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 41473,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/6146900QfpL.jpg"
+        },
+        {
+            "id": "ff727f37-6a9b-42b0-abaf-5f331cbdf147",
+            "title": null,
+            "number": 44,
+            "release_date": "2008-07-03",
+            "isbn": "9782723464246",
+            "asin": "2723464245",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2576,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61seBBkXXfL.jpg"
+        },
+        {
+            "id": "921a058f-d7f2-47f5-b76b-7541ac27b685",
+            "title": null,
+            "number": 26,
+            "release_date": "2005-04-06",
+            "isbn": "9782723448307",
+            "asin": "2723448304",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3009,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51HJKREQVDL.jpg"
+        },
+        {
+            "id": "d631eb3f-c7ab-43b5-ba82-ebd994a65fa5",
+            "title": null,
+            "number": 49,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001936",
+            "asin": "234400193X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 52734,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61tUqAk%2B2BL.jpg"
+        },
+        {
+            "id": "f37c9490-df8f-4cb2-ae3e-0c414fc07bed",
+            "title": null,
+            "number": 14,
+            "release_date": "2016-02-24",
+            "isbn": "M1258014",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1071,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxtTXpoa09XSTNZaTB3TUdJNUxUUXpZamt0T1RneFlpMWpZMk00TkdZM05UQmtObVVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--98bbc618f819bb8c846fa914ea0c03d21bb38a4b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/f37c9490-df8f-4cb2-ae3e-0c414fc07bed.jpg"
+        },
+        {
+            "id": "ea4ce65c-f047-44f1-8ddc-ec507450bf37",
+            "title": null,
+            "number": 98,
+            "release_date": "2021-05-19",
+            "isbn": "9782344047569",
+            "asin": "2344047565",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 46425,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51PJk1mBnKL.jpg"
+        },
+        {
+            "id": "12b301ec-e530-429d-b34c-e5a45d841dbd",
+            "title": null,
+            "number": 50,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001943",
+            "asin": "2344001948",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 54745,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61nBcgo0nfL.jpg"
+        },
+        {
+            "id": "db14ca54-bba9-4cb9-9f3a-7b81b262573e",
+            "title": null,
+            "number": 81,
+            "release_date": "2017-01-04",
+            "isbn": "9782344018286",
+            "asin": "234401828X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 42483,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61QS9dkuqGL.jpg"
+        },
+        {
+            "id": "ecd525d8-daf4-4bd6-bc12-40b360261def",
+            "title": null,
+            "number": 58,
+            "release_date": "2014-11-19",
+            "isbn": "9782344002025",
+            "asin": "2344002022",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 52636,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61RNl879qUL.jpg"
+        },
+        {
+            "id": "610dab64-118a-43b3-a9cd-d297ce5326b8",
+            "title": null,
+            "number": 42,
+            "release_date": "2008-03-12",
+            "isbn": "9782723460606",
+            "asin": "2723460606",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2533,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61Kml6LlMrL.jpg"
+        },
+        {
+            "id": "c5ebd425-9f6a-4d9a-8bc1-e850043f4fee",
+            "title": null,
+            "number": 55,
+            "release_date": "2014-08-27",
+            "isbn": "9782344001998",
+            "asin": "2344001999",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 51084,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61Y4%2BQwC0zL.jpg"
+        },
+        {
+            "id": "640a6db5-90da-4cf2-ae8b-9b6ae00aa801",
+            "title": null,
+            "number": 99,
+            "release_date": "2021-09-15",
+            "isbn": "9782344048740",
+            "asin": "234404874X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 47322,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/614QKJYT7hS.jpg"
+        },
+        {
+            "id": "17e51133-3df3-48b1-8e50-086b7550f904",
+            "title": null,
+            "number": 37,
+            "release_date": "2014-01-08",
+            "isbn": "9782723498654",
+            "asin": "2723498654",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 56225,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/616qIwg%2BAIL.jpg"
+        },
+        {
+            "id": "f8fabf4a-224a-433d-a1a7-50eeebb6aa8f",
+            "title": null,
+            "number": 52,
+            "release_date": "2010-01-13",
+            "isbn": "9782723472265",
+            "asin": "2723472264",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2476,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61j0hh1fHWL.jpg"
+        },
+        {
+            "id": "f1094b36-74f4-444a-aacc-0c1384af899f",
+            "title": null,
+            "number": 35,
+            "release_date": "2006-11-01",
+            "isbn": "9782723453721",
+            "asin": "2723453723",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2671,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/510PPFV57NL.jpg"
+        },
+        {
+            "id": "25ab6cc7-bfe1-45ee-ac3d-025ad17c6177",
+            "title": null,
+            "number": 60,
+            "release_date": "2014-11-19",
+            "isbn": "9782344002049",
+            "asin": "2344002049",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 53784,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/612Cfpti88L.jpg"
+        },
+        {
+            "id": "2295f9fd-8a6f-44c2-ae08-00fc63f0bb1c",
+            "title": null,
+            "number": 8,
+            "release_date": "2001-11-14",
+            "isbn": "9782723436236",
+            "asin": "2723436233",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 4497,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51ZHH2KPV4L.jpg"
+        },
+        {
+            "id": "8f4317a6-bd73-440c-821f-c5c3ac0af53e",
+            "title": null,
+            "number": 96,
+            "release_date": "2020-10-07",
+            "isbn": "9782344044698",
+            "asin": "2344044698",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 45057,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/61qIYm2zQRL.jpg"
+        },
+        {
+            "id": "fbdf3b84-f6f2-42df-887f-886b34a3ca88",
+            "title": null,
+            "number": 21,
+            "release_date": "2004-05-12",
+            "isbn": "9782723445849",
+            "asin": "2723445844",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3246,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/610D4HCY2BL.jpg"
+        },
+        {
+            "id": "45c801d6-b919-440b-b480-dcd6ebe089d6",
+            "title": null,
+            "number": 25,
+            "release_date": "2016-07-28",
+            "isbn": "M1258025",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 749,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsxTmpBME9UUTBZeTFqWVdJd0xUUTVObVF0T0daa05pMDVOREEwTW1ObU4yWmtaREFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--68db700f38ad634d36d0536ac3ecbe29fdb5051c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/45c801d6-b919-440b-b480-dcd6ebe089d6.jpg"
+        },
+        {
+            "id": "cf424609-524d-4ebf-b6a1-0b511de15195",
+            "title": null,
+            "number": 84,
+            "release_date": "2017-10-04",
+            "isbn": "9782344025390",
+            "asin": "2344025391",
+            "edition_id": "a315f0e1-c6cc-4dc3-9945-ee326d743f26",
+            "possessions_count": 4510,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/618oMJ00fDL.jpg"
+        },
+        {
+            "id": "e446fc01-b83b-484f-a0b1-7bb76f2c4a6c",
+            "title": null,
+            "number": 28,
+            "release_date": "2005-08-01",
+            "isbn": "9782723448321",
+            "asin": "2723448320",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2917,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/618M5MKEATL.jpg"
+        },
+        {
+            "id": "b57b8075-4de6-4b22-b16b-5b94362ff85f",
+            "title": null,
+            "number": 89,
+            "release_date": "2019-01-02",
+            "isbn": "9782344033586",
+            "asin": "2344033580",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 43529,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51yXMi1ENGL.jpg"
+        },
+        {
+            "id": "70c2a938-0eb3-47e2-9d26-d8a30989cf31",
+            "title": null,
+            "number": 86,
+            "release_date": "2018-04-04",
+            "isbn": "9782344027523",
+            "asin": "2344027521",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 41274,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61kB5-9e-5L.jpg"
+        },
+        {
+            "id": "c60d3324-6b6b-4b76-b549-7caa6a588151",
+            "title": null,
+            "number": 5,
+            "release_date": "2015-10-22",
+            "isbn": "M1258005",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1448,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsxTURkaU5tWXhaUzFrTWpjeExUUTFNek10T1RnMVlpMWtaREJsTURnMk9HUmxaRFlHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--fc168ebefce39424ab9688285daf5e21d3f72ac4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/c60d3324-6b6b-4b76-b549-7caa6a588151.jpg"
+        },
+        {
+            "id": "444b7b67-6862-41ef-894b-cf5ca534241b",
+            "title": null,
+            "number": 85,
+            "release_date": "2018-01-03",
+            "isbn": "9782344027516",
+            "asin": "2344027513",
+            "edition_id": "a315f0e1-c6cc-4dc3-9945-ee326d743f26",
+            "possessions_count": 4619,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61UL0BcfasL.jpg"
+        },
+        {
+            "id": "694aa72a-a001-4a4c-91a4-141d5eca81de",
+            "title": null,
+            "number": 83,
+            "release_date": "2017-07-05",
+            "isbn": "9782344023631",
+            "asin": "2344023631",
+            "edition_id": "a315f0e1-c6cc-4dc3-9945-ee326d743f26",
+            "possessions_count": 4225,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/616RnVxl9UL.jpg"
+        },
+        {
+            "id": "3a7977a3-0906-4eae-8888-038d7cbd6e5e",
+            "title": null,
+            "number": 11,
+            "release_date": "2016-01-13",
+            "isbn": "M1258011",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1151,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxpTVdabU4yVmlNQzA0TldFMUxUUmlNekF0WVRBMFlpMWlObVpqTmpSa1pUZ3daRElHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--d2fdc77c549116ac510d559b37ab3507db203caa/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/3a7977a3-0906-4eae-8888-038d7cbd6e5e.jpg"
+        },
+        {
+            "id": "0b7f49c5-d07b-4db9-8758-a0898b918485",
+            "title": null,
+            "number": 53,
+            "release_date": "2010-04-07",
+            "isbn": "9782723474979",
+            "asin": "2723474976",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2464,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61qiUcINHaL.jpg"
+        },
+        {
+            "id": "1f5fdd45-6ba1-4ec0-953d-445cff47fbc2",
+            "title": null,
+            "number": 106,
+            "release_date": "2023-12-06",
+            "isbn": "9782344052198",
+            "asin": "2344052194",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 37929,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51v5295UzVL.jpg"
+        },
+        {
+            "id": "fc426186-8468-41ff-aa7d-c7ca6b4078f5",
+            "title": null,
+            "number": 13,
+            "release_date": "2002-10-16",
+            "isbn": "9782723440103",
+            "asin": "2723440109",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3758,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/512PTBAV35L.jpg"
+        },
+        {
+            "id": "b82de404-4c9f-4e80-ba33-f71736df7ed8",
+            "title": null,
+            "number": 16,
+            "release_date": "2013-07-03",
+            "isbn": "9782723494724",
+            "asin": "2723494721",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 77250,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51D39RDXBuL.jpg"
+        },
+        {
+            "id": "8301d02e-36f1-4add-abf4-9d5c2645cf13",
+            "title": null,
+            "number": 76,
+            "release_date": "2015-09-02",
+            "isbn": "9782344008423",
+            "asin": "234400842X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 45134,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61u%2BEE03ekL.jpg"
+        },
+        {
+            "id": "18a3462c-7b25-419d-a5e1-c45f35792235",
+            "title": null,
+            "number": 54,
+            "release_date": "2010-06-30",
+            "isbn": "9782723474986",
+            "asin": "2723474984",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2358,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61s2Yg1SJ3L.jpg"
+        },
+        {
+            "id": "6811a9d0-ec55-42cf-9460-951302750ba0",
+            "title": null,
+            "number": 100,
+            "release_date": "2021-12-08",
+            "isbn": "9782344050149",
+            "asin": "2344050140",
+            "edition_id": "8078d40e-b965-4d02-9942-9e3de4ff2937",
+            "possessions_count": 17441,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51XWcik+LNL.jpg"
+        },
+        {
+            "id": "080d9fbc-5fe0-45f5-8fd7-3cced2e99b7d",
+            "title": null,
+            "number": 109,
+            "release_date": "2025-04-02",
+            "isbn": "9782344061343",
+            "asin": "2344061347",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 23751,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/515-cStLzEL.jpg"
+        },
+        {
+            "id": "47a81fdb-644a-4b30-a3f5-934d198447e0",
+            "title": null,
+            "number": 43,
+            "release_date": "2008-05-12",
+            "isbn": "9782723463355",
+            "asin": "2723463354",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2542,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61SbdSzVojL.jpg"
+        },
+        {
+            "id": "8f7632d0-4cea-405a-a54d-12c1bf3390e1",
+            "title": null,
+            "number": 56,
+            "release_date": "2011-01-05",
+            "isbn": "9782723478991",
+            "asin": "2723478998",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2380,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61BoIkzf%2BOL.jpg"
+        },
+        {
+            "id": "44a26c5f-e2e1-411f-929a-2f9c28be7c4e",
+            "title": null,
+            "number": 84,
+            "release_date": "2017-10-04",
+            "isbn": "9782344025314",
+            "asin": "2344025316",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 41934,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61MnLJqOnUL.jpg"
+        },
+        {
+            "id": "9aef12fd-73de-446c-8f8d-ed2229cbdbf8",
+            "title": null,
+            "number": 24,
+            "release_date": "2004-11-03",
+            "isbn": "9782723447072",
+            "asin": "2723447073",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3091,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51CX5W0X5JL.jpg"
+        },
+        {
+            "id": "8429613e-e7aa-4e88-b25c-12d26eb042ea",
+            "title": null,
+            "number": 39,
+            "release_date": "2017-02-08",
+            "isbn": "M1258039",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 623,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxpWkdZMk9XRXdNQzFqT0RVMkxUUTNOVEV0T0RJMk1DMDBOamd3TVdFMVltTXlNamdHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--aa91f231c634335d9d120731406b800b5da5a355/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/8429613e-e7aa-4e88-b25c-12d26eb042ea.jpg"
+        },
+        {
+            "id": "056bd3d7-498a-4c0d-a6d5-539a5584e634",
+            "title": null,
+            "number": 62,
+            "release_date": "2012-05-23",
+            "isbn": "9782723487689",
+            "asin": "2723487687",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 49803,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61x%2BS-wUfRL.jpg"
+        },
+        {
+            "id": "bf8e0043-2423-4689-afa3-b9cca84b54bb",
+            "title": null,
+            "number": 90,
+            "release_date": "2019-04-03",
+            "isbn": "9782344033593",
+            "asin": "2344033599",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 43758,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/611dd0mmfjL.jpg"
+        },
+        {
+            "id": "ad4493ad-1310-404b-ace2-91f3dd4f489a",
+            "title": null,
+            "number": 1,
+            "release_date": "2013-07-03",
+            "isbn": "9782723488525",
+            "asin": "2723488527",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 129830,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51VJPOdaxkL.jpg"
+        },
+        {
+            "id": "a93e9eb7-0f30-4d44-918b-6d0539e57685",
+            "title": null,
+            "number": 9,
+            "release_date": "2015-12-16",
+            "isbn": "M1258009",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1236,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWszTnpoa01HUmxNUzB6TTJSaExUUTVZemN0WWpsalpTMWlPVFUxTW1FME56SXhNbVFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--65d9f97c884a27060edd73de0d31d224dd24bdc4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/a93e9eb7-0f30-4d44-918b-6d0539e57685.jpg"
+        },
+        {
+            "id": "7db356ed-334f-4d6c-a90f-ce79554876a2",
+            "title": null,
+            "number": 26,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494823",
+            "asin": "2723494829",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 65147,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51DBI%2BDCPhL.jpg"
+        },
+        {
+            "id": "2386b68d-7376-43ae-91ff-d440c7621afa",
+            "title": null,
+            "number": 30,
+            "release_date": "2005-12-26",
+            "isbn": "9782723448345",
+            "asin": "2723448347",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2900,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61311K4RE0L.jpg"
+        },
+        {
+            "id": "c4ca34da-883b-4380-822f-cc5a1a6e793f",
+            "title": null,
+            "number": 18,
+            "release_date": "2016-04-20",
+            "isbn": "M1258018",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 939,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt6T0dJNVlXTmtZUzFqWWpnMExUUXdOV1V0T1RJeU9DMWpaakF6TVRWaU5qSmlOVGNHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--57d7fb4e65587ca2ef2145d88ee462519a9d6107/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/c4ca34da-883b-4380-822f-cc5a1a6e793f.jpg"
+        },
+        {
+            "id": "7b2f1330-e904-4a02-92d9-3e8427b42745",
+            "title": null,
+            "number": 64,
+            "release_date": "2012-10-03",
+            "isbn": "9782723487702",
+            "asin": "2723487709",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 49019,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51ZCZmF3pUL.jpg"
+        },
+        {
+            "id": "8263019a-175d-4ff9-8739-89fab49f1465",
+            "title": null,
+            "number": 37,
+            "release_date": "2007-04-04",
+            "isbn": "9782723458054",
+            "asin": "2723458059",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2589,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/618Qn664y4L.jpg"
+        },
+        {
+            "id": "ce0250ec-0f13-4529-870a-0e0a571d9052",
+            "title": null,
+            "number": 10,
+            "release_date": "2002-04-16",
+            "isbn": "9782723436250",
+            "asin": "272343625X",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 4255,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51SVQ9MD96L.jpg"
+        },
+        {
+            "id": "7aec3da6-afcf-4e63-8b07-8e1566b510f5",
+            "title": null,
+            "number": 35,
+            "release_date": "2016-12-14",
+            "isbn": "M1258035",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 638,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWswT0RkbU1qZGlNQzB4TVdVekxUUXhabUl0T0dRMlpTMDNaakl3TUdaaU9ETm1ZV0lHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--94e54bb5dc5062683fc19123401c9b0b76a2f0b9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/7aec3da6-afcf-4e63-8b07-8e1566b510f5.jpg"
+        },
+        {
+            "id": "3c78ad3e-fe1f-4981-ba21-1a180019554c",
+            "title": null,
+            "number": 60,
+            "release_date": "2012-01-04",
+            "isbn": "9782723486675",
+            "asin": "2723486672",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2566,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61WqZujgteL.jpg"
+        },
+        {
+            "id": "6d5b932c-644c-4c8d-a0f6-419af99fe2a2",
+            "title": null,
+            "number": 77,
+            "release_date": "2015-11-18",
+            "isbn": "9782344008430",
+            "asin": "2344008438",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 44939,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61oNXXTVmOL.jpg"
+        },
+        {
+            "id": "8d6e7b8b-b06a-48eb-b3c2-d667177ba4d7",
+            "title": null,
+            "number": 20,
+            "release_date": "2004-03-03",
+            "isbn": "9782723445832",
+            "asin": "2723445836",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3319,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51GNTYZN7XL.jpg"
+        },
+        {
+            "id": "68c6cbf1-2046-4071-bdfe-d3e62ac4de4f",
+            "title": null,
+            "number": 16,
+            "release_date": "2003-05-14",
+            "isbn": "9782723442404",
+            "asin": "2723442403",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3473,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51VJVW44WYL.jpg"
+        },
+        {
+            "id": "0668569e-44c7-4cd9-bc88-23d8073f29dc",
+            "title": null,
+            "number": 51,
+            "release_date": "2009-09-09",
+            "isbn": "9782723471916",
+            "asin": "2723471918",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2520,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61wwDpMw%2B0L.jpg"
+        },
+        {
+            "id": "a4318ac1-9af5-4a4e-a9f3-fc6c09799e02",
+            "title": null,
+            "number": 41,
+            "release_date": "2008-01-23",
+            "isbn": "9782723460590",
+            "asin": "2723460592",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2593,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61KtmBXRO4L.jpg"
+        },
+        {
+            "id": "2ad444ad-3608-4835-af44-8c1df64b518f",
+            "title": null,
+            "number": 50,
+            "release_date": "2009-07-01",
+            "isbn": "9782723470346",
+            "asin": "2723470342",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2581,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61jTEUHkYxL.jpg"
+        },
+        {
+            "id": "d1ec2a4f-05a5-4fe2-a128-949396a9b0e4",
+            "title": null,
+            "number": 63,
+            "release_date": "2012-07-04",
+            "isbn": "9782723487696",
+            "asin": "2723487695",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 1534,
+            "not_sold": true,
+            "image_url": "https://m.media-amazon.com/images/I/51tXgpbVS4L.jpg"
+        },
+        {
+            "id": "515c9307-e370-4378-a6df-8d896180b74e",
+            "title": null,
+            "number": 8,
+            "release_date": "2013-07-03",
+            "isbn": "9782723489959",
+            "asin": "2723489957",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 94462,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51d3kVwCr5L.jpg"
+        },
+        {
+            "id": "d08ad802-207c-4119-8810-4a0d5a2d656b",
+            "title": null,
+            "number": 3,
+            "release_date": "2013-07-03",
+            "isbn": "9782723489904",
+            "asin": "2723489906",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 113839,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51FOpAvoelL.jpg"
+        },
+        {
+            "id": "6ddbc49c-aa9c-4bda-b9c3-21bc91c6592a",
+            "title": null,
+            "number": 15,
+            "release_date": "2013-07-03",
+            "isbn": "9782723492607",
+            "asin": "2723492605",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 78858,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61DbMuk4ePL.jpg"
+        },
+        {
+            "id": "403bbbdf-1f57-4b78-b608-aab471f3fd70",
+            "title": null,
+            "number": 70,
+            "release_date": "2014-04-02",
+            "isbn": "9782723499330",
+            "asin": "2723499332",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 49440,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61GSx3%2BxiDL.jpg"
+        },
+        {
+            "id": "f961c5f0-dc69-4e63-a892-6a7f67a6f093",
+            "title": null,
+            "number": 57,
+            "release_date": "2014-11-19",
+            "isbn": "9782344002018",
+            "asin": "2344002014",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 51913,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51Jz%2Bl39i-L.jpg"
+        },
+        {
+            "id": "a95b0726-d21c-4651-9baf-e95bcb1e8082",
+            "title": null,
+            "number": 10,
+            "release_date": "2013-07-03",
+            "isbn": "9782723492553",
+            "asin": "2723492559",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 92043,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51LDqiq1MxL.jpg"
+        },
+        {
+            "id": "81932722-5d5c-4f88-940b-a0b339200dc9",
+            "title": null,
+            "number": 45,
+            "release_date": "2008-09-10",
+            "isbn": "9782723464567",
+            "asin": "2723464563",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2511,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61Lhu4KGBmL.jpg"
+        },
+        {
+            "id": "f635247c-7e86-4c70-b682-929b0dea7611",
+            "title": null,
+            "number": 78,
+            "release_date": "2016-03-02",
+            "isbn": "9782344013229",
+            "asin": "2344013229",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 44629,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61obnM354mL.jpg"
+        },
+        {
+            "id": "76aada30-2623-457a-9ae9-fe928fc9918c",
+            "title": null,
+            "number": 15,
+            "release_date": "2016-03-09",
+            "isbn": "M1258015",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1044,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxtTjJFek4yTTBZUzB4TVdNeExUUmtPV0l0WWpWak15MDBPVFV4TXpRMFpqRmlZaklHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--27bcf20f2ec3629b93daa670d9f4a1191bc53e32/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/76aada30-2623-457a-9ae9-fe928fc9918c.jpg"
+        },
+        {
+            "id": "147f776b-3b81-4538-bd99-38abbc3dcf1c",
+            "title": null,
+            "number": 34,
+            "release_date": "2016-11-30",
+            "isbn": "M1258034",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 640,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsyTkdaak5ETmhaQzB5TVRjekxUUmxOekF0T0Rsall5MW1PV1JqT1dKaU9EaGhaRFVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--c15d51da13d67b9dc306fc347f146a5343105da2/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/147f776b-3b81-4538-bd99-38abbc3dcf1c.jpg"
+        },
+        {
+            "id": "e6e8f661-4227-44de-82a0-cfb99b91de5f",
+            "title": null,
+            "number": 33,
+            "release_date": "2016-11-16",
+            "isbn": "M1258033",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 651,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWswTnpSbFkyWTNaQzB4TnpFeUxUUTJZV010WW1ZeE15MHdaR00zTTJVME9ESmpNVE1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--86b66541286dfd20b41a7cc20f00165252c31043/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/e6e8f661-4227-44de-82a0-cfb99b91de5f.jpg"
+        },
+        {
+            "id": "94148048-5ffc-44ad-8b95-56b77cb3fe1c",
+            "title": null,
+            "number": 35,
+            "release_date": "2014-01-03",
+            "isbn": "9782723498630",
+            "asin": "2723498638",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 57724,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61yR7HW3nPL.jpg"
+        },
+        {
+            "id": "e109c106-8911-49ad-9928-968d29a19302",
+            "title": null,
+            "number": 105,
+            "release_date": "2023-09-30",
+            "isbn": "9782344052181",
+            "asin": "2344052186",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 41563,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/615i7jXI2iL.jpg"
+        },
+        {
+            "id": "dedc6e2d-53fb-45f9-9458-2a6a838436af",
+            "title": null,
+            "number": 33,
+            "release_date": "2006-07-06",
+            "isbn": "9782723453707",
+            "asin": "2723453707",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2733,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51E741VW8JL.jpg"
+        },
+        {
+            "id": "27cc3aee-11b6-4924-b026-6de88b1fe37b",
+            "title": null,
+            "number": 101,
+            "release_date": "2022-05-04",
+            "isbn": "9782344052143",
+            "asin": "2344052143",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 43035,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51U1-gJm5eL.jpg"
+        },
+        {
+            "id": "bc32f05b-5e38-4064-a1b1-620ed754c2de",
+            "title": null,
+            "number": 4,
+            "release_date": "2013-07-03",
+            "isbn": "9782723489911",
+            "asin": "2723489914",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 108223,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51PnNM70JKL.jpg"
+        },
+        {
+            "id": "f0ac34af-1791-4c6d-b48f-b86097c11c8e",
+            "title": null,
+            "number": 22,
+            "release_date": "2016-06-16",
+            "isbn": "M1258022",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 820,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWs0TVRFM04yUTVOQzA1T1RVMkxUUmxZamt0WVdNd1lpMDNNMkUwT1dRd1ptWmxOR1FHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--8374e5a10abe76da6af305dd7b315cb52dfb425a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/f0ac34af-1791-4c6d-b48f-b86097c11c8e.jpg"
+        },
+        {
+            "id": "5b2037de-a8a5-41a7-9b95-3a6a7e877e36",
+            "title": null,
+            "number": 6,
+            "release_date": "2013-07-03",
+            "isbn": "9782723489935",
+            "asin": "2723489930",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 100250,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51jVdrI1YKL.jpg"
+        },
+        {
+            "id": "707fdd74-ff21-4621-a24b-51545d434970",
+            "title": null,
+            "number": 8,
+            "release_date": "2015-12-03",
+            "isbn": "M1258008",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1271,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWs1TUdSbVpESXpNaTFoTnpjMUxUUXlZek10T1dRM09DMHlaREF5T1RkbE1qYzJNemNHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--82d2bafe303b4225244d4c8b049cba1efde14346/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hSeVpYTnBlbVZmZEc5ZmJHbHRhWFJiQjJrQzlBRnBBdlFCIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--1c1d8c4785852ddf11da8e8f89d08629d358dfe4/707fdd74-ff21-4621-a24b-51545d434970.jpeg"
+        },
+        {
+            "id": "6cf0f587-b368-46c5-9af3-f5c6c0eed0f1",
+            "title": null,
+            "number": 61,
+            "release_date": "2012-03-07",
+            "isbn": "9782723486682",
+            "asin": "2723486680",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 52017,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61nHCLj58%2BL.jpg"
+        },
+        {
+            "id": "4a0aa5dd-9d08-4cc7-a64b-7ab63f6f7ce8",
+            "title": null,
+            "number": 30,
+            "release_date": "2016-10-05",
+            "isbn": "M1258030",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 663,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWswTTJSak1qSXpNeTFoTnpjeUxUUXdNVEF0T0RkaE9TMDRabUpsWkRGbE5USTJORFVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--4c4ac894696018eadb81dde6e34badc6d1b01148/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/4a0aa5dd-9d08-4cc7-a64b-7ab63f6f7ce8.jpg"
+        },
+        {
+            "id": "5761a8ae-35d6-4971-89ea-a9ef8aab3173",
+            "title": null,
+            "number": 74,
+            "release_date": "2015-04-01",
+            "isbn": "9782344006597",
+            "asin": "2344006591",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 45620,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61oTXU0eW5L.jpg"
+        },
+        {
+            "id": "b8c9fa20-3ab0-426b-8ec5-c9b9b1f649ea",
+            "title": null,
+            "number": 40,
+            "release_date": "2007-11-08",
+            "isbn": "9782723458214",
+            "asin": "2723458210",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2583,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61UuWahzj8L.jpg"
+        },
+        {
+            "id": "4ef1be10-b78b-47ca-8691-a1d564bb303f",
+            "title": null,
+            "number": 62,
+            "release_date": "2012-05-23",
+            "isbn": "9782723487689",
+            "asin": "2723487687",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 1550,
+            "not_sold": true,
+            "image_url": "https://m.media-amazon.com/images/I/61QzA7X+ueL.jpg"
+        },
+        {
+            "id": "34ad0afe-8789-493d-83de-17aea95f287d",
+            "title": null,
+            "number": 82,
+            "release_date": "2017-04-19",
+            "isbn": "9782344020432",
+            "asin": "2344020438",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 42166,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61Vcfnc6wQL.jpg"
+        },
+        {
+            "id": "f7f4b31b-dae0-4503-8585-24d656a9539c",
+            "title": null,
+            "number": 40,
+            "release_date": "2017-02-22",
+            "isbn": "M1258040",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 615,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt5TXpFeU0yTXlPUzFsWVRJekxUUTNabVl0T0RRNE5DMWlNV1JsTmpka09HRTNORGdHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--0abe700dc9a082105f3e1bd6cb6ec26a0ac78b79/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/f7f4b31b-dae0-4503-8585-24d656a9539c.jpg"
+        },
+        {
+            "id": "dad40864-3d1c-4541-954b-d323182387f3",
+            "title": null,
+            "number": 39,
+            "release_date": "2007-08-14",
+            "isbn": "9782723458160",
+            "asin": "2723458164",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2560,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61jWIpPnBjL.jpg"
+        },
+        {
+            "id": "80eb0426-4ad9-414e-8a63-99709cf4276f",
+            "title": null,
+            "number": 54,
+            "release_date": "2014-08-27",
+            "isbn": "9782344001981",
+            "asin": "2344001980",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 50881,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61Ghh%2B0y6qL.jpg"
+        },
+        {
+            "id": "a1947a2a-04dd-498d-b21e-a70772a5b375",
+            "title": null,
+            "number": 73,
+            "release_date": "2015-01-07",
+            "isbn": "9782344006450",
+            "asin": "2344006451",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 45992,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/613DVXhVclL.jpg"
+        },
+        {
+            "id": "7c65395a-ec6e-4337-a2e3-2e537a736092",
+            "title": null,
+            "number": 32,
+            "release_date": "2014-01-03",
+            "isbn": "9782723498609",
+            "asin": "2723498603",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 61045,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51M9QllSSIL.jpg"
+        },
+        {
+            "id": "9c3556cc-f6d7-41c1-b8b8-1cfaaf8e6bb6",
+            "title": null,
+            "number": 79,
+            "release_date": "2016-07-06",
+            "isbn": "9782344016374",
+            "asin": "2344016376",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 44596,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61TeH4nkhmL.jpg"
+        },
+        {
+            "id": "44f0a6b1-da95-4579-a77b-87175bf86d37",
+            "title": null,
+            "number": 19,
+            "release_date": "2016-05-03",
+            "isbn": "M1258019",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 946,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWszTURrelltTmxNaTAwTjJJMExUUTVZMkV0T0dJM1lTMHpaVGd6T1RZNE16TmlNbU1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--1215f227f26504db062cba8fbb70bed009b73a0c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/44f0a6b1-da95-4579-a77b-87175bf86d37.jpg"
+        },
+        {
+            "id": "93fec8e7-5058-4246-b008-3dbacb3ed473",
+            "title": null,
+            "number": 55,
+            "release_date": "2010-10-06",
+            "isbn": "9782723474993",
+            "asin": "2723474992",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2406,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61qT8mGwjWL.jpg"
+        },
+        {
+            "id": "32bdf1c5-a497-42d3-abfa-0d93972cc337",
+            "title": null,
+            "number": 28,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494847",
+            "asin": "2723494845",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 63712,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61Yj3eRnssL.jpg"
+        },
+        {
+            "id": "900299c7-fa69-434b-aac8-e8e6d597abda",
+            "title": null,
+            "number": 39,
+            "release_date": "2014-01-08",
+            "isbn": "9782723498678",
+            "asin": "2723498670",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 55611,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61AzFUKewGL.jpg"
+        },
+        {
+            "id": "3a92144b-d373-46c9-8488-4de1e8453462",
+            "title": null,
+            "number": 46,
+            "release_date": "2008-11-19",
+            "isbn": "9782723464611",
+            "asin": "272346461X",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2541,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/619h5yvYvKL.jpg"
+        },
+        {
+            "id": "75216a6f-cee0-4af3-8cba-eef6da22533e",
+            "title": null,
+            "number": 57,
+            "release_date": "2011-04-06",
+            "isbn": "9782723482318",
+            "asin": "2723482316",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2466,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61ZazW7POXL.jpg"
+        },
+        {
+            "id": "d417d023-16f0-4b43-ab30-4bc67d2be774",
+            "title": null,
+            "number": 61,
+            "release_date": "2012-03-07",
+            "isbn": "9782723486682",
+            "asin": "2723486680",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 1626,
+            "not_sold": true,
+            "image_url": "https://m.media-amazon.com/images/I/51KgyTjAYGL.jpg"
+        },
+        {
+            "id": "dc9ed8fe-0f2e-4746-8910-7ec4754330f0",
+            "title": null,
+            "number": 16,
+            "release_date": "2016-03-23",
+            "isbn": "M1258016",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 990,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxpWWpVME56SXdZaTAzWmpObExUUTBPREl0T1dJeE9TMDJZVFV6WXpNM1lUQmtabUVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--70c9f313f075c658ee954b97d64608d912e5de12/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/dc9ed8fe-0f2e-4746-8910-7ec4754330f0.jpg"
+        },
+        {
+            "id": "810cad69-9e17-4330-8c12-fb18f904b1dd",
+            "title": null,
+            "number": 9,
+            "release_date": "2013-07-03",
+            "isbn": "9782723492539",
+            "asin": "2723492532",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 92120,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51mN5IIspbL.jpg"
+        },
+        {
+            "id": "d6259a2c-a056-4370-ad2a-69c9f5c3e0c6",
+            "title": null,
+            "number": 58,
+            "release_date": "2011-09-07",
+            "isbn": "9782723483506",
+            "asin": "2723483509",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2510,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61vHBQHCI-L.jpg"
+        },
+        {
+            "id": "8119e65e-a315-406a-8f8f-85199525edbf",
+            "title": null,
+            "number": 42,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001868",
+            "asin": "2344001867",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 54924,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61kssZCLOUL.jpg"
+        },
+        {
+            "id": "a789417d-ff6a-4bb1-bf50-0e7983bdc1f5",
+            "title": null,
+            "number": 69,
+            "release_date": "2014-01-03",
+            "isbn": "9782723498234",
+            "asin": "2723498239",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 49125,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61lgb-SXrnL.jpg"
+        },
+        {
+            "id": "559c1acd-f5ad-4354-b461-7997a6e68f89",
+            "title": null,
+            "number": 4,
+            "release_date": "2001-03-14",
+            "isbn": "9782723434812",
+            "asin": "2723434818",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 5446,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/5136G68M8PL.jpg"
+        },
+        {
+            "id": "f89657b2-5599-414c-91e8-96071c6dc582",
+            "title": null,
+            "number": 87,
+            "release_date": "2018-07-04",
+            "isbn": "9782344030042",
+            "asin": "2344030042",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 42020,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/6114buRciiL.jpg"
+        },
+        {
+            "id": "44e0a874-053f-4583-8471-ed6b026eea50",
+            "title": null,
+            "number": 3,
+            "release_date": "2001-01-10",
+            "isbn": "9782723434805",
+            "asin": "272343480X",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 5876,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51N6SB7MF1L.jpg"
+        },
+        {
+            "id": "67762375-690a-400f-b9c2-31c265ed4159",
+            "title": null,
+            "number": 36,
+            "release_date": "2014-01-08",
+            "isbn": "9782723498647",
+            "asin": "2723498646",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 56789,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61IfAftYBbL.jpg"
+        },
+        {
+            "id": "35bc5871-b788-4027-bd51-d6c44285f0da",
+            "title": null,
+            "number": 10,
+            "release_date": "2015-12-30",
+            "isbn": "M1258010",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1181,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsxWXpWaVpEUTNOQzAzWWpoaExUUTBPVGt0T1RjMk1DMWhObU0zTnpZeVpXRXdZalFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--b65fa2ae7e00d13a6b039751e1fac8e1c41e92de/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/35bc5871-b788-4027-bd51-d6c44285f0da.jpg"
+        },
+        {
+            "id": "43da6b1f-b4d7-4c17-9058-144c6f0fc3bc",
+            "title": null,
+            "number": 83,
+            "release_date": "2017-07-05",
+            "isbn": "9782344023211",
+            "asin": "2344023216",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 41686,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61z2e8L3qwL.jpg"
+        },
+        {
+            "id": "9007e7fc-fb9e-4481-abd0-d7b703c99009",
+            "title": null,
+            "number": 1,
+            "release_date": "2000-09-20",
+            "isbn": "9782723433358",
+            "asin": "2723433358",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 7262,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/512B32QV01L.jpg"
+        },
+        {
+            "id": "85df5ef2-c7d3-4827-958d-404bb7173ad5",
+            "title": null,
+            "number": 67,
+            "release_date": "2013-07-03",
+            "isbn": "9782723495738",
+            "asin": "2723495736",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 49418,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61-Au0joG7L.jpg"
+        },
+        {
+            "id": "f2b2c98a-c706-4cbf-bfb4-fa2fe8f0aa61",
+            "title": null,
+            "number": 38,
+            "release_date": "2014-01-08",
+            "isbn": "9782723498661",
+            "asin": "2723498662",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 55627,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61-0mRkchhL.jpg"
+        },
+        {
+            "id": "6b0db911-fea2-436c-ac25-3be5abca7bbf",
+            "title": null,
+            "number": 11,
+            "release_date": "2002-07-03",
+            "isbn": "9782723436267",
+            "asin": "2723436268",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 4064,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/31OLGt2ZH4L.jpg"
+        },
+        {
+            "id": "aac8588c-82b8-47be-84bb-f1f7caf2b740",
+            "title": null,
+            "number": 86,
+            "release_date": "2018-04-04",
+            "isbn": "9782344027530",
+            "asin": "234402753X",
+            "edition_id": "a315f0e1-c6cc-4dc3-9945-ee326d743f26",
+            "possessions_count": 4417,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/617VyherP%2BL.jpg"
+        },
+        {
+            "id": "e3b0efec-d8df-441f-bc69-7db72d7d927f",
+            "title": null,
+            "number": 99,
+            "release_date": "2021-09-15",
+            "isbn": "9782344048757",
+            "asin": "2344048758",
+            "edition_id": "8078d40e-b965-4d02-9942-9e3de4ff2937",
+            "possessions_count": 14707,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/41skiULFCJL.jpg"
+        },
+        {
+            "id": "89a45da2-238c-4a07-ac75-11cd830ee15f",
+            "title": null,
+            "number": 9,
+            "release_date": "2002-02-20",
+            "isbn": "9782723436243",
+            "asin": "2723436241",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 4330,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/5105TAA1KFL.jpg"
+        },
+        {
+            "id": "cd205e8c-4191-4884-893c-522c287c4d2e",
+            "title": null,
+            "number": 32,
+            "release_date": "2006-04-25",
+            "isbn": "9782723453691",
+            "asin": "2723453693",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2757,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51AFO7UqZ8L.jpg"
+        },
+        {
+            "id": "5971bd20-e02d-48e3-949b-8f5252a6b887",
+            "title": null,
+            "number": 28,
+            "release_date": "2016-09-08",
+            "isbn": "M1258028",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 682,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxoTlRBNVpHUmxOaTB6TW1GakxUUXhOV1F0WVRBME1TMDNOVFppTUdZell6STJZakVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--20d7bd99c8c787e7b24c0ae74976cb2553f91270/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/5971bd20-e02d-48e3-949b-8f5252a6b887.jpg"
+        },
+        {
+            "id": "c21a1b0c-eaa9-4f3b-877a-334393eb09de",
+            "title": null,
+            "number": 31,
+            "release_date": "2016-10-19",
+            "isbn": "M1258031",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 659,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxrTXpaaE5HSTNOUzFsWmpWbUxUUmlNakF0T0dKbE55MWtZMlppTldKaFlUZzRaamNHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--e5525046a0931370316d2cc81093c368271ae79b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/c21a1b0c-eaa9-4f3b-877a-334393eb09de.jpg"
+        },
+        {
+            "id": "3d9a7331-def6-4dc0-92ea-874c024556b2",
+            "title": null,
+            "number": 59,
+            "release_date": "2014-11-19",
+            "isbn": "9782344002032",
+            "asin": "2344002030",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 53466,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61ojy1qIBOL.jpg"
+        },
+        {
+            "id": "6eee497a-2e08-4c08-86c0-b935735243bc",
+            "title": null,
+            "number": 24,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494809",
+            "asin": "2723494802",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 66744,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61MOmQY0NLL.jpg"
+        },
+        {
+            "id": "20239896-9678-4279-927a-c8e6d333bca1",
+            "title": null,
+            "number": 104,
+            "release_date": "2023-04-19",
+            "isbn": "9782344052174",
+            "asin": "2344052178",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 43840,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/61EjEBRIY7L.jpg"
+        },
+        {
+            "id": "cdbbcca5-bad1-4a6c-a768-bbd257bc92e4",
+            "title": null,
+            "number": 92,
+            "release_date": "2019-10-16",
+            "isbn": "9782344038819",
+            "asin": "2344038817",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 43478,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/612C1uweseL.jpg"
+        },
+        {
+            "id": "478bf8d4-3863-4e15-8871-6d138d747972",
+            "title": null,
+            "number": 20,
+            "release_date": "2016-05-18",
+            "isbn": "M1258020",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 906,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWs0WTJNeVltTmlaUzA1TkRBM0xUUm1ZVGd0WW1aaU9DMWtabVk0TWpnd056bGtaamdHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--e2b2b73447e4b2af87102eb4d6ccbf31c67cc4fd/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/478bf8d4-3863-4e15-8871-6d138d747972.jpg"
+        },
+        {
+            "id": "69656cc0-983a-42a3-9b12-d9b5219d70cd",
+            "title": null,
+            "number": 108,
+            "release_date": "2024-10-05",
+            "isbn": "9782344061336",
+            "asin": "2344061339",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 30619,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51-BH1GILVL.jpg"
+        },
+        {
+            "id": "6a3c4351-415a-495e-913b-5d733a2adcce",
+            "title": null,
+            "number": 66,
+            "release_date": "2013-04-03",
+            "isbn": "9782723493260",
+            "asin": "2723493261",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 48242,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/512a7JKbEzL.jpg"
+        },
+        {
+            "id": "58a31690-c14c-4d27-a000-e2cf27faadac",
+            "title": null,
+            "number": 21,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494779",
+            "asin": "2723494772",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 71662,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/618IvldiedL.jpg"
+        },
+        {
+            "id": "87c1fee4-4f0a-4034-bdb8-0770dcba0f4e",
+            "title": null,
+            "number": 63,
+            "release_date": "2012-07-04",
+            "isbn": "9782723487696",
+            "asin": "2723487695",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 49165,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/618tzmOSPSL.jpg"
+        },
+        {
+            "id": "3b07d07f-fafc-403d-a36f-7d2f0e5ce3f6",
+            "title": null,
+            "number": 36,
+            "release_date": "2007-02-07",
+            "isbn": "9782723453738",
+            "asin": "2723453731",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2659,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61WblFzB9LL.jpg"
+        },
+        {
+            "id": "b07ca19b-96d7-475f-918e-a6481ae0d515",
+            "title": null,
+            "number": 14,
+            "release_date": "2013-07-03",
+            "isbn": "9782723492591",
+            "asin": "2723492591",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 80345,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51FZ6z5C7CL.jpg"
+        },
+        {
+            "id": "f6d808fb-9296-4898-8745-25c43bd7cf34",
+            "title": null,
+            "number": 6,
+            "release_date": "2015-11-05",
+            "isbn": "M1258006",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 1378,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWswT0dJMlpUZzJPQzFrTmpWbUxUUTBOalF0WVRkbE1DMW1PV0UxT0dVMVlXTmxPVGNHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--e5daa4c57aef14ee210a05f8af11f768d8d21e58/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/f6d808fb-9296-4898-8745-25c43bd7cf34.jpg"
+        },
+        {
+            "id": "a82b282d-faee-4981-93b5-75949caba732",
+            "title": null,
+            "number": 103,
+            "release_date": "2022-12-07",
+            "isbn": "9782344052167",
+            "asin": "234405216X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 48657,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/71yVNLA6gNL.jpg"
+        },
+        {
+            "id": "010e2f24-afd7-462e-a5d4-39b6ecd284aa",
+            "title": null,
+            "number": 46,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001905",
+            "asin": "2344001905",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 53446,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61e0Lx8FomL.jpg"
+        },
+        {
+            "id": "da6552bb-b5fe-41a7-91a6-8ad5f088a3fb",
+            "title": null,
+            "number": 102,
+            "release_date": "2022-09-14",
+            "isbn": "9782344052150",
+            "asin": "2344052151",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 42124,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/713+2bOGFBL.jpg"
+        },
+        {
+            "id": "f737a304-58c7-465a-9716-a8a441f27905",
+            "title": null,
+            "number": 19,
+            "release_date": "2004-01-06",
+            "isbn": "9782723444040",
+            "asin": "272344404X",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3321,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61X6G3J523L.jpg"
+        },
+        {
+            "id": "e646cc22-312d-4e1e-ae14-8fa7065f1bbd",
+            "title": null,
+            "number": 22,
+            "release_date": "2004-07-15",
+            "isbn": "9782723445856",
+            "asin": "2723445852",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3194,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51ZFDA48WTL.jpg"
+        },
+        {
+            "id": "7b4acc5c-4011-4a0a-ae09-ce2dfc1c424f",
+            "title": null,
+            "number": 27,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494830",
+            "asin": "2723494837",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 64368,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61Fr2%2BdVqmL.jpg"
+        },
+        {
+            "id": "fc287cb5-1c59-413a-b8fb-fdca39deca9a",
+            "title": null,
+            "number": 88,
+            "release_date": "2018-10-17",
+            "isbn": "9782344030059",
+            "asin": "2344030050",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 42052,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61lk7OYtN6L.jpg"
+        },
+        {
+            "id": "0f3d7d1a-3dd1-47d4-98ae-c11138b18c73",
+            "title": null,
+            "number": 13,
+            "release_date": "2013-07-03",
+            "isbn": "9782723492584",
+            "asin": "2723492583",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 81797,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51KBcNdYWPL.jpg"
+        },
+        {
+            "id": "770b04dd-226b-47b7-bbc4-c67527eb21f5",
+            "title": null,
+            "number": 48,
+            "release_date": "2009-03-25",
+            "isbn": "9782723466257",
+            "asin": "2723466256",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2522,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51pl5SnLesL.jpg"
+        },
+        {
+            "id": "bd8e598a-0ef9-464c-8397-97d636ab686e",
+            "title": null,
+            "number": 14,
+            "release_date": "2003-01-22",
+            "isbn": "9782723441537",
+            "asin": "2723441539",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3681,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/514YBK4X6YL.jpg"
+        },
+        {
+            "id": "2e201294-60c0-4d48-9c4b-a88ea8291d31",
+            "title": null,
+            "number": 48,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001929",
+            "asin": "2344001921",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 52680,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61WnL6bsH4L.jpg"
+        },
+        {
+            "id": "d267cda2-5c8a-4a58-b0b6-c6c5e38f6329",
+            "title": null,
+            "number": 40,
+            "release_date": "2014-01-08",
+            "isbn": "9782723498685",
+            "asin": "2723498689",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 57036,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61bPP5DkoZL.jpg"
+        },
+        {
+            "id": "b59cfe61-a309-4636-bd12-2d642074f60d",
+            "title": null,
+            "number": 23,
+            "release_date": "2004-09-08",
+            "isbn": "9782723447065",
+            "asin": "2723447065",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3206,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51FRZ2W0MHL.jpg"
+        },
+        {
+            "id": "b2c0a3fa-943b-4da2-8783-ea7eaab855ee",
+            "title": null,
+            "number": 29,
+            "release_date": "2016-09-21",
+            "isbn": "M1258029",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 676,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxqWWpKaFpETXhNQzFpWW1ZM0xUUmhaamt0WWpNd1pTMDBOV1UwTURkbVpqWmxObU1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--8f2ef6bd7c92a2ebfa19bba961322c7f0f7a0154/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/b2c0a3fa-943b-4da2-8783-ea7eaab855ee.jpg"
+        },
+        {
+            "id": "17a65d8d-4707-4761-b51c-297c9a95ab63",
+            "title": null,
+            "number": 12,
+            "release_date": "2002-08-28",
+            "isbn": "9782723439343",
+            "asin": "2723439348",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3905,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51AY859NA0L.jpg"
+        },
+        {
+            "id": "d20bf800-cf66-4ef5-b2ca-1e4baf374c3f",
+            "title": null,
+            "number": 34,
+            "release_date": "2006-09-06",
+            "isbn": "9782723453714",
+            "asin": "2723453715",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2710,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51E7EZNA2GL.jpg"
+        },
+        {
+            "id": "c6f6c578-0cd9-45a1-b503-df301eca6850",
+            "title": null,
+            "number": 17,
+            "release_date": "2016-04-05",
+            "isbn": "M1258017",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 990,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt4TkdFNE5qZGxaQzFqWWpobUxUUmhaamt0T0dOak1TMHpPR0V3TnpBelpqRXdObUVHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--93440723522a8c36bdd998a19f2b6d50754067fb/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/c6f6c578-0cd9-45a1-b503-df301eca6850.jpg"
+        },
+        {
+            "id": "98d1aad6-572a-44b3-8c5d-395563fbbb9d",
+            "title": null,
+            "number": 53,
+            "release_date": "2014-08-27",
+            "isbn": "9782344001974",
+            "asin": "2344001972",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 52320,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61jnWGtNHeL.jpg"
+        },
+        {
+            "id": "44009370-5a2a-4b1c-9a0d-b04cfecb448a",
+            "title": null,
+            "number": 24,
+            "release_date": "2016-07-13",
+            "isbn": "M1258024",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 752,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt6T0dKbFpXTTFOaTAxWm1aaExUUmpPRGN0T1dGa015MHpNREkzTWpJMFpXVm1Nak1HT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--0629e49dda6ea40c0de94af54e83b665c5d92597/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/44009370-5a2a-4b1c-9a0d-b04cfecb448a.jpg"
+        },
+        {
+            "id": "feab5dda-6064-4cec-af9b-f52c66de70fb",
+            "title": null,
+            "number": 12,
+            "release_date": "2013-07-03",
+            "isbn": "9782723492577",
+            "asin": "2723492575",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 86598,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61sZJv9zICL.jpg"
+        },
+        {
+            "id": "49de1403-e7d0-421e-bfc2-09a4ffe7b7ec",
+            "title": null,
+            "number": 25,
+            "release_date": "2005-02-02",
+            "isbn": "9782723448291",
+            "asin": "2723448290",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 3115,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51D0RJSBKQL.jpg"
+        },
+        {
+            "id": "dae29f18-bbf6-47cc-9ac4-5054007cec4f",
+            "title": null,
+            "number": 29,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494854",
+            "asin": "2723494853",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 63263,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/519%2BzQuBmJL.jpg"
+        },
+        {
+            "id": "ac87f267-164f-4fbc-ad44-7e0617958a01",
+            "title": null,
+            "number": 20,
+            "release_date": "2013-07-03",
+            "isbn": "9782723494762",
+            "asin": "2723494764",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 74637,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51hCzKHNJWL.jpg"
+        },
+        {
+            "id": "bcca4a9d-e1a6-471a-b100-e687c5e8663b",
+            "title": null,
+            "number": 5,
+            "release_date": "2001-05-23",
+            "isbn": "9782723434829",
+            "asin": "2723434826",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 5172,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51VY6AWFQQL.jpg"
+        },
+        {
+            "id": "e008d20b-32dd-4720-9378-920e9983e6a4",
+            "title": null,
+            "number": 6,
+            "release_date": "2001-07-18",
+            "isbn": "9782723435604",
+            "asin": "2723435601",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 4918,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51X5EF8X2WL.jpg"
+        },
+        {
+            "id": "63b4c817-0155-4560-b4ea-962f9665d592",
+            "title": null,
+            "number": 7,
+            "release_date": "2001-09-26",
+            "isbn": "9782723436229",
+            "asin": "2723436225",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 4652,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51ERC0PWQ5L.jpg"
+        },
+        {
+            "id": "767a11d2-095f-4fbe-a1e7-897a41ca04ee",
+            "title": null,
+            "number": 2,
+            "release_date": "2000-11-22",
+            "isbn": "9782723434317",
+            "asin": "2723434311",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 6345,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51AG99BFVPL.jpg"
+        },
+        {
+            "id": "46388c53-602b-46c1-a630-00c30398e474",
+            "title": null,
+            "number": 23,
+            "release_date": "2016-06-30",
+            "isbn": "M1258023",
+            "asin": null,
+            "edition_id": "e6d6ec1d-3523-413a-9d25-bd5eb114138c",
+            "possessions_count": 817,
+            "not_sold": true,
+            "image_url": "https://api.mangacollec.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxpWVdKbE1XRTBaQzFsTVRaaExUUm1Nakl0T0RoaU5TMWlNamczTkdFMFptVXhaamNHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--762b30868dbcbbb7c2cae6b47054e53f06ad4fbe/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMMEFXa0M5QUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--f4740ce9863997714730d7d28982d4fbc8d883df/46388c53-602b-46c1-a630-00c30398e474.jpg"
+        },
+        {
+            "id": "6f1cfdb1-4864-428a-b8d5-2916355b5b3f",
+            "title": null,
+            "number": 38,
+            "release_date": "2007-06-06",
+            "isbn": "9782723458009",
+            "asin": "2723458008",
+            "edition_id": "9ceb8fac-09c4-4ba8-b61b-a8f4034b096b",
+            "possessions_count": 2557,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/515ZQgqaPBL.jpg"
+        },
+        {
+            "id": "69a24f7c-2202-4be7-aca6-21e924868c74",
+            "title": null,
+            "number": 18,
+            "release_date": "2013-07-03",
+            "isbn": "9782723494748",
+            "asin": "2723494748",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 75487,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/511SBBqZzzL.jpg"
+        },
+        {
+            "id": "1f79d04b-f1f1-454a-8a6c-88736ab8e750",
+            "title": null,
+            "number": 30,
+            "release_date": "2014-01-03",
+            "isbn": "9782723494861",
+            "asin": "2723494861",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 64840,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51nye1cMpaL.jpg"
+        },
+        {
+            "id": "326a4f1b-37bd-442d-802a-c2765fc912fa",
+            "title": null,
+            "number": 41,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001851",
+            "asin": "2344001859",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 55414,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61-qt1EBUKL.jpg"
+        },
+        {
+            "id": "165f1dda-8ce4-4859-9cf3-6dacfdee756c",
+            "title": null,
+            "number": 43,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001875",
+            "asin": "2344001875",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 54685,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61BdHe-15iL.jpg"
+        },
+        {
+            "id": "70bbb4a9-4d1b-496d-8e95-6c8e0801c634",
+            "title": null,
+            "number": 44,
+            "release_date": "2014-07-02",
+            "isbn": "9782344001882",
+            "asin": "2344001883",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 54873,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61jN7o7RppL.jpg"
+        },
+        {
+            "id": "1ec17930-7e5f-44d6-98b2-13cbcff5aed1",
+            "title": null,
+            "number": 65,
+            "release_date": "2013-01-03",
+            "isbn": "9782723493062",
+            "asin": "2723493067",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 49333,
+            "not_sold": false,
+            "image_url": "https://m.media-amazon.com/images/I/51gPuG9s2FL.jpg"
+        },
+        {
+            "id": "fe7e68df-20af-4eaa-92f6-ba0e751d5dcc",
+            "title": null,
+            "number": 75,
+            "release_date": "2015-07-01",
+            "isbn": "9782344008393",
+            "asin": "234400839X",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 45554,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61N8kQK2C9L.jpg"
+        },
+        {
+            "id": "4964c48e-48de-4b44-8a62-a27bd47c9210",
+            "title": null,
+            "number": 91,
+            "release_date": "2019-07-03",
+            "isbn": "9782344037102",
+            "asin": "2344037101",
+            "edition_id": "d56047bf-5855-4757-9f2f-539f9922e8db",
+            "possessions_count": 43772,
+            "not_sold": false,
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/51AiQHt3nOL.jpg"
+        }
+    ],
+    "box_editions": [
+        {
+            "id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "title": "One Piece",
+            "publisher_id": "5e961f4c-9954-452a-961f-4d3d922c370d",
+            "boxes_count": 9,
+            "adult_content": false,
+            "box_follow_editions_count": 5627
+        },
+        {
+            "id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "title": "One Piece",
+            "publisher_id": "5e961f4c-9954-452a-961f-4d3d922c370d",
+            "boxes_count": 9,
+            "adult_content": false,
+            "box_follow_editions_count": 11538
+        },
+        {
+            "id": "59659a90-9b56-46f6-bfc0-7bd4fc2cddd2",
+            "title": "One Piece",
+            "publisher_id": "5e961f4c-9954-452a-961f-4d3d922c370d",
+            "boxes_count": 1,
+            "adult_content": false,
+            "box_follow_editions_count": 232
+        }
+    ],
+    "boxes": [
+        {
+            "id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "title": "Coffret vide Tougato",
+            "number": 9,
+            "release_date": "2026-01-07",
+            "isbn": "9782344068915",
+            "asin": "2344068910",
+            "commercial_stop": false,
+            "box_edition_id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "box_possessions_count": 2,
+            "image_url": null
+        },
+        {
+            "id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "title": "Coffret Skypiea",
+            "number": 3,
+            "release_date": "2022-11-16",
+            "isbn": "9782344055434",
+            "asin": "2344055436",
+            "commercial_stop": false,
+            "box_edition_id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "box_possessions_count": 5456,
+            "image_url": "https://m.media-amazon.com/images/I/41TRTVkoHiL.jpg"
+        },
+        {
+            "id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "title": "Coffret vide Dressrosa",
+            "number": 8,
+            "release_date": "2025-07-02",
+            "isbn": "9782344068908",
+            "asin": "2344068902",
+            "commercial_stop": false,
+            "box_edition_id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "box_possessions_count": 965,
+            "image_url": "https://m.media-amazon.com/images/I/41TTNrZkbRL.jpg"
+        },
+        {
+            "id": "80f9fce8-700d-4ab4-91b5-ed20fa399fee",
+            "title": "Coffret Marine Ford",
+            "number": 6,
+            "release_date": "2024-06-12",
+            "isbn": "9782344062685",
+            "asin": "2344062688",
+            "commercial_stop": false,
+            "box_edition_id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "box_possessions_count": 2815,
+            "image_url": "https://m.media-amazon.com/images/I/41baOCjZz+L.jpg"
+        },
+        {
+            "id": "f295cdec-4126-47ba-89cd-4136b6665dc1",
+            "title": "Coffret Vide Thriller Bark",
+            "number": 5,
+            "release_date": "2024-01-17",
+            "isbn": "9782344058350",
+            "asin": "2344058354",
+            "commercial_stop": false,
+            "box_edition_id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "box_possessions_count": 1932,
+            "image_url": "https://m.media-amazon.com/images/I/51HATLBaJEL.jpg"
+        },
+        {
+            "id": "f522373e-dd53-434c-befe-b0da7395cc6a",
+            "title": "Pack découverte Tome 1 + 2 gratuit",
+            "number": 0,
+            "release_date": "2019-01-09",
+            "isbn": "9782344035368",
+            "asin": "2344035362",
+            "commercial_stop": true,
+            "box_edition_id": "59659a90-9b56-46f6-bfc0-7bd4fc2cddd2",
+            "box_possessions_count": 146,
+            "image_url": null
+        },
+        {
+            "id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "title": "Coffret vide Alabasta",
+            "number": 2,
+            "release_date": "2022-07-06",
+            "isbn": "9782344052013",
+            "asin": "2344052011",
+            "commercial_stop": false,
+            "box_edition_id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "box_possessions_count": 3675,
+            "image_url": "https://m.media-amazon.com/images/I/51tBrXTsK2L.jpg"
+        },
+        {
+            "id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "title": "Coffret Île des hommes-poissons",
+            "number": 7,
+            "release_date": "2024-11-06",
+            "isbn": "9782344062692",
+            "asin": "2344062696",
+            "commercial_stop": false,
+            "box_edition_id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "box_possessions_count": 2090,
+            "image_url": "https://m.media-amazon.com/images/I/51+8H0G469L.jpg"
+        },
+        {
+            "id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "title": "Coffret Alabasta",
+            "number": 2,
+            "release_date": "2022-06-01",
+            "isbn": "9782344052006",
+            "asin": "2344052003",
+            "commercial_stop": false,
+            "box_edition_id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "box_possessions_count": 6716,
+            "image_url": "https://m.media-amazon.com/images/I/613PViQPYeL.jpg"
+        },
+        {
+            "id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "title": "Coffret vide Île des hommes-poissons",
+            "number": 7,
+            "release_date": "2025-01-08",
+            "isbn": "9782344062678",
+            "asin": "234406267X",
+            "commercial_stop": false,
+            "box_edition_id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "box_possessions_count": 1277,
+            "image_url": "https://m.media-amazon.com/images/I/51+8H0G469L.jpg"
+        },
+        {
+            "id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "title": "Coffret vide Skypiea",
+            "number": 3,
+            "release_date": "2023-01-04",
+            "isbn": "9782344055441",
+            "asin": "2344055444",
+            "commercial_stop": false,
+            "box_edition_id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "box_possessions_count": 2846,
+            "image_url": "https://m.media-amazon.com/images/I/41TRTVkoHiL.jpg"
+        },
+        {
+            "id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "title": "Coffret vide East Blue",
+            "number": 1,
+            "release_date": "2022-01-19",
+            "isbn": "9782344050958",
+            "asin": "2344050957",
+            "commercial_stop": false,
+            "box_edition_id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "box_possessions_count": 4579,
+            "image_url": "https://m.media-amazon.com/images/I/51M6ZVJqNQL.jpg"
+        },
+        {
+            "id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "title": "Coffret Water Seven",
+            "number": 4,
+            "release_date": "2023-06-07",
+            "isbn": "9782344057834",
+            "asin": "2344057838",
+            "commercial_stop": false,
+            "box_edition_id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "box_possessions_count": 4078,
+            "image_url": "https://m.media-amazon.com/images/I/41i5ZItlIFL.jpg"
+        },
+        {
+            "id": "3741c3d1-467d-4a35-8906-8c5dfe031b56",
+            "title": "Coffret Thriller Bark",
+            "number": 5,
+            "release_date": "2023-11-08",
+            "isbn": "9782344058343",
+            "asin": "2344058346",
+            "commercial_stop": false,
+            "box_edition_id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "box_possessions_count": 3724,
+            "image_url": "https://m.media-amazon.com/images/I/51S50b5riBL.jpg"
+        },
+        {
+            "id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "title": "Coffret Dressrosa",
+            "number": 8,
+            "release_date": "2025-06-04",
+            "isbn": "9782344068885",
+            "asin": "2344068880",
+            "commercial_stop": false,
+            "box_edition_id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "box_possessions_count": 1301,
+            "image_url": "https://m.media-amazon.com/images/I/41TTNrZkbRL.jpg"
+        },
+        {
+            "id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "title": "Coffret East Blue",
+            "number": 1,
+            "release_date": "2021-11-17",
+            "isbn": "9782344050125",
+            "asin": "2344050124",
+            "commercial_stop": false,
+            "box_edition_id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "box_possessions_count": 8585,
+            "image_url": "https://m.media-amazon.com/images/I/418mbIH+oJL.jpg"
+        },
+        {
+            "id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "title": "Coffret vide Water Seven",
+            "number": 4,
+            "release_date": "2023-07-05",
+            "isbn": "9782344058336",
+            "asin": "2344058338",
+            "commercial_stop": false,
+            "box_edition_id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "box_possessions_count": 2290,
+            "image_url": "https://m.media-amazon.com/images/I/61xeJlp70EL.jpg"
+        },
+        {
+            "id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "title": "Coffret Tougato",
+            "number": 9,
+            "release_date": "2025-11-05",
+            "isbn": "9782344068892",
+            "asin": "2344068899",
+            "commercial_stop": false,
+            "box_edition_id": "e90a012d-413c-441e-9c6e-88667096f387",
+            "box_possessions_count": 16,
+            "image_url": "https://m.media-amazon.com/images/I/51asbrjkpNL.jpg"
+        },
+        {
+            "id": "50cae3d7-4fc3-4cf6-9493-420d209adf17",
+            "title": "Coffret vide Marine Ford",
+            "number": 6,
+            "release_date": "2024-07-03",
+            "isbn": "9782344062708",
+            "asin": "234406270X",
+            "commercial_stop": false,
+            "box_edition_id": "75742132-4150-4785-8b69-4e98b42a8f33",
+            "box_possessions_count": 1615,
+            "image_url": "https://www.bdfugue.com/media/catalog/product/9/7/9782344062708_1_75.jpg"
+        }
+    ],
+    "box_volumes": [
+        {
+            "id": "e70d7509-a944-4918-912c-9f53305aeaba",
+            "box_id": "f522373e-dd53-434c-befe-b0da7395cc6a",
+            "volume_id": "ad4493ad-1310-404b-ace2-91f3dd4f489a",
+            "included": true
+        },
+        {
+            "id": "dd83c581-5ba8-4538-9ae8-fd35d7d9b1fb",
+            "box_id": "f522373e-dd53-434c-befe-b0da7395cc6a",
+            "volume_id": "8ba9ed2d-ac99-47dc-af7f-712b5dcbabc5",
+            "included": true
+        },
+        {
+            "id": "f5c964ee-162d-4c28-bab5-709f07102001",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "ad4493ad-1310-404b-ace2-91f3dd4f489a",
+            "included": true
+        },
+        {
+            "id": "1ac873cd-30fc-45d3-b3df-7cb72baddd4e",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "8ba9ed2d-ac99-47dc-af7f-712b5dcbabc5",
+            "included": true
+        },
+        {
+            "id": "a440625f-d90e-45c5-b869-ab723279f038",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "d08ad802-207c-4119-8810-4a0d5a2d656b",
+            "included": true
+        },
+        {
+            "id": "a86bf062-dd14-4bee-acc2-123aba152ff6",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "bc32f05b-5e38-4064-a1b1-620ed754c2de",
+            "included": true
+        },
+        {
+            "id": "28943582-8e93-4cf3-ba6e-15232d71f794",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "fc08a11c-a9b0-46a7-901f-7f60e69fb125",
+            "included": true
+        },
+        {
+            "id": "0d961966-691e-4327-a2aa-3da57e10af3e",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "c8f3e2a6-2265-47e0-bce1-b4412b1a6a1f",
+            "included": true
+        },
+        {
+            "id": "5c86e2b5-8f1f-43a0-9f5a-25d8ffa1d09f",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "5b2037de-a8a5-41a7-9b95-3a6a7e877e36",
+            "included": true
+        },
+        {
+            "id": "3e2c7ac5-d231-4d3f-8477-a34171d92925",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "515c9307-e370-4378-a6df-8d896180b74e",
+            "included": true
+        },
+        {
+            "id": "788c148d-bd5e-4ff8-9860-93618dd00216",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "810cad69-9e17-4330-8c12-fb18f904b1dd",
+            "included": true
+        },
+        {
+            "id": "b9cab380-88fc-4384-b9b8-0e1bb3a68234",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "a95b0726-d21c-4651-9baf-e95bcb1e8082",
+            "included": true
+        },
+        {
+            "id": "2e755fe2-a8dc-4273-9e55-921b27e0f410",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "c37bd04c-1687-42a7-ab3d-9dd47e2aae9f",
+            "included": true
+        },
+        {
+            "id": "e59199af-93b2-4e5a-9fa7-05f2fd8d78f1",
+            "box_id": "1da6580a-999d-48c6-a0e4-790aad00c2d8",
+            "volume_id": "feab5dda-6064-4cec-af9b-f52c66de70fb",
+            "included": true
+        },
+        {
+            "id": "050a6e3b-07c3-45da-99d4-2a5e989be86e",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "0f3d7d1a-3dd1-47d4-98ae-c11138b18c73",
+            "included": true
+        },
+        {
+            "id": "ee9329eb-d9c5-41ab-a46c-bdd7fb2a5bd1",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "b07ca19b-96d7-475f-918e-a6481ae0d515",
+            "included": true
+        },
+        {
+            "id": "3bed13f9-342c-4cae-9b72-08f161b1fd09",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "6ddbc49c-aa9c-4bda-b9c3-21bc91c6592a",
+            "included": true
+        },
+        {
+            "id": "519cfb9f-9f2d-4fe4-b9fc-d66aba9de822",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "b82de404-4c9f-4e80-ba33-f71736df7ed8",
+            "included": true
+        },
+        {
+            "id": "f4813c85-a52b-4ba6-afbb-2fa18d16557d",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "b26812a7-84fd-44a1-ac62-b5e6f6917459",
+            "included": true
+        },
+        {
+            "id": "b6d9ff10-e19c-463b-9586-ada7cf0a6f6e",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "69a24f7c-2202-4be7-aca6-21e924868c74",
+            "included": true
+        },
+        {
+            "id": "af4b75cc-59a3-4b36-bf63-2f12fc1252c2",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "eb0f1f38-eb57-42f7-8904-dcb67c2624ec",
+            "included": true
+        },
+        {
+            "id": "06063ded-18f1-4736-b8b4-53cce6f661cc",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "ac87f267-164f-4fbc-ad44-7e0617958a01",
+            "included": true
+        },
+        {
+            "id": "47239b83-baf6-4a42-8752-e9dda79f3018",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "58a31690-c14c-4d27-a000-e2cf27faadac",
+            "included": true
+        },
+        {
+            "id": "69ee93f1-f0e5-4d9f-b72e-9684739aa62d",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "e34eac70-8d3b-4a93-8a2d-8257bcb15233",
+            "included": true
+        },
+        {
+            "id": "73d6fdc2-a271-467b-acda-34959ce61b45",
+            "box_id": "378be838-87b2-4a18-9a0c-3b7417295ece",
+            "volume_id": "faa65d6a-d489-4f95-b944-5ad2da1d3d5f",
+            "included": true
+        },
+        {
+            "id": "0b91d072-b823-4c70-bbcf-1ca534630ca2",
+            "box_id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "volume_id": "6eee497a-2e08-4c08-86c0-b935735243bc",
+            "included": true
+        },
+        {
+            "id": "15d23c86-b81b-46d9-8060-e5b1996893f6",
+            "box_id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "volume_id": "1e69265e-eea6-4a48-8376-6303667b96a9",
+            "included": true
+        },
+        {
+            "id": "e8fd2f58-ad5a-4746-99b2-9ffe32e1dc7d",
+            "box_id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "volume_id": "7db356ed-334f-4d6c-a90f-ce79554876a2",
+            "included": true
+        },
+        {
+            "id": "359e8700-98df-485c-98b8-891a4a4f4a77",
+            "box_id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "volume_id": "7b4acc5c-4011-4a0a-ae09-ce2dfc1c424f",
+            "included": true
+        },
+        {
+            "id": "1e3c36c6-d63a-4628-814d-8dc0a1ca0a3c",
+            "box_id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "volume_id": "32bdf1c5-a497-42d3-abfa-0d93972cc337",
+            "included": true
+        },
+        {
+            "id": "464274bc-5884-4ba7-853c-3232754526b4",
+            "box_id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "volume_id": "dae29f18-bbf6-47cc-9ac4-5054007cec4f",
+            "included": true
+        },
+        {
+            "id": "823f6d67-0306-467a-9396-1afce6cab7c2",
+            "box_id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "volume_id": "1f79d04b-f1f1-454a-8a6c-88736ab8e750",
+            "included": true
+        },
+        {
+            "id": "3ae8a9e7-f52c-4fdf-92bd-5aa5ca28af35",
+            "box_id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "volume_id": "0d38b8cd-e40f-489a-9313-a99a5ecb7f6f",
+            "included": true
+        },
+        {
+            "id": "018df509-cb19-43ce-8cc8-fe2aef45bc68",
+            "box_id": "169633f2-ce20-4baf-9b72-6c1032359eb4",
+            "volume_id": "7c65395a-ec6e-4337-a2e3-2e537a736092",
+            "included": true
+        },
+        {
+            "id": "10bb13c6-39c6-4f18-950e-5b4c3c495f29",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "ad4493ad-1310-404b-ace2-91f3dd4f489a",
+            "included": false
+        },
+        {
+            "id": "b87bbfe8-1a8b-43f1-b51f-002ba1d603fd",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "8ba9ed2d-ac99-47dc-af7f-712b5dcbabc5",
+            "included": false
+        },
+        {
+            "id": "c802a5e7-a0a1-40e1-983f-f694c9d7080e",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "d08ad802-207c-4119-8810-4a0d5a2d656b",
+            "included": false
+        },
+        {
+            "id": "43fd1148-7c36-40b4-9993-2e972082e934",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "bc32f05b-5e38-4064-a1b1-620ed754c2de",
+            "included": false
+        },
+        {
+            "id": "538fc4f7-6982-42b7-82f9-7b943ddd8eac",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "fc08a11c-a9b0-46a7-901f-7f60e69fb125",
+            "included": false
+        },
+        {
+            "id": "f3fae60e-9e4c-4298-9bb5-6cc17fde9b3d",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "5b2037de-a8a5-41a7-9b95-3a6a7e877e36",
+            "included": false
+        },
+        {
+            "id": "b9c0754c-321c-4f4b-b28c-ad4dbbda67b3",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "c8f3e2a6-2265-47e0-bce1-b4412b1a6a1f",
+            "included": false
+        },
+        {
+            "id": "27554f14-524e-4bde-a1b9-0478dc6ee683",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "515c9307-e370-4378-a6df-8d896180b74e",
+            "included": false
+        },
+        {
+            "id": "34b366ca-0a0e-46fc-90ec-16aa613b54cd",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "810cad69-9e17-4330-8c12-fb18f904b1dd",
+            "included": false
+        },
+        {
+            "id": "13512510-b6cc-474e-900a-cf0ba1571bfd",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "a95b0726-d21c-4651-9baf-e95bcb1e8082",
+            "included": false
+        },
+        {
+            "id": "0425cf48-b4ba-4c33-9f83-6f6b9d60ce81",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "c37bd04c-1687-42a7-ab3d-9dd47e2aae9f",
+            "included": false
+        },
+        {
+            "id": "e834ffa6-550b-427b-8c91-73402e645929",
+            "box_id": "1a12bf36-4236-4f9f-a298-2b5fa3c41074",
+            "volume_id": "feab5dda-6064-4cec-af9b-f52c66de70fb",
+            "included": false
+        },
+        {
+            "id": "945991ea-af66-4538-8073-9fa60ef73fb1",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "0f3d7d1a-3dd1-47d4-98ae-c11138b18c73",
+            "included": false
+        },
+        {
+            "id": "8897a604-a4a9-47c4-8c0c-c2d5179c975e",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "b07ca19b-96d7-475f-918e-a6481ae0d515",
+            "included": false
+        },
+        {
+            "id": "a23a5c33-c2f2-4e8f-8acd-15f6c523114f",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "6ddbc49c-aa9c-4bda-b9c3-21bc91c6592a",
+            "included": false
+        },
+        {
+            "id": "3f60395a-3888-431f-a2aa-0a8a00b2d951",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "b82de404-4c9f-4e80-ba33-f71736df7ed8",
+            "included": false
+        },
+        {
+            "id": "2c36ce40-018f-4351-8017-26f94930a61b",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "b26812a7-84fd-44a1-ac62-b5e6f6917459",
+            "included": false
+        },
+        {
+            "id": "ed84bdbd-52e8-4820-8b38-4222f20a4d4b",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "69a24f7c-2202-4be7-aca6-21e924868c74",
+            "included": false
+        },
+        {
+            "id": "1f12a10f-530a-479f-b716-b7265860efd0",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "eb0f1f38-eb57-42f7-8904-dcb67c2624ec",
+            "included": false
+        },
+        {
+            "id": "02768bdc-0738-4d7a-be2d-bcb2876bdfa8",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "58a31690-c14c-4d27-a000-e2cf27faadac",
+            "included": false
+        },
+        {
+            "id": "ec957685-d305-4bde-9601-e90b67a1731d",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "ac87f267-164f-4fbc-ad44-7e0617958a01",
+            "included": false
+        },
+        {
+            "id": "43653ae2-7ebe-4b4d-acb6-765eb6434e32",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "e34eac70-8d3b-4a93-8a2d-8257bcb15233",
+            "included": false
+        },
+        {
+            "id": "23405148-1b30-4d1f-bca3-b27a2275e4bd",
+            "box_id": "8ea2fe5f-b715-4ad9-836c-a0be239edda2",
+            "volume_id": "faa65d6a-d489-4f95-b944-5ad2da1d3d5f",
+            "included": false
+        },
+        {
+            "id": "903e4ef2-c3cf-42bd-96d5-0209ea9f4035",
+            "box_id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "volume_id": "6eee497a-2e08-4c08-86c0-b935735243bc",
+            "included": false
+        },
+        {
+            "id": "e1ceefb2-697b-42a3-b99f-aca68227db27",
+            "box_id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "volume_id": "1e69265e-eea6-4a48-8376-6303667b96a9",
+            "included": false
+        },
+        {
+            "id": "ffc81900-11c0-4a10-bbcd-014b3ff96169",
+            "box_id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "volume_id": "7db356ed-334f-4d6c-a90f-ce79554876a2",
+            "included": false
+        },
+        {
+            "id": "8e2028f6-df70-44b1-b115-0637183bd75f",
+            "box_id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "volume_id": "7b4acc5c-4011-4a0a-ae09-ce2dfc1c424f",
+            "included": false
+        },
+        {
+            "id": "f97a80b6-c7e3-4462-9f54-fb836885a4f6",
+            "box_id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "volume_id": "32bdf1c5-a497-42d3-abfa-0d93972cc337",
+            "included": false
+        },
+        {
+            "id": "675fad8a-d584-4785-a223-69920b386924",
+            "box_id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "volume_id": "dae29f18-bbf6-47cc-9ac4-5054007cec4f",
+            "included": false
+        },
+        {
+            "id": "d80250c8-8bb0-41f7-a915-ea95bb72f9c5",
+            "box_id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "volume_id": "0d38b8cd-e40f-489a-9313-a99a5ecb7f6f",
+            "included": false
+        },
+        {
+            "id": "86c4838b-eba5-4d2d-bf31-0d1fd870f69f",
+            "box_id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "volume_id": "7c65395a-ec6e-4337-a2e3-2e537a736092",
+            "included": false
+        },
+        {
+            "id": "701aa3fd-2f60-42ef-b903-0ad343b4e95c",
+            "box_id": "d514ccb7-8b5a-47b2-99a8-c1133aef05dc",
+            "volume_id": "1f79d04b-f1f1-454a-8a6c-88736ab8e750",
+            "included": false
+        },
+        {
+            "id": "43fc196b-1388-4bec-8099-3b5cfbff317d",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "14c64763-d518-4c9d-bc96-c47a8dc5f03d",
+            "included": true
+        },
+        {
+            "id": "8e6db609-823a-40dd-9d1e-b9f7f9ac146c",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "1a8b91a5-ab0a-4514-98ea-fb6a96feaaae",
+            "included": true
+        },
+        {
+            "id": "e178e906-967d-4af8-9ae9-d8547b031ad8",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "94148048-5ffc-44ad-8b95-56b77cb3fe1c",
+            "included": true
+        },
+        {
+            "id": "18564012-9b9f-4ae2-8c63-73bec0fa6c20",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "67762375-690a-400f-b9c2-31c265ed4159",
+            "included": true
+        },
+        {
+            "id": "44ec046d-7f09-4bda-a531-fffd3b632bbe",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "17e51133-3df3-48b1-8e50-086b7550f904",
+            "included": true
+        },
+        {
+            "id": "c54cbe12-a577-4fdc-8ef8-007beb7dfd16",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "f2b2c98a-c706-4cbf-bfb4-fa2fe8f0aa61",
+            "included": true
+        },
+        {
+            "id": "796bf096-008c-4608-b926-a37d0b1ba9c8",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "900299c7-fa69-434b-aac8-e8e6d597abda",
+            "included": true
+        },
+        {
+            "id": "c6d5f0b3-3ebd-47db-97fb-68ecd49a5156",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "d267cda2-5c8a-4a58-b0b6-c6c5e38f6329",
+            "included": true
+        },
+        {
+            "id": "57a1f073-b033-4ffc-9c00-5359714f4f95",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "326a4f1b-37bd-442d-802a-c2765fc912fa",
+            "included": true
+        },
+        {
+            "id": "81d4cdae-0bcb-462c-9e5f-4886ae66897f",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "8119e65e-a315-406a-8f8f-85199525edbf",
+            "included": true
+        },
+        {
+            "id": "33fbac43-5237-4384-ad72-adc0aee7788b",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "165f1dda-8ce4-4859-9cf3-6dacfdee756c",
+            "included": true
+        },
+        {
+            "id": "0af52043-d5f0-41e5-b707-bdc3bd77994c",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "70bbb4a9-4d1b-496d-8e95-6c8e0801c634",
+            "included": true
+        },
+        {
+            "id": "3debe98c-6860-4947-8bc9-6309f9be0ceb",
+            "box_id": "84d351c8-0cb3-4436-89fa-158fb27fec73",
+            "volume_id": "e7428b27-2aa6-4468-9374-043d2f5c243b",
+            "included": true
+        },
+        {
+            "id": "d5c3c9f6-896b-4698-9591-2686d642400a",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "14c64763-d518-4c9d-bc96-c47a8dc5f03d",
+            "included": false
+        },
+        {
+            "id": "cb63804e-6dd2-40fd-972a-a4d23bf8bc53",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "1a8b91a5-ab0a-4514-98ea-fb6a96feaaae",
+            "included": false
+        },
+        {
+            "id": "8ec89918-c1a2-439b-bee5-03a8499cf55e",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "94148048-5ffc-44ad-8b95-56b77cb3fe1c",
+            "included": false
+        },
+        {
+            "id": "ea6e3a8d-e223-4d51-bef5-3c92bc275c49",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "67762375-690a-400f-b9c2-31c265ed4159",
+            "included": false
+        },
+        {
+            "id": "85ae45d9-9b45-4d0d-a427-e8f3c680679a",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "17e51133-3df3-48b1-8e50-086b7550f904",
+            "included": false
+        },
+        {
+            "id": "46dc5f33-5ab6-4b5f-8e28-7046053ed883",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "900299c7-fa69-434b-aac8-e8e6d597abda",
+            "included": false
+        },
+        {
+            "id": "41964345-3804-404d-8cd9-fc1ebbad0e1c",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "326a4f1b-37bd-442d-802a-c2765fc912fa",
+            "included": false
+        },
+        {
+            "id": "f4456b66-9b3a-4bd8-9c7a-d2ea9c44581f",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "8119e65e-a315-406a-8f8f-85199525edbf",
+            "included": false
+        },
+        {
+            "id": "a8f9583f-2a56-43bd-90ee-ebca4c237e79",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "70bbb4a9-4d1b-496d-8e95-6c8e0801c634",
+            "included": false
+        },
+        {
+            "id": "fca9fda1-fef0-4aa6-80ef-f6e9e2d68121",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "e7428b27-2aa6-4468-9374-043d2f5c243b",
+            "included": false
+        },
+        {
+            "id": "43ca29a4-02a0-46e1-9106-4896e0f5f82f",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "f2b2c98a-c706-4cbf-bfb4-fa2fe8f0aa61",
+            "included": false
+        },
+        {
+            "id": "7fe33418-dfb9-480b-b0c0-48ea87df12f8",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "d267cda2-5c8a-4a58-b0b6-c6c5e38f6329",
+            "included": false
+        },
+        {
+            "id": "ef1a7de0-da04-4d08-8c29-fa3e712cdbea",
+            "box_id": "20b387d0-b8a6-4f02-8bae-23984bf376a4",
+            "volume_id": "165f1dda-8ce4-4859-9cf3-6dacfdee756c",
+            "included": false
+        },
+        {
+            "id": "1a88cad6-9b2e-4ab1-9d03-fead5c55c34e",
+            "box_id": "3741c3d1-467d-4a35-8906-8c5dfe031b56",
+            "volume_id": "2e201294-60c0-4d48-9c4b-a88ea8291d31",
+            "included": true
+        },
+        {
+            "id": "d9620535-267b-4676-86f1-184054af2827",
+            "box_id": "3741c3d1-467d-4a35-8906-8c5dfe031b56",
+            "volume_id": "63b5bd64-97e4-428e-9daf-5cb81f740e79",
+            "included": true
+        },
+        {
+            "id": "a7a109c4-4b4f-4518-8a4f-458c4d985500",
+            "box_id": "3741c3d1-467d-4a35-8906-8c5dfe031b56",
+            "volume_id": "6135b2be-3eb9-4192-a2a1-faef82af3c86",
+            "included": true
+        },
+        {
+            "id": "ef954a2b-2da9-4b0f-aed3-a96e4631795c",
+            "box_id": "3741c3d1-467d-4a35-8906-8c5dfe031b56",
+            "volume_id": "010e2f24-afd7-462e-a5d4-39b6ecd284aa",
+            "included": true
+        },
+        {
+            "id": "eb91f210-6e28-4219-a161-0fe054aec502",
+            "box_id": "3741c3d1-467d-4a35-8906-8c5dfe031b56",
+            "volume_id": "d631eb3f-c7ab-43b5-ba82-ebd994a65fa5",
+            "included": true
+        },
+        {
+            "id": "c682013b-ef4a-4c5f-b27c-b6b7fcf9d536",
+            "box_id": "3741c3d1-467d-4a35-8906-8c5dfe031b56",
+            "volume_id": "12b301ec-e530-429d-b34c-e5a45d841dbd",
+            "included": true
+        },
+        {
+            "id": "2f9cb5fc-edae-46c1-b4ff-676215dba369",
+            "box_id": "3741c3d1-467d-4a35-8906-8c5dfe031b56",
+            "volume_id": "ed31d7eb-f4e0-4242-a6c3-b01736c696e1",
+            "included": true
+        },
+        {
+            "id": "1e66c34c-4a26-45a8-8f16-48adf7185681",
+            "box_id": "3741c3d1-467d-4a35-8906-8c5dfe031b56",
+            "volume_id": "98d1aad6-572a-44b3-8c5d-395563fbbb9d",
+            "included": true
+        },
+        {
+            "id": "c4b5ab03-9189-42f3-adb1-bb764e33ab73",
+            "box_id": "f295cdec-4126-47ba-89cd-4136b6665dc1",
+            "volume_id": "010e2f24-afd7-462e-a5d4-39b6ecd284aa",
+            "included": false
+        },
+        {
+            "id": "2a4aa4a1-5432-4654-a5fd-05134165e99a",
+            "box_id": "f295cdec-4126-47ba-89cd-4136b6665dc1",
+            "volume_id": "2e201294-60c0-4d48-9c4b-a88ea8291d31",
+            "included": false
+        },
+        {
+            "id": "0bf41c2a-0bce-4a40-aa0e-1314529b3c9f",
+            "box_id": "f295cdec-4126-47ba-89cd-4136b6665dc1",
+            "volume_id": "d631eb3f-c7ab-43b5-ba82-ebd994a65fa5",
+            "included": false
+        },
+        {
+            "id": "0ef4f2f1-defe-431b-aff8-7e8a0b4172f8",
+            "box_id": "f295cdec-4126-47ba-89cd-4136b6665dc1",
+            "volume_id": "12b301ec-e530-429d-b34c-e5a45d841dbd",
+            "included": false
+        },
+        {
+            "id": "993ae7f9-4561-4bf9-b801-55acdf475d8a",
+            "box_id": "f295cdec-4126-47ba-89cd-4136b6665dc1",
+            "volume_id": "63b5bd64-97e4-428e-9daf-5cb81f740e79",
+            "included": false
+        },
+        {
+            "id": "6919f795-a2ea-4fca-8db3-acfe6ec18869",
+            "box_id": "f295cdec-4126-47ba-89cd-4136b6665dc1",
+            "volume_id": "ed31d7eb-f4e0-4242-a6c3-b01736c696e1",
+            "included": false
+        },
+        {
+            "id": "38c42e6d-39bc-499e-b8f3-f3e8da500796",
+            "box_id": "f295cdec-4126-47ba-89cd-4136b6665dc1",
+            "volume_id": "98d1aad6-572a-44b3-8c5d-395563fbbb9d",
+            "included": false
+        },
+        {
+            "id": "9190c424-7134-4a24-bf1a-3cd77f4e20c3",
+            "box_id": "f295cdec-4126-47ba-89cd-4136b6665dc1",
+            "volume_id": "6135b2be-3eb9-4192-a2a1-faef82af3c86",
+            "included": false
+        },
+        {
+            "id": "2d3c3c35-d9b6-449b-a502-39624c8f8b24",
+            "box_id": "80f9fce8-700d-4ab4-91b5-ed20fa399fee",
+            "volume_id": "80eb0426-4ad9-414e-8a63-99709cf4276f",
+            "included": true
+        },
+        {
+            "id": "79555c3e-d496-46fe-a1ec-c155d759c7c9",
+            "box_id": "80f9fce8-700d-4ab4-91b5-ed20fa399fee",
+            "volume_id": "c5ebd425-9f6a-4d9a-8bc1-e850043f4fee",
+            "included": true
+        },
+        {
+            "id": "46414d05-98b0-4ac0-8d33-52ba166b6381",
+            "box_id": "80f9fce8-700d-4ab4-91b5-ed20fa399fee",
+            "volume_id": "bbea44db-afca-4309-a798-c2d59a0782ec",
+            "included": true
+        },
+        {
+            "id": "fd900cb3-19f0-4cc4-a142-a5d021248a5c",
+            "box_id": "80f9fce8-700d-4ab4-91b5-ed20fa399fee",
+            "volume_id": "f961c5f0-dc69-4e63-a892-6a7f67a6f093",
+            "included": true
+        },
+        {
+            "id": "d987f0ef-8f57-4bed-a263-86fb742d5df5",
+            "box_id": "80f9fce8-700d-4ab4-91b5-ed20fa399fee",
+            "volume_id": "ecd525d8-daf4-4bd6-bc12-40b360261def",
+            "included": true
+        },
+        {
+            "id": "ab5d72e7-2eda-4bd8-acee-8dde57e00bf6",
+            "box_id": "80f9fce8-700d-4ab4-91b5-ed20fa399fee",
+            "volume_id": "3d9a7331-def6-4dc0-92ea-874c024556b2",
+            "included": true
+        },
+        {
+            "id": "981e9755-71e5-460b-bda9-16b0006472a9",
+            "box_id": "80f9fce8-700d-4ab4-91b5-ed20fa399fee",
+            "volume_id": "25ab6cc7-bfe1-45ee-ac3d-025ad17c6177",
+            "included": true
+        },
+        {
+            "id": "c3106a78-ad23-42c7-ad56-d9266b70dbcf",
+            "box_id": "80f9fce8-700d-4ab4-91b5-ed20fa399fee",
+            "volume_id": "6cf0f587-b368-46c5-9af3-f5c6c0eed0f1",
+            "included": true
+        },
+        {
+            "id": "b3036009-811c-4b30-95c4-8b636104f7aa",
+            "box_id": "50cae3d7-4fc3-4cf6-9493-420d209adf17",
+            "volume_id": "80eb0426-4ad9-414e-8a63-99709cf4276f",
+            "included": false
+        },
+        {
+            "id": "19198448-4309-4519-a331-b1123782b303",
+            "box_id": "50cae3d7-4fc3-4cf6-9493-420d209adf17",
+            "volume_id": "c5ebd425-9f6a-4d9a-8bc1-e850043f4fee",
+            "included": false
+        },
+        {
+            "id": "24103418-98e2-4b91-9e51-06212b7f781b",
+            "box_id": "50cae3d7-4fc3-4cf6-9493-420d209adf17",
+            "volume_id": "bbea44db-afca-4309-a798-c2d59a0782ec",
+            "included": false
+        },
+        {
+            "id": "6afc301a-3926-44ea-be52-f71bd3cfc3cb",
+            "box_id": "50cae3d7-4fc3-4cf6-9493-420d209adf17",
+            "volume_id": "f961c5f0-dc69-4e63-a892-6a7f67a6f093",
+            "included": false
+        },
+        {
+            "id": "ac25869c-79a8-46fc-bead-0f0b84f2a71a",
+            "box_id": "50cae3d7-4fc3-4cf6-9493-420d209adf17",
+            "volume_id": "ecd525d8-daf4-4bd6-bc12-40b360261def",
+            "included": false
+        },
+        {
+            "id": "62909a89-6495-4df9-81e0-3ae69a03ce3c",
+            "box_id": "50cae3d7-4fc3-4cf6-9493-420d209adf17",
+            "volume_id": "3d9a7331-def6-4dc0-92ea-874c024556b2",
+            "included": false
+        },
+        {
+            "id": "d31e9dda-b798-4303-9f17-570ca06a898b",
+            "box_id": "50cae3d7-4fc3-4cf6-9493-420d209adf17",
+            "volume_id": "25ab6cc7-bfe1-45ee-ac3d-025ad17c6177",
+            "included": false
+        },
+        {
+            "id": "83ced9a9-40f6-4470-8e6c-fd625dcea1f6",
+            "box_id": "50cae3d7-4fc3-4cf6-9493-420d209adf17",
+            "volume_id": "6cf0f587-b368-46c5-9af3-f5c6c0eed0f1",
+            "included": false
+        },
+        {
+            "id": "49e18b79-f7e1-462c-ad96-eb576149b4b8",
+            "box_id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "volume_id": "056bd3d7-498a-4c0d-a6d5-539a5584e634",
+            "included": true
+        },
+        {
+            "id": "053f3b29-564b-426b-9aab-d78872c4c2ee",
+            "box_id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "volume_id": "87c1fee4-4f0a-4034-bdb8-0770dcba0f4e",
+            "included": true
+        },
+        {
+            "id": "38274fc5-3a42-41d3-a8cf-42694b408d08",
+            "box_id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "volume_id": "7b2f1330-e904-4a02-92d9-3e8427b42745",
+            "included": true
+        },
+        {
+            "id": "b0b7a645-d29c-4ed1-b739-8fae0477cd96",
+            "box_id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "volume_id": "1ec17930-7e5f-44d6-98b2-13cbcff5aed1",
+            "included": true
+        },
+        {
+            "id": "86472831-1a2f-494a-b168-9d022ef284ae",
+            "box_id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "volume_id": "6a3c4351-415a-495e-913b-5d733a2adcce",
+            "included": true
+        },
+        {
+            "id": "b07e2a5b-d5fa-4697-ba2b-a8476b99c86a",
+            "box_id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "volume_id": "85df5ef2-c7d3-4827-958d-404bb7173ad5",
+            "included": true
+        },
+        {
+            "id": "2f3e5488-dcca-43c9-840d-31475e413620",
+            "box_id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "volume_id": "e2140775-71c5-408c-b8aa-95e66799cbc7",
+            "included": true
+        },
+        {
+            "id": "7538e284-cd0b-4330-a1ab-f4a02bbf7aac",
+            "box_id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "volume_id": "a789417d-ff6a-4bb1-bf50-0e7983bdc1f5",
+            "included": true
+        },
+        {
+            "id": "d49430ba-ae6d-4bb9-a135-0df2116f923f",
+            "box_id": "ee9c32b4-1802-4953-8b51-d3c82500a575",
+            "volume_id": "403bbbdf-1f57-4b78-b608-aab471f3fd70",
+            "included": true
+        },
+        {
+            "id": "b6645907-aaca-4a44-a03b-f4a75e126cd4",
+            "box_id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "volume_id": "056bd3d7-498a-4c0d-a6d5-539a5584e634",
+            "included": false
+        },
+        {
+            "id": "4deb5cf1-3704-4150-83a6-5dc72d13f309",
+            "box_id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "volume_id": "87c1fee4-4f0a-4034-bdb8-0770dcba0f4e",
+            "included": false
+        },
+        {
+            "id": "526e52e8-67b7-42ab-9147-5f0633695832",
+            "box_id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "volume_id": "7b2f1330-e904-4a02-92d9-3e8427b42745",
+            "included": false
+        },
+        {
+            "id": "98724e8a-0822-4ca8-b005-70b1f97fb418",
+            "box_id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "volume_id": "1ec17930-7e5f-44d6-98b2-13cbcff5aed1",
+            "included": false
+        },
+        {
+            "id": "60716939-ae9b-48c3-b66b-499b44894d10",
+            "box_id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "volume_id": "6a3c4351-415a-495e-913b-5d733a2adcce",
+            "included": false
+        },
+        {
+            "id": "484b2e26-82c7-4c17-bd0c-eca4cb8b11f8",
+            "box_id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "volume_id": "85df5ef2-c7d3-4827-958d-404bb7173ad5",
+            "included": false
+        },
+        {
+            "id": "f3601f02-a496-4019-8f1d-34fbbccbd591",
+            "box_id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "volume_id": "e2140775-71c5-408c-b8aa-95e66799cbc7",
+            "included": false
+        },
+        {
+            "id": "00920c81-d82d-4c77-81be-1d472ab6285b",
+            "box_id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "volume_id": "a789417d-ff6a-4bb1-bf50-0e7983bdc1f5",
+            "included": false
+        },
+        {
+            "id": "3d58ee02-3ce3-4cd2-b5b4-732da5147061",
+            "box_id": "891f1788-cc5d-4996-9e16-59b517cd3621",
+            "volume_id": "403bbbdf-1f57-4b78-b608-aab471f3fd70",
+            "included": false
+        },
+        {
+            "id": "7f0703f9-8308-43cc-af59-c94a1c587218",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "57b788fb-32cf-4bc7-a4c0-7cd20e212e3e",
+            "included": true
+        },
+        {
+            "id": "ef056959-cb11-44c1-bc8c-5d5f3efa3f9a",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "1545758c-7e04-4c44-89d8-74aef4621f66",
+            "included": true
+        },
+        {
+            "id": "0262e19b-97eb-4f22-8c61-ebac1b410e76",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "a1947a2a-04dd-498d-b21e-a70772a5b375",
+            "included": true
+        },
+        {
+            "id": "0b772ac1-caae-460c-a236-55b9a9d3c144",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "5761a8ae-35d6-4971-89ea-a9ef8aab3173",
+            "included": true
+        },
+        {
+            "id": "95e6113a-8505-480e-9204-5dd7f3648c67",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "fe7e68df-20af-4eaa-92f6-ba0e751d5dcc",
+            "included": true
+        },
+        {
+            "id": "17f606d0-c46a-460d-8f13-1bccd4c1f64c",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "8301d02e-36f1-4add-abf4-9d5c2645cf13",
+            "included": true
+        },
+        {
+            "id": "a0792a0e-52af-4270-8967-f8da617bd6c1",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "6d5b932c-644c-4c8d-a0f6-419af99fe2a2",
+            "included": true
+        },
+        {
+            "id": "16858c65-5f35-423a-8570-0cf045297cdf",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "f635247c-7e86-4c70-b682-929b0dea7611",
+            "included": true
+        },
+        {
+            "id": "23e4fdaf-341b-46a8-a90e-6fe5957ca6e0",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "9c3556cc-f6d7-41c1-b8b8-1cfaaf8e6bb6",
+            "included": true
+        },
+        {
+            "id": "622c1219-4d90-472c-aab4-095d706630bc",
+            "box_id": "62e5bd1e-c8e7-4830-9768-d85069158c94",
+            "volume_id": "99d309b2-8046-49ce-9f3c-cd18da1ad5e8",
+            "included": true
+        },
+        {
+            "id": "2a60b9c8-8cf6-4cef-a0f4-9650ff1e440d",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "57b788fb-32cf-4bc7-a4c0-7cd20e212e3e",
+            "included": false
+        },
+        {
+            "id": "c1f8428b-7f49-4893-99d4-5038148ab876",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "1545758c-7e04-4c44-89d8-74aef4621f66",
+            "included": false
+        },
+        {
+            "id": "fb01b178-534c-48db-a48b-405599d66e4c",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "a1947a2a-04dd-498d-b21e-a70772a5b375",
+            "included": false
+        },
+        {
+            "id": "8385dc02-a432-4295-8bee-9d6c8d945083",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "5761a8ae-35d6-4971-89ea-a9ef8aab3173",
+            "included": false
+        },
+        {
+            "id": "c212d7f7-08b8-4f44-93f6-5e6bf57606dc",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "fe7e68df-20af-4eaa-92f6-ba0e751d5dcc",
+            "included": false
+        },
+        {
+            "id": "050ec032-6731-4a7a-bd0e-38e2efeb3110",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "8301d02e-36f1-4add-abf4-9d5c2645cf13",
+            "included": false
+        },
+        {
+            "id": "ab25cc80-748a-4c00-8d9f-872f623b9d54",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "f635247c-7e86-4c70-b682-929b0dea7611",
+            "included": false
+        },
+        {
+            "id": "21aa1bc9-2401-4ebf-8918-314124e14d37",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "9c3556cc-f6d7-41c1-b8b8-1cfaaf8e6bb6",
+            "included": false
+        },
+        {
+            "id": "bd624406-c317-4ad6-bd2c-3589bb0edadf",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "99d309b2-8046-49ce-9f3c-cd18da1ad5e8",
+            "included": false
+        },
+        {
+            "id": "630f7661-e69c-424e-951e-a3737cb57125",
+            "box_id": "8a13c849-db24-44d1-bf0b-6cbdb3f5f5eb",
+            "volume_id": "6d5b932c-644c-4c8d-a0f6-419af99fe2a2",
+            "included": false
+        },
+        {
+            "id": "fdef6c9c-8ed2-4b54-92bc-1d9732b7c34f",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "db14ca54-bba9-4cb9-9f3a-7b81b262573e",
+            "included": true
+        },
+        {
+            "id": "15c81788-d4c9-47d1-aa18-320e87daf91c",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "34ad0afe-8789-493d-83de-17aea95f287d",
+            "included": true
+        },
+        {
+            "id": "7876282e-a940-4368-8651-127ea38de7c7",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "43da6b1f-b4d7-4c17-9058-144c6f0fc3bc",
+            "included": true
+        },
+        {
+            "id": "c6344ba5-7dcb-4702-a468-092ff38a1342",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "44a26c5f-e2e1-411f-929a-2f9c28be7c4e",
+            "included": true
+        },
+        {
+            "id": "37cec726-a15f-4542-9182-68157c7b3977",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "936bca9d-b10e-47a9-9962-babb2994fddd",
+            "included": true
+        },
+        {
+            "id": "7c228a48-b1cf-4e82-b939-668d07a550de",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "70c2a938-0eb3-47e2-9d26-d8a30989cf31",
+            "included": true
+        },
+        {
+            "id": "9327c0db-863d-4743-b462-3bd0a2b9090b",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "f89657b2-5599-414c-91e8-96071c6dc582",
+            "included": true
+        },
+        {
+            "id": "35ee9a11-0584-4e3c-9dc5-7ae7787bd179",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "fc287cb5-1c59-413a-b8fb-fdca39deca9a",
+            "included": true
+        },
+        {
+            "id": "deb92fb3-76dd-4486-a8d9-114b2e0fc607",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "b57b8075-4de6-4b22-b16b-5b94362ff85f",
+            "included": true
+        },
+        {
+            "id": "89350d07-c0c4-46ae-9809-5eae57fe5d3c",
+            "box_id": "8cfd539f-373b-4cc1-b759-35991dbac110",
+            "volume_id": "bf8e0043-2423-4689-afa3-b9cca84b54bb",
+            "included": true
+        },
+        {
+            "id": "69e4a74b-ab2b-4747-903e-d4276ee38dfc",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "db14ca54-bba9-4cb9-9f3a-7b81b262573e",
+            "included": false
+        },
+        {
+            "id": "3d37e338-0236-42ec-a172-35d0e9077c2f",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "34ad0afe-8789-493d-83de-17aea95f287d",
+            "included": false
+        },
+        {
+            "id": "e9d8a413-5cf0-43ea-94d4-c435885ea3f1",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "43da6b1f-b4d7-4c17-9058-144c6f0fc3bc",
+            "included": false
+        },
+        {
+            "id": "3d8bc22a-14f9-43fd-9d75-e965eed2258d",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "44a26c5f-e2e1-411f-929a-2f9c28be7c4e",
+            "included": false
+        },
+        {
+            "id": "4f2e98ef-37b2-4549-a12d-45a1c0d6da17",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "936bca9d-b10e-47a9-9962-babb2994fddd",
+            "included": false
+        },
+        {
+            "id": "89c20f79-e641-4439-988f-32f35ae3a494",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "70c2a938-0eb3-47e2-9d26-d8a30989cf31",
+            "included": false
+        },
+        {
+            "id": "9bd25c1e-bdb1-4f43-9636-9ce5fc0f9087",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "f89657b2-5599-414c-91e8-96071c6dc582",
+            "included": false
+        },
+        {
+            "id": "67c80952-ab29-4b60-9d50-2ab5ac26590e",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "fc287cb5-1c59-413a-b8fb-fdca39deca9a",
+            "included": false
+        },
+        {
+            "id": "8dcbc6d9-2767-415b-949a-812d15a0fbd3",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "b57b8075-4de6-4b22-b16b-5b94362ff85f",
+            "included": false
+        },
+        {
+            "id": "7374f3bc-35cd-4ba6-9afd-7b2c5e497619",
+            "box_id": "90d1d0c5-4803-4c19-a3e9-7b23172d783a",
+            "volume_id": "bf8e0043-2423-4689-afa3-b9cca84b54bb",
+            "included": false
+        }
+    ]
+}

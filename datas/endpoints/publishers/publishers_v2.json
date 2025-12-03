@@ -1,0 +1,1698 @@
+{
+    "publishers": [
+        {
+            "id": "bdef8c9e-7395-465d-8175-a1b985d4aa92",
+            "title": "Pika",
+            "closed": false,
+            "editions_count": 691,
+            "no_amazon": false
+        },
+        {
+            "id": "4c9547ff-2ef6-439a-80b8-ea705a385b76",
+            "title": "Kana",
+            "closed": false,
+            "editions_count": 596,
+            "no_amazon": false
+        },
+        {
+            "id": "5e961f4c-9954-452a-961f-4d3d922c370d",
+            "title": "Glénat",
+            "closed": false,
+            "editions_count": 527,
+            "no_amazon": false
+        },
+        {
+            "id": "74de7d1e-f2e9-44bb-8a5a-1fe84258c7bf",
+            "title": "Ki-oon",
+            "closed": false,
+            "editions_count": 367,
+            "no_amazon": false
+        },
+        {
+            "id": "122e0ec3-f072-4c5d-b40d-3eba4a82fe1e",
+            "title": "Crunchyroll / Kazé",
+            "closed": false,
+            "editions_count": 328,
+            "no_amazon": false
+        },
+        {
+            "id": "2f064f84-a653-48c1-b1f6-27a694bb7ec6",
+            "title": "Kurokawa",
+            "closed": false,
+            "editions_count": 300,
+            "no_amazon": false
+        },
+        {
+            "id": "764f8c5b-370b-48eb-9abc-0ca13d5459dd",
+            "title": "Delcourt/Tonkam",
+            "closed": false,
+            "editions_count": 295,
+            "no_amazon": false
+        },
+        {
+            "id": "df4bb56a-de70-48ed-a507-b946f7ae2c0e",
+            "title": "Panini",
+            "closed": false,
+            "editions_count": 433,
+            "no_amazon": false
+        },
+        {
+            "id": "69878791-96a6-41c3-9d63-cddd5c12e2dd",
+            "title": "Hana Boy's Love",
+            "closed": false,
+            "editions_count": 740,
+            "no_amazon": false
+        },
+        {
+            "id": "c5b95b3c-5657-44df-a960-e2cb17bcd0f7",
+            "title": "Soleil",
+            "closed": false,
+            "editions_count": 546,
+            "no_amazon": false
+        },
+        {
+            "id": "77a41c16-9ed9-4e8c-863f-92bd1c52bf7a",
+            "title": "Akata",
+            "closed": false,
+            "editions_count": 299,
+            "no_amazon": false
+        },
+        {
+            "id": "0f0e65f5-21e4-49dc-b3eb-fd091b01aed2",
+            "title": "Meian",
+            "closed": false,
+            "editions_count": 175,
+            "no_amazon": false
+        },
+        {
+            "id": "c1866645-afb4-44dd-bdce-420606488352",
+            "title": "Doki Doki",
+            "closed": false,
+            "editions_count": 210,
+            "no_amazon": false
+        },
+        {
+            "id": "86c2a281-a57e-45f3-8681-0c2d5a4a18c2",
+            "title": "Taifu Comics",
+            "closed": false,
+            "editions_count": 482,
+            "no_amazon": true
+        },
+        {
+            "id": "839c6566-013d-4093-9da2-4bdc71cb3fb0",
+            "title": "Nobi Nobi",
+            "closed": false,
+            "editions_count": 223,
+            "no_amazon": false
+        },
+        {
+            "id": "9654f307-0ff3-49ea-8e23-bacb03249e88",
+            "title": "Ototo",
+            "closed": false,
+            "editions_count": 85,
+            "no_amazon": false
+        },
+        {
+            "id": "4b160a48-aa9e-4beb-b6e3-69aca3dfd6cf",
+            "title": "Mangetsu",
+            "closed": false,
+            "editions_count": 86,
+            "no_amazon": false
+        },
+        {
+            "id": "a58fb05e-e3d3-4706-9735-49d220864104",
+            "title": "Tonkam",
+            "closed": false,
+            "editions_count": 307,
+            "no_amazon": false
+        },
+        {
+            "id": "33928a32-f7bd-4bd5-9083-0f2ff019a134",
+            "title": "Komikku",
+            "closed": false,
+            "editions_count": 162,
+            "no_amazon": false
+        },
+        {
+            "id": "a73823d6-1484-4bb6-b662-b7ea94aaee6b",
+            "title": "Kbooks",
+            "closed": false,
+            "editions_count": 69,
+            "no_amazon": false
+        },
+        {
+            "id": "680c8586-e414-4d81-8e54-2ee7330ebefc",
+            "title": "Noeve Grafx",
+            "closed": false,
+            "editions_count": 135,
+            "no_amazon": false
+        },
+        {
+            "id": "ceee37e0-5e76-44b5-bd09-4cbb48b1eebc",
+            "title": "Mana Books",
+            "closed": false,
+            "editions_count": 84,
+            "no_amazon": false
+        },
+        {
+            "id": "a5ee1408-70e0-47da-b512-b6465dc6f20e",
+            "title": "Vega",
+            "closed": false,
+            "editions_count": 119,
+            "no_amazon": false
+        },
+        {
+            "id": "e92bb57e-3fa1-4cc0-bd69-44f2f89e502c",
+            "title": "Casterman",
+            "closed": false,
+            "editions_count": 252,
+            "no_amazon": false
+        },
+        {
+            "id": "653ac9d7-9333-4179-9968-d681eb25524b",
+            "title": "Delcourt",
+            "closed": false,
+            "editions_count": 176,
+            "no_amazon": false
+        },
+        {
+            "id": "6d09c67b-9d38-44dd-b7fb-30e6d4361ab3",
+            "title": "Ankama",
+            "closed": false,
+            "editions_count": 76,
+            "no_amazon": false
+        },
+        {
+            "id": "a74caa32-e3cb-4013-ba09-969595bf40c2",
+            "title": "Le Lézard Noir",
+            "closed": false,
+            "editions_count": 132,
+            "no_amazon": false
+        },
+        {
+            "id": "125246ac-533c-4b4f-bc70-67ee7282b611",
+            "title": "Michel Lafon",
+            "closed": false,
+            "editions_count": 44,
+            "no_amazon": false
+        },
+        {
+            "id": "a6061c1e-44aa-4ca2-93d5-ea8e05f93f33",
+            "title": "Hot Manga",
+            "closed": false,
+            "editions_count": 135,
+            "no_amazon": false
+        },
+        {
+            "id": "16772843-572f-4341-958c-ead333c692e2",
+            "title": "Omaké",
+            "closed": false,
+            "editions_count": 49,
+            "no_amazon": false
+        },
+        {
+            "id": "e235a88b-44f3-4246-a0fd-f5e95862a253",
+            "title": "Asuka",
+            "closed": false,
+            "editions_count": 162,
+            "no_amazon": false
+        },
+        {
+            "id": "64484141-de47-4b44-a4ed-e0ef09fb03e6",
+            "title": "Naban",
+            "closed": false,
+            "editions_count": 35,
+            "no_amazon": true
+        },
+        {
+            "id": "2ecd7b0d-2930-4224-8114-4236ae77be23",
+            "title": "Imho",
+            "closed": false,
+            "editions_count": 96,
+            "no_amazon": false
+        },
+        {
+            "id": "a8f7b079-dc0c-463c-b72e-fe357c8c93c5",
+            "title": "Black Box",
+            "closed": false,
+            "editions_count": 243,
+            "no_amazon": false
+        },
+        {
+            "id": "2b4f7cf6-84cb-469e-aa08-755d57322182",
+            "title": "Kotoon",
+            "closed": false,
+            "editions_count": 19,
+            "no_amazon": false
+        },
+        {
+            "id": "7a978da4-6ec6-420b-9ac9-b2754ee3a578",
+            "title": "Nazca",
+            "closed": false,
+            "editions_count": 28,
+            "no_amazon": false
+        },
+        {
+            "id": "176414fd-c573-49e2-bf5f-402cac4ead5a",
+            "title": "Mahô Editions",
+            "closed": false,
+            "editions_count": 26,
+            "no_amazon": false
+        },
+        {
+            "id": "8feb04df-b77d-4470-90a3-dc5fd7361d8e",
+            "title": "Niho Niba",
+            "closed": false,
+            "editions_count": 41,
+            "no_amazon": true
+        },
+        {
+            "id": "ba7a1135-5333-431c-a8e2-b92e18671f90",
+            "title": "Ofelbe",
+            "closed": false,
+            "editions_count": 16,
+            "no_amazon": false
+        },
+        {
+            "id": "e84a71cf-b8a5-4b64-b9f8-83b1198ddfdc",
+            "title": "Shiba",
+            "closed": false,
+            "editions_count": 20,
+            "no_amazon": true
+        },
+        {
+            "id": "d76d39e1-1525-471c-b020-db360827bfbf",
+            "title": "J'ai lu",
+            "closed": true,
+            "editions_count": 22,
+            "no_amazon": false
+        },
+        {
+            "id": "be9f45ed-651f-425b-b7cf-fecbf45cc0b7",
+            "title": "Hachette",
+            "closed": false,
+            "editions_count": 21,
+            "no_amazon": false
+        },
+        {
+            "id": "199064f9-7ac3-4111-8175-d7fa330e7557",
+            "title": "Kamondo Books",
+            "closed": false,
+            "editions_count": 14,
+            "no_amazon": false
+        },
+        {
+            "id": "296fa43a-8a6a-4913-96ff-b5d99f7aaa7c",
+            "title": "Tokebi",
+            "closed": true,
+            "editions_count": 46,
+            "no_amazon": false
+        },
+        {
+            "id": "fa70f215-cb6b-4833-b951-db93d18351b7",
+            "title": "H2T Editions",
+            "closed": false,
+            "editions_count": 24,
+            "no_amazon": false
+        },
+        {
+            "id": "3993a762-0d61-4c02-a98d-6af63c0a5c1c",
+            "title": "ChattoChatto",
+            "closed": false,
+            "editions_count": 15,
+            "no_amazon": true
+        },
+        {
+            "id": "6cbf3960-829d-4816-8f95-8823d0a490b8",
+            "title": "Kami",
+            "closed": true,
+            "editions_count": 49,
+            "no_amazon": false
+        },
+        {
+            "id": "af8a31f1-30e6-4f63-8bde-c95c281af049",
+            "title": "Lumen",
+            "closed": false,
+            "editions_count": 15,
+            "no_amazon": false
+        },
+        {
+            "id": "260b4fbc-e628-4757-9f54-87dafa6302c3",
+            "title": "Clair de Lune",
+            "closed": false,
+            "editions_count": 75,
+            "no_amazon": false
+        },
+        {
+            "id": "dc7876b0-f5e6-44ae-8ce1-fbf6b319acb8",
+            "title": "Koda / Albin Michel",
+            "closed": false,
+            "editions_count": 18,
+            "no_amazon": false
+        },
+        {
+            "id": "6ecf0f7f-f6d4-46d9-8f60-789f3a5b6c2b",
+            "title": "Isan / Fuji Manga",
+            "closed": false,
+            "editions_count": 47,
+            "no_amazon": true
+        },
+        {
+            "id": "a22c670f-9b3b-48ec-ba5a-9c38a296dc2e",
+            "title": "Cornélius",
+            "closed": false,
+            "editions_count": 49,
+            "no_amazon": false
+        },
+        {
+            "id": "0e0db67d-0f4a-428b-aea6-5cadd8b426ac",
+            "title": "Rue de sèvres",
+            "closed": false,
+            "editions_count": 24,
+            "no_amazon": false
+        },
+        {
+            "id": "4a062ddc-3961-435c-90f2-47daace715bb",
+            "title": "Dynamite",
+            "closed": false,
+            "editions_count": 29,
+            "no_amazon": false
+        },
+        {
+            "id": "6c5d1ef2-f3ff-42eb-9a75-26792f7f5aad",
+            "title": "Hugo Publishing",
+            "closed": false,
+            "editions_count": 7,
+            "no_amazon": false
+        },
+        {
+            "id": "8402b323-22e1-4990-8212-1e5c353f4f10",
+            "title": "Futuropolis",
+            "closed": false,
+            "editions_count": 21,
+            "no_amazon": false
+        },
+        {
+            "id": "b64554c4-330c-47f0-ba2e-c95eb703f2ed",
+            "title": "Saphira",
+            "closed": true,
+            "editions_count": 38,
+            "no_amazon": false
+        },
+        {
+            "id": "936385c2-373d-4cd1-8c6f-60ce07d5c6dc",
+            "title": "Paquet Manga",
+            "closed": false,
+            "editions_count": 56,
+            "no_amazon": false
+        },
+        {
+            "id": "2d475e77-623f-48b6-95b4-6e35c86493db",
+            "title": "Cameleon",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "b4f21fef-5f74-4dd1-8f76-7fae488f3db5",
+            "title": "Third Éditions",
+            "closed": false,
+            "editions_count": 47,
+            "no_amazon": false
+        },
+        {
+            "id": "18ed0b69-ba46-4718-b431-094a878f5040",
+            "title": "Booken Manga",
+            "closed": true,
+            "editions_count": 13,
+            "no_amazon": false
+        },
+        {
+            "id": "a1f83d4c-3174-4a9e-9cb1-7b5994d829d5",
+            "title": "Sarbacane",
+            "closed": false,
+            "editions_count": 13,
+            "no_amazon": false
+        },
+        {
+            "id": "3b06f5f1-2a9f-41a5-9c67-6c9238029bb2",
+            "title": "France Loisirs",
+            "closed": false,
+            "editions_count": 17,
+            "no_amazon": false
+        },
+        {
+            "id": "2694b3e7-643f-4748-8261-5919176a6a13",
+            "title": "Kabuto",
+            "closed": true,
+            "editions_count": 19,
+            "no_amazon": false
+        },
+        {
+            "id": "6abb3b55-e104-43ba-9b30-e4e1c432f177",
+            "title": "Komogi",
+            "closed": false,
+            "editions_count": 10,
+            "no_amazon": false
+        },
+        {
+            "id": "e1256873-919e-468e-a281-35620e5dad75",
+            "title": "K! Addict",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "e1d46d75-f648-445f-84ee-583ca86593ed",
+            "title": "Koyohan",
+            "closed": true,
+            "editions_count": 5,
+            "no_amazon": false
+        },
+        {
+            "id": "39c1a168-4ef4-4b9b-b9a2-53b3f14ecbaa",
+            "title": "Akiléos",
+            "closed": false,
+            "editions_count": 10,
+            "no_amazon": false
+        },
+        {
+            "id": "759a9551-a4e1-49aa-b9ef-09e18824d9c3",
+            "title": "Ynnis",
+            "closed": false,
+            "editions_count": 57,
+            "no_amazon": false
+        },
+        {
+            "id": "6a1a18bd-0530-4981-8108-60bbce20e346",
+            "title": "Bookmark",
+            "closed": false,
+            "editions_count": 7,
+            "no_amazon": false
+        },
+        {
+            "id": "2cfe0d0c-d068-4d34-8760-e9b156718566",
+            "title": "Auto-Edition",
+            "closed": false,
+            "editions_count": 54,
+            "no_amazon": false
+        },
+        {
+            "id": "66ad8a59-0931-40d8-b0e1-5632bacd1a82",
+            "title": "Kotoji",
+            "closed": false,
+            "editions_count": 15,
+            "no_amazon": true
+        },
+        {
+            "id": "9a47e2fe-8938-4db6-9799-2782d42b6f47",
+            "title": "Lanovel",
+            "closed": true,
+            "editions_count": 10,
+            "no_amazon": false
+        },
+        {
+            "id": "a88c5b77-565b-4376-8b31-9e78e2b02d16",
+            "title": "12bis",
+            "closed": true,
+            "editions_count": 15,
+            "no_amazon": false
+        },
+        {
+            "id": "f30acae5-a764-4a5c-929b-8676a84f9b3f",
+            "title": "Milan",
+            "closed": false,
+            "editions_count": 31,
+            "no_amazon": false
+        },
+        {
+            "id": "e5d8c91d-9c7d-4d02-bc22-10df9fea21c6",
+            "title": "ManEd",
+            "closed": false,
+            "editions_count": 5,
+            "no_amazon": true
+        },
+        {
+            "id": "2b1d04d5-f70c-4a96-b8bb-dc41bfd1149f",
+            "title": "Flblb",
+            "closed": false,
+            "editions_count": 17,
+            "no_amazon": false
+        },
+        {
+            "id": "a3c1f17e-98c4-4702-80c1-77fbd458ec33",
+            "title": "Manga player",
+            "closed": true,
+            "editions_count": 18,
+            "no_amazon": false
+        },
+        {
+            "id": "7ea46421-b8dc-4c76-9e59-ac33a67f0673",
+            "title": "Huber",
+            "closed": false,
+            "editions_count": 12,
+            "no_amazon": false
+        },
+        {
+            "id": "6717e1cf-4a97-4610-982a-4579a038c6c3",
+            "title": "Humanoïdes associés",
+            "closed": false,
+            "editions_count": 48,
+            "no_amazon": false
+        },
+        {
+            "id": "b728423d-8675-49fb-bb0b-1eaf0c231816",
+            "title": "Samji",
+            "closed": true,
+            "editions_count": 28,
+            "no_amazon": false
+        },
+        {
+            "id": "78cad803-f25f-411d-adad-859ed9451de1",
+            "title": "Iwa",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": true
+        },
+        {
+            "id": "4b5fe3f2-8070-4325-be02-6fd3f6db6b65",
+            "title": "Atelier Akatombo",
+            "closed": false,
+            "editions_count": 11,
+            "no_amazon": false
+        },
+        {
+            "id": "4111995c-8ad4-4c48-aeb2-27d9e31020af",
+            "title": "Gekko",
+            "closed": true,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "aa2f464c-f51a-4ecc-887a-3af0ea16bb5e",
+            "title": "Silenium",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "e54a7264-260c-461c-b2de-e1344a5ed3e8",
+            "title": "Akiko",
+            "closed": true,
+            "editions_count": 12,
+            "no_amazon": false
+        },
+        {
+            "id": "2a0d1b49-31a7-4585-b33f-8083765725e5",
+            "title": "Nouvelle Hydre",
+            "closed": false,
+            "editions_count": 12,
+            "no_amazon": false
+        },
+        {
+            "id": "d943231a-8649-4eb0-bc1c-05035a7a5b5f",
+            "title": "Kwari",
+            "closed": true,
+            "editions_count": 14,
+            "no_amazon": false
+        },
+        {
+            "id": "7160c9ae-24f6-4a28-ac07-ac4fb0aeed7b",
+            "title": "Olydri",
+            "closed": false,
+            "editions_count": 12,
+            "no_amazon": false
+        },
+        {
+            "id": "895bc4b2-34b3-476c-92ac-e7d1fbdefae4",
+            "title": "Pix'N Love Editions",
+            "closed": false,
+            "editions_count": 18,
+            "no_amazon": false
+        },
+        {
+            "id": "c674cc71-e038-4b61-878c-7b85aff6667f",
+            "title": "Xiao Pan",
+            "closed": true,
+            "editions_count": 47,
+            "no_amazon": false
+        },
+        {
+            "id": "798c3eca-894b-4f62-8162-e84aebac6f45",
+            "title": "Teen's Love",
+            "closed": false,
+            "editions_count": 29,
+            "no_amazon": false
+        },
+        {
+            "id": "11d009c8-cda2-4d83-b34d-dfb753a20f66",
+            "title": "Shockdom",
+            "closed": false,
+            "editions_count": 10,
+            "no_amazon": true
+        },
+        {
+            "id": "cf61d47a-518d-4cef-bfce-9dc49d0a60c6",
+            "title": "K-Dream",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "6b6a0ded-310f-4777-a861-7f3c386ffd3a",
+            "title": "Picquier",
+            "closed": false,
+            "editions_count": 28,
+            "no_amazon": false
+        },
+        {
+            "id": "9fc047eb-ce97-4746-babe-7b3fcca079fb",
+            "title": "Nao Studio Publishing",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": true
+        },
+        {
+            "id": "d374a8e0-2717-47a9-936d-feddbd294846",
+            "title": "Reborn",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "c6d218c1-4bc8-44ef-bf9b-b7f5b7c7271d",
+            "title": "Dynamic Vision",
+            "closed": true,
+            "editions_count": 7,
+            "no_amazon": false
+        },
+        {
+            "id": "a9ad36c2-bd1c-4bad-8e7f-aed356791856",
+            "title": "Revival",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "b06c806d-d8c0-4de3-b97f-896a04126b15",
+            "title": "Lilite Editions",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "63905c06-973e-4afc-9fca-2ba5a5c399b7",
+            "title": "Urban China",
+            "closed": true,
+            "editions_count": 23,
+            "no_amazon": false
+        },
+        {
+            "id": "62143507-4272-4c68-818d-54b427db10a5",
+            "title": "Dargaud",
+            "closed": false,
+            "editions_count": 16,
+            "no_amazon": false
+        },
+        {
+            "id": "8dd43550-8909-4873-9533-925c6665117e",
+            "title": "ED Edition",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "39ccaa7a-8ed2-4dde-ab0a-8b06ce86133f",
+            "title": "Vertige graphic",
+            "closed": false,
+            "editions_count": 10,
+            "no_amazon": false
+        },
+        {
+            "id": "84a62045-a694-469a-8d2c-53d5bda40ed2",
+            "title": "Atrabile",
+            "closed": false,
+            "editions_count": 14,
+            "no_amazon": false
+        },
+        {
+            "id": "388a2c86-c5f4-41f5-b7f2-fef8a8d74db4",
+            "title": "Kmics",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "c6c9acc0-5810-41fd-958d-a516c7488d93",
+            "title": "Editions H",
+            "closed": false,
+            "editions_count": 7,
+            "no_amazon": false
+        },
+        {
+            "id": "bbfafac6-ebe5-4ebd-aefa-569dea3e06d5",
+            "title": "Dôshin",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "91a1f93a-0e4d-4970-a177-eb0134fa5c61",
+            "title": "Opportun",
+            "closed": false,
+            "editions_count": 13,
+            "no_amazon": false
+        },
+        {
+            "id": "6f62aaf0-802a-41df-b590-1f006d7c3098",
+            "title": "Des bulles dans l'océan",
+            "closed": false,
+            "editions_count": 5,
+            "no_amazon": false
+        },
+        {
+            "id": "769a567d-f11d-4833-b66d-27fbd805f687",
+            "title": "Bayard Jeunesse",
+            "closed": false,
+            "editions_count": 9,
+            "no_amazon": false
+        },
+        {
+            "id": "4123010d-af87-46ba-8e74-f6d3cbbc7381",
+            "title": "Tartamudo",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "5c8b7acc-7648-4674-a6aa-befce7566859",
+            "title": "Kool Books",
+            "closed": false,
+            "editions_count": 8,
+            "no_amazon": false
+        },
+        {
+            "id": "a975ee7e-1f66-4bd2-b9a7-8c1c9b47a05f",
+            "title": "Le Téméraire",
+            "closed": true,
+            "editions_count": 20,
+            "no_amazon": false
+        },
+        {
+            "id": "875c3cab-19cc-48eb-ad07-8af1b1cee21e",
+            "title": "BLF Europe",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "19ad7b11-a970-471c-a414-a34a9257efae",
+            "title": "Irodori",
+            "closed": false,
+            "editions_count": 14,
+            "no_amazon": false
+        },
+        {
+            "id": "5404bd1e-9c43-482d-b502-730654400328",
+            "title": "Samouraï",
+            "closed": true,
+            "editions_count": 14,
+            "no_amazon": false
+        },
+        {
+            "id": "a0169dfe-e446-4d6d-8ba2-12cc97090413",
+            "title": "Editions Fei",
+            "closed": false,
+            "editions_count": 14,
+            "no_amazon": false
+        },
+        {
+            "id": "880a5205-d4aa-44ac-98f2-4534aceadbd2",
+            "title": "De Saxus",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "dabc1ddf-0c2f-418c-946b-591a796ecfe8",
+            "title": "9e Art+",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "a66c8e49-c56b-474a-b4be-5817b445be03",
+            "title": "Kotodama / Petit à Petit",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "458d07f3-ed57-45c1-af55-f6677e01d2b7",
+            "title": "Jungle",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "088c9eb3-7793-471e-9530-5796bd5e6694",
+            "title": "Tripode",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "438654b5-d141-48ec-bdcb-4a5fd40e379b",
+            "title": "Kasaï Editions",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "144d7c65-dca9-493f-8cb6-671dc59e8add",
+            "title": "Atomic Club",
+            "closed": true,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "172e3c6d-c12c-42cb-985f-96e6745d0e6a",
+            "title": "Cambourakis",
+            "closed": false,
+            "editions_count": 11,
+            "no_amazon": false
+        },
+        {
+            "id": "d09ff91e-c044-4836-9123-106ec770950a",
+            "title": "Iku Comics",
+            "closed": true,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "36506d93-c441-4dfc-9045-a2c4a5ec20b3",
+            "title": "Ark Editions",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "027824ec-2167-4865-af67-75953d9b94a1",
+            "title": "Le seuil",
+            "closed": false,
+            "editions_count": 7,
+            "no_amazon": false
+        },
+        {
+            "id": "1adc79ff-3fb7-4685-874f-a3f986c47b92",
+            "title": "Fleuve Noir",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "9edd08c0-c35b-4f6b-9204-fcd9601218c8",
+            "title": "Pocket Jeunesse",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "09fde726-d786-49a4-9e0d-cb4b924ae5ef",
+            "title": "Le Courrier du Livre",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "92c8d7d7-9462-43c2-8241-6ad0a138f7de",
+            "title": "BD érogène",
+            "closed": true,
+            "editions_count": 17,
+            "no_amazon": false
+        },
+        {
+            "id": "36079105-8617-4f23-a0d9-8c713afcef5d",
+            "title": "Kippon Dream",
+            "closed": false,
+            "editions_count": 7,
+            "no_amazon": false
+        },
+        {
+            "id": "a3b16642-f668-43d2-a157-c61230cb27bc",
+            "title": "ça et là",
+            "closed": false,
+            "editions_count": 10,
+            "no_amazon": false
+        },
+        {
+            "id": "a80354fe-6441-45e4-a0ea-6e44797eda9a",
+            "title": "Rue de l'échiquier",
+            "closed": false,
+            "editions_count": 7,
+            "no_amazon": false
+        },
+        {
+            "id": "2f776e8b-747c-4774-8bf7-1be5151c91f4",
+            "title": "Dashicray",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "bb05a788-f8f7-4467-b88f-1643f09af799",
+            "title": "Robinson",
+            "closed": false,
+            "editions_count": 5,
+            "no_amazon": false
+        },
+        {
+            "id": "0db15e88-53ba-46b5-88a5-d9039882af75",
+            "title": "Yurang",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "d88bb82e-a3e7-4cc6-8e3d-843b191166eb",
+            "title": "Akuma",
+            "closed": true,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "a7db065e-6f91-4e5c-b7be-c6c5a775bfc2",
+            "title": "Huginn&Muninn",
+            "closed": false,
+            "editions_count": 5,
+            "no_amazon": false
+        },
+        {
+            "id": "bfa32afc-9fa9-4401-b44e-e478697f4506",
+            "title": "Myria editions",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "77b45729-1971-4be2-bc1b-fb1b8e65119f",
+            "title": "Semic",
+            "closed": true,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "544918b9-74ae-4fd7-b5e5-33d205f5945e",
+            "title": "Matière",
+            "closed": false,
+            "editions_count": 14,
+            "no_amazon": false
+        },
+        {
+            "id": "9da48566-d135-4fab-abc0-258397ba9520",
+            "title": "Komics Initiative",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "bdda4136-433c-4084-99af-c9a2ae5bee23",
+            "title": "Paulsen",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "1566081b-ba91-4c9e-b11d-23a909bd9f79",
+            "title": "Budo Éditions",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "2b6dedde-dc06-4488-867a-cd44b1d57ccd",
+            "title": "Vegetal Manga",
+            "closed": true,
+            "editions_count": 8,
+            "no_amazon": false
+        },
+        {
+            "id": "1dc277d6-2bc4-4d58-b2db-e5c5df328cc8",
+            "title": "Misma",
+            "closed": false,
+            "editions_count": 8,
+            "no_amazon": false
+        },
+        {
+            "id": "a5746f0d-a419-4786-8ee1-8cedc7e8aa2f",
+            "title": "Kôdansha France",
+            "closed": true,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "e4655c9d-e76d-4af2-88d1-db7379790f93",
+            "title": "Carabas",
+            "closed": false,
+            "editions_count": 5,
+            "no_amazon": false
+        },
+        {
+            "id": "e70bb941-5d78-4fb4-bfd0-543ce10803ba",
+            "title": "Toki",
+            "closed": true,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "069ab889-daaa-4b94-9be1-b0923e75960f",
+            "title": "Yüreka",
+            "closed": false,
+            "editions_count": 7,
+            "no_amazon": false
+        },
+        {
+            "id": "d669d633-0075-4aae-a1c0-9d8de50e39ea",
+            "title": "Drakosia",
+            "closed": true,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "92dc4f46-4e3b-49e3-9668-a71b76fb256a",
+            "title": "Kraken",
+            "closed": true,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "33cf3647-2cb8-4994-9f89-d6fc8cfdb917",
+            "title": "Ego comme X",
+            "closed": true,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "601a0e0f-1813-46c1-846c-5de8022139a2",
+            "title": "Muteki",
+            "closed": true,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "8d02723b-e11c-48a6-8744-9566e385e9ff",
+            "title": "Milady Graphics",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "16059d3c-1c26-4473-a959-cb194a2af6a8",
+            "title": "Larousse",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "5d31a05e-a199-40e0-b588-90944285b4eb",
+            "title": "Gallimard",
+            "closed": false,
+            "editions_count": 5,
+            "no_amazon": false
+        },
+        {
+            "id": "e691e089-9a7d-4d44-80b8-e91b7d2be1c6",
+            "title": "Le Lombard",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "27e84cef-12fc-493b-a200-0dd7579bbef9",
+            "title": "404 éditions",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "9bc3719c-9eaa-4674-84c7-ea9aaefb2155",
+            "title": "Bamboo",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "9ca51081-0ff0-454f-8016-5fa4d3690c03",
+            "title": "Le livre de Poche",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "1d03ca9e-5f85-4716-bec9-aa7ff18095c7",
+            "title": "Frenchmangaka",
+            "closed": true,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "7a737411-787b-4940-9f3f-60c4f49b311a",
+            "title": "Les arènes",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "754d857b-445f-4898-9819-157d48c5e5c0",
+            "title": "Ypnos",
+            "closed": true,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "c1ec2d9d-e843-45e8-801b-3412c1d2a1cb",
+            "title": "Vents d'Ouest",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "1eb2a8e6-e82b-46a5-80c0-ceb7fc5df0c6",
+            "title": "Issekinicho",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "1e5a55b2-d209-46e3-b427-921bd5ed7b42",
+            "title": "La Martinière",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "92962b10-9a2b-4f8a-bb42-4f66aa09d8e4",
+            "title": "Michel Quintin",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "70a79108-f8be-4cbb-bea2-fd66d590d48d",
+            "title": "Graph Zeppelin",
+            "closed": false,
+            "editions_count": 5,
+            "no_amazon": false
+        },
+        {
+            "id": "e6aa0eeb-d8eb-4407-bc49-f1ae1a95e7f8",
+            "title": "Nanachi",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "6b29786c-de3f-424f-8d6b-0a7297536b03",
+            "title": "Mosquito",
+            "closed": false,
+            "editions_count": 7,
+            "no_amazon": false
+        },
+        {
+            "id": "5446fb00-931c-4924-951d-e8b55ba5026f",
+            "title": "TheBookEdition",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "a864d729-aae7-40ab-876e-324246828924",
+            "title": "L'aqueduc bleu",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "945c5be9-382a-4edc-a630-adda2d6dd4f8",
+            "title": "Tobikawa Bunko",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "b7f1dd2a-350d-480a-b2e4-e90a6263d5a2",
+            "title": "Aaltaïr",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "009eedef-c3ec-4f14-b946-57cfed5dd138",
+            "title": "H&O",
+            "closed": false,
+            "editions_count": 6,
+            "no_amazon": false
+        },
+        {
+            "id": "5f35da98-1ccb-40cd-a955-723b6bc9f8b8",
+            "title": "ADH Editions",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "d19afd5a-aa1a-489f-b053-6bb29b092780",
+            "title": "Dark Horse",
+            "closed": true,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "58c12d9c-997e-4893-b5cc-b1a53d01c3e6",
+            "title": "Taschen",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "835cf6ad-9a46-4d9b-9293-b2f9ed5e7b69",
+            "title": "Synchronique",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "316ddcf8-cca0-43b4-aff9-746128185d44",
+            "title": "Dupuis",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "5936da27-cdbf-47e6-9a43-e5dde0e9b629",
+            "title": "Montjoie",
+            "closed": true,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "904bb60a-d55f-4d8b-b85d-51bf70b04560",
+            "title": "La boîte à bulles",
+            "closed": false,
+            "editions_count": 5,
+            "no_amazon": false
+        },
+        {
+            "id": "59d2506a-9c9c-4d79-bce6-85061ac7c9fd",
+            "title": "Association Culturelle Leiji Matsumoto",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "a3c19520-92d3-46cd-a4c7-6d6bdc5c823e",
+            "title": "Abyss Publishing",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "a43617a2-9073-40a9-8c5f-269d09ce7d35",
+            "title": "Elytis",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "57fe2f64-bf30-4fe7-ae81-03f74c7550f0",
+            "title": "Editions de l'Emmanuel",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "16138736-5f65-4de9-9522-9d6b45241f49",
+            "title": "Patayo",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "6806768f-4373-44bb-9543-af077202a72f",
+            "title": "Blackelephant",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "9ac061a2-68e2-4cc5-a878-c2be35916c6c",
+            "title": "Steinkis",
+            "closed": false,
+            "editions_count": 5,
+            "no_amazon": false
+        },
+        {
+            "id": "b961230f-82b0-423a-8b49-5be0071f9471",
+            "title": "Hariken",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "52e5c41f-b47a-467a-a6c3-a3cf12969016",
+            "title": "Louis Vuitton",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "0abbedd9-d8a5-462f-bcf0-6c6e6c901207",
+            "title": "Salvator",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "ec5158ab-03ee-4d58-a1d0-d82735afc881",
+            "title": "Ecchi Manga",
+            "closed": true,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "bba07c38-5fc6-4aac-b969-356d833a6ab6",
+            "title": "Nine editions",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "604a7634-ef27-481e-b735-93fc2e4e284c",
+            "title": "Eidola",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "d4340af9-432e-4b73-992d-fb65c5f10b67",
+            "title": "Mame",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "bb77fe13-9863-4298-8a6f-5855f2cc7203",
+            "title": "Kinoko",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "f3205076-4c11-411a-b728-cf4cf7347f46",
+            "title": "Eyrolles",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "49a49fc1-55c1-435e-bf88-dc056377e69b",
+            "title": "Sully",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "1afeff88-a06a-4c9e-9ded-5a6ab9799d05",
+            "title": "Hoochie Coochie",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "8b16f90d-aa7c-4482-b388-59887cd62f60",
+            "title": "Hikari",
+            "closed": false,
+            "editions_count": 4,
+            "no_amazon": false
+        },
+        {
+            "id": "c444f2c6-03f4-4824-95fc-55a2bafdd636",
+            "title": "Presque Lune",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "f0981580-3dff-48ea-8ed2-b5acf0929871",
+            "title": "Digiclub",
+            "closed": true,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "fbbbd335-f431-4359-b4d6-759927ddcb34",
+            "title": "Nouveau Monde Editions",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "a42a81c4-10c1-4c91-8901-6858527f4f7d",
+            "title": "Massot",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "2891dff9-365d-4f9e-a0e6-758664426ceb",
+            "title": "Lapin Editions",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "f057cf4c-0835-4df2-b6bd-3a71ef6457db",
+            "title": "Onapratut",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "e9a3f7d9-a78c-4196-b0e0-e4096896c468",
+            "title": "Fairy's Hope",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "54a523d3-e62b-43db-9189-41f86a960921",
+            "title": "Artefact",
+            "closed": true,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "2b274df3-40c6-4147-a325-510d56c5090f",
+            "title": "Hozhoni",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "8072177d-d11c-4721-bd42-2ab0bff73e3f",
+            "title": "Inkblazers",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "e10a4acf-2e16-4fa5-9c09-b3fc3d13f2cc",
+            "title": "Salamao",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "ac94aff9-1e14-4349-89db-6529bc18dcc3",
+            "title": "Flammarion",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "21c71174-3c01-4253-9661-e342a26b7ecc",
+            "title": "La Poule qui pond",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "6261f0fd-5eb7-49af-96fc-773236de8076",
+            "title": "United Dead Artists",
+            "closed": false,
+            "editions_count": 3,
+            "no_amazon": false
+        },
+        {
+            "id": "1c07eacf-0b92-4566-ae3b-b0a51ce6c5da",
+            "title": "Warum",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "632fd249-aed6-478e-a72e-389fc0cf842d",
+            "title": "Caraïbéditions",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "90aeef2c-5023-4131-bc4e-0b5f3b6af407",
+            "title": "Gachimuchi",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "1c5ffad8-31a9-4778-895c-1d42d54cc6a4",
+            "title": "Take your chance",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "a14e9fef-7ad4-4cbe-bd1e-ca5ef9a51ca9",
+            "title": "Éditions RITT",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "e764d5ef-bb97-4511-857f-296f85700987",
+            "title": "Palette",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "19d38eb9-9109-49fc-b512-c4777a30dc46",
+            "title": "Humeurs",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "4a2aa427-8547-4843-8ace-9fcb5959c551",
+            "title": "Thema Press",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "8b78baec-2456-479d-a7d1-4c2eaa9ebcb3",
+            "title": "Les enfants rouges",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "c033a383-61f2-4e85-b0b3-099f2e17a206",
+            "title": "Evalou",
+            "closed": false,
+            "editions_count": 2,
+            "no_amazon": false
+        },
+        {
+            "id": "f57db9b6-44cb-4941-ad08-52a1d7f2361d",
+            "title": "L'étudiant",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "a8121825-8d32-4afa-aeb4-4f2a9ba1297f",
+            "title": "Ohayo",
+            "closed": true,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "5ff0e3a8-a2d6-46ff-8aec-6a13a5a0ad04",
+            "title": "Aqua Lumina",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "5d1d9e3d-aefa-42b7-b18e-fbe0aa8d7607",
+            "title": "21g",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "faebc9e6-8c08-4975-a68d-8f51e4556480",
+            "title": "Chamade Editions",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "be531a01-ced8-485d-bb76-d6db9f7bef04",
+            "title": "Dagan Editions",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "87bfb9dc-08b0-46d6-bde0-d87ce60ecb9d",
+            "title": "Demdel",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "9c21673e-378f-4ba3-8072-6c8614617e0f",
+            "title": "Calmann-Levy",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "5faa36c4-054d-4c13-a346-2343c42c8039",
+            "title": "The Troc Tete Rock Underground",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "0415666b-6a7f-49ec-8ee3-9672fc231cd7",
+            "title": "Arsenic Galerie",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "73801a18-4886-4a59-80d6-34d24e98da63",
+            "title": "Exemplaire Editions",
+            "closed": false,
+            "editions_count": 1,
+            "no_amazon": false
+        },
+        {
+            "id": "21e29333-31d9-400c-aa8b-a59a0cd1c8c9",
+            "title": "Harpelume",
+            "closed": false,
+            "editions_count": 0,
+            "no_amazon": false
+        },
+        {
+            "id": "035425a5-a784-4588-8102-5f8a34478350",
+            "title": "Nathan",
+            "closed": false,
+            "editions_count": 0,
+            "no_amazon": false
+        }
+    ]
+}

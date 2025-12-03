@@ -1,0 +1,62 @@
+[
+    {
+        "id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "title": "Manga",
+        "to_display": false
+    },
+    {
+        "id": "fcb5dd8c-b28f-467d-9858-df52dd24e555",
+        "title": "Manhwa",
+        "to_display": false
+    },
+    {
+        "id": "a4430b4d-4021-4a73-b286-6b76fb1bf103",
+        "title": "Manhua",
+        "to_display": false
+    },
+    {
+        "id": "9c31ba97-aef8-455f-b6fd-35973874b9ad",
+        "title": "BD",
+        "to_display": false
+    },
+    {
+        "id": "09253f84-8e89-4536-bfb2-bd91d9e0c0ab",
+        "title": "Comics",
+        "to_display": false
+    },
+    {
+        "id": "3c009f18-811d-4b07-8dde-8249e422ec9e",
+        "title": "Global Manga",
+        "to_display": false
+    },
+    {
+        "id": "f41d81b0-fca6-4445-a903-da310e0899d2",
+        "title": "Artbook",
+        "to_display": true
+    },
+    {
+        "id": "588f1a19-7a1e-498c-88f6-901d8a47e79f",
+        "title": "Guidebook",
+        "to_display": true
+    },
+    {
+        "id": "bb3d92a9-020a-4d3f-adec-77bebe9980db",
+        "title": "Roman",
+        "to_display": true
+    },
+    {
+        "id": "8f5eb0fd-a8d5-48ca-b694-0057102dd43c",
+        "title": "Anime Comics",
+        "to_display": true
+    },
+    {
+        "id": "2682dd71-4aba-459c-83b6-82a4e5f138e8",
+        "title": "Mook",
+        "to_display": true
+    },
+    {
+        "id": "c8839382-a578-419c-a88e-180e8bebb497",
+        "title": "Papeterie",
+        "to_display": true
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "possessions": [
+        {
+            "id": "f32038b6-e9b9-4427-ae6d-94b15df1a022",
+            "user_id": "1f32e2fc-c7c3-4dd3-9f18-e0fcdb075295",
+            "volume_id": "fdb3365e-b18d-45b3-9ab0-09b3b73b9367",
+            "created_at": "2025-10-26T19:46:02.397Z"
+        }
+    ],
+    "follow_editions": [
+        {
+            "id": "c43fb28c-944c-48cd-806a-6ac2f7fe241e",
+            "user_id": "1f32e2fc-c7c3-4dd3-9f18-e0fcdb075295",
+            "edition_id": "bd982e24-525d-47cc-a152-7582e5f8236d",
+            "following": true,
+            "created_at": "2025-10-26T19:46:02.385Z",
+            "updated_at": "2025-10-26T19:46:02.385Z"
+        }
+    ]
+}

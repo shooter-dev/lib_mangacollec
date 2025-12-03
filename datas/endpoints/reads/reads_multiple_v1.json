@@ -1,0 +1,19 @@
+{
+    "reads": [
+        {
+            "id": "0994509d-1227-411d-ac18-73708b3f6371",
+            "user_id": "1f32e2fc-c7c3-4dd3-9f18-e0fcdb075295",
+            "volume_id": "dcf1f103-48d0-4a0a-b20a-acc20f656f04",
+            "created_at": "2025-10-26T19:57:46.199Z"
+        }
+    ],
+    "read_editions": [
+        {
+            "id": "3a15a949-28f8-4ab9-bdc2-94df79b84d6d",
+            "user_id": "1f32e2fc-c7c3-4dd3-9f18-e0fcdb075295",
+            "edition_id": "1e68b837-be95-4baa-a38f-09c082777c04",
+            "reading": true,
+            "created_at": "2025-10-26T19:57:46.192Z"
+        }
+    ]
+}
