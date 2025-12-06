@@ -1,0 +1,82 @@
+[
+    {
+        "id": "a02cf154-af6c-4f08-9a7a-32f7bc229ac8",
+        "title": "One Piece",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 5,
+        "tasks_count": 1
+    },
+    {
+        "id": "2f70bcbc-756b-4db3-8159-bb30b602c5b7",
+        "title": "My Hero Academia",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 7,
+        "tasks_count": 1
+    },
+    {
+        "id": "a320ac19-4318-4471-9e4e-eb017f4584d5",
+        "title": "Demon Slayer",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 5,
+        "tasks_count": 1
+    },
+    {
+        "id": "ed7eaace-939f-4c1c-ad13-8e6c336257cf",
+        "title": "L'Attaque des Titans",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 7,
+        "tasks_count": 1
+    },
+    {
+        "id": "544df61b-edcf-45ec-9ae5-cdf8341a84ca",
+        "title": "Jujutsu Kaisen",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 6,
+        "tasks_count": 1
+    },
+    {
+        "id": "6738a67b-adcd-43e8-9473-16ecd27b0b87",
+        "title": "Spy x Family",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 8,
+        "tasks_count": 1
+    },
+    {
+        "id": "d1a38f41-2ac9-40cf-aa17-aeac9697e1c8",
+        "title": "Naruto",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 7,
+        "tasks_count": 1
+    },
+    {
+        "id": "f41a928c-8450-40e9-805b-3ccf3ac49705",
+        "title": "Berserk",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 6,
+        "tasks_count": 1
+    },
+    {
+        "id": "ad400c0a-2b7b-45e2-8e8e-c947b3bfe89f",
+        "title": "Chainsaw Man",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 4,
+        "tasks_count": 1
+    },
+    {
+        "id": "55908422-414a-4be2-b9ba-ad4f9a16cf97",
+        "title": "Fairy Tail",
+        "type_id": "106f524e-7283-44b8-aa84-25e9a7fb1f7d",
+        "adult_content": false,
+        "editions_count": 5,
+        "tasks_count": 1
+    }
+]

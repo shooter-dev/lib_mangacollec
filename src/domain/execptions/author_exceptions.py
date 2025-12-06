@@ -1,19 +1,12 @@
-#    _____ __                __           ____
-#   / ___// /_  ____  ____  / /____  ____/ __ \___  _   __
-#   \__ \/ __ \/ __ \/ __ \/ __/ _ \/ __/ / / / _ \| | / /
-#  ___/ / / / / /_/ / /_/ / /_/  __/ / / /_/ /  __/| |/ /
-# /____/_/ /_/\____/\____/\__/\___/_/ /_____/\___/ |___/
-# __project__: lib_mangacollec
-# __author__: ShooterDev
-# __filename__: author_exceptions.py
-# __directory__: src
+"""Exceptions pour la ressource Author.
+
+This module contains custom exceptions for Author-related operations.
 """
 
-
-"""
-from domain.execptions.base_exeptions import MangacollecException
+from src.domain.execptions.base_exeptions import MangacollecException
 
 
 class AuthorNotFoundException(MangacollecException):
-    def __init__(self, author_id: str):
+    def __init__(self, author_id: str) -> None:
+        self.author_id = author_id
         super().__init__(f"Author with ID '{author_id}' not found.")

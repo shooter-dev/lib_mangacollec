@@ -1,0 +1,20 @@
+#    _____ __                __           ____
+#   / ___// /_  ____  ____  / /____  ____/ __ \___  _   __
+#   \__ \/ __ \/ __ \/ __ \/ __/ _ \/ __/ / / / _ \| | / /
+#  ___/ / / / / /_/ / /_/ / /_/  __/ / / /_/ /  __/| |/ /
+# /____/_/ /_/\____/\____/\__/\___/_/ /_____/\___/ |___/
+# __project__: lib_mangacollec
+# __author__: ShooterDev
+# __filename__: __init__.py.py
+# __directory__: src/infrastructure/services
+"""
+
+
+"""
+__all__ = [
+    "IMangaCollecAPI",
+    "MangaCollecAPI"
+]
+
+from application.interfaces.mangacollec_api_interface import IMangaCollecAPI
+from infrastructure.services.mangacollec_api import MangaCollecAPI
