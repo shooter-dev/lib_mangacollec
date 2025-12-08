@@ -11,20 +11,24 @@
 
 __all__ = [
     "AuthorMapper",
-    "JobMapper",
-    "TaskMapper",
-    "SerieMapper",
+    "BoxMapper",
+    "BoxEditionMapper",
     "EditionMapper",
-    "VolumeMapper",
+    "JobMapper",
     "PublisherMapper",
-    "TypeSerieMapper",
+    "SerieMapper",
+    "TaskMapper",
+    "TypeMapper",
+    "VolumeMapper",
 ]
 
 from src.application.mappers.author_mapper import AuthorMapper
+from src.application.mappers.box_edition_mapper import BoxEditionMapper
+from src.application.mappers.box_mapper import BoxMapper
 from src.application.mappers.edition_mapper import EditionMapper
 from src.application.mappers.job_mapper import JobMapper
 from src.application.mappers.publisher_mapper import PublisherMapper
 from src.application.mappers.serie_mapper import SerieMapper
 from src.application.mappers.task_mapper import TaskMapper
-from src.application.mappers.type_serie_mapper import TypeSerieMapper
+from src.application.mappers.type_mapper import TypeMapper
 from src.application.mappers.volume_mapper import VolumeMapper

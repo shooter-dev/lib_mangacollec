@@ -1,23 +1,29 @@
-"""Mapper pour la conversion entre les réponses API et les entités Publisher.
-
-This module provides mapping functions between API responses and Publisher entities.
-"""
-
-from src.domain.entities import Publisher
+"""Publisher mapper."""
+from src.application.dto.responses.publisher_responses import (
+    GetAllPublishersV2Response,
+    GetPublisherByIdV2Response,
+)
+from src.application.mappers.box_edition_mapper import BoxEditionMapper
+from src.application.mappers.box_mapper import BoxMapper
+from src.application.mappers.serie_mapper import SerieMapper
+from src.application.mappers.type_mapper import TypeMapper
+from src.application.mappers.volume_mapper import VolumeMapper
+from src.domain.entities.publisher import Publisher, PublisherListItem
 
 
 class PublisherMapper:
-    """Mapper pour convertir entre API et entités Publisher du domaine."""
+    """Publisher mapper."""
 
     @staticmethod
     def from_dict(data: dict) -> Publisher:
-        """Convertit la réponse API en entité Publisher.
+        """
+        Convert a dictionary to a Publisher entity.
 
         Args:
-            data: Dictionnaire contenant les données de l'API
+            data: The dictionary to convert.
 
         Returns:
-            Entité Publisher
+            A Publisher entity.
         """
         return Publisher(
             id=data["id"],
@@ -29,13 +35,14 @@ class PublisherMapper:
 
     @staticmethod
     def to_dict(publisher: Publisher) -> dict:
-        """Convertit l'entité Publisher en dictionnaire.
+        """
+        Convert a Publisher entity to a dictionary.
 
         Args:
-            publisher: Entité Publisher
+            publisher: The Publisher entity to convert.
 
         Returns:
-            Dictionnaire représentant l'éditeur
+            A dictionary representing the Publisher.
         """
         return {
             "id": publisher.id,
@@ -44,3 +51,75 @@ class PublisherMapper:
             "editions_count": publisher.editions_count,
             "no_amazon": publisher.no_amazon,
         }
+
+    @staticmethod
+    def to_list_item(publisher: Publisher) -> PublisherListItem:
+        """
+        Convert a Publisher entity to a PublisherListItem.
+
+        Args:
+            publisher: The Publisher entity to convert.
+
+        Returns:
+            A PublisherListItem entity.
+        """
+        return PublisherListItem(
+            id=publisher.id,
+            title=publisher.title,
+        )
+
+    @staticmethod
+    def from_all_publishers_response(
+        response: dict,
+    ) -> GetAllPublishersV2Response:
+        """
+        Convert the API response for get_all to GetAllPublishersV2Response.
+
+        Args:
+            response: The API response.
+
+        Returns:
+            A GetAllPublishersV2Response.
+        """
+        return GetAllPublishersV2Response(
+            publishers=[
+                PublisherMapper.from_dict(publisher)
+                for publisher in response.get("publishers", [])
+            ]
+        )
+
+    @staticmethod
+    def from_api_response(response: dict) -> GetPublisherByIdV2Response:
+        """
+        Convert the API response to GetPublisherByIdV2Response.
+
+        Args:
+            response: The API response.
+
+        Returns:
+            A GetPublisherByIdV2Response.
+        """
+        from src.application.mappers.edition_mapper import EditionMapper
+
+        return GetPublisherByIdV2Response(
+            publishers=[
+                PublisherMapper.from_dict(publisher)
+                for publisher in response.get("publishers", [])
+            ],
+            editions=[
+                EditionMapper.from_dict(edition)
+                for edition in response.get("editions", [])
+            ],
+            box_editions=[
+                BoxEditionMapper.from_dict(box_edition)
+                for box_edition in response.get("box_editions", [])
+            ],
+            series=[
+                SerieMapper.from_dict(serie) for serie in response.get("series", [])
+            ],
+            types=[TypeMapper.from_dict(type) for type in response.get("types", [])],
+            volumes=[
+                VolumeMapper.from_dict(volume) for volume in response.get("volumes", [])
+            ],
+            boxes=[BoxMapper.from_dict(box) for box in response.get("boxes", [])],
+        )

@@ -4,9 +4,7 @@ This module provides mapping functions between API responses and Edition entitie
 """
 
 from src.application.dto.responses import GetEditionByIdV2Response
-from src.application.mappers.publisher_mapper import PublisherMapper
 from src.application.mappers.serie_mapper import SerieMapper
-from src.application.mappers.type_serie_mapper import TypeSerieMapper
 from src.application.mappers.volume_mapper import VolumeMapper
 from src.domain.entities import Edition
 
@@ -70,6 +68,8 @@ class EditionMapper:
         Returns:
             GetEditionByIdV2Response contenant toutes les entités converties
         """
+        from src.application.mappers.publisher_mapper import PublisherMapper
+        from src.application.mappers.type_mapper import TypeMapper
         # Convertir les editions (liste)
         editions = [
             EditionMapper.from_dict(edition_data) for edition_data in response.get("editions", [])
@@ -86,7 +86,7 @@ class EditionMapper:
 
         # Convertir les types
         types = [
-            TypeSerieMapper.from_dict(type_data) for type_data in response.get("types", [])
+            TypeMapper.from_dict(type_data) for type_data in response.get("types", [])
         ]
 
         # Convertir les volumes

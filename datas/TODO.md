@@ -1,0 +1,119 @@
+# TODO
+
+## Autors
+- [ ] Author Entity
+- [ ] Author Repository
+  - [ ] InMemoryAuthorRepository
+  - [ ] APIAuthorRepository
+- [ ] Author Mapper
+  - [ ] to_dict
+  - [ ] from_dict
+  - [ ] from_all_authors_response
+  - [ ] from_author_detail_response
+- [ ] Author DTOs
+  - [ ] GetAllAuthorsV2Response
+  - [ ] GetAuthorByIdV2Response
+- [ ] Author Use Cases
+  - [ ] GetAllAuthorsV2
+  - [ ] GetAuthorByIdV2
+  - [ ] GetListAuthors
+- [ ] Tests
+  - [ ] Unit Tests
+    - [ ] Author Entity Tests
+    - [ ] Author Repository Tests
+      - [ ] InMemoryAuthorRepository Tests
+      - [ ] APIAuthorRepository Tests
+    - [ ] Author Mapper Tests
+        - [ ] to_dict Tests
+        - [ ] from_dict Tests
+        - [ ] from_all_authors_response Tests
+        - [ ] from_author_detail_response Tests
+  - [ ] Integration Tests
+    - [ ] GetAllAuthorsV2 Tests
+    - [ ] GetAuthorByIdV2 Tests
+    - [ ] GetListAuthors Tests
+
+## Editions
+- [ ] Edition Entity
+- [ ] Edition Repository
+  - [ ] InMemoryEditionRepository
+  - [ ] APIEditionRepository
+- [ ] Edition Mapper
+  - [ ] to_dict
+  - [ ] from_dict
+  - [ ] from_edition_detail_response
+- [ ] Edition DTOs
+  - [ ] GetEditionByIdV2Response
+- [ ] Edition Use Cases
+  - [ ] GetEditionByIdV2
+- Tests
+  - [ ] Unit Tests
+    - [ ] Edition Entity Tests
+    - [ ] Edition Repository Tests
+      - [ ] InMemoryEditionRepository Tests
+      - [ ] APIEditionRepository Tests
+    - [ ] Edition Mapper Tests
+        - [ ] to_dict Tests
+        - [ ] from_dict Tests
+        - [ ] from_edition_detail_response Tests
+  - [ ] Integration Tests
+    - [ ] GetEditionByIdV2 Tests
+
+## jobs
+- [ ] Job Entity
+- [ ] Job Repository
+  - [ ] InMemoryJobRepository
+  - [ ] APIJobRepository
+- [ ] Job Mapper
+  - [ ] to_dict
+  - [ ] from_dict
+  - [ ] from_all_jobs_response
+- [ ] Job DTOs
+  - [ ] GetAllJobsV2Response
+- [ ] Job Use Cases
+  - [ ] GetAllJobsV1
+- [ ] Tests
+  - [ ] Unit Tests
+    - [ ] Job Entity Tests
+    - [ ] Job Repository Tests
+      - [ ] InMemoryJobRepository Tests
+      - [ ] APIJobRepository Tests
+    - [ ] Job Mapper Tests
+        - [ ] to_dict Tests
+        - [ ] from_dict Tests
+        - [ ] from_all_jobs_response Tests
+  - [ ] Integration Tests
+    - [ ] GetAllJobsV1 Tests
+
+## Publishers
+- [ ] Publisher Entity
+- [ ] Publisher Repository
+  - [ ] InMemoryPublisherRepository
+  - [ ] APIPublisherRepository
+- [ ] Publisher Mapper
+  - [ ] to_dict
+  - [ ] from_dict
+  - [ ] from_all_publishers_response
+  - [ ] from_publisher_detail_response
+- [ ] Publisher DTOs
+  - [ ] GetAllPublishersV2Response
+  - [ ] GetPublisherByIdV2Response
+- [ ] Publisher Use Cases
+  - [ ] GetAllPublishersV2
+  - [ ] GetPublisherByIdV2
+  - [ ] GetListPublishers
+- [ ] Tests
+  - [ ] Unit Tests
+    - [ ] Publisher Entity Tests
+    - [ ] Publisher Repository Tests
+      - [ ] InMemoryPublisherRepository Tests
+      - [ ] APIPublisherRepository Tests
+    - [ ] Publisher Mapper Tests
+        - [ ] to_dict Tests
+        - [ ] from_dict Tests
+        - [ ] from_all_publishers_response Tests
+        - [ ] from_publisher_detail_response Tests
+  - [ ] Integration Tests
+    - [ ] GetAllPublishersV2 Tests
+    - [ ] GetPublisherByIdV2 Tests
+    - [ ] GetListPublishers Tests

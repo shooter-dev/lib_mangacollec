@@ -1,13 +1,11 @@
-#    _____ __                __           ____
-#   / ___// /_  ____  ____  / /____  ____/ __ \___  _   __
-#   \__ \/ __ \/ __ \/ __ \/ __/ _ \/ __/ / / / _ \| | / /
-#  ___/ / / / / /_/ / /_/ / /_/  __/ / / /_/ /  __/| |/ /
-# /____/_/ /_/\____/\____/\__/\___/_/ /_____/\___/ |___/
-# __author__: lib_mangacollec
-# __author__: ShooterDev
-# __filename__: __init__.py.py
-# __directory__: src/domain/repositories
-"""
+"""Repositories interfaces."""
 
+__all__ = [
+    "IAuthorRepository",
+    "IEditionRepository",
+    "IPublisherRepository",
+]
 
-"""
+from src.domain.repositories.author_repository import IAuthorRepository
+from src.domain.repositories.edition_repository import IEditionRepository
+from src.domain.repositories.publisher_repository import IPublisherRepository

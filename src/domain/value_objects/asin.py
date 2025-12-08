@@ -1,9 +1,9 @@
-"""ISBN value object."""
+"""ASIN value object."""
 from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
-class ISBN:
-    """ISBN value object."""
+class ASIN:
+    """ASIN value object."""
 
     value: str
