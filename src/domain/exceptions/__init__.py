@@ -1,4 +1,5 @@
 """Exceptions module."""
+
 __all__ = [
     "AuthorNotFoundException",
     "EditionNotFoundException",
@@ -7,4 +8,5 @@ __all__ = [
 
 from src.domain.exceptions.author_exceptions import AuthorNotFoundException
 from src.domain.exceptions.edition_exceptions import EditionNotFoundException
-from src.domain.exceptions.publisher_exceptions import PublisherNotFoundException
+from src.domain.exceptions.publisher_exceptions import \
+    PublisherNotFoundException

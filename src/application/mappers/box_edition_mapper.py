@@ -1,4 +1,5 @@
 """BoxEdition mapper."""
+
 from src.domain.entities.box_edition import BoxEdition
 
 

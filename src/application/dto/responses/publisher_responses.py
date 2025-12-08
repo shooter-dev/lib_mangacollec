@@ -1,4 +1,5 @@
 """Publisher responses."""
+
 from dataclasses import dataclass
 
 from src.domain.entities.box import Box

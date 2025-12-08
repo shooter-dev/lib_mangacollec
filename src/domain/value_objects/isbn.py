@@ -1,4 +1,5 @@
 """ISBN value object."""
+
 from dataclasses import dataclass
 
 

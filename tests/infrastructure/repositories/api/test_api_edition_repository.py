@@ -8,10 +8,12 @@ from unittest.mock import Mock
 import pytest
 
 from src.application.dto.responses import GetEditionByIdV2Response
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
+from src.application.interfaces.mangacollec_api_interface import \
+    IMangaCollecAPI
 from src.domain.entities import Edition, Publisher, Serie, Type, Volume
 from src.domain.execptions.edition_exceptions import EditionNotFoundException
-from src.infrastructure.repositories.api.api_edition_repository import APIEditionRepository
+from src.infrastructure.repositories.api.api_edition_repository import \
+    APIEditionRepository
 
 
 class TestAPIEditionRepository:
@@ -201,9 +203,7 @@ class TestAPIEditionRepository:
         with pytest.raises(EditionNotFoundException):
             repository.get_edition_by_id_v2("test-id")
 
-    def test_get_edition_by_id_api_exception(
-        self, repository: APIEditionRepository, mock_api_client: Mock
-    ) -> None:
+    def test_get_edition_by_id_api_exception(self, repository: APIEditionRepository, mock_api_client: Mock) -> None:
         """Test de gestion d'erreur API."""
         mock_api_client.get.side_effect = Exception("API Error")
 

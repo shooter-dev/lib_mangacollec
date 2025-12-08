@@ -18,9 +18,7 @@ class GetEditionByIdV2UseCase:
         """
         self.repository = repository
 
-    def __call__(
-        self, edition_id: str
-    ) -> tuple[list[Edition], list[Publisher], list[Serie], list[Type], list[Volume]]:
+    def __call__(self, edition_id: str) -> tuple[list[Edition], list[Publisher], list[Serie], list[Type], list[Volume]]:
         """Exécute le use case.
 
         Args:

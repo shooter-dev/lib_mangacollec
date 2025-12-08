@@ -1,8 +1,7 @@
 """Publisher mapper."""
+
 from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)
 from src.application.mappers.box_edition_mapper import BoxEditionMapper
 from src.application.mappers.box_mapper import BoxMapper
 from src.application.mappers.serie_mapper import SerieMapper
@@ -82,10 +81,7 @@ class PublisherMapper:
             A GetAllPublishersV2Response.
         """
         return GetAllPublishersV2Response(
-            publishers=[
-                PublisherMapper.from_dict(publisher)
-                for publisher in response.get("publishers", [])
-            ]
+            publishers=[PublisherMapper.from_dict(publisher) for publisher in response.get("publishers", [])]
         )
 
     @staticmethod
@@ -102,24 +98,11 @@ class PublisherMapper:
         from src.application.mappers.edition_mapper import EditionMapper
 
         return GetPublisherByIdV2Response(
-            publishers=[
-                PublisherMapper.from_dict(publisher)
-                for publisher in response.get("publishers", [])
-            ],
-            editions=[
-                EditionMapper.from_dict(edition)
-                for edition in response.get("editions", [])
-            ],
-            box_editions=[
-                BoxEditionMapper.from_dict(box_edition)
-                for box_edition in response.get("box_editions", [])
-            ],
-            series=[
-                SerieMapper.from_dict(serie) for serie in response.get("series", [])
-            ],
+            publishers=[PublisherMapper.from_dict(publisher) for publisher in response.get("publishers", [])],
+            editions=[EditionMapper.from_dict(edition) for edition in response.get("editions", [])],
+            box_editions=[BoxEditionMapper.from_dict(box_edition) for box_edition in response.get("box_editions", [])],
+            series=[SerieMapper.from_dict(serie) for serie in response.get("series", [])],
             types=[TypeMapper.from_dict(type) for type in response.get("types", [])],
-            volumes=[
-                VolumeMapper.from_dict(volume) for volume in response.get("volumes", [])
-            ],
+            volumes=[VolumeMapper.from_dict(volume) for volume in response.get("volumes", [])],
             boxes=[BoxMapper.from_dict(box) for box in response.get("boxes", [])],
         )

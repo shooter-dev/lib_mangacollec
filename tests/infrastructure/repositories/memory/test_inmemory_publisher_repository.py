@@ -3,14 +3,11 @@
 import pytest
 
 from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)
 from src.domain.entities.publisher import Publisher, PublisherListItem
 from src.domain.exceptions import PublisherNotFoundException
-from src.infrastructure.repositories.memory.inmemory_publisher_repository import (
-    InMemoryPublisherRepository,
-)
+from src.infrastructure.repositories.memory.inmemory_publisher_repository import \
+    InMemoryPublisherRepository
 
 
 class TestInMemoryPublisherRepository:
@@ -22,9 +19,7 @@ class TestInMemoryPublisherRepository:
         return InMemoryPublisherRepository()
 
     @pytest.fixture
-    def sample_publishers(
-        self, repository: InMemoryPublisherRepository
-    ) -> list[Publisher]:
+    def sample_publishers(self, repository: InMemoryPublisherRepository) -> list[Publisher]:
         """Fixture to create test publishers."""
         publishers = [
             Publisher(
@@ -101,9 +96,7 @@ class TestInMemoryPublisherRepository:
         assert len(result.volumes) == 0
         assert len(result.boxes) == 0
 
-    def test_get_by_id_v2_not_found(
-        self, repository: InMemoryPublisherRepository
-    ) -> None:
+    def test_get_by_id_v2_not_found(self, repository: InMemoryPublisherRepository) -> None:
         """Test retrieving a non-existent publisher."""
         with pytest.raises(PublisherNotFoundException) as exc_info:
             repository.get_by_id_v2("nonexistent-id")
@@ -140,9 +133,7 @@ class TestInMemoryPublisherRepository:
         result = repository.get_all_v2()
         assert len(result.publishers) == 0
 
-    def test_add_overwrites_existing(
-        self, repository: InMemoryPublisherRepository
-    ) -> None:
+    def test_add_overwrites_existing(self, repository: InMemoryPublisherRepository) -> None:
         """Test that adding a publisher with the same ID overwrites the existing one."""
         publisher1 = Publisher(
             id="test-id",

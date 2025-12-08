@@ -1,8 +1,7 @@
 """Publisher use cases."""
+
 from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)
 from src.domain.entities.publisher import PublisherListItem
 from src.domain.repositories.publisher_repository import IPublisherRepository
 

@@ -1,27 +1,17 @@
 """Tests for APIPublisherRepository."""
+
 from unittest.mock import Mock
 
 import pytest
 
-from src.application.dto.responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
-from src.domain.entities import (
-    Box,
-    BoxEdition,
-    Edition,
-    Publisher,
-    PublisherListItem,
-    Serie,
-    Type,
-    Volume,
-)
+from src.application.dto.responses import (GetAllPublishersV2Response,
+                                           GetPublisherByIdV2Response)
+from src.application.interfaces.mangacollec_api_interface import \
+    IMangaCollecAPI
+from src.domain.entities import Publisher, PublisherListItem
 from src.domain.exceptions import PublisherNotFoundException
-from src.infrastructure.repositories.api.api_publisher_repository import (
-    APIPublisherRepository,
-)
+from src.infrastructure.repositories.api.api_publisher_repository import \
+    APIPublisherRepository
 
 
 class TestAPIPublisherRepository:
@@ -74,13 +64,9 @@ class TestAPIPublisherRepository:
         assert publisher.id == "bdef8c9e-7395-465d-8175-a1b985d4aa92"
         assert publisher.title == "Pika"
 
-        mock_api_client.get.assert_called_once_with(
-            "/v2/publishers/bdef8c9e-7395-465d-8175-a1b985d4aa92"
-        )
+        mock_api_client.get.assert_called_once_with("/v2/publishers/bdef8c9e-7395-465d-8175-a1b985d4aa92")
 
-    def test_get_by_id_not_found(
-        self, repository: APIPublisherRepository, mock_api_client: Mock
-    ) -> None:
+    def test_get_by_id_not_found(self, repository: APIPublisherRepository, mock_api_client: Mock) -> None:
         """Test retrieving a non-existent publisher."""
         mock_api_client.get.return_value = {"publishers": []}
 

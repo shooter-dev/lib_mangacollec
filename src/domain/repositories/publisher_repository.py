@@ -1,10 +1,9 @@
 """Publisher repository interface."""
+
 from abc import ABC, abstractmethod
 
 from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)
 from src.domain.entities.publisher import PublisherListItem
 
 

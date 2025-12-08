@@ -1,5 +1,7 @@
 """In-memory edition repository."""
-from src.application.dto.responses.edition_responses import GetEditionByIdV2Response
+
+from src.application.dto.responses.edition_responses import \
+    GetEditionByIdV2Response
 from src.domain.entities.edition import Edition
 from src.domain.exceptions.edition_exceptions import EditionNotFoundException
 from src.domain.repositories.edition_repository import IEditionRepository

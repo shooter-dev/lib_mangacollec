@@ -6,6 +6,8 @@ This entity represents a client for the MangaCollection API.
 """
 
 from dataclasses import dataclass
+
+
 @dataclass(frozen=True)
 class ClientMangaCollec:
     client_id: str

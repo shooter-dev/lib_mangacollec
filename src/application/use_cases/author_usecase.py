@@ -4,7 +4,8 @@ This module contains all use cases for Author operations.
 """
 
 from src.application.dto.author_dto import SearchAuthor
-from src.domain.entities import Author, AuthorListItem, Edition, Job, Serie, Task, Volume
+from src.domain.entities import (Author, AuthorListItem, Edition, Job, Serie,
+                                 Task, Volume)
 from src.domain.repositories.author_repository import IAuthorRepository
 
 
@@ -14,7 +15,9 @@ class GetByIdAuthorUseCase:
     def __init__(self, repository: IAuthorRepository) -> None:
         self.repository = repository
 
-    def __call__(self, author_id: str) -> tuple[Author, list[Task], list[Job], list[Serie], list[Edition], list[Volume]]:
+    def __call__(
+        self, author_id: str
+    ) -> (tuple)[Author, list[Task], list[Job], list[Serie], list[Edition], list[Volume]]:
         """Exécute le use case.
 
         Args:

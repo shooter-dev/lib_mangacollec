@@ -6,11 +6,9 @@
 # __project__: lib_mangacollec
 # __author__: ShooterDev
 # __filename__: base_exeptions.py
-# __directory__: 
-"""
+# __directory__: src/domain/execptions
+""" """
 
 
-"""
 class MangacollecException(Exception):
     pass
-

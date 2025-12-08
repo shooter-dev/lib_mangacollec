@@ -3,8 +3,10 @@
 This module provides the API implementation of the Author repository.
 """
 
-from src.application.dto.responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
+from src.application.dto.responses import (GetAllAuthorsV2Response,
+                                           GetAuthorByIdV2Response)
+from src.application.interfaces.mangacollec_api_interface import \
+    IMangaCollecAPI
 from src.application.mappers.author_mapper import AuthorMapper
 from src.domain.entities import AuthorListItem
 from src.domain.execptions.author_exceptions import AuthorNotFoundException

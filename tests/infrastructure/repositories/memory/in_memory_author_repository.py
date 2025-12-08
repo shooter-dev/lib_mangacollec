@@ -1,5 +1,7 @@
 """In-memory author repository."""
-from src.application.dto.responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
+
+from src.application.dto.responses import (GetAllAuthorsV2Response,
+                                           GetAuthorByIdV2Response)
 from src.application.mappers.author_mapper import AuthorMapper
 from src.domain.entities import Author, AuthorListItem
 from src.domain.execptions.author_exceptions import AuthorNotFoundException
@@ -52,9 +54,7 @@ class InMemoryAuthorRepository(IAuthorRepository):
         Returns:
             A list of AuthorListItem.
         """
-        return [
-            AuthorMapper.to_list_item(author) for author in self._authors.values()
-        ]
+        return [AuthorMapper.to_list_item(author) for author in self._authors.values()]
 
     def add(self, author: Author) -> None:
         """

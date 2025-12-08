@@ -3,13 +3,14 @@
 This module provides mapping functions between API responses and Author entities.
 """
 
-from src.application.dto.responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
+from src.application.dto.responses import (GetAllAuthorsV2Response,
+                                           GetAuthorByIdV2Response)
 from src.application.mappers.edition_mapper import EditionMapper
 from src.application.mappers.job_mapper import JobMapper
 from src.application.mappers.serie_mapper import SerieMapper
 from src.application.mappers.task_mapper import TaskMapper
 from src.application.mappers.volume_mapper import VolumeMapper
-from src.domain.entities import Author, AuthorListItem, Edition, Job, Serie, Task, Volume
+from src.domain.entities import Author, AuthorListItem
 
 
 class AuthorMapper:
@@ -78,9 +79,7 @@ class AuthorMapper:
             GetAllAuthorsV2Response contenant la liste des auteurs
         """
         # Convertir les authors
-        authors = [
-            AuthorMapper.from_dict(author_data) for author_data in response.get("authors", [])
-        ]
+        authors = [AuthorMapper.from_dict(author_data) for author_data in response.get("authors", [])]
 
         return GetAllAuthorsV2Response(authors=authors)
 
@@ -107,14 +106,10 @@ class AuthorMapper:
         series = [SerieMapper.from_dict(serie_data) for serie_data in response.get("series", [])]
 
         # Convertir les editions
-        editions = [
-            EditionMapper.from_dict(edition_data) for edition_data in response.get("editions", [])
-        ]
+        editions = [EditionMapper.from_dict(edition_data) for edition_data in response.get("editions", [])]
 
         # Convertir les volumes
-        volumes = [
-            VolumeMapper.from_dict(volume_data) for volume_data in response.get("volumes", [])
-        ]
+        volumes = [VolumeMapper.from_dict(volume_data) for volume_data in response.get("volumes", [])]
 
         return GetAuthorByIdV2Response(
             authors=authors,

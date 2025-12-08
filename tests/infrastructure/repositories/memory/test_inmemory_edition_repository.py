@@ -8,9 +8,8 @@ import pytest
 from src.application.dto.responses import GetEditionByIdV2Response
 from src.domain.entities import Edition, Publisher, Serie, Type, Volume
 from src.domain.execptions.edition_exceptions import EditionNotFoundException
-from src.infrastructure.repositories.memory.in_memory_edition_repository import (
-    InMemoryEditionRepository,
-)
+from src.infrastructure.repositories.memory.in_memory_edition_repository import \
+    InMemoryEditionRepository
 
 
 class TestInMemoryEditionRepository:

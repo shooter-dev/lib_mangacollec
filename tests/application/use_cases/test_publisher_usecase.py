@@ -3,15 +3,12 @@
 import pytest
 
 from src.application.use_cases.publisher_usecase import (
-    GetAllPublishersV2UseCase,
-    GetListPublishersUseCase,
-    GetPublisherByIdV2UseCase,
-)
+    GetAllPublishersV2UseCase, GetListPublishersUseCase,
+    GetPublisherByIdV2UseCase)
 from src.domain.entities.publisher import Publisher, PublisherListItem
 from src.domain.exceptions import PublisherNotFoundException
-from src.infrastructure.repositories.memory.inmemory_publisher_repository import (
-    InMemoryPublisherRepository,
-)
+from src.infrastructure.repositories.memory.inmemory_publisher_repository import \
+    InMemoryPublisherRepository
 
 
 @pytest.fixture
@@ -65,9 +62,7 @@ class TestGetByIdPublisherUseCase:
         assert publisher.id == "bdef8c9e-7395-465d-8175-a1b985d4aa92"
         assert publisher.title == "Pika"
 
-    def test_get_nonexistent_publisher(
-        self, repository: InMemoryPublisherRepository
-    ) -> None:
+    def test_get_nonexistent_publisher(self, repository: InMemoryPublisherRepository) -> None:
         """Test retrieving a non-existent publisher."""
         usecase = GetPublisherByIdV2UseCase(repository)
 
@@ -91,9 +86,7 @@ class TestGetAllPublisherUseCase:
         assert len(result.publishers) == 2
         assert all(isinstance(publisher, Publisher) for publisher in result.publishers)
 
-    def test_get_all_publishers_empty(
-        self, repository: InMemoryPublisherRepository
-    ) -> None:
+    def test_get_all_publishers_empty(self, repository: InMemoryPublisherRepository) -> None:
         """Test retrieving with an empty repository."""
         usecase = GetAllPublishersV2UseCase(repository)
 

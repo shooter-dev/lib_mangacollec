@@ -3,8 +3,6 @@
 This module contains unit tests for the TypeMapper.
 """
 
-import pytest
-
 from src.application.mappers.type_mapper import TypeMapper
 from src.domain.entities import Type
 

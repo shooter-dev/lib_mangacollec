@@ -1,8 +1,7 @@
 """In-memory publisher repository."""
+
 from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)
 from src.application.mappers.publisher_mapper import PublisherMapper
 from src.domain.entities.publisher import Publisher, PublisherListItem
 from src.domain.exceptions import PublisherNotFoundException
@@ -23,9 +22,7 @@ class InMemoryPublisherRepository(IPublisherRepository):
         Returns:
             A GetAllPublishersV2Response.
         """
-        return GetAllPublishersV2Response(
-            publishers=list(self._publishers.values())
-        )
+        return GetAllPublishersV2Response(publishers=list(self._publishers.values()))
 
     def get_by_id_v2(self, publisher_id: str) -> GetPublisherByIdV2Response:
         """
@@ -58,10 +55,7 @@ class InMemoryPublisherRepository(IPublisherRepository):
         Returns:
             A list of PublisherListItem.
         """
-        return [
-            PublisherMapper.to_list_item(publisher)
-            for publisher in self._publishers.values()
-        ]
+        return [PublisherMapper.to_list_item(publisher) for publisher in self._publishers.values()]
 
     def add(self, publisher: Publisher) -> None:
         """

@@ -1,12 +1,8 @@
 """Tests for the PublisherMapper."""
 
 from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)
 from src.application.mappers.publisher_mapper import PublisherMapper
-from src.domain.entities.box import Box
-from src.domain.entities.box_edition import BoxEdition
 from src.domain.entities.edition import Edition
 from src.domain.entities.publisher import Publisher, PublisherListItem
 from src.domain.entities.serie import Serie

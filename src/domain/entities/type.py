@@ -1,4 +1,5 @@
 """Type entity."""
+
 from dataclasses import dataclass
 
 

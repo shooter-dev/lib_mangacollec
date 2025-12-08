@@ -4,7 +4,8 @@ import pytest
 
 from src.application.use_cases.job_usecase import GetAllJobsV1UseCase
 from src.domain.entities.job import Job
-from src.infrastructure.repositories.memory.inmemory_job_repository import InMemoryJobRepository
+from src.infrastructure.repositories.memory.inmemory_job_repository import \
+    InMemoryJobRepository
 
 
 class TestGetAllJobsV1UseCase:

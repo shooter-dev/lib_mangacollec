@@ -70,29 +70,21 @@ class EditionMapper:
         """
         from src.application.mappers.publisher_mapper import PublisherMapper
         from src.application.mappers.type_mapper import TypeMapper
+
         # Convertir les editions (liste)
-        editions = [
-            EditionMapper.from_dict(edition_data) for edition_data in response.get("editions", [])
-        ]
+        editions = [EditionMapper.from_dict(edition_data) for edition_data in response.get("editions", [])]
 
         # Convertir les publishers
-        publishers = [
-            PublisherMapper.from_dict(publisher_data)
-            for publisher_data in response.get("publishers", [])
-        ]
+        publishers = [PublisherMapper.from_dict(publisher_data) for publisher_data in response.get("publishers", [])]
 
         # Convertir les series
         series = [SerieMapper.from_dict(serie_data) for serie_data in response.get("series", [])]
 
         # Convertir les types
-        types = [
-            TypeMapper.from_dict(type_data) for type_data in response.get("types", [])
-        ]
+        types = [TypeMapper.from_dict(type_data) for type_data in response.get("types", [])]
 
         # Convertir les volumes
-        volumes = [
-            VolumeMapper.from_dict(volume_data) for volume_data in response.get("volumes", [])
-        ]
+        volumes = [VolumeMapper.from_dict(volume_data) for volume_data in response.get("volumes", [])]
 
         return GetEditionByIdV2Response(
             editions=editions,

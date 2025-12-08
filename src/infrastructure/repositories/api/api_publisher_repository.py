@@ -1,12 +1,13 @@
 """Publisher API repository."""
+
 from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)
+from src.application.interfaces.mangacollec_api_interface import \
+    IMangaCollecAPI
 from src.application.mappers.publisher_mapper import PublisherMapper
 from src.domain.entities.publisher import PublisherListItem
-from src.domain.exceptions.publisher_exceptions import PublisherNotFoundException
+from src.domain.exceptions.publisher_exceptions import \
+    PublisherNotFoundException
 from src.domain.repositories.publisher_repository import IPublisherRepository
 
 
@@ -66,7 +67,4 @@ class APIPublisherRepository(IPublisherRepository):
             A list of PublisherListItem.
         """
         all_publishers_response = self.get_all_v2()
-        return [
-            PublisherMapper.to_list_item(publisher)
-            for publisher in all_publishers_response.publishers
-        ]
+        return [PublisherMapper.to_list_item(publisher) for publisher in all_publishers_response.publishers]

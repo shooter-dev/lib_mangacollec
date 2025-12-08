@@ -3,7 +3,8 @@
 This module provides an in-memory implementation of the Author repository for testing.
 """
 
-from src.application.dto.responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
+from src.application.dto.responses import (GetAllAuthorsV2Response,
+                                           GetAuthorByIdV2Response)
 from src.application.mappers.author_mapper import AuthorMapper
 from src.domain.entities import Author, AuthorListItem
 from src.domain.execptions.author_exceptions import AuthorNotFoundException

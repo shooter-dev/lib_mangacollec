@@ -7,7 +7,4 @@
 # __author__: ShooterDev
 # __filename__: __init__.py.py
 # __directory__: src/domain/execptions
-"""
-
-
-"""
+""" """

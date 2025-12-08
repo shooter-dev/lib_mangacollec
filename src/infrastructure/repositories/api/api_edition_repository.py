@@ -4,7 +4,8 @@ This module provides the API implementation of the Edition repository.
 """
 
 from src.application.dto.responses import GetEditionByIdV2Response
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
+from src.application.interfaces.mangacollec_api_interface import \
+    IMangaCollecAPI
 from src.application.mappers.edition_mapper import EditionMapper
 from src.domain.execptions.edition_exceptions import EditionNotFoundException
 from src.domain.repositories.edition_repository import IEditionRepository

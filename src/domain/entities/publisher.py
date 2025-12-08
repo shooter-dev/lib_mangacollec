@@ -1,4 +1,5 @@
 """Publisher entity."""
+
 from dataclasses import dataclass
 
 

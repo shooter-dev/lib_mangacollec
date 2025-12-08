@@ -3,8 +3,6 @@
 This module contains unit tests for the EditionMapper.
 """
 
-import pytest
-
 from src.application.mappers.edition_mapper import EditionMapper
 from src.domain.entities import Edition
 

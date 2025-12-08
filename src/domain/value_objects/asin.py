@@ -1,4 +1,5 @@
 """ASIN value object."""
+
 from dataclasses import dataclass
 
 

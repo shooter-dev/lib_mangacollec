@@ -1,4 +1,5 @@
 """Box mapper."""
+
 from src.domain.entities.box import Box
 from src.domain.value_objects.asin import ASIN
 from src.domain.value_objects.isbn import ISBN

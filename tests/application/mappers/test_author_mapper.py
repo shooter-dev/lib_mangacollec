@@ -3,8 +3,6 @@
 This module contains unit tests for the AuthorMapper.
 """
 
-import pytest
-
 from src.application.mappers.author_mapper import AuthorMapper
 from src.domain.entities import Author, AuthorListItem
 

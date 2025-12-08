@@ -7,11 +7,15 @@ from unittest.mock import Mock
 
 import pytest
 
-from src.application.dto.responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
-from src.domain.entities import Author, AuthorListItem, Edition, Job, Serie, Task, Volume
+from src.application.dto.responses import (GetAllAuthorsV2Response,
+                                           GetAuthorByIdV2Response)
+from src.application.interfaces.mangacollec_api_interface import \
+    IMangaCollecAPI
+from src.domain.entities import (Author, AuthorListItem, Edition, Job, Serie,
+                                 Task, Volume)
 from src.domain.execptions.author_exceptions import AuthorNotFoundException
-from src.infrastructure.repositories.api.api_author_repository import APIAuthorRepository
+from src.infrastructure.repositories.api.api_author_repository import \
+    APIAuthorRepository
 
 
 class TestAPIV2AuthorRepository:
@@ -74,13 +78,9 @@ class TestAPIV2AuthorRepository:
         assert isinstance(result.editions, list)
         assert isinstance(result.volumes, list)
 
-        mock_api_client.get.assert_called_once_with(
-            "/v2/authors/370ac96c-49e0-4f09-b7c4-662cb1374b21"
-        )
+        mock_api_client.get.assert_called_once_with("/v2/authors/370ac96c-49e0-4f09-b7c4-662cb1374b21")
 
-    def test_get_by_id_not_found_empty_list(
-        self, repository: APIAuthorRepository, mock_api_client: Mock
-    ) -> None:
+    def test_get_by_id_not_found_empty_list(self, repository: APIAuthorRepository, mock_api_client: Mock) -> None:
         """Test de récupération d'un auteur inexistant (liste vide)."""
         mock_api_client.get.return_value = {"authors": []}
 
@@ -89,18 +89,14 @@ class TestAPIV2AuthorRepository:
 
         assert "nonexistent-id" in str(exc_info.value)
 
-    def test_get_by_id_not_found_no_authors_key(
-        self, repository: APIAuthorRepository, mock_api_client: Mock
-    ) -> None:
+    def test_get_by_id_not_found_no_authors_key(self, repository: APIAuthorRepository, mock_api_client: Mock) -> None:
         """Test de récupération sans clé 'authors' dans la réponse."""
         mock_api_client.get.return_value = {}
 
         with pytest.raises(AuthorNotFoundException):
             repository.get_by_id_v2("test-id")
 
-    def test_get_by_id_api_exception(
-        self, repository: APIAuthorRepository, mock_api_client: Mock
-    ) -> None:
+    def test_get_by_id_api_exception(self, repository: APIAuthorRepository, mock_api_client: Mock) -> None:
         """Test de gestion d'erreur API."""
         mock_api_client.get.side_effect = Exception("API Error")
 
@@ -136,9 +132,7 @@ class TestAPIV2AuthorRepository:
 
         mock_api_client.get.assert_called_once_with("/v2/authors/")
 
-    def test_get_all_empty(
-        self, repository: APIAuthorRepository, mock_api_client: Mock
-    ) -> None:
+    def test_get_all_empty(self, repository: APIAuthorRepository, mock_api_client: Mock) -> None:
         """Test de récupération avec liste vide."""
         mock_api_client.get.return_value = {"authors": []}
 
@@ -147,9 +141,7 @@ class TestAPIV2AuthorRepository:
         assert isinstance(result, GetAllAuthorsV2Response)
         assert result.authors == []
 
-    def test_get_all_no_authors_key(
-        self, repository: APIAuthorRepository, mock_api_client: Mock
-    ) -> None:
+    def test_get_all_no_authors_key(self, repository: APIAuthorRepository, mock_api_client: Mock) -> None:
         """Test de récupération sans clé 'authors'."""
         mock_api_client.get.return_value = {}
 
@@ -158,9 +150,7 @@ class TestAPIV2AuthorRepository:
         assert isinstance(result, GetAllAuthorsV2Response)
         assert result.authors == []
 
-    def test_get_all_api_exception(
-        self, repository: APIAuthorRepository, mock_api_client: Mock
-    ) -> None:
+    def test_get_all_api_exception(self, repository: APIAuthorRepository, mock_api_client: Mock) -> None:
         """Test de gestion d'erreur API pour get_all."""
         mock_api_client.get.side_effect = Exception("API Error")
 
@@ -188,19 +178,13 @@ class TestAPIV2AuthorRepository:
         assert len(items) == 2
         assert all(isinstance(item, AuthorListItem) for item in items)
 
-        kishimoto = next(
-            item
-            for item in items
-            if item.id == "370ac96c-49e0-4f09-b7c4-662cb1374b21"
-        )
+        kishimoto = next(item for item in items if item.id == "370ac96c-49e0-4f09-b7c4-662cb1374b21")
         assert kishimoto.full_name == "Masashi Kishimoto"
 
         boichi = next(item for item in items if item.id == "id2")
         assert boichi.full_name == "Boichi"
 
-    def test_get_by_id_without_first_name(
-        self, repository: APIAuthorRepository, mock_api_client: Mock
-    ) -> None:
+    def test_get_by_id_without_first_name(self, repository: APIAuthorRepository, mock_api_client: Mock) -> None:
         """Test de récupération d'un auteur sans prénom."""
         author_data = {
             "id": "test-id",

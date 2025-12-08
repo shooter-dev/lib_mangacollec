@@ -1,4 +1,5 @@
 """URL value object."""
+
 from dataclasses import dataclass
 
 
