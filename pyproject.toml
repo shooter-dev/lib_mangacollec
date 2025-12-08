@@ -1,14 +1,44 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
 name = "lib_mangacollec"
+version = "0.1.0"
+description = "Lib Python pour l'API MangaCollec"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "ShooterDev", email = "vincentbleach@gmail.com.fr"}
+]
 
 dependencies = [
     "requests>=2.25.1"
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "flake8",
+    "ruff",
+    "black",
+    "mypy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
 [tool.black]
 line-length = 120
 
-[tool.flake8]
-max-line-length = 120
+[tool.ruff]
+line-length = 120
 
 [tool.mypy]
 python_path = "src"
