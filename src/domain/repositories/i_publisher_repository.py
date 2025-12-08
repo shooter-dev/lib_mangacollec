@@ -1,9 +1,7 @@
 from abc import ABC, abstractmethod
 
-from src.application.dto.responses.get_all_publishers_v2_response import \
-    GetAllPublishersV2Response
-from src.application.dto.responses.get_publisher_by_id_v2_response import \
-    GetPublisherByIdV2Response
+from src.application.dto.responses.get_all_publishers_v2_response import GetAllPublishersV2Response
+from src.application.dto.responses.get_publisher_by_id_v2_response import GetPublisherByIdV2Response
 
 
 class IPublisherRepository(ABC):

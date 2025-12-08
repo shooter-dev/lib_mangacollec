@@ -3,8 +3,7 @@
 This module provides mapping functions between API responses and Author entities.
 """
 
-from src.application.dto.responses import (GetAllAuthorsV2Response,
-                                           GetAuthorByIdV2Response)
+from src.application.dto.responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
 from src.application.mappers.edition_mapper import EditionMapper
 from src.application.mappers.job_mapper import JobMapper
 from src.application.mappers.serie_mapper import SerieMapper

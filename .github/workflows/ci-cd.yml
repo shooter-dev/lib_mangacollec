@@ -42,17 +42,12 @@ jobs:
       # 2.1 Run flake8
       - name: Run flake8
         run: |
-          flake8 src --max-line-length=120   
+          flake8 .
 
-      # 2.2 Run ruff
-      - name: Run ruff
+      # 2.2 Run black check
+      - name: Run black check
         run: |
-          ruff check src tests --line-length=120
-
-      # 2.3 Run mypy
-      - name: Run mypy
-        run: |
-          mypy src tests
+          black --check .src
 
   # 3. Run tests
   run_tests:

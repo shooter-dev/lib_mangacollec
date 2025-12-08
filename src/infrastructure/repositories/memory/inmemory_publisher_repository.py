@@ -1,7 +1,6 @@
 """In-memory publisher repository."""
 
-from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response, GetPublisherByIdV2Response)
+from src.application.dto.responses.publisher_responses import GetAllPublishersV2Response, GetPublisherByIdV2Response
 from src.application.mappers.publisher_mapper import PublisherMapper
 from src.domain.entities.publisher import Publisher, PublisherListItem
 from src.domain.exceptions import PublisherNotFoundException

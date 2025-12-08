@@ -1,13 +1,10 @@
 """Publisher API repository."""
 
-from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response, GetPublisherByIdV2Response)
-from src.application.interfaces.mangacollec_api_interface import \
-    IMangaCollecAPI
+from src.application.dto.responses.publisher_responses import GetAllPublishersV2Response, GetPublisherByIdV2Response
+from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
 from src.application.mappers.publisher_mapper import PublisherMapper
 from src.domain.entities.publisher import PublisherListItem
-from src.domain.exceptions.publisher_exceptions import \
-    PublisherNotFoundException
+from src.domain.exceptions.publisher_exceptions import PublisherNotFoundException
 from src.domain.repositories.publisher_repository import IPublisherRepository
 
 

@@ -5,8 +5,7 @@ This module defines the repository interface for Author operations.
 
 from abc import ABC, abstractmethod
 
-from src.application.dto.responses import (GetAllAuthorsV2Response,
-                                           GetAuthorByIdV2Response)
+from src.application.dto.responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
 from src.domain.entities import AuthorListItem
 
 

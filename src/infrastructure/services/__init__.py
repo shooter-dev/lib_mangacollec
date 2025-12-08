@@ -8,7 +8,6 @@
 # __filename__: __init__.py.py
 # __directory__: src/infrastructure/services
 """ """
-__all__ = ["IMangaCollecAPI", "MangaCollecAPI"]
+__all__ = ["MangaCollecAPI"]
 
-from application.interfaces.mangacollec_api_interface import IMangaCollecAPI
 from infrastructure.services.mangacollec_api import MangaCollecAPI

@@ -12,12 +12,16 @@ __all__ = [
     "GetListPublishersUseCase",
 ]
 
-from src.application.use_cases.author_usecase import (GetAllAuthorUseCase,
-                                                      GetByIdAuthorUseCase,
-                                                      GetListAuthorUseCase,
-                                                      SearchAuthorUseCase)
+from src.application.use_cases.author_usecase import (
+    GetAllAuthorUseCase,
+    GetByIdAuthorUseCase,
+    GetListAuthorUseCase,
+    SearchAuthorUseCase,
+)
 from src.application.use_cases.edition_usecase import GetEditionByIdV2UseCase
 from src.application.use_cases.job_usecase import GetAllJobsV1UseCase
 from src.application.use_cases.publisher_usecase import (
-    GetAllPublishersV2UseCase, GetListPublishersUseCase,
-    GetPublisherByIdV2UseCase)
+    GetAllPublishersV2UseCase,
+    GetListPublishersUseCase,
+    GetPublisherByIdV2UseCase,
+)

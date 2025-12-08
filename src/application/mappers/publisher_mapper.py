@@ -1,7 +1,6 @@
 """Publisher mapper."""
 
-from src.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response, GetPublisherByIdV2Response)
+from src.application.dto.responses.publisher_responses import GetAllPublishersV2Response, GetPublisherByIdV2Response
 from src.application.mappers.box_edition_mapper import BoxEditionMapper
 from src.application.mappers.box_mapper import BoxMapper
 from src.application.mappers.serie_mapper import SerieMapper
