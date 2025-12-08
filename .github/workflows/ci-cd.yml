@@ -61,7 +61,7 @@ jobs:
       # 3.1 Run tests with pytest
       - name: Run tests with pytest
         run: |
-          pytest tests --cov=src --cov-report=xml
+          pytest tests
 
       # 3.2 Upload coverage report
       - name: Upload coverage report
