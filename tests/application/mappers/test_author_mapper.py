@@ -102,3 +102,158 @@ class TestAuthorMapper:
 
         assert item.id == "test-id"
         assert item.full_name == "Boichi"
+
+    def test_from_all_authors_response(self) -> None:
+        """Test de conversion de la réponse get_all."""
+        response = {
+            "authors": [
+                {
+                    "id": "id1",
+                    "name": "Kishimoto",
+                    "first_name": "Masashi",
+                    "tasks_count": 32,
+                },
+                {
+                    "id": "id2",
+                    "name": "Boichi",
+                    "tasks_count": 14,
+                },
+            ]
+        }
+
+        result = AuthorMapper.from_all_authors_response(response)
+
+        assert len(result.authors) == 2
+        assert result.authors[0].name == "Kishimoto"
+        assert result.authors[0].first_name == "Masashi"
+        assert result.authors[1].name == "Boichi"
+        assert result.authors[1].first_name is None
+
+    def test_from_all_authors_response_empty(self) -> None:
+        """Test de conversion de la réponse get_all vide."""
+        response = {"authors": []}
+
+        result = AuthorMapper.from_all_authors_response(response)
+
+        assert result.authors == []
+
+    def test_from_all_authors_response_no_key(self) -> None:
+        """Test de conversion sans clé 'authors'."""
+        response = {}
+
+        result = AuthorMapper.from_all_authors_response(response)
+
+        assert result.authors == []
+
+    def test_from_api_response(self) -> None:
+        """Test de conversion de la réponse complète get_by_id."""
+        response = {
+            "authors": [
+                {
+                    "id": "370ac96c-49e0-4f09-b7c4-662cb1374b21",
+                    "name": "Kishimoto",
+                    "first_name": "Masashi",
+                    "tasks_count": 32,
+                }
+            ],
+            "tasks": [
+                {
+                    "id": "task-1",
+                    "job_id": "job-1",
+                    "series_id": "series-1",
+                    "author_id": "370ac96c-49e0-4f09-b7c4-662cb1374b21",
+                }
+            ],
+            "jobs": [{"id": "job-1", "title": "Auteur"}],
+            "series": [
+                {
+                    "id": "series-1",
+                    "title": "Naruto",
+                    "type_id": "type-1",
+                    "adult_content": False,
+                    "editions_count": 7,
+                    "tasks_count": 1,
+                }
+            ],
+            "editions": [
+                {
+                    "id": "edition-1",
+                    "title": "Edition Collector",
+                    "series_id": "series-1",
+                    "publisher_id": "publisher-1",
+                    "parent_edition_id": None,
+                    "volumes_count": 72,
+                    "last_volume_number": 72,
+                    "commercial_stop": False,
+                    "not_finished": False,
+                    "follow_editions_count": 1443,
+                }
+            ],
+            "volumes": [
+                {
+                    "id": "volume-1",
+                    "title": None,
+                    "number": 1,
+                    "release_date": "2002-03-01",
+                    "isbn": "9782012345678",
+                    "asin": "2012345678",
+                    "edition_id": "edition-1",
+                    "possessions_count": 100,
+                    "not_sold": False,
+                    "image_url": "https://example.com/image.jpg",
+                }
+            ],
+        }
+
+        result = AuthorMapper.from_api_response(response)
+
+        # Vérifier les auteurs
+        assert len(result.authors) == 1
+        assert result.authors[0].name == "Kishimoto"
+
+        # Vérifier les tasks
+        assert len(result.tasks) == 1
+        assert result.tasks[0].id == "task-1"
+
+        # Vérifier les jobs
+        assert len(result.jobs) == 1
+        assert result.jobs[0].title == "Auteur"
+
+        # Vérifier les series
+        assert len(result.series) == 1
+        assert result.series[0].title == "Naruto"
+
+        # Vérifier les editions
+        assert len(result.editions) == 1
+        assert result.editions[0].title == "Edition Collector"
+
+        # Vérifier les volumes
+        assert len(result.volumes) == 1
+        assert result.volumes[0].number == 1
+
+    def test_from_api_response_empty_relations(self) -> None:
+        """Test de conversion avec relations vides."""
+        response = {
+            "authors": [
+                {
+                    "id": "test-id",
+                    "name": "Test",
+                    "first_name": None,
+                    "tasks_count": 0,
+                }
+            ],
+            "tasks": [],
+            "jobs": [],
+            "series": [],
+            "editions": [],
+            "volumes": [],
+        }
+
+        result = AuthorMapper.from_api_response(response)
+
+        assert len(result.authors) == 1
+        assert result.tasks == []
+        assert result.jobs == []
+        assert result.series == []
+        assert result.editions == []
+        assert result.volumes == []

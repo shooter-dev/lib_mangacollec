@@ -3,7 +3,7 @@ Resource: job_list
 Version: V1
 Endpoint: https://api.mangacollec.com/v1/jobs/
 Method: GET
-Response_brut: datas/_endpoints/jobs/jobs_v1.json
+Response_brut: /Users/shooterdev/Lab/PycharmProjects/lib_mangacollec/datas/_endpoints/jobs/jobs_v1.json
 Description: List all jobs
 Authentication: false
 ---

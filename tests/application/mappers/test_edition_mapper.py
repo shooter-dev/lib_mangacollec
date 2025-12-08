@@ -232,3 +232,213 @@ class TestEditionMapper:
         result_data = EditionMapper.to_dict(edition)
 
         assert result_data == original_data
+
+    def test_from_api_response_with_all_entities(self) -> None:
+        """Test de conversion de la réponse complète de l'API V2."""
+        api_response = {
+            "editions": [
+                {
+                    "id": "edition-123",
+                    "title": "Edition Collector",
+                    "series_id": "series-456",
+                    "publisher_id": "publisher-789",
+                    "parent_edition_id": None,
+                    "volumes_count": 72,
+                    "last_volume_number": 72,
+                    "commercial_stop": False,
+                    "not_finished": False,
+                    "follow_editions_count": 1443,
+                }
+            ],
+            "publishers": [
+                {
+                    "id": "publisher-789",
+                    "title": "Kana",
+                    "closed": False,
+                    "editions_count": 150,
+                    "no_amazon": False,
+                }
+            ],
+            "series": [
+                {
+                    "id": "series-456",
+                    "title": "Naruto",
+                    "type_id": "type-001",
+                    "adult_content": False,
+                    "editions_count": 7,
+                    "tasks_count": 1,
+                }
+            ],
+            "types": [
+                {
+                    "id": "type-001",
+                    "title": "Manga",
+                    "to_display": True,
+                }
+            ],
+            "volumes": [
+                {
+                    "id": "volume-001",
+                    "title": None,
+                    "number": 1,
+                    "release_date": "2002-03-01",
+                    "isbn": "9782012345678",
+                    "asin": "2012345678",
+                    "edition_id": "edition-123",
+                    "possessions_count": 100,
+                    "not_sold": False,
+                    "image_url": "https://example.com/image.jpg",
+                }
+            ],
+        }
+
+        from src.application.dto.responses import GetEditionByIdV2Response
+        from src.domain.entities import Edition, Publisher, Serie, Type, Volume
+
+        result = EditionMapper.from_api_response(api_response)
+
+        # Vérifier le type de retour
+        assert isinstance(result, GetEditionByIdV2Response)
+
+        # Vérifier les éditions
+        assert len(result.editions) == 1
+        assert isinstance(result.editions[0], Edition)
+        assert result.editions[0].id == "edition-123"
+        assert result.editions[0].title == "Edition Collector"
+
+        # Vérifier les publishers
+        assert len(result.publishers) == 1
+        assert isinstance(result.publishers[0], Publisher)
+        assert result.publishers[0].id == "publisher-789"
+        assert result.publishers[0].title == "Kana"
+
+        # Vérifier les series
+        assert len(result.series) == 1
+        assert isinstance(result.series[0], Serie)
+        assert result.series[0].id == "series-456"
+        assert result.series[0].title == "Naruto"
+
+        # Vérifier les types
+        assert len(result.types) == 1
+        assert isinstance(result.types[0], Type)
+        assert result.types[0].id == "type-001"
+        assert result.types[0].title == "Manga"
+
+        # Vérifier les volumes
+        assert len(result.volumes) == 1
+        assert isinstance(result.volumes[0], Volume)
+        assert result.volumes[0].id == "volume-001"
+        assert result.volumes[0].number == 1
+
+    def test_from_api_response_with_empty_lists(self) -> None:
+        """Test de conversion avec listes vides."""
+        api_response = {
+            "editions": [
+                {
+                    "id": "edition-123",
+                    "title": "Edition Test",
+                    "series_id": "series-456",
+                    "publisher_id": "publisher-789",
+                    "volumes_count": 10,
+                    "commercial_stop": False,
+                    "not_finished": False,
+                    "follow_editions_count": 50,
+                }
+            ],
+            "publishers": [
+                {
+                    "id": "publisher-789",
+                    "title": "Test Publisher",
+                    "closed": False,
+                    "editions_count": 10,
+                    "no_amazon": False,
+                }
+            ],
+            "series": [],
+            "types": [],
+            "volumes": [],
+        }
+
+        from src.application.dto.responses import GetEditionByIdV2Response
+
+        result = EditionMapper.from_api_response(api_response)
+
+        assert isinstance(result, GetEditionByIdV2Response)
+        assert len(result.editions) == 1
+        assert len(result.publishers) == 1
+        assert result.series == []
+        assert result.types == []
+        assert result.volumes == []
+
+    def test_from_api_response_with_missing_keys(self) -> None:
+        """Test de conversion avec clés manquantes (utilise .get())."""
+        api_response = {
+            "editions": [
+                {
+                    "id": "edition-123",
+                    "title": "Edition Test",
+                    "series_id": "series-456",
+                    "publisher_id": "publisher-789",
+                    "volumes_count": 10,
+                    "commercial_stop": False,
+                    "not_finished": False,
+                    "follow_editions_count": 50,
+                }
+            ],
+            "publishers": [],
+        }
+
+        from src.application.dto.responses import GetEditionByIdV2Response
+
+        result = EditionMapper.from_api_response(api_response)
+
+        assert isinstance(result, GetEditionByIdV2Response)
+        assert len(result.editions) == 1
+        assert result.publishers == []
+        assert result.series == []
+        assert result.types == []
+        assert result.volumes == []
+
+    def test_from_api_response_with_multiple_editions(self) -> None:
+        """Test de conversion avec plusieurs éditions (parent et enfants)."""
+        api_response = {
+            "editions": [
+                {
+                    "id": "edition-parent",
+                    "title": "Edition Standard",
+                    "series_id": "series-456",
+                    "publisher_id": "publisher-789",
+                    "volumes_count": 72,
+                    "last_volume_number": 72,
+                    "commercial_stop": False,
+                    "not_finished": False,
+                    "follow_editions_count": 1000,
+                },
+                {
+                    "id": "edition-child",
+                    "title": "Edition Deluxe",
+                    "series_id": "series-456",
+                    "publisher_id": "publisher-789",
+                    "parent_edition_id": "edition-parent",
+                    "volumes_count": 72,
+                    "last_volume_number": 72,
+                    "commercial_stop": False,
+                    "not_finished": False,
+                    "follow_editions_count": 500,
+                },
+            ],
+            "publishers": [],
+            "series": [],
+            "types": [],
+            "volumes": [],
+        }
+
+        from src.application.dto.responses import GetEditionByIdV2Response
+
+        result = EditionMapper.from_api_response(api_response)
+
+        assert isinstance(result, GetEditionByIdV2Response)
+        assert len(result.editions) == 2
+        assert result.editions[0].id == "edition-parent"
+        assert result.editions[1].id == "edition-child"
+        assert result.editions[1].parent_edition_id == "edition-parent"

@@ -9,7 +9,7 @@ from src.application.use_cases.publisher_usecase import (
 )
 from src.domain.entities.publisher import Publisher, PublisherListItem
 from src.domain.exceptions import PublisherNotFoundException
-from tests.infrastructure.repositories.memory.in_memory_publisher_repository import (
+from src.infrastructure.repositories.memory.inmemory_publisher_repository import (
     InMemoryPublisherRepository,
 )
 

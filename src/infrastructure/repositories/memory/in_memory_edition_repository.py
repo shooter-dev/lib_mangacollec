@@ -4,7 +4,7 @@ This module provides an in-memory implementation of the Edition repository for t
 """
 
 from src.application.dto.responses import GetEditionByIdV2Response
-from src.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
+from src.domain.entities import Edition, Publisher, Serie, Type, Volume
 from src.domain.execptions.edition_exceptions import EditionNotFoundException
 from src.domain.repositories.edition_repository import IEditionRepository
 
@@ -17,7 +17,7 @@ class InMemoryEditionRepository(IEditionRepository):
         self._editions: dict[str, Edition] = {}
         self._publishers: dict[str, Publisher] = {}
         self._series: dict[str, Serie] = {}
-        self._types: dict[str, TypeSerie] = {}
+        self._types: dict[str, Type] = {}
         self._volumes: dict[str, list[Volume]] = {}  # Clé: edition_id
 
     def get_edition_by_id_v2(self, edition_id: str) -> GetEditionByIdV2Response:
@@ -115,14 +115,14 @@ class InMemoryEditionRepository(IEditionRepository):
         self._series[serie.id] = serie
         return serie
 
-    def add_type(self, type_serie: TypeSerie) -> TypeSerie:
+    def add_type(self, type_serie: Type) -> Type:
         """Ajoute un type de série au repository (méthode pour les tests).
 
         Args:
-            type_serie: Entité TypeSerie à ajouter
+            type_serie: Entité Type à ajouter
 
         Returns:
-            L'entité TypeSerie ajoutée
+            L'entité Type ajoutée
         """
         self._types[type_serie.id] = type_serie
         return type_serie

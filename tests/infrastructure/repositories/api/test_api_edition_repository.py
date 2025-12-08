@@ -9,7 +9,7 @@ import pytest
 
 from src.application.dto.responses import GetEditionByIdV2Response
 from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
-from src.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
+from src.domain.entities import Edition, Publisher, Serie, Type, Volume
 from src.domain.execptions.edition_exceptions import EditionNotFoundException
 from src.infrastructure.repositories.api.api_edition_repository import APIEditionRepository
 
@@ -139,7 +139,7 @@ class TestAPIEditionRepository:
 
         # Vérifier les types
         assert len(response.types) == 1
-        assert isinstance(response.types[0], TypeSerie)
+        assert isinstance(response.types[0], Type)
         assert response.types[0].id == "type-001"
         assert response.types[0].title == "Manga"
 

@@ -9,7 +9,7 @@ import pytest
 
 from src.application.dto.responses import GetEditionByIdV2Response
 from src.application.use_cases.edition_usecase import GetEditionByIdV2UseCase
-from src.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
+from src.domain.entities import Edition, Publisher, Serie, Type, Volume
 from src.domain.execptions.edition_exceptions import EditionNotFoundException
 from src.domain.repositories.edition_repository import IEditionRepository
 
@@ -67,9 +67,9 @@ class TestGetEditionByIdV2UseCase:
         )
 
     @pytest.fixture
-    def sample_type(self) -> TypeSerie:
+    def sample_type(self) -> Type:
         """Fixture pour créer un type de test."""
-        return TypeSerie(
+        return Type(
             id="type-001",
             title="Manga",
             to_display=True,
@@ -98,7 +98,7 @@ class TestGetEditionByIdV2UseCase:
         sample_edition: Edition,
         sample_publisher: Publisher,
         sample_serie: Serie,
-        sample_type: TypeSerie,
+        sample_type: Type,
         sample_volume: Volume,
     ) -> None:
         """Test de récupération réussie d'une édition par ID."""
