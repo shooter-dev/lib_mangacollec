@@ -111,8 +111,5 @@ jobs:
         run: python -m build
 
       - name: Upload to private PyPI
-        env:
-          TWINE_USERNAME: ""
-          TWINE_PASSWORD: ""
         run: |
-          twine upload --repository-url https://pylib.shooterlab.fr/ dist/*
+          twine upload --repository-url https://pylib.shooterlab.fr/ -u "" -p "" dist/*
