@@ -96,8 +96,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -108,35 +106,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install build twine
-
-      - name: Increment version
-        id: increment_version
-        run: |
-          # Lire la version actuelle
-          CURRENT_VERSION=$(grep -oP 'version = "\K[^"]+' pyproject.toml)
-          echo "Current version: $CURRENT_VERSION"
-
-          # Séparer les composants de la version (MAJOR.MINOR.PATCH)
-          IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT_VERSION"
-
-          # Incrémenter le PATCH
-          PATCH=$((PATCH + 1))
-          NEW_VERSION="$MAJOR.$MINOR.$PATCH"
-          echo "New version: $NEW_VERSION"
-
-          # Mettre à jour pyproject.toml
-          sed -i "s/version = \"$CURRENT_VERSION\"/version = \"$NEW_VERSION\"/" pyproject.toml
-
-          # Exporter la nouvelle version pour les étapes suivantes
-          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
-
-      - name: Commit version bump
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add pyproject.toml
-          git commit -m "chore: bump version to ${{ steps.increment_version.outputs.new_version }}"
-          git push
 
       - name: Build package
         run: python -m build
