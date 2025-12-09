@@ -2,10 +2,9 @@
 
 import pytest
 
-from mangacollec.application import GetAllJobsV1UseCase
+from mangacollec.application.use_cases import GetAllJobsV1UseCase
 from mangacollec.domain.entities import Job
-from mangacollec.infrastructure.repositories.memory.inmemory_job_repository import \
-    InMemoryJobRepository
+from mangacollec.infrastructure.repositories import InMemoryJobRepository
 
 
 class TestGetAllJobsV1UseCase:

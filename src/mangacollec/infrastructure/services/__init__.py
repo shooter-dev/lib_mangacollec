@@ -7,7 +7,10 @@
 # __author__: ShooterDev
 # __filename__: __init__.py.py
 # __directory__: src/infrastructure/services
-""" """
-__all__ = ["MangaCollecAPI"]
+"""Infrastructure services package."""
+
+__all__ = [
+    "MangaCollecAPI",
+]
 
 from mangacollec.infrastructure.services.mangacollec_api import MangaCollecAPI

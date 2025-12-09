@@ -2,14 +2,14 @@
 
 __all__ = [
     "GetAllAuthorUseCase",
-    "GetByIdAuthorUseCase",
-    "GetListAuthorUseCase",
-    "SearchAuthorUseCase",
-    "GetEditionByIdV2UseCase",
     "GetAllJobsV1UseCase",
     "GetAllPublishersV2UseCase",
-    "GetPublisherByIdV2UseCase",
+    "GetByIdAuthorUseCase",
+    "GetEditionByIdV2UseCase",
+    "GetListAuthorUseCase",
     "GetListPublishersUseCase",
+    "GetPublisherByIdV2UseCase",
+    "SearchAuthorUseCase",
 ]
 
 from mangacollec.application.use_cases.author_usecase import (

@@ -1,3 +1,5 @@
+"""Domain entities package."""
+
 __all__ = [
     "Author",
     "AuthorListItem",
@@ -10,7 +12,7 @@ __all__ = [
     "PublisherListItem",
     "Serie",
     "Task",
-    "Type",
+    "TypeSerie",
     "Volume",
 ]
 
@@ -23,5 +25,5 @@ from mangacollec.domain.entities.job import Job
 from mangacollec.domain.entities.publisher import Publisher, PublisherListItem
 from mangacollec.domain.entities.serie import Serie
 from mangacollec.domain.entities.task import Task
-from mangacollec.domain.entities.type import Type
+from mangacollec.domain.entities.type import TypeSerie
 from mangacollec.domain.entities.volume import Volume

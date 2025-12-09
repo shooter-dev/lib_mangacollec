@@ -4,14 +4,11 @@ from unittest.mock import Mock
 
 import pytest
 
-from mangacollec.application import (GetAllPublishersV2Response,
-                                     GetPublisherByIdV2Response)
-from mangacollec.application import \
-    IMangaCollecAPI
+from mangacollec.application.dto import GetAllPublishersV2Response, GetPublisherByIdV2Response
+from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.domain.entities import Publisher, PublisherListItem
-from mangacollec.domain import PublisherNotFoundException
-from mangacollec.infrastructure import \
-    APIPublisherRepository
+from mangacollec.domain.exceptions import PublisherNotFoundException
+from mangacollec.infrastructure.repositories import APIPublisherRepository
 
 
 class TestAPIPublisherRepository:

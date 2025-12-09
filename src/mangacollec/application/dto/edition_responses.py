@@ -5,7 +5,7 @@ This module contains response DTOs for Edition operations.
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
+from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
 
 
 @dataclass(frozen=True)
@@ -18,5 +18,5 @@ class GetEditionByIdV2Response:
     editions: list[Edition]
     publishers: list[Publisher]
     series: list[Serie]
-    types: list[Type]
+    types: list[TypeSerie]
     volumes: list[Volume]

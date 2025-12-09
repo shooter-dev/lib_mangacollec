@@ -5,8 +5,8 @@ This module contains unit tests for Edition response DTOs.
 
 import pytest
 
-from mangacollec.application import GetEditionByIdV2Response
-from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
+from mangacollec.application.dto import GetEditionByIdV2Response
+from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
 
 
 class TestGetEditionByIdV2Response:
@@ -52,9 +52,9 @@ class TestGetEditionByIdV2Response:
         )
 
     @pytest.fixture
-    def sample_type(self) -> Type:
+    def sample_type(self) -> TypeSerie:
         """Fixture pour créer un type de test."""
-        return Type(
+        return TypeSerie(
             id="type-001",
             title="Manga",
             to_display=True,
@@ -81,7 +81,7 @@ class TestGetEditionByIdV2Response:
         sample_edition: Edition,
         sample_publisher: Publisher,
         sample_serie: Serie,
-        sample_type: Type,
+        sample_type: TypeSerie,
         sample_volume: Volume,
     ) -> None:
         """Test de création d'une réponse avec toutes les entités."""
@@ -261,7 +261,7 @@ class TestGetEditionByIdV2Response:
         self,
         sample_edition: Edition,
         sample_publisher: Publisher,
-        sample_type: Type,
+        sample_type: TypeSerie,
     ) -> None:
         """Test que types est bien une liste."""
         response = GetEditionByIdV2Response(
@@ -273,7 +273,7 @@ class TestGetEditionByIdV2Response:
         )
 
         assert isinstance(response.types, list)
-        assert all(isinstance(t, Type) for t in response.types)
+        assert all(isinstance(t, TypeSerie) for t in response.types)
 
     def test_response_volumes_is_list(
         self,

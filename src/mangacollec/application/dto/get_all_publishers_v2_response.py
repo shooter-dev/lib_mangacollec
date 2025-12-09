@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 
-from mangacollec.domain.entities.publisher import Publisher
+from mangacollec.domain.entities import Publisher
 
 
 @dataclass(frozen=True)

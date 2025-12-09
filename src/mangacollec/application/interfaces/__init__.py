@@ -7,4 +7,10 @@
 # __author__: ShooterDev
 # __filename__: __init__.py.py
 # __directory__: src/application/interfaces
-""" """
+"""Application interfaces."""
+
+__all__ = [
+    "IMangaCollecAPI",
+]
+
+from mangacollec.application.interfaces.mangacollec_api_interface import IMangaCollecAPI

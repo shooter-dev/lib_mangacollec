@@ -3,7 +3,6 @@
 VENV_PYTHON = .venv/bin/python
 SRC = src tests
 
-
 fix-code:
 	@echo "Running code fixes..."
 	$(VENV_PYTHON) -m black $(SRC) --line-length=120

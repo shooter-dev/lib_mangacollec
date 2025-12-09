@@ -1,7 +1,7 @@
 """Use cases pour la ressource Job."""
 
-from mangacollec.domain.entities.job import Job
-from mangacollec.domain.repositories.i_job_repository import IJobRepository
+from mangacollec.domain.entities import Job
+from mangacollec.domain.repositories import IJobRepository
 
 
 class GetAllJobsV1UseCase:

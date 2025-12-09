@@ -1,10 +1,13 @@
 """In-memory publisher repository."""
 
-from mangacollec.application.dto.responses.publisher_responses import GetAllPublishersV2Response, GetPublisherByIdV2Response
-from mangacollec.application.mappers.publisher_mapper import PublisherMapper
-from mangacollec.domain.entities.publisher import Publisher, PublisherListItem
+from mangacollec.application.dto import (
+    GetAllPublishersV2Response,
+    GetPublisherByIdV2Response,
+)
+from mangacollec.application.mappers import PublisherMapper
+from mangacollec.domain.entities import Publisher, PublisherListItem
 from mangacollec.domain.exceptions import PublisherNotFoundException
-from mangacollec.domain.repositories.publisher_repository import IPublisherRepository
+from mangacollec.domain.repositories import IPublisherRepository
 
 
 class InMemoryPublisherRepository(IPublisherRepository):

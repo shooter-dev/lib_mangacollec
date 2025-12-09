@@ -3,10 +3,10 @@
 This module provides an in-memory implementation of the Edition repository for testing.
 """
 
-from mangacollec.application.dto.responses import GetEditionByIdV2Response
-from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
+from mangacollec.application.dto import GetEditionByIdV2Response
+from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
 from mangacollec.domain.exceptions.edition_exceptions import EditionNotFoundException
-from mangacollec.domain.repositories.edition_repository import IEditionRepository
+from mangacollec.domain.repositories.edition_repository_interface import IEditionRepository
 
 
 class InMemoryEditionRepository(IEditionRepository):
@@ -17,7 +17,7 @@ class InMemoryEditionRepository(IEditionRepository):
         self._editions: dict[str, Edition] = {}
         self._publishers: dict[str, Publisher] = {}
         self._series: dict[str, Serie] = {}
-        self._types: dict[str, Type] = {}
+        self._types: dict[str, TypeSerie] = {}
         self._volumes: dict[str, list[Volume]] = {}  # Clé: edition_id
 
     def get_edition_by_id_v2(self, edition_id: str) -> GetEditionByIdV2Response:
@@ -115,7 +115,7 @@ class InMemoryEditionRepository(IEditionRepository):
         self._series[serie.id] = serie
         return serie
 
-    def add_type(self, type_serie: Type) -> Type:
+    def add_type(self, type_serie: TypeSerie) -> TypeSerie:
         """Ajoute un type de série au repository (méthode pour les tests).
 
         Args:

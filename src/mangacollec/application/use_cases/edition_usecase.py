@@ -3,8 +3,8 @@
 This module contains all use cases for Edition operations.
 """
 
-from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
-from mangacollec.domain.repositories.edition_repository import IEditionRepository
+from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
+from mangacollec.domain.repositories import IEditionRepository
 
 
 class GetEditionByIdV2UseCase:
@@ -18,7 +18,9 @@ class GetEditionByIdV2UseCase:
         """
         self.repository = repository
 
-    def __call__(self, edition_id: str) -> tuple[list[Edition], list[Publisher], list[Serie], list[Type], list[Volume]]:
+    def __call__(
+        self, edition_id: str
+    ) -> tuple[list[Edition], list[Publisher], list[Serie], list[TypeSerie], list[Volume]]:
         """Exécute le use case.
 
         Args:

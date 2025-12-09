@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
-class Type:
+class TypeSerie:
     """Represents a series type."""
 
     id: str

@@ -3,8 +3,8 @@
 This module provides mapping functions between API responses and Job entities.
 """
 
-from mangacollec.application.dto.responses.job_responses import GetAllJobsV1Response
-from mangacollec.domain.entities.job import Job
+from mangacollec.application.dto import GetAllJobsV1Response
+from mangacollec.domain.entities import Job
 
 
 class JobMapper:

@@ -3,14 +3,14 @@
 This module provides mapping functions between API responses and Type entities.
 """
 
-from mangacollec.domain.entities.type import Type
+from mangacollec.domain.entities import TypeSerie
 
 
-class TypeMapper:
+class TypeSerieMapper:
     """Mapper for converting between API and domain Type entities."""
 
     @staticmethod
-    def from_dict(data: dict) -> Type:
+    def from_dict(data: dict) -> TypeSerie:
         """Converts the API response to a Type entity.
 
         Args:
@@ -19,14 +19,14 @@ class TypeMapper:
         Returns:
             A Type entity.
         """
-        return Type(
+        return TypeSerie(
             id=data["id"],
             title=data["title"],
             to_display=data["to_display"],
         )
 
     @staticmethod
-    def to_dict(type_entity: Type) -> dict:
+    def to_dict(type_entity: TypeSerie) -> dict:
         """Converts a Type entity to a dictionary.
 
         Args:

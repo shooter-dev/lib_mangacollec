@@ -2,13 +2,7 @@
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities.box import Box
-from mangacollec.domain.entities.box_edition import BoxEdition
-from mangacollec.domain.entities.edition import Edition
-from mangacollec.domain.entities.publisher import Publisher
-from mangacollec.domain.entities.serie import Serie
-from mangacollec.domain.entities.type import Type
-from mangacollec.domain.entities.volume import Volume
+from mangacollec.domain.entities import Box, BoxEdition, Edition, Publisher, Serie, TypeSerie, Volume
 
 
 @dataclass(frozen=True)
@@ -26,6 +20,6 @@ class GetPublisherByIdV2Response:
     editions: list[Edition]
     box_editions: list[BoxEdition]
     series: list[Serie]
-    types: list[Type]
+    types: list[TypeSerie]
     volumes: list[Volume]
     boxes: list[Box]

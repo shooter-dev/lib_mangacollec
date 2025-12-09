@@ -7,4 +7,8 @@
 # __author__: ShooterDev
 # __filename__: __init__.py.py
 # __directory__: src/domain/interfaces
-""" """
+"""Domain interfaces package.
+
+This package is currently empty. Repository interfaces are located in the
+`domain.repositories` package.
+"""

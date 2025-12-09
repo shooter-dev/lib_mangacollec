@@ -3,9 +3,7 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from mangacollec.domain.value_objects.asin import ASIN
-from mangacollec.domain.value_objects.isbn import ISBN
-from mangacollec.domain.value_objects.url import URL
+from mangacollec.domain.value_objects import ASIN, ISBN, URL
 
 
 @dataclass(frozen=True)

@@ -1,7 +1,9 @@
 """Publisher exceptions."""
 
+from mangacollec.domain.exceptions.base_exceptions import MangacollecException
 
-class PublisherNotFoundException(Exception):
+
+class PublisherNotFoundException(MangacollecException):
     """Exception raised when a publisher is not found."""
 
     def __init__(self, publisher_id: str):

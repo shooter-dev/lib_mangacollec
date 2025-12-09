@@ -1,7 +1,6 @@
 """BoxEdition entity."""
 
 from dataclasses import dataclass
-from typing import Optional
 
 
 @dataclass(frozen=True)
@@ -9,7 +8,7 @@ class BoxEdition:
     """BoxEdition entity."""
 
     id: str
-    title: Optional[str]
+    title: str | None
     publisher_id: str
     boxes_count: int
     adult_content: bool

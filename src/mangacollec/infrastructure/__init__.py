@@ -7,14 +7,4 @@
 # __author__: ShooterDev
 # __filename__: __init__.py.py
 # __directory__: src/infrastructure
-""" """
-
-from .repositories.api.api_author_repository import APIAuthorRepository
-from .repositories.api.api_edition_repository import APIEditionRepository
-from .repositories.api.api_job_repository import APIJobRepository
-from .repositories.api.api_publisher_repository import APIPublisherRepository
-
-from .repositories.memory.in_memory_author_repository import InMemoryAuthorRepository
-from .repositories.memory.in_memory_edition_repository import InMemoryEditionRepository
-from .repositories.memory.inmemory_job_repository import InMemoryJobRepository
-from .repositories.memory.inmemory_publisher_repository import InMemoryPublisherRepository
+"""Infrastructure layer exports."""

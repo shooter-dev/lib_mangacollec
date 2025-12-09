@@ -1,11 +1,10 @@
 """In-memory author repository."""
 
-from mangacollec.application import (GetAllAuthorsV2Response,
-                                     GetAuthorByIdV2Response)
+from mangacollec.application.dto import GetAllAuthorsV2Response, GetAuthorByIdV2Response
 from mangacollec.application.mappers.author_mapper import AuthorMapper
 from mangacollec.domain.entities import Author, AuthorListItem
 from mangacollec.domain.exceptions.author_exceptions import AuthorNotFoundException
-from mangacollec.domain.repositories.author_repository import IAuthorRepository
+from mangacollec.domain.repositories.author_repository_interface import IAuthorRepository
 
 
 class InMemoryAuthorRepository(IAuthorRepository):

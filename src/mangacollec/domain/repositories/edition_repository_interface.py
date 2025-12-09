@@ -5,7 +5,7 @@ This module defines the repository interface for edition operations.
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto.responses import GetEditionByIdV2Response
+from mangacollec.application.dto import GetEditionByIdV2Response
 
 
 class IEditionRepository(ABC):

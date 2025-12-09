@@ -3,7 +3,7 @@
 This module provides mapping functions between API responses and Edition entities.
 """
 
-from mangacollec.application.dto.responses import GetEditionByIdV2Response
+from mangacollec.application.dto import GetEditionByIdV2Response
 from mangacollec.application.mappers.serie_mapper import SerieMapper
 from mangacollec.application.mappers.volume_mapper import VolumeMapper
 from mangacollec.domain.entities import Edition
@@ -69,7 +69,7 @@ class EditionMapper:
             GetEditionByIdV2Response contenant toutes les entités converties
         """
         from mangacollec.application.mappers.publisher_mapper import PublisherMapper
-        from mangacollec.application.mappers.type_mapper import TypeMapper
+        from mangacollec.application.mappers.type_mapper import TypeSerieMapper
 
         # Convertir les editions (liste)
         editions = [EditionMapper.from_dict(edition_data) for edition_data in response.get("editions", [])]
@@ -81,7 +81,7 @@ class EditionMapper:
         series = [SerieMapper.from_dict(serie_data) for serie_data in response.get("series", [])]
 
         # Convertir les types
-        types = [TypeMapper.from_dict(type_data) for type_data in response.get("types", [])]
+        types = [TypeSerieMapper.from_dict(type_data) for type_data in response.get("types", [])]
 
         # Convertir les volumes
         volumes = [VolumeMapper.from_dict(volume_data) for volume_data in response.get("volumes", [])]

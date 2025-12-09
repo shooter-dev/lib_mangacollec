@@ -7,8 +7,7 @@ import pytest
 
 from mangacollec.domain.entities import Author, AuthorListItem
 from mangacollec.domain.exceptions.author_exceptions import AuthorNotFoundException
-from mangacollec.infrastructure.repositories.memory.in_memory_author_repository import \
-    InMemoryAuthorRepository
+from mangacollec.infrastructure.repositories.memory.in_memory_author_repository import InMemoryAuthorRepository
 
 
 class TestInMemoryAuthorRepository:

@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities.job import Job
+from mangacollec.domain.entities import Job
 
 
 @dataclass(frozen=True)

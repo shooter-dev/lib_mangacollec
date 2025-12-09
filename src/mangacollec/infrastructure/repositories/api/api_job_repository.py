@@ -1,9 +1,9 @@
 """Implémentation API du repository Job."""
 
-from mangacollec.application.dto.responses.job_responses import GetAllJobsV1Response
-from mangacollec.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
-from mangacollec.application.mappers.job_mapper import JobMapper
-from mangacollec.domain.repositories.i_job_repository import IJobRepository
+from mangacollec.application.dto import GetAllJobsV1Response
+from mangacollec.application.interfaces import IMangaCollecAPI
+from mangacollec.application.mappers import JobMapper
+from mangacollec.domain.repositories import IJobRepository
 
 
 class APIJobRepository(IJobRepository):

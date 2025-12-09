@@ -3,16 +3,14 @@ import time
 
 import requests
 
-from mangacollec.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
+from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.domain.entities import ClientMangaCollec
 
 logger = logging.getLogger(__name__)
 
 
 class MangaCollecAPI(IMangaCollecAPI):
-
     def __init__(self, client: ClientMangaCollec, proxy: dict[str, str] | None = None) -> None:
-
         # Créer la session avant l'appel au parent pour qu'elle soit disponible dans _authenticate
         self._session = requests.Session()
         super().__init__(client, proxy)

@@ -3,11 +3,11 @@
 This module provides an in-memory implementation of the Author repository for testing.
 """
 
-from mangacollec.application.dto.responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
-from mangacollec.application.mappers.author_mapper import AuthorMapper
+from mangacollec.application.dto import GetAllAuthorsV2Response, GetAuthorByIdV2Response
+from mangacollec.application.mappers import AuthorMapper
 from mangacollec.domain.entities import Author, AuthorListItem
-from mangacollec.domain.exceptions.author_exceptions import AuthorNotFoundException
-from mangacollec.domain.repositories.author_repository import IAuthorRepository
+from mangacollec.domain.exceptions import AuthorNotFoundException
+from mangacollec.domain.repositories import IAuthorRepository
 
 
 class InMemoryAuthorRepository(IAuthorRepository):

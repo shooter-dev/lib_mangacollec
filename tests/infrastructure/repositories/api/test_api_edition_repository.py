@@ -7,13 +7,11 @@ from unittest.mock import Mock
 
 import pytest
 
-from mangacollec.application import GetEditionByIdV2Response
-from mangacollec.application import \
-    IMangaCollecAPI
-from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
-from mangacollec.domain import EditionNotFoundException
-from mangacollec.infrastructure.repositories.api.api_edition_repository import \
-    APIEditionRepository
+from mangacollec.application.dto import GetEditionByIdV2Response
+from mangacollec.application.interfaces import IMangaCollecAPI
+from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
+from mangacollec.domain.exceptions import EditionNotFoundException
+from mangacollec.infrastructure.repositories.api.api_edition_repository import APIEditionRepository
 
 
 class TestAPIEditionRepository:
@@ -141,7 +139,7 @@ class TestAPIEditionRepository:
 
         # Vérifier les types
         assert len(response.types) == 1
-        assert isinstance(response.types[0], Type)
+        assert isinstance(response.types[0], TypeSerie)
         assert response.types[0].id == "type-001"
         assert response.types[0].title == "Manga"
 

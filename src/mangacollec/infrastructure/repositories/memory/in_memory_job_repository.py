@@ -1,8 +1,8 @@
 """Implémentation en mémoire du repository Job pour les tests."""
 
-from mangacollec.application.dto.responses.job_responses import GetAllJobsV1Response
-from mangacollec.domain.entities.job import Job
-from mangacollec.domain.repositories.i_job_repository import IJobRepository
+from mangacollec.application.dto import GetAllJobsV1Response
+from mangacollec.domain.entities import Job
+from mangacollec.domain.repositories import IJobRepository
 
 
 class InMemoryJobRepository(IJobRepository):

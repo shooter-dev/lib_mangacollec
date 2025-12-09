@@ -3,7 +3,7 @@
 This module provides mapping functions between API responses and Author entities.
 """
 
-from mangacollec.application.dto.responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
+from mangacollec.application.dto import GetAllAuthorsV2Response, GetAuthorByIdV2Response
 from mangacollec.application.mappers.edition_mapper import EditionMapper
 from mangacollec.application.mappers.job_mapper import JobMapper
 from mangacollec.application.mappers.serie_mapper import SerieMapper

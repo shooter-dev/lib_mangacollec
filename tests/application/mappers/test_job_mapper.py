@@ -2,8 +2,8 @@
 
 import pytest
 
-from mangacollec.application.dto.responses.job_responses import GetAllJobsV1Response
-from mangacollec.application.mappers.job_mapper import JobMapper
+from mangacollec.application.dto import GetAllJobsV1Response
+from mangacollec.application.mappers import JobMapper
 from mangacollec.domain.entities import Job
 
 

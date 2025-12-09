@@ -1,6 +1,6 @@
 """BoxEdition mapper."""
 
-from mangacollec.domain.entities.box_edition import BoxEdition
+from mangacollec.domain.entities import BoxEdition
 
 
 class BoxEditionMapper:

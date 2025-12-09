@@ -1,9 +1,7 @@
 """Box mapper."""
 
-from mangacollec.domain.entities.box import Box
-from mangacollec.domain.value_objects.asin import ASIN
-from mangacollec.domain.value_objects.isbn import ISBN
-from mangacollec.domain.value_objects.url import URL
+from mangacollec.domain.entities import Box
+from mangacollec.domain.value_objects import ASIN, ISBN, URL
 
 
 class BoxMapper:

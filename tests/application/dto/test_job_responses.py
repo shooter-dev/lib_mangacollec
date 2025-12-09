@@ -2,7 +2,7 @@
 
 import pytest
 
-from mangacollec.application.dto.responses.job_responses import GetAllJobsV1Response
+from mangacollec.application.dto import GetAllJobsV1Response
 from mangacollec.domain.entities import Job
 
 

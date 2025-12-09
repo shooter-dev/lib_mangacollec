@@ -1,13 +1,8 @@
 """Tests for the PublisherMapper."""
 
-from mangacollec.application.dto.responses.publisher_responses import (
-    GetAllPublishersV2Response, GetPublisherByIdV2Response)
-from mangacollec.application.mappers.publisher_mapper import PublisherMapper
-from mangacollec.domain.entities import Edition
-from mangacollec.domain.entities.publisher import Publisher, PublisherListItem
-from mangacollec.domain.entities import Serie
-from mangacollec.domain.entities import Type
-from mangacollec.domain.entities import Volume
+from mangacollec.application.dto import GetAllPublishersV2Response, GetPublisherByIdV2Response
+from mangacollec.application.mappers import PublisherMapper
+from mangacollec.domain.entities import Edition, Serie, TypeSerie, Volume, Publisher, PublisherListItem
 
 
 class TestPublisherMapper:
@@ -172,7 +167,7 @@ class TestPublisherMapper:
         assert len(result.series) == 1
         assert isinstance(result.series[0], Serie)
         assert len(result.types) == 1
-        assert isinstance(result.types[0], Type)
+        assert isinstance(result.types[0], TypeSerie)
         assert len(result.volumes) == 1
         assert isinstance(result.volumes[0], Volume)
         assert len(result.boxes) == 0

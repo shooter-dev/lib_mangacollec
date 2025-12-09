@@ -1,12 +1,15 @@
 """Publisher mapper."""
 
-from mangacollec.application.dto.responses.publisher_responses import GetAllPublishersV2Response, GetPublisherByIdV2Response
+from mangacollec.application.dto.publisher_responses import (
+    GetAllPublishersV2Response,
+    GetPublisherByIdV2Response,
+)
 from mangacollec.application.mappers.box_edition_mapper import BoxEditionMapper
 from mangacollec.application.mappers.box_mapper import BoxMapper
 from mangacollec.application.mappers.serie_mapper import SerieMapper
-from mangacollec.application.mappers.type_mapper import TypeMapper
+from mangacollec.application.mappers.type_mapper import TypeSerieMapper
 from mangacollec.application.mappers.volume_mapper import VolumeMapper
-from mangacollec.domain.entities.publisher import Publisher, PublisherListItem
+from mangacollec.domain.entities import Publisher, PublisherListItem
 
 
 class PublisherMapper:
@@ -101,7 +104,7 @@ class PublisherMapper:
             editions=[EditionMapper.from_dict(edition) for edition in response.get("editions", [])],
             box_editions=[BoxEditionMapper.from_dict(box_edition) for box_edition in response.get("box_editions", [])],
             series=[SerieMapper.from_dict(serie) for serie in response.get("series", [])],
-            types=[TypeMapper.from_dict(type) for type in response.get("types", [])],
+            types=[TypeSerieMapper.from_dict(type) for type in response.get("types", [])],
             volumes=[VolumeMapper.from_dict(volume) for volume in response.get("volumes", [])],
             boxes=[BoxMapper.from_dict(box) for box in response.get("boxes", [])],
         )

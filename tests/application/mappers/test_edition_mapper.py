@@ -3,8 +3,9 @@
 This module contains unit tests for the EditionMapper.
 """
 
-from mangacollec.application import EditionMapper
-from mangacollec.domain.entities import Edition
+from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
+from mangacollec.application.mappers import EditionMapper
+from mangacollec.application.dto import GetEditionByIdV2Response
 
 
 class TestEditionMapper:
@@ -290,9 +291,6 @@ class TestEditionMapper:
             ],
         }
 
-        from mangacollec.application import GetEditionByIdV2Response
-        from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
-
         result = EditionMapper.from_api_response(api_response)
 
         # Vérifier le type de retour
@@ -318,7 +316,7 @@ class TestEditionMapper:
 
         # Vérifier les types
         assert len(result.types) == 1
-        assert isinstance(result.types[0], Type)
+        assert isinstance(result.types[0], TypeSerie)
         assert result.types[0].id == "type-001"
         assert result.types[0].title == "Manga"
 
@@ -357,8 +355,6 @@ class TestEditionMapper:
             "volumes": [],
         }
 
-        from mangacollec.application import GetEditionByIdV2Response
-
         result = EditionMapper.from_api_response(api_response)
 
         assert isinstance(result, GetEditionByIdV2Response)
@@ -385,8 +381,6 @@ class TestEditionMapper:
             ],
             "publishers": [],
         }
-
-        from mangacollec.application import GetEditionByIdV2Response
 
         result = EditionMapper.from_api_response(api_response)
 
@@ -430,8 +424,6 @@ class TestEditionMapper:
             "types": [],
             "volumes": [],
         }
-
-        from mangacollec.application import GetEditionByIdV2Response
 
         result = EditionMapper.from_api_response(api_response)
 

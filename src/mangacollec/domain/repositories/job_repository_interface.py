@@ -2,7 +2,7 @@
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto.responses.job_responses import GetAllJobsV1Response
+from mangacollec.application.dto import GetAllJobsV1Response
 
 
 class IJobRepository(ABC):
