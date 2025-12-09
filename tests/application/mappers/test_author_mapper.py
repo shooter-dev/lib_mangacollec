@@ -3,8 +3,8 @@
 This module contains unit tests for the AuthorMapper.
 """
 
-from src.application.mappers.author_mapper import AuthorMapper
-from src.domain.entities import Author, AuthorListItem
+from mangacollec.application.mappers.author_mapper import AuthorMapper
+from mangacollec.domain.entities import Author, AuthorListItem
 
 
 class TestAuthorMapper:

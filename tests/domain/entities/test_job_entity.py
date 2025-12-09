@@ -2,7 +2,7 @@
 
 import pytest
 
-from src.domain.entities.job import Job
+from mangacollec.domain.entities import Job
 
 
 class TestJobEntity:

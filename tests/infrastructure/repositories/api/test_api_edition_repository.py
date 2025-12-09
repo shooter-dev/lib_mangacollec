@@ -7,12 +7,12 @@ from unittest.mock import Mock
 
 import pytest
 
-from src.application.dto.responses import GetEditionByIdV2Response
-from src.application.interfaces.mangacollec_api_interface import \
+from mangacollec.application import GetEditionByIdV2Response
+from mangacollec.application import \
     IMangaCollecAPI
-from src.domain.entities import Edition, Publisher, Serie, Type, Volume
-from src.domain.execptions.edition_exceptions import EditionNotFoundException
-from src.infrastructure.repositories.api.api_edition_repository import \
+from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
+from mangacollec.domain import EditionNotFoundException
+from mangacollec.infrastructure.repositories.api.api_edition_repository import \
     APIEditionRepository
 
 

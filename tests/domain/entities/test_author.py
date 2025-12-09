@@ -5,7 +5,7 @@ This module contains unit tests for Author and AuthorListItem entities.
 
 import pytest
 
-from src.domain.entities import Author, AuthorListItem
+from mangacollec.domain.entities import Author, AuthorListItem
 
 
 class TestAuthor:

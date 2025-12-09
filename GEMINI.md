@@ -168,7 +168,9 @@ Les ressources suivantes sont documentées dans le dossier `datas/` :
 # src/domain/repositories/{resource}_repository.py
 from abc import ABC, abstractmethod
 
-from src.domain.entities import {Resource}
+from mangacollec.domain.entities import
+
+{Resource}
 
 
 class I{Resource}Repository(ABC):
@@ -188,11 +190,13 @@ class I{Resource}Repository(ABC):
         pass
 
     @abstractmethod
-    def search(self, search_{resource}) -> list[{Resource}] | None:
-        """Récupère tous les {resource}s."""
-        pass
+    def search(self, search_{resource}
 
-    # Ajouter create/update/delete SEULEMENT si les _endpoints existent
+    ) -> list[{Resource}] | None:
+    """Récupère tous les {resource}s."""
+    pass
+
+# Ajouter create/update/delete SEULEMENT si les _endpoints existent
 ```
 
 ### 2. Entity (Domain Layer)
@@ -237,14 +241,14 @@ class Search{Resource}:
 
 ```python
 # src/application/use_cases/{resource}_usecase.py
-from src.domain.repositories import I
+from mangacollec.domain import I
 
 {Resource}
 Repository
-from src.domain.entities import
+from mangacollec.domain.entities import
 
 {Resource}
-from src.application.dto import Create
+from mangacollec.application import Create
 
 {Resource}, Search
 {Resource}
@@ -265,14 +269,14 @@ def __call__(self, id: str) -> {Resource} | None:
 
 ```python
 # src/application/use_cases/{resource}_usecase.py
-from src.domain.repositories import I
+from mangacollec.domain import I
 
 {Resource}
 Repository
-from src.domain.entities import
+from mangacollec.domain.entities import
 
 {Resource}
-from src.application.dto import Create
+from mangacollec.application import Create
 
 {Resource}, Search
 {Resource}
@@ -293,23 +297,42 @@ def __call__(self) -> list[{Resource}]:
 
 ```python
 # src/application/use_cases/{resource}_usecase.py
-from src.domain.repositories import I{Resource}Repository
-from src.domain.entities import {Resource}
-from src.application.dto import Create{Resource}, Search{Resource}
+from mangacollec.domain import I
+
+{Resource}
+Repository
+from mangacollec.domain.entities import
+
+{Resource}
+from mangacollec.application import Create
+
+{Resource}, Search
+{Resource}
 
 
 class Search{Resource}UseCase:
     """Cas d'utilisation : rechercher des {resource}s."""
 
-    def __init__(self, repo: I{Resource}Repository) -> None:
-        self.repo = repo
+    def __init__(self, repo: I{Resource}
 
-    def __call__(self, search_{Resource}: Search{Resource}) -> list[{Resource}] | None:
-        all_{Resource}_usecase = GetAll{Resource}UseCase(self.repo)
-        all_{Resource}s = all_resource_usecase()
-        # code pour filtrer all_{Resource}s selon search_{Resource}...
-        return self.repo.search(criteria)
+    Repository) -> None:
+    self.repo = repo
 
+
+def __call__(self, search_{Resource}: Search
+
+
+{Resource}) -> list[{Resource}] | None:
+all_
+{Resource}
+_usecase = GetAll
+{Resource}
+UseCase(self.repo)
+all_
+{Resource}
+s = all_resource_usecase()
+# code pour filtrer all_{Resource}s selon search_{Resource}...
+return self.repo.search(criteria)
 
 # Ajouter Create/Update/Delete SEULEMENT si supportés par l'API
 ```
@@ -376,8 +399,14 @@ Chaque mapper DOIT implémenter au minimum :
 
 ```python
 # src/application/mappers/{resource}_mapper.py
-from src.application.dto.responses import Get{Resource}ByIdV2Response
-from src.domain.entities import {Resource}
+from mangacollec.application import Get
+
+{Resource}
+ByIdV2Response
+from mangacollec.domain.entities import
+
+{Resource}
+
 
 class {Resource}Mapper:
     @staticmethod
@@ -488,11 +517,35 @@ class {Resource}Mapper:
 
 ```python
 # src/infrastructure/repositories/api/api_{resource}_repository.py
-from src.application.dto.responses import Get{Resource}ByIdV2Response
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
-from src.application.mappers.{resource}_mapper import {Resource}Mapper
-from src.domain.execptions.{resource}_exceptions import {Resource}NotFoundException
-from src.domain.repositories.{resource}_repository import I{Resource}Repository
+from mangacollec.application import Get
+
+{Resource}
+ByIdV2Response
+from mangacollec.application import IMangaCollecAPI
+from mangacollec.application.mappers
+
+{resource}
+_mapper
+import
+
+{Resource}
+Mapper
+from mangacollec.domain.exceptions
+
+{resource}
+_exceptions
+import
+
+{Resource}
+NotFoundException
+from mangacollec.domain.repositories
+
+{resource}
+_repository
+import I
+
+{Resource}
+Repository
 
 
 class API{Resource}Repository(I{Resource}Repository):
@@ -506,46 +559,60 @@ class API{Resource}Repository(I{Resource}Repository):
         """
         self.client_api = client_api
 
-    def get_by_id_v2(self, {resource}_id: str) -> Get{Resource}ByIdV2Response:
-        """Récupère un(e) {resource} par son ID avec toutes ses relations via l'API.
+    def get_by_id_v2(self, {resource}_id: str) -> Get{Resource}
 
-        Args:
-            {resource}_id: UUID du/de la {resource}
+    ByIdV2Response:
+    """Récupère un(e) {resource} par son ID avec toutes ses relations via l'API.
 
-        Returns:
-            Get{Resource}ByIdV2Response contenant toutes les entités
+    Args:
+        {resource}_id: UUID du/de la {resource}
 
-        Raises:
-            {Resource}NotFoundException: Si le/la {resource} n'existe pas
-        """
-        try:
-            response = self.client_api.get(f"/v2/{resources}/{{{resource}_id}}")
+    Returns:
+        Get{Resource}ByIdV2Response contenant toutes les entités
 
-            if not response.get("{resources}") or len(response["{resources}"]) == 0:
-                raise {Resource}NotFoundException({resource}_id)
+    Raises:
+        {Resource}NotFoundException: Si le/la {resource} n'existe pas
+    """
+    try:
+        response = self.client_api.get(f"/v2/{resources}/{{{resource}_id}}")
 
-            # ✅ CORRECT : Déléguer au mapper
-            return {Resource}Mapper.from_api_response(response)
-
-        except Exception as e:
-            if isinstance(e, {Resource}NotFoundException):
-                raise
-            raise {Resource}NotFoundException({resource}_id) from e
-
-    def get_all_v2(self) -> GetAll{Resource}sV2Response:
-        """Récupère tous les {resources} via l'API.
-
-        Returns:
-            GetAll{Resource}sV2Response contenant la liste des {resources}
-        """
-        try:
-            response = self.client_api.get("/v2/{resources}/")
+        if not response.get("{resources}") or len(response["{resources}"]) == 0:
+            raise {Resource}
+            NotFoundException({resource}
+            _id)
 
             # ✅ CORRECT : Déléguer au mapper
-            return {Resource}Mapper.from_all_{resources}_response(response)
+            return {Resource}
+            Mapper.from_api_response(response)
 
         except Exception as e:
-            raise RuntimeError(f"Failed to retrieve {resources}: {{e}}") from e
+        if isinstance(e, {Resource}NotFoundException):
+            raise
+        raise {Resource}
+        NotFoundException({resource}
+        _id) from e
+
+
+def get_all_v2(self) -> GetAll{Resource}
+
+
+sV2Response:
+"""Récupère tous les {resources} via l'API.
+
+Returns:
+    GetAll{Resource}sV2Response contenant la liste des {resources}
+"""
+try:
+    response = self.client_api.get("/v2/{resources}/")
+
+    # ✅ CORRECT : Déléguer au mapper
+    return {Resource}
+    Mapper.from_all_
+    {resources}
+    _response(response)
+
+except Exception as e:
+    raise RuntimeError(f"Failed to retrieve {resources}: {{e}}") from e
 ```
 
 #### Règles Strictes des Repositories
@@ -620,8 +687,21 @@ def get_by_id_v2(self, edition_id: str) -> GetEditionByIdV2Response:
 
 ```python
 # src/infrastructure/repositories/memory/inmemory_{resource}_repository.py
-from domain.entities.{resource}_entity import {Resource}
-from domain.repositories.{resource}_repository import I{Resource}Repository
+from mangacollec.domain
+
+{resource}
+_entity
+import
+
+{Resource}
+from mangacollec.domain.repositories
+
+{resource}
+_repository
+import I
+
+{Resource}
+Repository
 
 
 class InMemory{Resource}Repository(I{Resource}Repository):
@@ -653,15 +733,15 @@ class InMemory{Resource}Repository(I{Resource}Repository):
 #### Initialisation du client API
 
 ```python
-from infrastructure.services import MangaCollecAPI
-from domain.entities import ClientMangaCollec
+from mangacollec.infrastructure.services import MangaCollecAPI
+from mangacollec.domain.entities import ClientMangaCollec
 
 # Création du client avec credentials
 client = ClientMangaCollec(
     client_id="your_client_id",
     client_secret="your_client_secret",
     username="optional_username",  # Optionnel
-    password="optional_password"   # Optionnel
+    password="optional_password"  # Optionnel
 )
 
 # Initialisation du service API (authentification automatique)

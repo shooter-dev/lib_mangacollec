@@ -5,7 +5,7 @@ This module contains unit tests for Type entity.
 
 import pytest
 
-from src.domain.entities import Type
+from mangacollec.domain.entities import Type
 
 
 class TestType:

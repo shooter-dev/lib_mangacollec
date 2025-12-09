@@ -5,8 +5,8 @@ This module contains unit tests for Edition response DTOs.
 
 import pytest
 
-from src.application.dto.responses import GetEditionByIdV2Response
-from src.domain.entities import Edition, Publisher, Serie, Type, Volume
+from mangacollec.application import GetEditionByIdV2Response
+from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
 
 
 class TestGetEditionByIdV2Response:

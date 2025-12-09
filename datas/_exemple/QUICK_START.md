@@ -77,7 +77,10 @@ touch src/application/dto/responses/{resource}_responses.py
 
 ```python
 from dataclasses import dataclass
-from src.domain.entities import {Resource}
+from mangacollec.domain.entities import
+
+{Resource}
+
 
 @dataclass(frozen=True)
 class Get{Resource}ByIdV2Response:
@@ -88,6 +91,7 @@ class Get{Resource}ByIdV2Response:
     {resources}: list[{Resource}]
     # TOUJOURS utiliser des listes, même pour une seule entité
     related_entities: list[RelatedEntity]
+
 
 # Si endpoint GET list existe :
 @dataclass(frozen=True)
@@ -120,8 +124,14 @@ touch src/application/mappers/{resource}_mapper.py
 **Code minimal** :
 
 ```python
-from src.application.dto.responses import Get{Resource}ByIdV2Response
-from src.domain.entities import {Resource}
+from mangacollec.application import Get
+
+{Resource}
+ByIdV2Response
+from mangacollec.domain.entities import
+
+{Resource}
+
 
 class {Resource}Mapper:
     @staticmethod
@@ -143,12 +153,16 @@ class {Resource}Mapper:
         }
 
     @staticmethod
-    def from_api_response(response: dict) -> Get{Resource}ByIdV2Response:
-        {resources} = [
-            {Resource}Mapper.from_dict(r)
-            for r in response.get("{resources}", [])
-        ]
-        return Get{Resource}ByIdV2Response({resources}={resources})
+    def from_api_response(response: dict) -> Get{Resource}
+
+    ByIdV2Response:
+    {resources} = [
+        {Resource}Mapper.from_dict(r)
+    for r in response.get("{resources}", [])
+    ]
+    return Get
+    {Resource}
+    ByIdV2Response({resources} = {resources})
 ```
 
 ### Étape 5 : Créer les Repositories
@@ -163,7 +177,10 @@ touch src/domain/repositories/{resource}_repository.py
 
 ```python
 from abc import ABC, abstractmethod
-from src.domain.entities import {Resource}
+from mangacollec.domain.entities import
+
+{Resource}
+
 
 class I{Resource}Repository(ABC):
     """Interface du repository pour {Resource}."""
@@ -185,11 +202,35 @@ touch src/infrastructure/repositories/api/api_{resource}_repository.py
 **Template Minimal (Pattern Author)** :
 
 ```python
-from src.application.dto.responses import Get{Resource}ByIdV2Response
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
-from src.application.mappers.{resource}_mapper import {Resource}Mapper
-from src.domain.execptions.{resource}_exceptions import {Resource}NotFoundException
-from src.domain.repositories.{resource}_repository import I{Resource}Repository
+from mangacollec.application import Get
+
+{Resource}
+ByIdV2Response
+from mangacollec.application import IMangaCollecAPI
+from mangacollec.application.mappers
+
+{resource}
+_mapper
+import
+
+{Resource}
+Mapper
+from mangacollec.domain.exceptions
+
+{resource}
+_exceptions
+import
+
+{Resource}
+NotFoundException
+from mangacollec.domain.repositories
+
+{resource}
+_repository
+import I
+
+{Resource}
+Repository
 
 
 class API{Resource}Repository(I{Resource}Repository):
@@ -198,30 +239,44 @@ class API{Resource}Repository(I{Resource}Repository):
     def __init__(self, client_api: IMangaCollecAPI) -> None:
         self.client_api = client_api
 
-    def get_by_id_v2(self, {resource}_id: str) -> Get{Resource}ByIdV2Response:
-        """Récupère un(e) {resource} par son ID avec toutes ses relations."""
-        try:
-            response = self.client_api.get(f"/v2/{resources}/{{{resource}_id}}")
+    def get_by_id_v2(self, {resource}_id: str) -> Get{Resource}
 
-            if not response.get("{resources}") or len(response["{resources}"]) == 0:
-                raise {Resource}NotFoundException({resource}_id)
+    ByIdV2Response:
+    """Récupère un(e) {resource} par son ID avec toutes ses relations."""
+    try:
+        response = self.client_api.get(f"/v2/{resources}/{{{resource}_id}}")
+
+        if not response.get("{resources}") or len(response["{resources}"]) == 0:
+            raise {Resource}
+            NotFoundException({resource}
+            _id)
 
             # ✅ CRITICAL : Déléguer au mapper (3 lignes max)
-            return {Resource}Mapper.from_api_response(response)
+            return {Resource}
+            Mapper.from_api_response(response)
 
         except Exception as e:
-            if isinstance(e, {Resource}NotFoundException):
-                raise
-            raise {Resource}NotFoundException({resource}_id) from e
+        if isinstance(e, {Resource}NotFoundException):
+            raise
+        raise {Resource}
+        NotFoundException({resource}
+        _id) from e
 
-    def get_all_v2(self) -> GetAll{Resource}sV2Response:
-        """Récupère tous les {resources} via l'API."""
-        try:
-            response = self.client_api.get("/v2/{resources}/")
-            # ✅ CRITICAL : Déléguer au mapper
-            return {Resource}Mapper.from_all_{resources}_response(response)
-        except Exception as e:
-            raise RuntimeError(f"Failed to retrieve {resources}: {{e}}") from e
+
+def get_all_v2(self) -> GetAll{Resource}
+
+
+sV2Response:
+"""Récupère tous les {resources} via l'API."""
+try:
+    response = self.client_api.get("/v2/{resources}/")
+    # ✅ CRITICAL : Déléguer au mapper
+    return {Resource}
+    Mapper.from_all_
+    {resources}
+    _response(response)
+except Exception as e:
+    raise RuntimeError(f"Failed to retrieve {resources}: {{e}}") from e
 ```
 
 **⚠️ Règles Critiques pour les Repositories** :

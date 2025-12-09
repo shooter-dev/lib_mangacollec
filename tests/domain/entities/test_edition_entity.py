@@ -5,7 +5,7 @@ This module contains unit tests for the Edition entity.
 
 import pytest
 
-from src.domain.entities import Edition
+from mangacollec.domain.entities import Edition
 
 
 class TestEdition:

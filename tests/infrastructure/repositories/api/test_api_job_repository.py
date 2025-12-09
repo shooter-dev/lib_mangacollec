@@ -4,9 +4,9 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from src.application.dto.responses.job_responses import GetAllJobsV1Response
-from src.domain.entities.job import Job
-from src.infrastructure.repositories.api.api_job_repository import \
+from mangacollec.application.dto.responses.job_responses import GetAllJobsV1Response
+from mangacollec.domain.entities import Job
+from mangacollec.infrastructure.repositories.api.api_job_repository import \
     APIJobRepository
 
 

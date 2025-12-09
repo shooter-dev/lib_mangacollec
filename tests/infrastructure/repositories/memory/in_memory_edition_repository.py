@@ -1,10 +1,10 @@
 """In-memory edition repository."""
 
-from src.application.dto.responses.edition_responses import \
+from mangacollec.application.dto.responses.edition_responses import \
     GetEditionByIdV2Response
-from src.domain.entities.edition import Edition
-from src.domain.exceptions.edition_exceptions import EditionNotFoundException
-from src.domain.repositories.edition_repository import IEditionRepository
+from mangacollec.domain.entities import Edition
+from mangacollec.domain import EditionNotFoundException
+from mangacollec.domain.repositories.edition_repository import IEditionRepository
 
 
 class InMemoryEditionRepository(IEditionRepository):

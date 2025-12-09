@@ -1,13 +1,13 @@
 """Tests for the PublisherMapper."""
 
-from src.application.dto.responses.publisher_responses import (
+from mangacollec.application.dto.responses.publisher_responses import (
     GetAllPublishersV2Response, GetPublisherByIdV2Response)
-from src.application.mappers.publisher_mapper import PublisherMapper
-from src.domain.entities.edition import Edition
-from src.domain.entities.publisher import Publisher, PublisherListItem
-from src.domain.entities.serie import Serie
-from src.domain.entities.type import Type
-from src.domain.entities.volume import Volume
+from mangacollec.application.mappers.publisher_mapper import PublisherMapper
+from mangacollec.domain.entities import Edition
+from mangacollec.domain.entities.publisher import Publisher, PublisherListItem
+from mangacollec.domain.entities import Serie
+from mangacollec.domain.entities import Type
+from mangacollec.domain.entities import Volume
 
 
 class TestPublisherMapper:

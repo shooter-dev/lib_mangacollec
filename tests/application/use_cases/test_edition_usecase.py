@@ -7,11 +7,11 @@ from unittest.mock import Mock
 
 import pytest
 
-from src.application.dto.responses import GetEditionByIdV2Response
-from src.application.use_cases.edition_usecase import GetEditionByIdV2UseCase
-from src.domain.entities import Edition, Publisher, Serie, Type, Volume
-from src.domain.execptions.edition_exceptions import EditionNotFoundException
-from src.domain.repositories.edition_repository import IEditionRepository
+from mangacollec.application import GetEditionByIdV2Response
+from mangacollec.application import GetEditionByIdV2UseCase
+from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
+from mangacollec.domain import EditionNotFoundException
+from mangacollec.domain.repositories.edition_repository import IEditionRepository
 
 
 class TestGetEditionByIdV2UseCase:

@@ -5,10 +5,10 @@ This module contains unit tests for the InMemory Edition repository.
 
 import pytest
 
-from src.application.dto.responses import GetEditionByIdV2Response
-from src.domain.entities import Edition, Publisher, Serie, Type, Volume
-from src.domain.execptions.edition_exceptions import EditionNotFoundException
-from src.infrastructure.repositories.memory.in_memory_edition_repository import \
+from mangacollec.application import GetEditionByIdV2Response
+from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
+from mangacollec.domain import EditionNotFoundException
+from mangacollec.infrastructure.repositories.memory.in_memory_edition_repository import \
     InMemoryEditionRepository
 
 

@@ -2,11 +2,11 @@
 
 import pytest
 
-from src.application.dto.responses.publisher_responses import (
+from mangacollec.application.dto.responses.publisher_responses import (
     GetAllPublishersV2Response, GetPublisherByIdV2Response)
-from src.domain.entities.publisher import Publisher, PublisherListItem
-from src.domain.exceptions import PublisherNotFoundException
-from src.infrastructure.repositories.memory.inmemory_publisher_repository import \
+from mangacollec.domain.entities.publisher import Publisher, PublisherListItem
+from mangacollec.domain import PublisherNotFoundException
+from mangacollec.infrastructure import \
     InMemoryPublisherRepository
 
 

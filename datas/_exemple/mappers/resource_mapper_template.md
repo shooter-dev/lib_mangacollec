@@ -10,13 +10,20 @@ Ce template suit le pattern établi par `AuthorMapper` pour garantir la cohéren
 This module provides mapping functions between API responses and {Resource} entities.
 """
 
-from src.application.dto.responses import (
-    GetAll{Resource}sV2Response,
-    Get{Resource}ByIdV2Response,
+from mangacollec.application import (
+    GetAll
+
+{Resource}
+sV2Response,
+Get
+{Resource}
+ByIdV2Response,
 )
 # Importer les mappers des entités liées si nécessaire
 # from src.application.mappers.related_mapper import RelatedMapper
-from src.domain.entities import {Resource}
+from mangacollec.domain.entities import
+
+{Resource}
 
 
 class {Resource}Mapper:
@@ -63,72 +70,84 @@ class {Resource}Mapper:
     # MÉTHODE OBLIGATOIRE si endpoint GET /v2/{resources}/ existe
     # =====================================================================
     @staticmethod
-    def from_all_{resources}_response(response: dict) -> GetAll{Resource}sV2Response:
-        """Convertit la réponse de l'API V2 pour get_all en GetAll{Resource}sV2Response.
+    def from_all_{resources}
 
-        Args:
-            response: Réponse API contenant {resources}
+    _response(response: dict) -> GetAll
+    {Resource}
+    sV2Response:
+    """Convertit la réponse de l'API V2 pour get_all en GetAll{Resource}sV2Response.
 
-        Returns:
-            GetAll{Resource}sV2Response contenant la liste des ressources
-        """
-        # Convertir les {resources}
-        {resources} = [
-            {Resource}Mapper.from_dict(resource_data)
-            for resource_data in response.get("{resources}", [])
-        ]
+    Args:
+        response: Réponse API contenant {resources}
 
-        return GetAll{Resource}sV2Response({resources}={resources})
+    Returns:
+        GetAll{Resource}sV2Response contenant la liste des ressources
+    """
+    # Convertir les {resources}
+    {resources} = [
+        {Resource}Mapper.from_dict(resource_data)
+    for resource_data in response.get("{resources}", [])
+    ]
+
+    return GetAll
+    {Resource}
+    sV2Response({resources} = {resources})
 
     # =====================================================================
     # MÉTHODE OBLIGATOIRE si endpoint GET /v2/{resources}/{id} retourne
     # une structure normalisée avec plusieurs types d'entités
     # =====================================================================
     @staticmethod
-    def from_api_response(response: dict) -> Get{Resource}ByIdV2Response:
-        """Convertit la réponse complète de l'API V2 en Get{Resource}ByIdV2Response.
+    def from_api_response(response: dict) -> Get{Resource}
 
-        Args:
-            response: Réponse API contenant {resources} et entités liées
+    ByIdV2Response:
+    """Convertit la réponse complète de l'API V2 en Get{Resource}ByIdV2Response.
 
-        Returns:
-            Get{Resource}ByIdV2Response contenant toutes les entités converties
-        """
-        # Convertir les {resources} (liste)
-        {resources} = [
-            {Resource}Mapper.from_dict(resource_data)
-            for resource_data in response.get("{resources}", [])
-        ]
+    Args:
+        response: Réponse API contenant {resources} et entités liées
 
-        # Convertir les entités liées
-        # Example: tasks, jobs, series, editions, volumes, etc.
-        # tasks = [TaskMapper.from_dict(task_data) for task_data in response.get("tasks", [])]
-        # jobs = [JobMapper.from_dict(job_data) for job_data in response.get("jobs", [])]
+    Returns:
+        Get{Resource}ByIdV2Response contenant toutes les entités converties
+    """
+    # Convertir les {resources} (liste)
+    {resources} = [
+        {Resource}Mapper.from_dict(resource_data)
+    for resource_data in response.get("{resources}", [])
+    ]
 
-        return Get{Resource}ByIdV2Response(
-            {resources}={resources},
-            # tasks=tasks,
-            # jobs=jobs,
-            # ... autres entités liées
-        )
+    # Convertir les entités liées
+    # Example: tasks, jobs, series, editions, volumes, etc.
+    # tasks = [TaskMapper.from_dict(task_data) for task_data in response.get("tasks", [])]
+    # jobs = [JobMapper.from_dict(job_data) for job_data in response.get("jobs", [])]
+
+    return Get
+    {Resource}
+    ByIdV2Response(
+        {resources} = {resources},
+    # tasks=tasks,
+    # jobs=jobs,
+    # ... autres entités liées
+    )
 
     # =====================================================================
     # MÉTHODE OPTIONNELLE - Uniquement si nécessaire pour l'affichage
     # =====================================================================
     @staticmethod
     def to_list_item(resource: {Resource}) -> {Resource}ListItem:
-        """Convertit une entité {Resource} en {Resource}ListItem.
 
-        Args:
-            resource: Entité {Resource}
+    """Convertit une entité {Resource} en {Resource}ListItem.
 
-        Returns:
-            Entité {Resource}ListItem pour affichage en liste
-        """
-        return {Resource}ListItem(
-            id=resource.id,
-            display_name=f"{resource.name}",
-        )
+    Args:
+        resource: Entité {Resource}
+
+    Returns:
+        Entité {Resource}ListItem pour affichage en liste
+    """
+    return {Resource}
+    ListItem(
+        id=resource.id,
+        display_name=f"{resource.name}",
+    )
 ```
 
 ## Checklist de Création d'un Mapper
@@ -170,16 +189,23 @@ class {Resource}Mapper:
 
 ```python
 # DTO de réponse
-from src.application.dto.responses import (
-    GetAll{Resource}sV2Response,  # Si get_all existe
-    Get{Resource}ByIdV2Response,   # Si get_by_id existe
+from mangacollec.application import (
+    GetAll
+
+{Resource}
+sV2Response,  # Si get_all existe
+Get
+{Resource}
+ByIdV2Response,  # Si get_by_id existe
 )
 
 # Mappers des entités liées
-from src.application.mappers.related_mapper import RelatedMapper
+from mangacollec.application.mappers import RelatedMapper
 
 # Entités du domaine
-from src.domain.entities import {Resource}, RelatedEntity
+from mangacollec.domain.entities import
+
+{Resource}, RelatedEntity
 ```
 
 ## Exemples de Référence

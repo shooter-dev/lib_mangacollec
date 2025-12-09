@@ -17,15 +17,44 @@ Ce template suit le pattern établi par `APIAuthorRepository` pour garantir la c
 This module provides the API implementation of the {Resource} repository.
 """
 
-from src.application.dto.responses import (
-    GetAll{Resource}sV2Response,  # Si endpoint GET list existe
-    Get{Resource}ByIdV2Response,  # Si endpoint GET by_id existe
+from mangacollec.application import (
+    GetAll
+
+{Resource}
+sV2Response,  # Si endpoint GET list existe
+Get
+{Resource}
+ByIdV2Response,  # Si endpoint GET by_id existe
 )
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
-from src.application.mappers.{resource}_mapper import {Resource}Mapper
-from src.domain.entities import {Resource}ListItem  # Si méthode get_list existe
-from src.domain.execptions.{resource}_exceptions import {Resource}NotFoundException
-from src.domain.repositories.{resource}_repository import I{Resource}Repository
+from mangacollec.application import IMangaCollecAPI
+from mangacollec.application.mappers
+
+{resource}
+_mapper
+import
+
+{Resource}
+Mapper
+from mangacollec.domain.entities import
+
+{Resource}
+ListItem  # Si méthode get_list existe
+from mangacollec.domain.exceptions
+
+{resource}
+_exceptions
+import
+
+{Resource}
+NotFoundException
+from mangacollec.domain.repositories
+
+{resource}
+_repository
+import I
+
+{Resource}
+Repository
 
 
 class API{Resource}Repository(I{Resource}Repository):
@@ -42,125 +71,154 @@ class API{Resource}Repository(I{Resource}Repository):
     # =====================================================================
     # MÉTHODE OBLIGATOIRE si endpoint GET /v2/{resources}/{id} existe
     # =====================================================================
-    def get_by_id_v2(self, {resource}_id: str) -> Get{Resource}ByIdV2Response:
-        """Récupère un(e) {resource} par son ID avec toutes ses relations via l'API.
+    def get_by_id_v2(self, {resource}_id: str) -> Get{Resource}
 
-        Args:
-            {resource}_id: UUID du/de la {resource}
+    ByIdV2Response:
+    """Récupère un(e) {resource} par son ID avec toutes ses relations via l'API.
 
-        Returns:
-            Get{Resource}ByIdV2Response contenant:
-                - {resources}: Liste des {resources}
-                - [autres entités liées selon l'API]
+    Args:
+        {resource}_id: UUID du/de la {resource}
 
-        Raises:
-            {Resource}NotFoundException: Si le/la {resource} n'existe pas
-        """
-        try:
-            response = self.client_api.get(f"/v2/{resources}/{{{resource}_id}}")
+    Returns:
+        Get{Resource}ByIdV2Response contenant:
+            - {resources}: Liste des {resources}
+            - [autres entités liées selon l'API]
 
-            if not response.get("{resources}") or len(response["{resources}"]) == 0:
-                raise {Resource}NotFoundException({resource}_id)
+    Raises:
+        {Resource}NotFoundException: Si le/la {resource} n'existe pas
+    """
+    try:
+        response = self.client_api.get(f"/v2/{resources}/{{{resource}_id}}")
+
+        if not response.get("{resources}") or len(response["{resources}"]) == 0:
+            raise {Resource}
+            NotFoundException({resource}
+            _id)
 
             # ✅ CORRECT : Utiliser le mapper pour convertir toute la réponse API
-            return {Resource}Mapper.from_api_response(response)
+            return {Resource}
+            Mapper.from_api_response(response)
 
         except Exception as e:
-            if isinstance(e, {Resource}NotFoundException):
-                raise
-            raise {Resource}NotFoundException({resource}_id) from e
+        if isinstance(e, {Resource}NotFoundException):
+            raise
+        raise {Resource}
+        NotFoundException({resource}
+        _id) from e
 
-    # =====================================================================
-    # MÉTHODE OBLIGATOIRE si endpoint GET /v2/{resources}/ existe
-    # =====================================================================
-    def get_all_v2(self) -> GetAll{Resource}sV2Response:
-        """Récupère tous les {resources} via l'API.
 
-        Returns:
-            GetAll{Resource}sV2Response contenant la liste des {resources}
-        """
-        try:
-            response = self.client_api.get("/v2/{resources}/")
+# =====================================================================
+# MÉTHODE OBLIGATOIRE si endpoint GET /v2/{resources}/ existe
+# =====================================================================
+def get_all_v2(self) -> GetAll{Resource}
 
-            # ✅ CORRECT : Utiliser le mapper pour convertir la réponse
-            return {Resource}Mapper.from_all_{resources}_response(response)
 
-        except Exception as e:
-            raise RuntimeError(f"Failed to retrieve {resources}: {{e}}") from e
+sV2Response:
+"""Récupère tous les {resources} via l'API.
 
-    # =====================================================================
-    # MÉTHODE OPTIONNELLE - Liste simplifiée pour affichage
-    # =====================================================================
-    def get_list(self) -> list[{Resource}ListItem]:
-        """Récupère la liste simplifiée des {resources} (id + display_name).
+Returns:
+    GetAll{Resource}sV2Response contenant la liste des {resources}
+"""
+try:
+    response = self.client_api.get("/v2/{resources}/")
 
-        Returns:
-            Liste des entités {Resource}ListItem
-        """
-        all_{resources}_response = self.get_all_v2()
-        return [{Resource}Mapper.to_list_item({resource}) for {resource} in all_{resources}_response.{resources}]
+    # ✅ CORRECT : Utiliser le mapper pour convertir la réponse
+    return {Resource}
+    Mapper.from_all_
+    {resources}
+    _response(response)
 
-    # =====================================================================
-    # MÉTHODE OPTIONNELLE si endpoint POST /v2/{resources}/ existe
-    # =====================================================================
-    def create(self, {resource}_data: Create{Resource}) -> {Resource}:
-        """Crée un nouveau/une nouvelle {resource}.
+except Exception as e:
+    raise RuntimeError(f"Failed to retrieve {resources}: {{e}}") from e
 
-        Args:
-            {resource}_data: Données de création
 
-        Returns:
-            Entité {Resource} créée
-        """
-        try:
-            # Convertir le DTO en dictionnaire via le mapper
-            data = {Resource}Mapper.to_dict({resource}_data)
+# =====================================================================
+# MÉTHODE OPTIONNELLE - Liste simplifiée pour affichage
+# =====================================================================
+def get_list(self) -> list[{Resource}ListItem
 
-            response = self.client_api.post("/v2/{resources}/", data=data)
+]:
+"""Récupère la liste simplifiée des {resources} (id + display_name).
 
-            # Convertir la réponse via le mapper
-            return {Resource}Mapper.from_dict(response["{resource}"])
+Returns:
+    Liste des entités {Resource}ListItem
+"""
+all_
+{resources}
+_response = self.get_all_v2()
+return [{Resource}Mapper.to_list_item({resource})
+for {resource} in all_{resources}_response.{resources}]
 
-        except Exception as e:
-            raise RuntimeError(f"Failed to create {resource}: {{e}}") from e
 
-    # =====================================================================
-    # MÉTHODE OPTIONNELLE si endpoint PUT/PATCH /v2/{resources}/{id} existe
-    # =====================================================================
-    def update(self, {resource}_id: str, {resource}_data: Update{Resource}) -> {Resource}:
-        """Met à jour un(e) {resource}.
+# =====================================================================
+# MÉTHODE OPTIONNELLE si endpoint POST /v2/{resources}/ existe
+# =====================================================================
+def create(self, {resource}_data: Create{Resource}) -> {Resource}:
+    """Crée un nouveau/une nouvelle {resource}.
 
-        Args:
-            {resource}_id: UUID du/de la {resource}
-            {resource}_data: Données de mise à jour
+    Args:
+        {resource}_data: Données de création
 
-        Returns:
-            Entité {Resource} mise à jour
-        """
-        try:
-            data = {Resource}Mapper.to_dict({resource}_data)
+    Returns:
+        Entité {Resource} créée
+    """
+    try:
+        # Convertir le DTO en dictionnaire via le mapper
+        data = {Resource}
+        Mapper.to_dict({resource}
+        _data)
 
-            response = self.client_api.put(f"/v2/{resources}/{{{resource}_id}}", data=data)
+        response = self.client_api.post("/v2/{resources}/", data=data)
 
-            return {Resource}Mapper.from_dict(response["{resource}"])
+        # Convertir la réponse via le mapper
+        return {Resource}
+        Mapper.from_dict(response["{resource}"])
 
-        except Exception as e:
-            raise RuntimeError(f"Failed to update {resource}: {{e}}") from e
+    except Exception as e:
+        raise RuntimeError(f"Failed to create {resource}: {{e}}") from e
 
-    # =====================================================================
-    # MÉTHODE OPTIONNELLE si endpoint DELETE /v2/{resources}/{id} existe
-    # =====================================================================
-    def delete(self, {resource}_id: str) -> None:
-        """Supprime un(e) {resource}.
 
-        Args:
-            {resource}_id: UUID du/de la {resource}
-        """
-        try:
-            self.client_api.delete(f"/v2/{resources}/{{{resource}_id}}")
+# =====================================================================
+# MÉTHODE OPTIONNELLE si endpoint PUT/PATCH /v2/{resources}/{id} existe
+# =====================================================================
+def update(self, {resource}_id: str, {resource}_data: Update{Resource}) -> {Resource}:
+    """Met à jour un(e) {resource}.
 
-        except Exception as e:
-            raise RuntimeError(f"Failed to delete {resource}: {{e}}") from e
+    Args:
+        {resource}_id: UUID du/de la {resource}
+        {resource}_data: Données de mise à jour
+
+    Returns:
+        Entité {Resource} mise à jour
+    """
+    try:
+        data = {Resource}
+        Mapper.to_dict({resource}
+        _data)
+
+        response = self.client_api.put(f"/v2/{resources}/{{{resource}_id}}", data=data)
+
+        return {Resource}
+        Mapper.from_dict(response["{resource}"])
+
+    except Exception as e:
+        raise RuntimeError(f"Failed to update {resource}: {{e}}") from e
+
+
+# =====================================================================
+# MÉTHODE OPTIONNELLE si endpoint DELETE /v2/{resources}/{id} existe
+# =====================================================================
+def delete(self, {resource}_id: str) -> None:
+    """Supprime un(e) {resource}.
+
+    Args:
+        {resource}_id: UUID du/de la {resource}
+    """
+    try:
+        self.client_api.delete(f"/v2/{resources}/{{{resource}_id}}")
+
+    except Exception as e:
+        raise RuntimeError(f"Failed to delete {resource}: {{e}}") from e
 ```
 
 ## ⚠️ Erreurs Courantes à Éviter

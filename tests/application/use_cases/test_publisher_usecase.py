@@ -2,12 +2,12 @@
 
 import pytest
 
-from src.application.use_cases.publisher_usecase import (
+from mangacollec.application.use_cases.publisher_usecase import (
     GetAllPublishersV2UseCase, GetListPublishersUseCase,
     GetPublisherByIdV2UseCase)
-from src.domain.entities.publisher import Publisher, PublisherListItem
-from src.domain.exceptions import PublisherNotFoundException
-from src.infrastructure.repositories.memory.inmemory_publisher_repository import \
+from mangacollec.domain.entities.publisher import Publisher, PublisherListItem
+from mangacollec.domain import PublisherNotFoundException
+from mangacollec.infrastructure import \
     InMemoryPublisherRepository
 
 

@@ -22,13 +22,21 @@ Ce document vous aide à choisir le bon pattern de mapper selon les endpoints di
 ### Structure du Fichier
 
 ```python
-from src.application.dto.responses import (
-    GetAll{Resource}sV2Response,
-    Get{Resource}ByIdV2Response,
+from mangacollec.application import (
+    GetAll
+
+{Resource}
+sV2Response,
+Get
+{Resource}
+ByIdV2Response,
 )
-from src.application.mappers.related1_mapper import Related1Mapper
-from src.application.mappers.related2_mapper import Related2Mapper
-from src.domain.entities import {Resource}, {Resource}ListItem, Related1, Related2
+from mangacollec.application.mappers import Related1Mapper
+from mangacollec.application.mappers import Related2Mapper
+from mangacollec.domain.entities import
+
+{Resource}, {Resource}
+ListItem, Related1, Related2
 
 
 class {Resource}Mapper:
@@ -56,49 +64,64 @@ class {Resource}Mapper:
 
     @staticmethod
     def to_list_item(resource: {Resource}) -> {Resource}ListItem:
-        """Convertit une entité {Resource} en {Resource}ListItem."""
-        first_name = resource.first_name if resource.first_name else ""
-        full_name = f"{first_name} {resource.name}".strip()
 
-        return {Resource}ListItem(
-            id=resource.id,
-            full_name=full_name,
-        )
+    """Convertit une entité {Resource} en {Resource}ListItem."""
+    first_name = resource.first_name if resource.first_name else ""
+    full_name = f"{first_name} {resource.name}".strip()
 
-    @staticmethod
-    def from_all_{resources}_response(response: dict) -> GetAll{Resource}sV2Response:
-        """Convertit la réponse de l'API V2 pour get_all."""
-        {resources} = [
-            {Resource}Mapper.from_dict(resource_data)
-            for resource_data in response.get("{resources}", [])
-        ]
-        return GetAll{Resource}sV2Response({resources}={resources})
+    return {Resource}
+    ListItem(
+        id=resource.id,
+        full_name=full_name,
+    )
 
-    @staticmethod
-    def from_api_response(response: dict) -> Get{Resource}ByIdV2Response:
-        """Convertit la réponse complète de l'API V2."""
-        # Convertir les {resources} (liste)
-        {resources} = [
-            {Resource}Mapper.from_dict(resource_data)
-            for resource_data in response.get("{resources}", [])
-        ]
 
-        # Convertir les entités liées
-        related1 = [
-            Related1Mapper.from_dict(r1_data)
-            for r1_data in response.get("related1", [])
-        ]
+@staticmethod
+def from_all_{resources}
 
-        related2 = [
-            Related2Mapper.from_dict(r2_data)
-            for r2_data in response.get("related2", [])
-        ]
 
-        return Get{Resource}ByIdV2Response(
-            {resources}={resources},
-            related1=related1,
-            related2=related2,
-        )
+_response(response: dict) -> GetAll
+{Resource}
+sV2Response:
+"""Convertit la réponse de l'API V2 pour get_all."""
+{resources} = [
+    {Resource}Mapper.from_dict(resource_data)
+for resource_data in response.get("{resources}", [])
+]
+return GetAll
+{Resource}
+sV2Response({resources} = {resources})
+
+@staticmethod
+def from_api_response(response: dict) -> Get{Resource}
+
+
+ByIdV2Response:
+"""Convertit la réponse complète de l'API V2."""
+# Convertir les {resources} (liste)
+{resources} = [
+    {Resource}Mapper.from_dict(resource_data)
+for resource_data in response.get("{resources}", [])
+]
+
+# Convertir les entités liées
+related1 = [
+    Related1Mapper.from_dict(r1_data)
+    for r1_data in response.get("related1", [])
+]
+
+related2 = [
+    Related2Mapper.from_dict(r2_data)
+    for r2_data in response.get("related2", [])
+]
+
+return Get
+{Resource}
+ByIdV2Response(
+    {resources} = {resources},
+related1 = related1,
+related2 = related2,
+)
 ```
 
 ### DTOs Nécessaires
@@ -133,10 +156,15 @@ class Get{Resource}ByIdV2Response:
 ### Structure du Fichier
 
 ```python
-from src.application.dto.responses import Get{Resource}ByIdV2Response
-from src.application.mappers.related1_mapper import Related1Mapper
-from src.application.mappers.related2_mapper import Related2Mapper
-from src.domain.entities import {Resource}
+from mangacollec.application import Get
+
+{Resource}
+ByIdV2Response
+from mangacollec.application.mappers import Related1Mapper
+from mangacollec.application.mappers import Related2Mapper
+from mangacollec.domain.entities import
+
+{Resource}
 
 
 class {Resource}Mapper:
@@ -163,24 +191,28 @@ class {Resource}Mapper:
         }
 
     @staticmethod
-    def from_api_response(response: dict) -> Get{Resource}ByIdV2Response:
-        """Convertit la réponse complète de l'API V2."""
-        # Convertir les {resources} (liste)
-        {resources} = [
-            {Resource}Mapper.from_dict(resource_data)
-            for resource_data in response.get("{resources}", [])
-        ]
+    def from_api_response(response: dict) -> Get{Resource}
 
-        # Convertir les entités liées
-        related1 = [
-            Related1Mapper.from_dict(r1_data)
-            for r1_data in response.get("related1", [])
-        ]
+    ByIdV2Response:
+    """Convertit la réponse complète de l'API V2."""
+    # Convertir les {resources} (liste)
+    {resources} = [
+        {Resource}Mapper.from_dict(resource_data)
+    for resource_data in response.get("{resources}", [])
+    ]
 
-        return Get{Resource}ByIdV2Response(
-            {resources}={resources},
-            related1=related1,
-        )
+    # Convertir les entités liées
+    related1 = [
+        Related1Mapper.from_dict(r1_data)
+        for r1_data in response.get("related1", [])
+    ]
+
+    return Get
+    {Resource}
+    ByIdV2Response(
+        {resources} = {resources},
+    related1 = related1,
+    )
 ```
 
 ### DTOs Nécessaires
@@ -210,7 +242,9 @@ class Get{Resource}ByIdV2Response:
 ### Structure du Fichier
 
 ```python
-from src.domain.entities import {Resource}
+from mangacollec.domain.entities import
+
+{Resource}
 
 
 class {Resource}Mapper:
@@ -370,7 +404,7 @@ tasks_count=data.get("tasks_count", 0)
 
 ```python
 # TOUJOURS importer les mappers des entités liées
-from src.application.mappers.related_mapper import RelatedMapper
+from mangacollec.application.mappers import RelatedMapper
 
 # TOUJOURS utiliser ces mappers pour la conversion
 related = [

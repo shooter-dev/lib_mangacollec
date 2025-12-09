@@ -3,8 +3,8 @@
 This module contains unit tests for the TypeMapper.
 """
 
-from src.application.mappers.type_mapper import TypeMapper
-from src.domain.entities import Type
+from mangacollec.application.mappers.type_mapper import TypeMapper
+from mangacollec.domain.entities import Type
 
 
 class TestTypeMapper:

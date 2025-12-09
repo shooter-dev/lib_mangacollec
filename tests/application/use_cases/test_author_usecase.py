@@ -5,14 +5,14 @@ This module contains unit tests for Author use cases.
 
 import pytest
 
-from src.application.dto.author_dto import SearchAuthor
-from src.application.use_cases.author_usecase import (GetAllAuthorUseCase,
-                                                      GetByIdAuthorUseCase,
-                                                      GetListAuthorUseCase,
-                                                      SearchAuthorUseCase)
-from src.domain.entities import Author, AuthorListItem
-from src.domain.execptions.author_exceptions import AuthorNotFoundException
-from src.infrastructure.repositories.memory.in_memory_author_repository import \
+from mangacollec.application import SearchAuthor
+from mangacollec.application.use_cases.author_usecase import (GetAllAuthorUseCase,
+                                                              GetByIdAuthorUseCase,
+                                                              GetListAuthorUseCase,
+                                                              SearchAuthorUseCase)
+from mangacollec.domain.entities import Author, AuthorListItem
+from mangacollec.domain.exceptions.author_exceptions import AuthorNotFoundException
+from mangacollec.infrastructure.repositories.memory.in_memory_author_repository import \
     InMemoryAuthorRepository
 
 

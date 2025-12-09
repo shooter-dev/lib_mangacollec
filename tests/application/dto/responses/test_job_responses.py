@@ -2,8 +2,8 @@
 
 import pytest
 
-from src.application.dto.responses.job_responses import GetAllJobsV1Response
-from src.domain.entities.job import Job
+from mangacollec.application.dto.responses.job_responses import GetAllJobsV1Response
+from mangacollec.domain.entities import Job
 
 
 class TestGetAllJobsV1Response:

@@ -8,4 +8,3 @@
 # __filename__: __init__.py.py
 # __directory__: src
 """ """
-__version__ = "0.1.0"

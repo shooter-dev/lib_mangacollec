@@ -2,9 +2,9 @@
 
 import pytest
 
-from src.application.dto.responses.job_responses import GetAllJobsV1Response
-from src.application.mappers.job_mapper import JobMapper
-from src.domain.entities.job import Job
+from mangacollec.application.dto.responses.job_responses import GetAllJobsV1Response
+from mangacollec.application.mappers.job_mapper import JobMapper
+from mangacollec.domain.entities import Job
 
 
 class TestJobMapperFromDict:

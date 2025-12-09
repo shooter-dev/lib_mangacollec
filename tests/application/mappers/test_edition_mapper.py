@@ -3,8 +3,8 @@
 This module contains unit tests for the EditionMapper.
 """
 
-from src.application.mappers.edition_mapper import EditionMapper
-from src.domain.entities import Edition
+from mangacollec.application import EditionMapper
+from mangacollec.domain.entities import Edition
 
 
 class TestEditionMapper:
@@ -290,8 +290,8 @@ class TestEditionMapper:
             ],
         }
 
-        from src.application.dto.responses import GetEditionByIdV2Response
-        from src.domain.entities import Edition, Publisher, Serie, Type, Volume
+        from mangacollec.application import GetEditionByIdV2Response
+        from mangacollec.domain.entities import Edition, Publisher, Serie, Type, Volume
 
         result = EditionMapper.from_api_response(api_response)
 
@@ -357,7 +357,7 @@ class TestEditionMapper:
             "volumes": [],
         }
 
-        from src.application.dto.responses import GetEditionByIdV2Response
+        from mangacollec.application import GetEditionByIdV2Response
 
         result = EditionMapper.from_api_response(api_response)
 
@@ -386,7 +386,7 @@ class TestEditionMapper:
             "publishers": [],
         }
 
-        from src.application.dto.responses import GetEditionByIdV2Response
+        from mangacollec.application import GetEditionByIdV2Response
 
         result = EditionMapper.from_api_response(api_response)
 
@@ -431,7 +431,7 @@ class TestEditionMapper:
             "volumes": [],
         }
 
-        from src.application.dto.responses import GetEditionByIdV2Response
+        from mangacollec.application import GetEditionByIdV2Response
 
         result = EditionMapper.from_api_response(api_response)
 

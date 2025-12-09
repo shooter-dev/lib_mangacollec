@@ -5,7 +5,7 @@ This module contains unit tests for Publisher entity.
 
 import pytest
 
-from src.domain.entities import Publisher
+from mangacollec.domain.entities import Publisher
 
 
 class TestPublisher:

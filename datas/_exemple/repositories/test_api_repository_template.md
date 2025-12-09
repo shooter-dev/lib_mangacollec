@@ -14,14 +14,36 @@ from unittest.mock import Mock
 
 import pytest
 
-from src.application.dto.responses import (
-    GetAll{Resource}sV2Response,  # Si endpoint GET list existe
-    Get{Resource}ByIdV2Response,
+from mangacollec.application import (
+    GetAll
+
+{Resource}
+sV2Response,  # Si endpoint GET list existe
+Get
+{Resource}
+ByIdV2Response,
 )
-from src.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
-from src.domain.entities import {Resource}, {Resource}ListItem  # Si get_list existe
-from src.domain.execptions.{resource}_exceptions import {Resource}NotFoundException
-from src.infrastructure.repositories.api.api_{resource}_repository import API{Resource}Repository
+from mangacollec.application import IMangaCollecAPI
+from mangacollec.domain.entities import
+
+{Resource}, {Resource}
+ListItem  # Si get_list existe
+from mangacollec.domain.exceptions
+
+{resource}
+_exceptions
+import
+
+{Resource}
+NotFoundException
+from mangacollec.infrastructure.repositories.api
+
+{resource}
+_repository
+import API
+
+{Resource}
+Repository
 
 
 class TestAPI{Resource}Repository:
@@ -37,230 +59,313 @@ class TestAPI{Resource}Repository:
         return Mock(spec=IMangaCollecAPI)
 
     @pytest.fixture
-    def repository(self, mock_api_client: Mock) -> API{Resource}Repository:
-        """Fixture pour créer un repository avec mock API."""
-        return API{Resource}Repository(mock_api_client)
+    def repository(self, mock_api_client: Mock) -> API{Resource}
 
-    @pytest.fixture
-    def sample_{resource}_data(self) -> dict:
-        """Fixture pour créer des données de {resource} de test."""
-        return {
-            "id": "{resource}-123",
-            "name": "Sample {Resource}",
-            # Ajouter les autres champs selon l'entité
-        }
+    Repository:
+    """Fixture pour créer un repository avec mock API."""
+    return API
+    {Resource}
+    Repository(mock_api_client)
 
-    # Si le repository retourne des entités liées, créer une fixture pour chaque
-    @pytest.fixture
-    def sample_related_data(self) -> dict:
-        """Fixture pour créer des données d'entité liée de test."""
-        return {
-            "id": "related-456",
-            "title": "Related Entity",
-        }
 
-    # ================================================================
-    # TESTS GET BY ID (OBLIGATOIRES si endpoint existe)
-    # ================================================================
+@pytest.fixture
+def sample_{resource}
 
-    def test_get_by_id_success(
+
+_data(self) -> dict:
+"""Fixture pour créer des données de {resource} de test."""
+return {
+    "id": "{resource}-123",
+    "name": "Sample {Resource}",
+    # Ajouter les autres champs selon l'entité
+}
+
+
+# Si le repository retourne des entités liées, créer une fixture pour chaque
+@pytest.fixture
+def sample_related_data(self) -> dict:
+    """Fixture pour créer des données d'entité liée de test."""
+    return {
+        "id": "related-456",
+        "title": "Related Entity",
+    }
+
+
+# ================================================================
+# TESTS GET BY ID (OBLIGATOIRES si endpoint existe)
+# ================================================================
+
+def test_get_by_id_success(
         self,
-        repository: API{Resource}Repository,
-        mock_api_client: Mock,
-        sample_{resource}_data: dict,
-    ) -> None:
-        """Test de récupération d'un(e) {resource} par ID avec toutes ses relations."""
-        # Préparer la réponse mock (structure normalisée V2)
-        mock_api_client.get.return_value = {
-            "{resources}": [sample_{resource}_data],
-            # Ajouter les entités liées selon l'API
-            "related": [],
-        }
+        repository: API{Resource}
 
-        # Appeler la méthode
-        result = repository.get_by_id_v2("{resource}-123")
 
-        # Vérifier que c'est une Get{Resource}ByIdV2Response
-        assert isinstance(result, Get{Resource}ByIdV2Response)
+Repository,
+mock_api_client: Mock,
+sample_
+{resource}
+_data: dict,
+) -> None:
+"""Test de récupération d'un(e) {resource} par ID avec toutes ses relations."""
+# Préparer la réponse mock (structure normalisée V2)
+mock_api_client.get.return_value = {
+    "{resources}": [sample_{resource}_data],
+    # Ajouter les entités liées selon l'API
+    "related": [],
+}
 
-        # Vérifier la ressource principale
-        assert len(result.{resources}) == 1
-        resource = result.{resources}[0]
-        assert isinstance(resource, {Resource})
-        assert resource.id == "{resource}-123"
-        assert resource.name == "Sample {Resource}"
+# Appeler la méthode
+result = repository.get_by_id_v2("{resource}-123")
 
-        # Vérifier les entités liées
-        assert isinstance(result.related, list)
+# Vérifier que c'est une Get{Resource}ByIdV2Response
+assert isinstance(result, Get
+{Resource}
+ByIdV2Response)
 
-        # Vérifier l'appel API
-        mock_api_client.get.assert_called_once_with("/v2/{resources}/{resource}-123")
+# Vérifier la ressource principale
+assert len(result.
+{resources}) == 1
+resource = result.
+{resources}[0]
+assert isinstance(resource, {Resource})
+assert resource.id == "{resource}-123"
+assert resource.name == "Sample {Resource}"
 
-    def test_get_by_id_not_found_empty_list(
-        self, repository: API{Resource}Repository, mock_api_client: Mock
-    ) -> None:
-        """Test de récupération d'un(e) {resource} inexistant(e) (liste vide)."""
-        mock_api_client.get.return_value = {"{resources}": []}
+# Vérifier les entités liées
+assert isinstance(result.related, list)
 
-        with pytest.raises({Resource}NotFoundException) as exc_info:
-            repository.get_by_id_v2("nonexistent-id")
+# Vérifier l'appel API
+mock_api_client.get.assert_called_once_with("/v2/{resources}/{resource}-123")
 
-        assert "nonexistent-id" in str(exc_info.value)
 
-    def test_get_by_id_not_found_no_key(
-        self, repository: API{Resource}Repository, mock_api_client: Mock
-    ) -> None:
-        """Test de récupération sans clé '{resources}' dans la réponse."""
-        mock_api_client.get.return_value = {}
+def test_get_by_id_not_found_empty_list(
+        self, repository: API{Resource}
 
-        with pytest.raises({Resource}NotFoundException):
-            repository.get_by_id_v2("test-id")
 
-    def test_get_by_id_api_exception(
-        self, repository: API{Resource}Repository, mock_api_client: Mock
-    ) -> None:
-        """Test de gestion d'erreur API."""
-        mock_api_client.get.side_effect = Exception("API Error")
+Repository, mock_api_client: Mock
+) -> None:
+"""Test de récupération d'un(e) {resource} inexistant(e) (liste vide)."""
+mock_api_client.get.return_value = {"{resources}": []}
 
-        with pytest.raises({Resource}NotFoundException):
-            repository.get_by_id_v2("test-id")
+with pytest.raises({Resource}NotFoundException) as exc_info:
+    repository.get_by_id_v2("nonexistent-id")
 
-    def test_get_by_id_with_all_relations(
+assert "nonexistent-id" in str(exc_info.value)
+
+
+def test_get_by_id_not_found_no_key(
+        self, repository: API{Resource}
+
+
+Repository, mock_api_client: Mock
+) -> None:
+"""Test de récupération sans clé '{resources}' dans la réponse."""
+mock_api_client.get.return_value = {}
+
+with pytest.raises({Resource}NotFoundException):
+    repository.get_by_id_v2("test-id")
+
+
+def test_get_by_id_api_exception(
+        self, repository: API{Resource}
+
+
+Repository, mock_api_client: Mock
+) -> None:
+"""Test de gestion d'erreur API."""
+mock_api_client.get.side_effect = Exception("API Error")
+
+with pytest.raises({Resource}NotFoundException):
+    repository.get_by_id_v2("test-id")
+
+
+def test_get_by_id_with_all_relations(
         self,
-        repository: API{Resource}Repository,
-        mock_api_client: Mock,
-        sample_{resource}_data: dict,
-        sample_related_data: dict,
-    ) -> None:
-        """Test de récupération avec toutes les relations."""
-        # Données complètes de la réponse API
-        mock_api_client.get.return_value = {
-            "{resources}": [sample_{resource}_data],
-            "related": [sample_related_data],
-        }
+        repository: API{Resource}
 
-        result = repository.get_by_id_v2("{resource}-123")
 
-        # Vérifier que c'est une Get{Resource}ByIdV2Response
-        assert isinstance(result, Get{Resource}ByIdV2Response)
+Repository,
+mock_api_client: Mock,
+sample_
+{resource}
+_data: dict,
+sample_related_data: dict,
+) -> None:
+"""Test de récupération avec toutes les relations."""
+# Données complètes de la réponse API
+mock_api_client.get.return_value = {
+    "{resources}": [sample_{resource}_data],
+    "related": [sample_related_data],
+}
 
-        # Vérifier la ressource
-        assert len(result.{resources}) == 1
-        assert result.{resources}[0].id == "{resource}-123"
+result = repository.get_by_id_v2("{resource}-123")
 
-        # Vérifier les entités liées
-        assert len(result.related) == 1
-        assert result.related[0].id == "related-456"
+# Vérifier que c'est une Get{Resource}ByIdV2Response
+assert isinstance(result, Get
+{Resource}
+ByIdV2Response)
 
-    def test_get_by_id_optional_fields(
-        self, repository: API{Resource}Repository, mock_api_client: Mock
-    ) -> None:
-        """Test de récupération avec champs optionnels manquants."""
-        resource_data = {
-            "id": "test-id",
-            "name": "Test {Resource}",
-            # Champs optionnels omis
-        }
-        mock_api_client.get.return_value = {
-            "{resources}": [resource_data],
-            "related": [],
-        }
+# Vérifier la ressource
+assert len(result.
+{resources}) == 1
+assert result.
+{resources}[0].id == "{resource}-123"
 
-        result = repository.get_by_id_v2("test-id")
-        resource = result.{resources}[0]
+# Vérifier les entités liées
+assert len(result.related) == 1
+assert result.related[0].id == "related-456"
 
-        # Vérifier que les champs optionnels sont None
-        assert resource.optional_field is None
 
-    # ================================================================
-    # TESTS GET ALL (OBLIGATOIRES si endpoint GET list existe)
-    # ================================================================
+def test_get_by_id_optional_fields(
+        self, repository: API{Resource}
 
-    def test_get_all_success(
+
+Repository, mock_api_client: Mock
+) -> None:
+"""Test de récupération avec champs optionnels manquants."""
+resource_data = {
+    "id": "test-id",
+    "name": "Test {Resource}",
+    # Champs optionnels omis
+}
+mock_api_client.get.return_value = {
+    "{resources}": [resource_data],
+    "related": [],
+}
+
+result = repository.get_by_id_v2("test-id")
+resource = result.
+{resources}[0]
+
+# Vérifier que les champs optionnels sont None
+assert resource.optional_field is None
+
+
+# ================================================================
+# TESTS GET ALL (OBLIGATOIRES si endpoint GET list existe)
+# ================================================================
+
+def test_get_all_success(
         self,
-        repository: API{Resource}Repository,
-        mock_api_client: Mock,
-        sample_{resource}_data: dict,
-    ) -> None:
-        """Test de récupération de tous les {resources}."""
-        mock_api_client.get.return_value = {
-            "{resources}": [
-                sample_{resource}_data,
-                {
-                    "id": "{resource}-456",
-                    "name": "Another {Resource}",
-                },
-            ]
-        }
+        repository: API{Resource}
 
-        result = repository.get_all_v2()
 
-        assert isinstance(result, GetAll{Resource}sV2Response)
-        assert len(result.{resources}) == 2
-        assert all(isinstance(r, {Resource}) for r in result.{resources})
-        assert result.{resources}[0].name == "Sample {Resource}"
-        assert result.{resources}[1].name == "Another {Resource}"
+Repository,
+mock_api_client: Mock,
+sample_
+{resource}
+_data: dict,
+) -> None:
+"""Test de récupération de tous les {resources}."""
+mock_api_client.get.return_value = {
+    "{resources}": [
+        sample_{resource}_data,
+        {
+            "id": "{resource}-456",
+            "name": "Another {Resource}",
+        },
+    ]
+}
 
-        mock_api_client.get.assert_called_once_with("/v2/{resources}/")
+result = repository.get_all_v2()
 
-    def test_get_all_empty(
-        self, repository: API{Resource}Repository, mock_api_client: Mock
-    ) -> None:
-        """Test de récupération avec liste vide."""
-        mock_api_client.get.return_value = {"{resources}": []}
+assert isinstance(result, GetAll
+{Resource}
+sV2Response)
+assert len(result.
+{resources}) == 2
+assert all(isinstance(r, {Resource}) for r in result.
+{resources})
+assert result.
+{resources}[0].name == "Sample {Resource}"
+assert result.
+{resources}[1].name == "Another {Resource}"
 
-        result = repository.get_all_v2()
+mock_api_client.get.assert_called_once_with("/v2/{resources}/")
 
-        assert isinstance(result, GetAll{Resource}sV2Response)
-        assert result.{resources} == []
 
-    def test_get_all_no_key(
-        self, repository: API{Resource}Repository, mock_api_client: Mock
-    ) -> None:
-        """Test de récupération sans clé '{resources}'."""
-        mock_api_client.get.return_value = {}
+def test_get_all_empty(
+        self, repository: API{Resource}
 
-        result = repository.get_all_v2()
 
-        assert isinstance(result, GetAll{Resource}sV2Response)
-        assert result.{resources} == []
+Repository, mock_api_client: Mock
+) -> None:
+"""Test de récupération avec liste vide."""
+mock_api_client.get.return_value = {"{resources}": []}
 
-    def test_get_all_api_exception(
-        self, repository: API{Resource}Repository, mock_api_client: Mock
-    ) -> None:
-        """Test de gestion d'erreur API pour get_all."""
-        mock_api_client.get.side_effect = Exception("API Error")
+result = repository.get_all_v2()
 
-        with pytest.raises(RuntimeError) as exc_info:
-            repository.get_all_v2()
+assert isinstance(result, GetAll
+{Resource}
+sV2Response)
+assert result.
+{resources} == []
 
-        assert "Failed to retrieve {resources}" in str(exc_info.value)
 
-    # ================================================================
-    # TESTS GET LIST (OPTIONNELS - si méthode get_list existe)
-    # ================================================================
+def test_get_all_no_key(
+        self, repository: API{Resource}
 
-    def test_get_list_success(
+
+Repository, mock_api_client: Mock
+) -> None:
+"""Test de récupération sans clé '{resources}'."""
+mock_api_client.get.return_value = {}
+
+result = repository.get_all_v2()
+
+assert isinstance(result, GetAll
+{Resource}
+sV2Response)
+assert result.
+{resources} == []
+
+
+def test_get_all_api_exception(
+        self, repository: API{Resource}
+
+
+Repository, mock_api_client: Mock
+) -> None:
+"""Test de gestion d'erreur API pour get_all."""
+mock_api_client.get.side_effect = Exception("API Error")
+
+with pytest.raises(RuntimeError) as exc_info:
+    repository.get_all_v2()
+
+assert "Failed to retrieve {resources}" in str(exc_info.value)
+
+
+# ================================================================
+# TESTS GET LIST (OPTIONNELS - si méthode get_list existe)
+# ================================================================
+
+def test_get_list_success(
         self,
-        repository: API{Resource}Repository,
-        mock_api_client: Mock,
-        sample_{resource}_data: dict,
-    ) -> None:
-        """Test de récupération de la liste simplifiée."""
-        mock_api_client.get.return_value = {
-            "{resources}": [
-                sample_{resource}_data,
-                {"id": "{resource}-456", "name": "Test"},
-            ]
-        }
+        repository: API{Resource}
 
-        items = repository.get_list()
 
-        assert len(items) == 2
-        assert all(isinstance(item, {Resource}ListItem) for item in items)
+Repository,
+mock_api_client: Mock,
+sample_
+{resource}
+_data: dict,
+) -> None:
+"""Test de récupération de la liste simplifiée."""
+mock_api_client.get.return_value = {
+    "{resources}": [
+        sample_{resource}_data,
+        {"id": "{resource}-456", "name": "Test"},
+    ]
+}
 
-        first_item = next(item for item in items if item.id == "{resource}-123")
-        assert first_item.display_name == "Sample {Resource}"
+items = repository.get_list()
+
+assert len(items) == 2
+assert all(isinstance(item, {Resource}
+ListItem) for item in items)
+
+first_item = next(item for item in items if item.id == "{resource}-123")
+assert first_item.display_name == "Sample {Resource}"
 ```
 
 ## 📋 Checklist de Tests Obligatoires
