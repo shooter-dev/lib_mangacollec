@@ -32,3 +32,17 @@ pre-comit:
 	make tests-code
 
 	make tests
+
+increment-version:
+	@echo "Incrementing version..."
+	@CURRENT_VERSION=$$(grep 'version = ' pyproject.toml | head -n1 | sed 's/.*"\(.*\)".*/\1/'); \
+	echo "Current version: $$CURRENT_VERSION"; \
+	MAJOR=$$(echo $$CURRENT_VERSION | cut -d. -f1); \
+	MINOR=$$(echo $$CURRENT_VERSION | cut -d. -f2); \
+	PATCH=$$(echo $$CURRENT_VERSION | cut -d. -f3); \
+	PATCH=$$((PATCH + 1)); \
+	NEW_VERSION="$$MAJOR.$$MINOR.$$PATCH"; \
+	echo "New version: $$NEW_VERSION"; \
+	sed -i.bak "s/version = \"$$CURRENT_VERSION\"/version = \"$$NEW_VERSION\"/" pyproject.toml; \
+	rm -f pyproject.toml.bak; \
+	echo "✅ Version updated to $$NEW_VERSION"
