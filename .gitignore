@@ -6,6 +6,8 @@ CLAUDE.md
 *.DS_Store
 
 htmlcov
+.coverage
+*.coverage
 
-
+dist
 __pycache__/

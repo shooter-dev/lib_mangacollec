@@ -45,4 +45,5 @@ increment-version:
 	echo "New version: $$NEW_VERSION"; \
 	sed -i.bak "s/version = \"$$CURRENT_VERSION\"/version = \"$$NEW_VERSION\"/" pyproject.toml; \
 	rm -f pyproject.toml.bak; \
+	git add pyproject.toml; \
 	echo "✅ Version updated to $$NEW_VERSION"
