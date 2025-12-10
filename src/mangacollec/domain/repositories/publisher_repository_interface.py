@@ -2,10 +2,8 @@
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+from mangacollec.application.dto import (GetAllPublishersV2Response,
+                                         GetPublisherByIdV2Response)
 from mangacollec.domain.entities.publisher import PublisherListItem
 
 

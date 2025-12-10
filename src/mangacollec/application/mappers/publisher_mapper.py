@@ -1,9 +1,7 @@
 """Publisher mapper."""
 
 from mangacollec.application.dto.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)
 from mangacollec.application.mappers.box_edition_mapper import BoxEditionMapper
 from mangacollec.application.mappers.box_mapper import BoxMapper
 from mangacollec.application.mappers.serie_mapper import SerieMapper
@@ -97,7 +95,8 @@ class PublisherMapper:
         Returns:
             A GetPublisherByIdV2Response.
         """
-        from mangacollec.application.mappers.edition_mapper import EditionMapper
+        from mangacollec.application.mappers.edition_mapper import \
+            EditionMapper
 
         return GetPublisherByIdV2Response(
             publishers=[PublisherMapper.from_dict(publisher) for publisher in response.get("publishers", [])],

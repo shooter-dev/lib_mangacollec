@@ -1,8 +1,10 @@
 """Tests for the PublisherMapper."""
 
-from mangacollec.application.dto import GetAllPublishersV2Response, GetPublisherByIdV2Response
+from mangacollec.application.dto import (GetAllPublishersV2Response,
+                                         GetPublisherByIdV2Response)
 from mangacollec.application.mappers import PublisherMapper
-from mangacollec.domain.entities import Edition, Serie, TypeSerie, Volume, Publisher, PublisherListItem
+from mangacollec.domain.entities import (Edition, Publisher, PublisherListItem,
+                                         Serie, TypeSerie, Volume)
 
 
 class TestPublisherMapper:

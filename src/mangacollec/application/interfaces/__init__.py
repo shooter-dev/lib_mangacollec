@@ -13,4 +13,5 @@ __all__ = [
     "IMangaCollecAPI",
 ]
 
-from mangacollec.application.interfaces.mangacollec_api_interface import IMangaCollecAPI
+from mangacollec.application.interfaces.mangacollec_api_interface import \
+    IMangaCollecAPI

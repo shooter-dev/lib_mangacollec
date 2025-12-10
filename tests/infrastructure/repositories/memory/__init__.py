@@ -6,6 +6,9 @@ __all__ = [
     "InMemoryPublisherRepository",
 ]
 
-from tests.infrastructure.repositories.memory.in_memory_author_repository import InMemoryAuthorRepository
-from tests.infrastructure.repositories.memory.in_memory_edition_repository import InMemoryEditionRepository
-from tests.infrastructure.repositories.memory.in_memory_publisher_repository import InMemoryPublisherRepository
+from tests.infrastructure.repositories.memory.in_memory_author_repository import \
+    InMemoryAuthorRepository
+from tests.infrastructure.repositories.memory.in_memory_edition_repository import \
+    InMemoryEditionRepository
+from tests.infrastructure.repositories.memory.in_memory_publisher_repository import \
+    InMemoryPublisherRepository

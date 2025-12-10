@@ -4,7 +4,8 @@ import pytest
 
 from mangacollec.application.dto.job_responses import GetAllJobsV1Response
 from mangacollec.domain.entities import Job
-from mangacollec.infrastructure.repositories.memory.in_memory_job_repository import InMemoryJobRepository
+from mangacollec.infrastructure.repositories.memory.in_memory_job_repository import \
+    InMemoryJobRepository
 
 
 class TestInMemoryJobRepository:

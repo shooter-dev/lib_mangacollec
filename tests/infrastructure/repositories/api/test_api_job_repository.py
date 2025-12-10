@@ -6,7 +6,8 @@ import pytest
 
 from mangacollec.application.dto.job_responses import GetAllJobsV1Response
 from mangacollec.domain.entities import Job
-from mangacollec.infrastructure.repositories.api.api_job_repository import APIJobRepository
+from mangacollec.infrastructure.repositories.api.api_job_repository import \
+    APIJobRepository
 
 
 class TestAPIJobRepository:

@@ -2,7 +2,8 @@
 
 import pytest
 
-from mangacollec.application.dto.publisher_responses import GetAllPublishersV2Response, GetPublisherByIdV2Response
+from mangacollec.application.dto.publisher_responses import (
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)
 from mangacollec.domain.entities.publisher import Publisher, PublisherListItem
 from mangacollec.domain.exceptions import PublisherNotFoundException
 from mangacollec.infrastructure.repositories import InMemoryPublisherRepository

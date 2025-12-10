@@ -68,7 +68,8 @@ class EditionMapper:
         Returns:
             GetEditionByIdV2Response contenant toutes les entités converties
         """
-        from mangacollec.application.mappers.publisher_mapper import PublisherMapper
+        from mangacollec.application.mappers.publisher_mapper import \
+            PublisherMapper
         from mangacollec.application.mappers.type_mapper import TypeSerieMapper
 
         # Convertir les editions (liste)

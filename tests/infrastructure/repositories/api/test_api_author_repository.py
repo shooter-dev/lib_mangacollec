@@ -7,10 +7,13 @@ from unittest.mock import Mock
 
 import pytest
 
-from mangacollec.application.dto import GetAllAuthorsV2Response, GetAuthorByIdV2Response
+from mangacollec.application.dto import (GetAllAuthorsV2Response,
+                                         GetAuthorByIdV2Response)
 from mangacollec.application.interfaces import IMangaCollecAPI
-from mangacollec.domain.entities import Author, AuthorListItem, Edition, Job, Serie, Task, Volume
-from mangacollec.domain.exceptions.author_exceptions import AuthorNotFoundException
+from mangacollec.domain.entities import (Author, AuthorListItem, Edition, Job,
+                                         Serie, Task, Volume)
+from mangacollec.domain.exceptions.author_exceptions import \
+    AuthorNotFoundException
 from mangacollec.infrastructure.repositories import APIAuthorRepository
 
 

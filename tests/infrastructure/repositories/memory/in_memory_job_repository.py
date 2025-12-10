@@ -2,7 +2,8 @@ from typing import List
 
 from mangacollec.application.dto.job_responses import GetAllJobsV1Response
 from mangacollec.domain.entities import Job
-from mangacollec.domain.repositories.job_repository_interface import IJobRepository
+from mangacollec.domain.repositories.job_repository_interface import \
+    IJobRepository
 
 
 class InMemoryJobRepository(IJobRepository):

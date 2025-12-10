@@ -1,9 +1,7 @@
 """Publisher API repository."""
 
-from mangacollec.application.dto import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+from mangacollec.application.dto import (GetAllPublishersV2Response,
+                                         GetPublisherByIdV2Response)
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.application.mappers import PublisherMapper
 from mangacollec.domain.entities import PublisherListItem

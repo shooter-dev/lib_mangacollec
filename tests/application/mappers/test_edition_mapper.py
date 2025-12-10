@@ -3,9 +3,10 @@
 This module contains unit tests for the EditionMapper.
 """
 
-from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
-from mangacollec.application.mappers import EditionMapper
 from mangacollec.application.dto import GetEditionByIdV2Response
+from mangacollec.application.mappers import EditionMapper
+from mangacollec.domain.entities import (Edition, Publisher, Serie, TypeSerie,
+                                         Volume)
 
 
 class TestEditionMapper:

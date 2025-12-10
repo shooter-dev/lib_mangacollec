@@ -16,14 +16,17 @@ __all__ = [
     "GetAuthorByIdV2Response",
     "GetEditionByIdV2Response",
     "GetPublisherByIdV2Response",
+    "FollowEditionV1Response",
     "SearchAuthor",
 ]
 
 from mangacollec.application.dto.author_dto import SearchAuthor
-from mangacollec.application.dto.author_responses import GetAllAuthorsV2Response, GetAuthorByIdV2Response
-from mangacollec.application.dto.edition_responses import GetEditionByIdV2Response
+from mangacollec.application.dto.author_responses import (
+    GetAllAuthorsV2Response, GetAuthorByIdV2Response)
+from mangacollec.application.dto.edition_responses import \
+    GetEditionByIdV2Response
+from mangacollec.application.dto.follow_edition_responses import \
+    FollowEditionV1Response
 from mangacollec.application.dto.job_responses import GetAllJobsV1Response
 from mangacollec.application.dto.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
-)
+    GetAllPublishersV2Response, GetPublisherByIdV2Response)

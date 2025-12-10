@@ -4,7 +4,8 @@ This module contains all use cases for Author operations.
 """
 
 from mangacollec.application.dto import SearchAuthor
-from mangacollec.domain.entities import Author, AuthorListItem, Edition, Job, Serie, Task, Volume
+from mangacollec.domain.entities import (Author, AuthorListItem, Edition, Job,
+                                         Serie, Task, Volume)
 from mangacollec.domain.repositories import IAuthorRepository
 
 

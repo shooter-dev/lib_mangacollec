@@ -5,7 +5,8 @@ This module defines the repository interface for Author operations.
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto import GetAllAuthorsV2Response, GetAuthorByIdV2Response
+from mangacollec.application.dto import (GetAllAuthorsV2Response,
+                                         GetAuthorByIdV2Response)
 from mangacollec.domain.entities import AuthorListItem
 
 

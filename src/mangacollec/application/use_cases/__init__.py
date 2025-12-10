@@ -1,6 +1,7 @@
 """Use cases."""
 
 __all__ = [
+    "FollowEditionV1UseCase",
     "GetAllAuthorUseCase",
     "GetAllJobsV1UseCase",
     "GetAllPublishersV2UseCase",
@@ -10,18 +11,17 @@ __all__ = [
     "GetListPublishersUseCase",
     "GetPublisherByIdV2UseCase",
     "SearchAuthorUseCase",
+    "UnfollowEditionV1UseCase",
 ]
 
 from mangacollec.application.use_cases.author_usecase import (
-    GetAllAuthorUseCase,
-    GetByIdAuthorUseCase,
-    GetListAuthorUseCase,
-    SearchAuthorUseCase,
-)
-from mangacollec.application.use_cases.edition_usecase import GetEditionByIdV2UseCase
+    GetAllAuthorUseCase, GetByIdAuthorUseCase, GetListAuthorUseCase,
+    SearchAuthorUseCase)
+from mangacollec.application.use_cases.edition_usecase import \
+    GetEditionByIdV2UseCase
+from mangacollec.application.use_cases.follow_edition_usecase import (
+    FollowEditionV1UseCase, UnfollowEditionV1UseCase)
 from mangacollec.application.use_cases.job_usecase import GetAllJobsV1UseCase
 from mangacollec.application.use_cases.publisher_usecase import (
-    GetAllPublishersV2UseCase,
-    GetListPublishersUseCase,
-    GetPublisherByIdV2UseCase,
-)
+    GetAllPublishersV2UseCase, GetListPublishersUseCase,
+    GetPublisherByIdV2UseCase)

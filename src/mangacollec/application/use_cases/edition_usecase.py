@@ -3,7 +3,8 @@
 This module contains all use cases for Edition operations.
 """
 
-from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
+from mangacollec.domain.entities import (Edition, Publisher, Serie, TypeSerie,
+                                         Volume)
 from mangacollec.domain.repositories import IEditionRepository
 
 
