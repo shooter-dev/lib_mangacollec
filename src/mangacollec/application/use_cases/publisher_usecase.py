@@ -19,7 +19,7 @@ class GetAllPublishersV2UseCase:
         """
         self.repository = repository
 
-    def execute(self) -> GetAllPublishersV2Response:
+    def __call__(self) -> GetAllPublishersV2Response:
         """
         Execute the use case.
 
@@ -41,7 +41,7 @@ class GetPublisherByIdV2UseCase:
         """
         self.repository = repository
 
-    def execute(self, publisher_id: str) -> GetPublisherByIdV2Response:
+    def __call__(self, publisher_id: str) -> GetPublisherByIdV2Response:
         """
         Execute the use case.
 
@@ -66,7 +66,7 @@ class GetListPublishersUseCase:
         """
         self.repository = repository
 
-    def execute(self) -> list[PublisherListItem]:
+    def __call__(self) -> list[PublisherListItem]:
         """
         Execute the use case.
 
