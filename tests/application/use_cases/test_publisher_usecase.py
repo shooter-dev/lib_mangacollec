@@ -53,7 +53,7 @@ class TestGetByIdPublisherUseCase:
         """Test retrieving an existing publisher."""
         usecase = GetPublisherByIdV2UseCase(repository)
 
-        response = usecase.execute("bdef8c9e-7395-465d-8175-a1b985d4aa92")
+        response = usecase.__call__("bdef8c9e-7395-465d-8175-a1b985d4aa92")
 
         assert len(response.publishers) == 1
         publisher = response.publishers[0]
@@ -66,7 +66,7 @@ class TestGetByIdPublisherUseCase:
         usecase = GetPublisherByIdV2UseCase(repository)
 
         with pytest.raises(PublisherNotFoundException):
-            usecase.execute("nonexistent-id")
+            usecase.__call__("nonexistent-id")
 
 
 class TestGetAllPublisherUseCase:
@@ -80,7 +80,7 @@ class TestGetAllPublisherUseCase:
         """Test retrieving all publishers."""
         usecase = GetAllPublishersV2UseCase(repository)
 
-        result = usecase.execute()
+        result = usecase.__call__()
 
         assert len(result.publishers) == 2
         assert all(isinstance(publisher, Publisher) for publisher in result.publishers)
@@ -89,7 +89,7 @@ class TestGetAllPublisherUseCase:
         """Test retrieving with an empty repository."""
         usecase = GetAllPublishersV2UseCase(repository)
 
-        result = usecase.execute()
+        result = usecase.__call__()
 
         assert result.publishers == []
 
@@ -105,7 +105,7 @@ class TestGetListPublisherUseCase:
         """Test retrieving the simplified list."""
         usecase = GetListPublishersUseCase(repository)
 
-        items = usecase.execute()
+        items = usecase.__call__()
 
         assert len(items) == 2
         assert all(isinstance(item, PublisherListItem) for item in items)
