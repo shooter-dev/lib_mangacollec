@@ -5,11 +5,13 @@ __all__ = [
     "APIEditionRepository",
     "APIFollowEditionRepository",
     "APIJobRepository",
+    "APIPlanningRepository",
     "APIPublisherRepository",
     "InMemoryAuthorRepository",
     "InMemoryEditionRepository",
     "InMemoryFollowEditionRepository",
     "InMemoryJobRepository",
+    "InMemoryPlanningRepository",
     "InMemoryPublisherRepository",
 ]
 
@@ -21,6 +23,8 @@ from mangacollec.infrastructure.repositories.api.api_follow_edition_repository i
     APIFollowEditionRepository
 from mangacollec.infrastructure.repositories.api.api_job_repository import \
     APIJobRepository
+from mangacollec.infrastructure.repositories.api.api_planning_repository import \
+    APIPlanningRepository
 from mangacollec.infrastructure.repositories.api.api_publisher_repository import \
     APIPublisherRepository
 from mangacollec.infrastructure.repositories.memory.in_memory_author_repository import \
@@ -31,5 +35,7 @@ from mangacollec.infrastructure.repositories.memory.in_memory_follow_edition_rep
     InMemoryFollowEditionRepository
 from mangacollec.infrastructure.repositories.memory.in_memory_job_repository import \
     InMemoryJobRepository
+from mangacollec.infrastructure.repositories.memory.in_memory_planning_repository import \
+    InMemoryPlanningRepository
 from mangacollec.infrastructure.repositories.memory.in_memory_publisher_repository import \
     InMemoryPublisherRepository
