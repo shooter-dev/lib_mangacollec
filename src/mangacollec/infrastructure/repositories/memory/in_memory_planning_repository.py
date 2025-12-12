@@ -4,8 +4,15 @@ This module provides an in-memory implementation of the Planning repository.
 """
 
 from mangacollec.application.dto import GetPlanningV2Response
-from mangacollec.domain.entities import (Box, BoxEdition, BoxVolume, Edition,
-                                         Serie, TypeSerie, Volume)
+from mangacollec.domain.entities import (
+    Box,
+    BoxEdition,
+    BoxVolume,
+    Edition,
+    Serie,
+    TypeSerie,
+    Volume,
+)
 from mangacollec.domain.repositories import IPlanningRepository
 
 

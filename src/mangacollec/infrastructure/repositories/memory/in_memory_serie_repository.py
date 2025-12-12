@@ -3,8 +3,7 @@
 This module provides an in-memory implementation of the Serie repository for testing.
 """
 
-from mangacollec.application.dto import (GetAllSeriesV2Response,
-                                         GetSerieByIdV2Response)
+from mangacollec.application.dto import GetAllSeriesV2Response, GetSerieByIdV2Response
 from mangacollec.domain.entities import Serie, TypeSerie
 from mangacollec.domain.exceptions import SerieNotFoundException
 from mangacollec.domain.repositories import ISerieRepository

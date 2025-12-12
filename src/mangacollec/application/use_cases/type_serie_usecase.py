@@ -1,9 +1,9 @@
 """TypeSerie use cases."""
 
-from mangacollec.application.dto.type_serie_responses import \
-    GetAllTypesSerieV1Response
-from mangacollec.domain.repositories.type_serie_repository_interface import \
-    ITypeSerieRepository
+from mangacollec.application.dto.type_serie_responses import GetAllTypesSerieV1Response
+from mangacollec.domain.repositories.type_serie_repository_interface import (
+    ITypeSerieRepository,
+)
 
 
 class GetAllTypesSerieV1UseCase:

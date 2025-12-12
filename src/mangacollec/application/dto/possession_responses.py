@@ -2,9 +2,13 @@
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities import (FollowEdition, FollowEditionDeleted,
-                                         LoanDeleted, Possession,
-                                         PossessionDeleted)
+from mangacollec.domain.entities import (
+    FollowEdition,
+    FollowEditionDeleted,
+    LoanDeleted,
+    Possession,
+    PossessionDeleted,
+)
 
 
 @dataclass(frozen=True)

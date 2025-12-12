@@ -5,8 +5,7 @@ This module contains response DTOs for Author operations.
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities import (Author, Edition, Job, Serie, Task,
-                                         Volume)
+from mangacollec.domain.entities import Author, Edition, Job, Serie, Task, Volume
 
 
 @dataclass(frozen=True)

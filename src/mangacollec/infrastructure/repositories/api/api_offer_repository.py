@@ -3,12 +3,16 @@
 This module provides the API implementation of the Offer repository.
 """
 
-from mangacollec.application.dto import (GetAmazonOfferV1Response,
-                                         GetBDFugueOfferV1Response)
+from mangacollec.application.dto import (
+    GetAmazonOfferV1Response,
+    GetBDFugueOfferV1Response,
+)
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.application.mappers import OfferMapper
-from mangacollec.domain.exceptions import (AmazonOfferNotFoundException,
-                                           BDFugueOfferNotFoundException)
+from mangacollec.domain.exceptions import (
+    AmazonOfferNotFoundException,
+    BDFugueOfferNotFoundException,
+)
 from mangacollec.domain.repositories import IOfferRepository
 
 

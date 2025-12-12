@@ -5,12 +5,17 @@ This module provides an in-memory implementation of the Read repository for test
 
 from datetime import datetime, timezone
 
-from mangacollec.application.dto import (CreateReadsMultipleV1Response,
-                                         DeleteReadsMultipleV1Response)
-from mangacollec.domain.entities import (Read, ReadDeleted, ReadEdition,
-                                         ReadEditionDeleted)
-from mangacollec.domain.exceptions import (ReadCreationException,
-                                           ReadDeletionException)
+from mangacollec.application.dto import (
+    CreateReadsMultipleV1Response,
+    DeleteReadsMultipleV1Response,
+)
+from mangacollec.domain.entities import (
+    Read,
+    ReadDeleted,
+    ReadEdition,
+    ReadEditionDeleted,
+)
+from mangacollec.domain.exceptions import ReadCreationException, ReadDeletionException
 from mangacollec.domain.repositories import IReadRepository
 
 

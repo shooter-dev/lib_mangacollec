@@ -3,12 +3,13 @@
 This module contains unit tests for the UserMapper.
 """
 
-from mangacollec.application.dto import (GetMeCollectionV2Response,
-                                         GetMeRecommendationsV1Response,
-                                         GetUserCollectionByUsernameV2Response)
+from mangacollec.application.dto import (
+    GetMeCollectionV2Response,
+    GetMeRecommendationsV1Response,
+    GetUserCollectionByUsernameV2Response,
+)
 from mangacollec.application.mappers import UserMapper
-from mangacollec.domain.entities import (Edition, Serie, User, UserCollection,
-                                         Volume)
+from mangacollec.domain.entities import Edition, Serie, User, UserCollection, Volume
 
 
 class TestUserMapper:

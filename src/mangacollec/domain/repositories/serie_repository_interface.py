@@ -6,8 +6,7 @@ des données des séries de mangas.
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto import (GetAllSeriesV2Response,
-                                         GetSerieByIdV2Response)
+from mangacollec.application.dto import GetAllSeriesV2Response, GetSerieByIdV2Response
 
 
 class ISerieRepository(ABC):

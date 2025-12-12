@@ -2,8 +2,10 @@
 
 from datetime import datetime
 
-from mangacollec.application.dto import (AddPossessionsMultipleV1Response,
-                                         DeletePossessionsMultipleV1Response)
+from mangacollec.application.dto import (
+    AddPossessionsMultipleV1Response,
+    DeletePossessionsMultipleV1Response,
+)
 from mangacollec.application.mappers import PossessionMapper
 from mangacollec.domain.entities import Possession
 

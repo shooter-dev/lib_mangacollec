@@ -3,8 +3,10 @@
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.application.mappers import FollowEditionMapper
 from mangacollec.domain.entities import FollowEdition
-from mangacollec.domain.exceptions import (FollowEditionNotFoundException,
-                                           FollowEditionOperationException)
+from mangacollec.domain.exceptions import (
+    FollowEditionNotFoundException,
+    FollowEditionOperationException,
+)
 from mangacollec.domain.repositories import IFollowEditionRepository
 
 

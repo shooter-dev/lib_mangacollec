@@ -3,8 +3,7 @@
 This module provides mapping functions between API responses and Serie entities.
 """
 
-from mangacollec.application.dto import (GetAllSeriesV2Response,
-                                         GetSerieByIdV2Response)
+from mangacollec.application.dto import GetAllSeriesV2Response, GetSerieByIdV2Response
 from mangacollec.domain.entities import Serie, SerieListItem
 
 
@@ -97,17 +96,13 @@ class SerieMapper:
             GetSerieByIdV2Response contenant toutes les entités converties
         """
         from mangacollec.application.mappers.author_mapper import AuthorMapper
-        from mangacollec.application.mappers.box_edition_mapper import \
-            BoxEditionMapper
+        from mangacollec.application.mappers.box_edition_mapper import BoxEditionMapper
         from mangacollec.application.mappers.box_mapper import BoxMapper
-        from mangacollec.application.mappers.box_volume_mapper import \
-            BoxVolumeMapper
-        from mangacollec.application.mappers.edition_mapper import \
-            EditionMapper
+        from mangacollec.application.mappers.box_volume_mapper import BoxVolumeMapper
+        from mangacollec.application.mappers.edition_mapper import EditionMapper
         from mangacollec.application.mappers.job_mapper import JobMapper
         from mangacollec.application.mappers.kind_mapper import KindMapper
-        from mangacollec.application.mappers.publisher_mapper import \
-            PublisherMapper
+        from mangacollec.application.mappers.publisher_mapper import PublisherMapper
         from mangacollec.application.mappers.task_mapper import TaskMapper
         from mangacollec.application.mappers.type_mapper import TypeSerieMapper
         from mangacollec.application.mappers.volume_mapper import VolumeMapper

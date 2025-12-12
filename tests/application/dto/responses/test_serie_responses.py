@@ -2,11 +2,21 @@
 
 import pytest
 
-from mangacollec.application.dto import (GetAllSeriesV2Response,
-                                         GetSerieByIdV2Response)
-from mangacollec.domain.entities import (Author, Box, BoxEdition, BoxVolume,
-                                         Edition, Job, Kind, Publisher, Serie,
-                                         Task, TypeSerie, Volume)
+from mangacollec.application.dto import GetAllSeriesV2Response, GetSerieByIdV2Response
+from mangacollec.domain.entities import (
+    Author,
+    Box,
+    BoxEdition,
+    BoxVolume,
+    Edition,
+    Job,
+    Kind,
+    Publisher,
+    Serie,
+    Task,
+    TypeSerie,
+    Volume,
+)
 
 
 class TestGetAllSeriesV2Response:

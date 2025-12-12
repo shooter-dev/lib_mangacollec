@@ -2,8 +2,7 @@
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto import (GetAllKindsV1Response,
-                                         GetAllKindsV2Response)
+from mangacollec.application.dto import GetAllKindsV1Response, GetAllKindsV2Response
 
 
 class IKindRepository(ABC):

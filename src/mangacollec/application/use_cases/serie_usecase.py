@@ -4,10 +4,21 @@ This module contains all use cases for Serie operations.
 """
 
 from mangacollec.application.mappers import SerieMapper
-from mangacollec.domain.entities import (Author, Box, BoxEdition, BoxVolume,
-                                         Edition, Job, Kind, Publisher, Serie,
-                                         SerieListItem, Task, TypeSerie,
-                                         Volume)
+from mangacollec.domain.entities import (
+    Author,
+    Box,
+    BoxEdition,
+    BoxVolume,
+    Edition,
+    Job,
+    Kind,
+    Publisher,
+    Serie,
+    SerieListItem,
+    Task,
+    TypeSerie,
+    Volume,
+)
 from mangacollec.domain.repositories import ISerieRepository
 
 

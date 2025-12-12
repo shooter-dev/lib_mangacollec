@@ -3,8 +3,10 @@
 import pytest
 
 from mangacollec.domain.entities import AmazonOffer, BDFugueOffer
-from mangacollec.domain.exceptions import (AmazonOfferNotFoundException,
-                                           BDFugueOfferNotFoundException)
+from mangacollec.domain.exceptions import (
+    AmazonOfferNotFoundException,
+    BDFugueOfferNotFoundException,
+)
 from mangacollec.infrastructure.repositories import InMemoryOfferRepository
 
 

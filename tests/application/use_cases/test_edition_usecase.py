@@ -9,8 +9,7 @@ import pytest
 
 from mangacollec.application.dto import GetEditionByIdV2Response
 from mangacollec.application.use_cases import GetEditionByIdV2UseCase
-from mangacollec.domain.entities import (Edition, Publisher, Serie, TypeSerie,
-                                         Volume)
+from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
 from mangacollec.domain.exceptions import EditionNotFoundException
 from mangacollec.domain.repositories import IEditionRepository
 

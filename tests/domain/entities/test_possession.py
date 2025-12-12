@@ -4,8 +4,12 @@ from datetime import datetime, timezone
 
 import pytest
 
-from mangacollec.domain.entities import (FollowEditionDeleted, LoanDeleted,
-                                         Possession, PossessionDeleted)
+from mangacollec.domain.entities import (
+    FollowEditionDeleted,
+    LoanDeleted,
+    Possession,
+    PossessionDeleted,
+)
 
 
 class TestPossessionEntity:

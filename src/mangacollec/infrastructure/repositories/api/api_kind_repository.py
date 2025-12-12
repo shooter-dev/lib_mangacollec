@@ -1,7 +1,6 @@
 """Implémentation du repository Kind via MangaCollecAPI."""
 
-from mangacollec.application.dto import (GetAllKindsV1Response,
-                                         GetAllKindsV2Response)
+from mangacollec.application.dto import GetAllKindsV1Response, GetAllKindsV2Response
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.application.mappers import KindMapper
 from mangacollec.domain.repositories import IKindRepository

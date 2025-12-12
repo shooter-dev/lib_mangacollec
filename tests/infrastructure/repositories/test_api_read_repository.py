@@ -5,8 +5,7 @@ from unittest.mock import MagicMock
 import pytest
 
 from mangacollec.application.interfaces import IMangaCollecAPI
-from mangacollec.domain.exceptions import (ReadCreationException,
-                                           ReadDeletionException)
+from mangacollec.domain.exceptions import ReadCreationException, ReadDeletionException
 from mangacollec.infrastructure.repositories import APIReadRepository
 
 

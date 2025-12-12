@@ -3,12 +3,22 @@
 This module contains unit tests for the VolumeMapper.
 """
 
-from mangacollec.application.dto import (GetVolumeByIdV2Response,
-                                         GetVolumesNewsV2Response)
+from mangacollec.application.dto import (
+    GetVolumeByIdV2Response,
+    GetVolumesNewsV2Response,
+)
 from mangacollec.application.mappers import VolumeMapper
-from mangacollec.domain.entities import (Box, BoxEdition, BoxVolume, Edition,
-                                         NativeAdVolumeHomeFirst, Publisher,
-                                         Serie, TypeSerie, Volume)
+from mangacollec.domain.entities import (
+    Box,
+    BoxEdition,
+    BoxVolume,
+    Edition,
+    NativeAdVolumeHomeFirst,
+    Publisher,
+    Serie,
+    TypeSerie,
+    Volume,
+)
 
 
 class TestVolumeMapper:

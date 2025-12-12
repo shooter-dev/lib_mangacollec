@@ -4,12 +4,11 @@ This module provides an in-memory implementation of the Edition repository for t
 """
 
 from mangacollec.application.dto import GetEditionByIdV2Response
-from mangacollec.domain.entities import (Edition, Publisher, Serie, TypeSerie,
-                                         Volume)
-from mangacollec.domain.exceptions.edition_exceptions import \
-    EditionNotFoundException
-from mangacollec.domain.repositories.edition_repository_interface import \
-    IEditionRepository
+from mangacollec.domain.entities import Edition, Publisher, Serie, TypeSerie, Volume
+from mangacollec.domain.exceptions.edition_exceptions import EditionNotFoundException
+from mangacollec.domain.repositories.edition_repository_interface import (
+    IEditionRepository,
+)
 
 
 class InMemoryEditionRepository(IEditionRepository):

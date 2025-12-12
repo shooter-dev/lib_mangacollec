@@ -4,10 +4,14 @@ from unittest.mock import Mock
 
 import pytest
 
-from mangacollec.application.dto import (AddPossessionsMultipleV1Response,
-                                         DeletePossessionsMultipleV1Response)
-from mangacollec.domain.exceptions import (PossessionCreationException,
-                                           PossessionDeletionException)
+from mangacollec.application.dto import (
+    AddPossessionsMultipleV1Response,
+    DeletePossessionsMultipleV1Response,
+)
+from mangacollec.domain.exceptions import (
+    PossessionCreationException,
+    PossessionDeletionException,
+)
 from mangacollec.infrastructure.repositories import APIPossessionRepository
 
 

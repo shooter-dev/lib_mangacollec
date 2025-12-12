@@ -5,9 +5,11 @@ This module contains unit tests for Serie use cases.
 
 import pytest
 
-from mangacollec.application.use_cases import (GetAllSeriesV2UseCase,
-                                               GetListSeriesUseCase,
-                                               GetSerieByIdV2UseCase)
+from mangacollec.application.use_cases import (
+    GetAllSeriesV2UseCase,
+    GetListSeriesUseCase,
+    GetSerieByIdV2UseCase,
+)
 from mangacollec.domain.entities import Serie, SerieListItem, TypeSerie
 from mangacollec.domain.exceptions import SerieNotFoundException
 from mangacollec.infrastructure.repositories import InMemorySerieRepository

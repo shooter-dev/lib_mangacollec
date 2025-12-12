@@ -1,10 +1,13 @@
 """Publisher use cases."""
 
 from mangacollec.application.dto.publisher_responses import (
-    GetAllPublishersV2Response, GetPublisherByIdV2Response)
+    GetAllPublishersV2Response,
+    GetPublisherByIdV2Response,
+)
 from mangacollec.domain.entities.publisher import PublisherListItem
-from mangacollec.domain.repositories.publisher_repository_interface import \
-    IPublisherRepository
+from mangacollec.domain.repositories.publisher_repository_interface import (
+    IPublisherRepository,
+)
 
 
 class GetAllPublishersV2UseCase:

@@ -5,8 +5,10 @@ This module provides mapping functions between API responses and Volume entities
 
 from typing import TYPE_CHECKING
 
-from mangacollec.application.dto import (GetVolumeByIdV2Response,
-                                         GetVolumesNewsV2Response)
+from mangacollec.application.dto import (
+    GetVolumeByIdV2Response,
+    GetVolumesNewsV2Response,
+)
 from mangacollec.domain.entities import Volume
 
 if TYPE_CHECKING:
@@ -77,18 +79,13 @@ class VolumeMapper:
             GetVolumeByIdV2Response contenant toutes les entités converties
         """
         # Import local pour éviter l'import circulaire
-        from mangacollec.application.mappers.box_edition_mapper import \
-            BoxEditionMapper
+        from mangacollec.application.mappers.box_edition_mapper import BoxEditionMapper
         from mangacollec.application.mappers.box_mapper import BoxMapper
-        from mangacollec.application.mappers.box_volume_mapper import \
-            BoxVolumeMapper
-        from mangacollec.application.mappers.edition_mapper import \
-            EditionMapper
-        from mangacollec.application.mappers.publisher_mapper import \
-            PublisherMapper
+        from mangacollec.application.mappers.box_volume_mapper import BoxVolumeMapper
+        from mangacollec.application.mappers.edition_mapper import EditionMapper
+        from mangacollec.application.mappers.publisher_mapper import PublisherMapper
         from mangacollec.application.mappers.serie_mapper import SerieMapper
-        from mangacollec.application.mappers.type_serie_mapper import \
-            TypeSerieMapper
+        from mangacollec.application.mappers.type_serie_mapper import TypeSerieMapper
 
         # Convertir les volumes (liste)
         volumes = [VolumeMapper.from_dict(volume_data) for volume_data in response.get("volumes", [])]
@@ -144,18 +141,15 @@ class VolumeMapper:
             GetVolumesNewsV2Response contenant toutes les entités et la publicité native
         """
         # Import local pour éviter l'import circulaire
-        from mangacollec.application.mappers.box_edition_mapper import \
-            BoxEditionMapper
+        from mangacollec.application.mappers.box_edition_mapper import BoxEditionMapper
         from mangacollec.application.mappers.box_mapper import BoxMapper
-        from mangacollec.application.mappers.box_volume_mapper import \
-            BoxVolumeMapper
-        from mangacollec.application.mappers.edition_mapper import \
-            EditionMapper
-        from mangacollec.application.mappers.native_ad_volume_home_first_mapper import \
-            NativeAdVolumeHomeFirstMapper
+        from mangacollec.application.mappers.box_volume_mapper import BoxVolumeMapper
+        from mangacollec.application.mappers.edition_mapper import EditionMapper
+        from mangacollec.application.mappers.native_ad_volume_home_first_mapper import (
+            NativeAdVolumeHomeFirstMapper,
+        )
         from mangacollec.application.mappers.serie_mapper import SerieMapper
-        from mangacollec.application.mappers.type_serie_mapper import \
-            TypeSerieMapper
+        from mangacollec.application.mappers.type_serie_mapper import TypeSerieMapper
 
         # Convertir les volumes (liste)
         volumes = [VolumeMapper.from_dict(volume_data) for volume_data in response.get("volumes", [])]

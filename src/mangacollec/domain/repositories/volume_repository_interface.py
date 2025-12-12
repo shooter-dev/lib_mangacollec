@@ -5,8 +5,10 @@ This module defines the repository interface for Volume entities.
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto import (GetVolumeByIdV2Response,
-                                         GetVolumesNewsV2Response)
+from mangacollec.application.dto import (
+    GetVolumeByIdV2Response,
+    GetVolumesNewsV2Response,
+)
 
 
 class IVolumeRepository(ABC):

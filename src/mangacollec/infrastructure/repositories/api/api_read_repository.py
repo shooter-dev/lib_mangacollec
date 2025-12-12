@@ -1,11 +1,12 @@
 """API Read repository implementation."""
 
-from mangacollec.application.dto import (CreateReadsMultipleV1Response,
-                                         DeleteReadsMultipleV1Response)
+from mangacollec.application.dto import (
+    CreateReadsMultipleV1Response,
+    DeleteReadsMultipleV1Response,
+)
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.application.mappers import ReadMapper
-from mangacollec.domain.exceptions import (ReadCreationException,
-                                           ReadDeletionException)
+from mangacollec.domain.exceptions import ReadCreationException, ReadDeletionException
 from mangacollec.domain.repositories import IReadRepository
 
 

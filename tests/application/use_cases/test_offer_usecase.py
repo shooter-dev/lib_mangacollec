@@ -2,11 +2,15 @@
 
 import pytest
 
-from mangacollec.application.use_cases import (GetAmazonOfferV1UseCase,
-                                               GetBDFugueOfferV1UseCase)
+from mangacollec.application.use_cases import (
+    GetAmazonOfferV1UseCase,
+    GetBDFugueOfferV1UseCase,
+)
 from mangacollec.domain.entities import AmazonOffer, BDFugueOffer
-from mangacollec.domain.exceptions import (AmazonOfferNotFoundException,
-                                           BDFugueOfferNotFoundException)
+from mangacollec.domain.exceptions import (
+    AmazonOfferNotFoundException,
+    BDFugueOfferNotFoundException,
+)
 from mangacollec.infrastructure.repositories import InMemoryOfferRepository
 
 

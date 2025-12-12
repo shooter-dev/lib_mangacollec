@@ -2,8 +2,10 @@
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto import (CreateReadsMultipleV1Response,
-                                         DeleteReadsMultipleV1Response)
+from mangacollec.application.dto import (
+    CreateReadsMultipleV1Response,
+    DeleteReadsMultipleV1Response,
+)
 
 
 class IReadRepository(ABC):

@@ -3,8 +3,7 @@
 This module provides the API implementation of the Serie repository.
 """
 
-from mangacollec.application.dto import (GetAllSeriesV2Response,
-                                         GetSerieByIdV2Response)
+from mangacollec.application.dto import GetAllSeriesV2Response, GetSerieByIdV2Response
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.application.mappers import SerieMapper
 from mangacollec.domain.exceptions import SerieNotFoundException

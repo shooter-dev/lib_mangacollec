@@ -6,9 +6,20 @@ les réponses des endpoints de l'API Serie.
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities import (Author, Box, BoxEdition, BoxVolume,
-                                         Edition, Job, Kind, Publisher, Serie,
-                                         Task, TypeSerie, Volume)
+from mangacollec.domain.entities import (
+    Author,
+    Box,
+    BoxEdition,
+    BoxVolume,
+    Edition,
+    Job,
+    Kind,
+    Publisher,
+    Serie,
+    Task,
+    TypeSerie,
+    Volume,
+)
 
 
 @dataclass(frozen=True)

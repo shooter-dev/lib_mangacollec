@@ -3,9 +3,11 @@
 This module provides the API implementation of the User repository.
 """
 
-from mangacollec.application.dto import (GetMeCollectionV2Response,
-                                         GetMeRecommendationsV1Response,
-                                         GetUserCollectionByUsernameV2Response)
+from mangacollec.application.dto import (
+    GetMeCollectionV2Response,
+    GetMeRecommendationsV1Response,
+    GetUserCollectionByUsernameV2Response,
+)
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.application.mappers import UserMapper
 from mangacollec.domain.exceptions import UserNotFoundException

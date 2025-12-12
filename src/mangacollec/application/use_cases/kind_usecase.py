@@ -1,7 +1,6 @@
 """Use cases pour les Kinds."""
 
-from mangacollec.application.dto import (GetAllKindsV1Response,
-                                         GetAllKindsV2Response)
+from mangacollec.application.dto import GetAllKindsV1Response, GetAllKindsV2Response
 from mangacollec.domain.repositories import IKindRepository
 
 

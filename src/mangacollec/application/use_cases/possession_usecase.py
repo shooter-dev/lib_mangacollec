@@ -1,7 +1,9 @@
 """Possession use cases."""
 
 from mangacollec.application.dto.possession_responses import (
-    AddPossessionsMultipleV1Response, DeletePossessionsMultipleV1Response)
+    AddPossessionsMultipleV1Response,
+    DeletePossessionsMultipleV1Response,
+)
 from mangacollec.domain.repositories import IPossessionRepository
 
 

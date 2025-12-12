@@ -2,8 +2,10 @@
 
 import pytest
 
-from mangacollec.application.dto import (GetAmazonOfferV1Response,
-                                         GetBDFugueOfferV1Response)
+from mangacollec.application.dto import (
+    GetAmazonOfferV1Response,
+    GetBDFugueOfferV1Response,
+)
 from mangacollec.application.mappers import OfferMapper
 from mangacollec.domain.entities import AmazonOffer, BDFugueOffer
 

@@ -3,9 +3,11 @@
 This module contains all use cases for User operations.
 """
 
-from mangacollec.application.dto import (GetMeCollectionV2Response,
-                                         GetMeRecommendationsV1Response,
-                                         GetUserCollectionByUsernameV2Response)
+from mangacollec.application.dto import (
+    GetMeCollectionV2Response,
+    GetMeRecommendationsV1Response,
+    GetUserCollectionByUsernameV2Response,
+)
 from mangacollec.domain.repositories import IUserRepository
 
 

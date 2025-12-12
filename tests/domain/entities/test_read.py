@@ -4,8 +4,12 @@ from datetime import datetime, timezone
 
 import pytest
 
-from mangacollec.domain.entities import (Read, ReadDeleted, ReadEdition,
-                                         ReadEditionDeleted)
+from mangacollec.domain.entities import (
+    Read,
+    ReadDeleted,
+    ReadEdition,
+    ReadEditionDeleted,
+)
 
 
 class TestReadEntity:

@@ -3,9 +3,15 @@
 from datetime import datetime
 
 from mangacollec.application.dto.read_responses import (
-    CreateReadsMultipleV1Response, DeleteReadsMultipleV1Response)
-from mangacollec.domain.entities import (Read, ReadDeleted, ReadEdition,
-                                         ReadEditionDeleted)
+    CreateReadsMultipleV1Response,
+    DeleteReadsMultipleV1Response,
+)
+from mangacollec.domain.entities import (
+    Read,
+    ReadDeleted,
+    ReadEdition,
+    ReadEditionDeleted,
+)
 
 
 class ReadMapper:

@@ -5,9 +5,11 @@ This module defines the repository interface for User operations.
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto import (GetMeCollectionV2Response,
-                                         GetMeRecommendationsV1Response,
-                                         GetUserCollectionByUsernameV2Response)
+from mangacollec.application.dto import (
+    GetMeCollectionV2Response,
+    GetMeRecommendationsV1Response,
+    GetUserCollectionByUsernameV2Response,
+)
 
 
 class IUserRepository(ABC):

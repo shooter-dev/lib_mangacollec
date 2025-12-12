@@ -5,8 +5,15 @@ This module contains Data Transfer Objects for Planning API responses.
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities import (Box, BoxEdition, BoxVolume, Edition,
-                                         Serie, TypeSerie, Volume)
+from mangacollec.domain.entities import (
+    Box,
+    BoxEdition,
+    BoxVolume,
+    Edition,
+    Serie,
+    TypeSerie,
+    Volume,
+)
 
 
 @dataclass(frozen=True)

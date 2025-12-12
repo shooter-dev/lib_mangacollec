@@ -1,7 +1,6 @@
 """Implémentation en mémoire du repository Kind."""
 
-from mangacollec.application.dto import (GetAllKindsV1Response,
-                                         GetAllKindsV2Response)
+from mangacollec.application.dto import GetAllKindsV1Response, GetAllKindsV2Response
 from mangacollec.domain.entities import Kind
 from mangacollec.domain.repositories import IKindRepository
 

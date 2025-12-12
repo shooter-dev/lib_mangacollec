@@ -5,9 +5,11 @@ This module contains unit tests for the InMemory User repository.
 
 import pytest
 
-from mangacollec.application.dto import (GetMeCollectionV2Response,
-                                         GetMeRecommendationsV1Response,
-                                         GetUserCollectionByUsernameV2Response)
+from mangacollec.application.dto import (
+    GetMeCollectionV2Response,
+    GetMeRecommendationsV1Response,
+    GetUserCollectionByUsernameV2Response,
+)
 from mangacollec.domain.exceptions import UserNotFoundException
 from mangacollec.infrastructure.repositories import InMemoryUserRepository
 

@@ -9,8 +9,10 @@ import pytest
 
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.domain.entities import FollowEdition
-from mangacollec.domain.exceptions import (FollowEditionNotFoundException,
-                                           FollowEditionOperationException)
+from mangacollec.domain.exceptions import (
+    FollowEditionNotFoundException,
+    FollowEditionOperationException,
+)
 from mangacollec.infrastructure.repositories import APIFollowEditionRepository
 
 

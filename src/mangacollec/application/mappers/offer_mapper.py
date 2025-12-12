@@ -3,8 +3,10 @@
 This module provides mapping functions between API responses and Offer entities.
 """
 
-from mangacollec.application.dto import (GetAmazonOfferV1Response,
-                                         GetBDFugueOfferV1Response)
+from mangacollec.application.dto import (
+    GetAmazonOfferV1Response,
+    GetBDFugueOfferV1Response,
+)
 from mangacollec.domain.entities import AmazonOffer, BDFugueOffer
 
 

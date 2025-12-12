@@ -5,13 +5,21 @@ from unittest.mock import Mock
 
 import pytest
 
-from mangacollec.application.dto import (AddPossessionsMultipleV1Response,
-                                         DeletePossessionsMultipleV1Response)
+from mangacollec.application.dto import (
+    AddPossessionsMultipleV1Response,
+    DeletePossessionsMultipleV1Response,
+)
 from mangacollec.application.use_cases import (
-    AddPossessionsMultipleV1UseCase, DeletePossessionsMultipleV1UseCase)
-from mangacollec.domain.entities import (FollowEdition, FollowEditionDeleted,
-                                         LoanDeleted, Possession,
-                                         PossessionDeleted)
+    AddPossessionsMultipleV1UseCase,
+    DeletePossessionsMultipleV1UseCase,
+)
+from mangacollec.domain.entities import (
+    FollowEdition,
+    FollowEditionDeleted,
+    LoanDeleted,
+    Possession,
+    PossessionDeleted,
+)
 
 
 class TestAddPossessionsMultipleV1UseCase:

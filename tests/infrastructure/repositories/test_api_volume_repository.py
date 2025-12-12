@@ -7,11 +7,21 @@ from unittest.mock import Mock
 
 import pytest
 
-from mangacollec.application.dto import (GetVolumeByIdV2Response,
-                                         GetVolumesNewsV2Response)
+from mangacollec.application.dto import (
+    GetVolumeByIdV2Response,
+    GetVolumesNewsV2Response,
+)
 from mangacollec.application.interfaces import IMangaCollecAPI
-from mangacollec.domain.entities import (Box, BoxEdition, BoxVolume, Edition,
-                                         Publisher, Serie, TypeSerie, Volume)
+from mangacollec.domain.entities import (
+    Box,
+    BoxEdition,
+    BoxVolume,
+    Edition,
+    Publisher,
+    Serie,
+    TypeSerie,
+    Volume,
+)
 from mangacollec.domain.exceptions import VolumeNotFoundException
 from mangacollec.infrastructure.repositories import APIVolumeRepository
 

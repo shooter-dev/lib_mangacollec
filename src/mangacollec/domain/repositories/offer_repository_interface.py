@@ -5,8 +5,10 @@ This module defines the repository interface for Offer operations.
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto import (GetAmazonOfferV1Response,
-                                         GetBDFugueOfferV1Response)
+from mangacollec.application.dto import (
+    GetAmazonOfferV1Response,
+    GetBDFugueOfferV1Response,
+)
 
 
 class IOfferRepository(ABC):

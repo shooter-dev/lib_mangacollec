@@ -2,8 +2,12 @@
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities import (Read, ReadDeleted, ReadEdition,
-                                         ReadEditionDeleted)
+from mangacollec.domain.entities import (
+    Read,
+    ReadDeleted,
+    ReadEdition,
+    ReadEditionDeleted,
+)
 
 
 @dataclass(frozen=True)

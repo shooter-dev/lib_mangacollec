@@ -2,8 +2,7 @@
 
 import pytest
 
-from mangacollec.infrastructure.repositories import \
-    InMemoryPossessionRepository
+from mangacollec.infrastructure.repositories import InMemoryPossessionRepository
 
 
 class TestInMemoryPossessionRepository:

@@ -5,19 +5,15 @@ SRC = src tests
 
 fix-code:
 	@echo "Running code fixes..."
-	$(VENV_PYTHON) -m black $(SRC) --line-length=120
-
-	$(VENV_PYTHON) -m isort $(SRC)
-
+	$(VENV_PYTHON) -m isort $(SRC) --profile=black
 	$(VENV_PYTHON) -m ruff check $(SRC) --line-length=120 --fix
+	$(VENV_PYTHON) -m black $(SRC) --line-length=120
 
 tests-code:
 	@echo "Checking code..."
-	$(VENV_PYTHON) -m black --check $(SRC) --line-length=120
-
-	$(VENV_PYTHON) -m isort --check-only $(SRC)
-
+	$(VENV_PYTHON) -m isort --check-only $(SRC) --profile=black
 	$(VENV_PYTHON) -m ruff check $(SRC) --line-length=120
+	$(VENV_PYTHON) -m black --check $(SRC) --line-length=120
 
 tests:
 	@echo "Running tests..."

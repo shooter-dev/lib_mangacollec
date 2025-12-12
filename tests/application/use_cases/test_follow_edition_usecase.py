@@ -5,12 +5,13 @@ This module contains unit tests for FollowEdition use cases.
 
 import pytest
 
-from mangacollec.application.use_cases import (FollowEditionV1UseCase,
-                                               UnfollowEditionV1UseCase)
+from mangacollec.application.use_cases import (
+    FollowEditionV1UseCase,
+    UnfollowEditionV1UseCase,
+)
 from mangacollec.domain.entities import FollowEdition
 from mangacollec.domain.exceptions import FollowEditionNotFoundException
-from mangacollec.infrastructure.repositories import \
-    InMemoryFollowEditionRepository
+from mangacollec.infrastructure.repositories import InMemoryFollowEditionRepository
 
 
 @pytest.fixture

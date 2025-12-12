@@ -4,10 +4,14 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from mangacollec.application.dto import (GetAmazonOfferV1Response,
-                                         GetBDFugueOfferV1Response)
-from mangacollec.domain.exceptions import (AmazonOfferNotFoundException,
-                                           BDFugueOfferNotFoundException)
+from mangacollec.application.dto import (
+    GetAmazonOfferV1Response,
+    GetBDFugueOfferV1Response,
+)
+from mangacollec.domain.exceptions import (
+    AmazonOfferNotFoundException,
+    BDFugueOfferNotFoundException,
+)
 from mangacollec.infrastructure.repositories import APIOfferRepository
 
 

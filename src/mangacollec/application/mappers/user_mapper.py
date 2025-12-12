@@ -3,9 +3,11 @@
 This module provides mapping functions between API responses and User entities.
 """
 
-from mangacollec.application.dto import (GetMeCollectionV2Response,
-                                         GetMeRecommendationsV1Response,
-                                         GetUserCollectionByUsernameV2Response)
+from mangacollec.application.dto import (
+    GetMeCollectionV2Response,
+    GetMeRecommendationsV1Response,
+    GetUserCollectionByUsernameV2Response,
+)
 from mangacollec.application.mappers.edition_mapper import EditionMapper
 from mangacollec.application.mappers.serie_mapper import SerieMapper
 from mangacollec.application.mappers.volume_mapper import VolumeMapper

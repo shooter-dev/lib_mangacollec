@@ -1,11 +1,15 @@
 """API Possession Repository."""
 
 from mangacollec.application.dto.possession_responses import (
-    AddPossessionsMultipleV1Response, DeletePossessionsMultipleV1Response)
+    AddPossessionsMultipleV1Response,
+    DeletePossessionsMultipleV1Response,
+)
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.application.mappers import PossessionMapper
-from mangacollec.domain.exceptions import (PossessionCreationException,
-                                           PossessionDeletionException)
+from mangacollec.domain.exceptions import (
+    PossessionCreationException,
+    PossessionDeletionException,
+)
 from mangacollec.domain.repositories import IPossessionRepository
 
 

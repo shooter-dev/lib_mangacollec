@@ -2,8 +2,10 @@
 
 from abc import ABC, abstractmethod
 
-from mangacollec.application.dto import (AddPossessionsMultipleV1Response,
-                                         DeletePossessionsMultipleV1Response)
+from mangacollec.application.dto import (
+    AddPossessionsMultipleV1Response,
+    DeletePossessionsMultipleV1Response,
+)
 
 
 class IPossessionRepository(ABC):

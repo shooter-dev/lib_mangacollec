@@ -6,8 +6,7 @@ import pytest
 
 from mangacollec.domain.entities import FollowEdition
 from mangacollec.domain.exceptions import FollowEditionNotFoundException
-from mangacollec.infrastructure.repositories import \
-    InMemoryFollowEditionRepository
+from mangacollec.infrastructure.repositories import InMemoryFollowEditionRepository
 
 
 class TestInMemoryFollowEditionRepository:

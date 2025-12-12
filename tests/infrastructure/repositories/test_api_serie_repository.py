@@ -4,8 +4,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from mangacollec.application.dto import (GetAllSeriesV2Response,
-                                         GetSerieByIdV2Response)
+from mangacollec.application.dto import GetAllSeriesV2Response, GetSerieByIdV2Response
 from mangacollec.domain.exceptions import SerieNotFoundException
 from mangacollec.infrastructure.repositories import APISerieRepository
 

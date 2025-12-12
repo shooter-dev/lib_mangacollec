@@ -2,8 +2,15 @@
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities import (Box, BoxEdition, Edition, Publisher,
-                                         Serie, TypeSerie, Volume)
+from mangacollec.domain.entities import (
+    Box,
+    BoxEdition,
+    Edition,
+    Publisher,
+    Serie,
+    TypeSerie,
+    Volume,
+)
 
 
 @dataclass(frozen=True)

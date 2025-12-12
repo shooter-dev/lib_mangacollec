@@ -5,9 +5,17 @@ This module contains response DTOs for Volume operations.
 
 from dataclasses import dataclass
 
-from mangacollec.domain.entities import (Box, BoxEdition, BoxVolume, Edition,
-                                         NativeAdVolumeHomeFirst, Publisher,
-                                         Serie, TypeSerie, Volume)
+from mangacollec.domain.entities import (
+    Box,
+    BoxEdition,
+    BoxVolume,
+    Edition,
+    NativeAdVolumeHomeFirst,
+    Publisher,
+    Serie,
+    TypeSerie,
+    Volume,
+)
 
 
 @dataclass(frozen=True)

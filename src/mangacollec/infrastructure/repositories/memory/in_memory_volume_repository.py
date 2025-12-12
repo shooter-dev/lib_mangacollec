@@ -3,8 +3,10 @@
 This module provides an in-memory implementation of the Volume repository for testing.
 """
 
-from mangacollec.application.dto import (GetVolumeByIdV2Response,
-                                         GetVolumesNewsV2Response)
+from mangacollec.application.dto import (
+    GetVolumeByIdV2Response,
+    GetVolumesNewsV2Response,
+)
 from mangacollec.domain.exceptions import VolumeNotFoundException
 from mangacollec.domain.repositories import IVolumeRepository
 

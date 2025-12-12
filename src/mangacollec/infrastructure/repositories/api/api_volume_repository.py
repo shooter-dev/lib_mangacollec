@@ -3,8 +3,10 @@
 This module provides the API implementation of the Volume repository.
 """
 
-from mangacollec.application.dto import (GetVolumeByIdV2Response,
-                                         GetVolumesNewsV2Response)
+from mangacollec.application.dto import (
+    GetVolumeByIdV2Response,
+    GetVolumesNewsV2Response,
+)
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.application.mappers import VolumeMapper
 from mangacollec.domain.exceptions import VolumeNotFoundException

@@ -3,8 +3,10 @@
 This module contains use cases for Volume operations.
 """
 
-from mangacollec.application.dto import (GetVolumeByIdV2Response,
-                                         GetVolumesNewsV2Response)
+from mangacollec.application.dto import (
+    GetVolumeByIdV2Response,
+    GetVolumesNewsV2Response,
+)
 from mangacollec.domain.repositories import IVolumeRepository
 
 

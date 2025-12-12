@@ -7,9 +7,11 @@ from unittest.mock import Mock
 
 import pytest
 
-from mangacollec.application.dto import (GetMeCollectionV2Response,
-                                         GetMeRecommendationsV1Response,
-                                         GetUserCollectionByUsernameV2Response)
+from mangacollec.application.dto import (
+    GetMeCollectionV2Response,
+    GetMeRecommendationsV1Response,
+    GetUserCollectionByUsernameV2Response,
+)
 from mangacollec.application.interfaces import IMangaCollecAPI
 from mangacollec.domain.exceptions import UserNotFoundException
 from mangacollec.infrastructure.repositories import APIUserRepository

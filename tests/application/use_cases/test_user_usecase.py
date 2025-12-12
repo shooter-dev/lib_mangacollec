@@ -6,8 +6,10 @@ This module contains unit tests for User use cases.
 import pytest
 
 from mangacollec.application.use_cases import (
-    GetMeCollectionV2UseCase, GetMeRecommendationsV1UseCase,
-    GetUserCollectionByUsernameV2UseCase)
+    GetMeCollectionV2UseCase,
+    GetMeRecommendationsV1UseCase,
+    GetUserCollectionByUsernameV2UseCase,
+)
 from mangacollec.domain.exceptions import UserNotFoundException
 from mangacollec.infrastructure.repositories import InMemoryUserRepository
 

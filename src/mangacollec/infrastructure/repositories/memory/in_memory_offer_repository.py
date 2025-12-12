@@ -3,11 +3,15 @@
 This module provides an in-memory implementation of the Offer repository for testing.
 """
 
-from mangacollec.application.dto import (GetAmazonOfferV1Response,
-                                         GetBDFugueOfferV1Response)
+from mangacollec.application.dto import (
+    GetAmazonOfferV1Response,
+    GetBDFugueOfferV1Response,
+)
 from mangacollec.domain.entities import AmazonOffer, BDFugueOffer
-from mangacollec.domain.exceptions import (AmazonOfferNotFoundException,
-                                           BDFugueOfferNotFoundException)
+from mangacollec.domain.exceptions import (
+    AmazonOfferNotFoundException,
+    BDFugueOfferNotFoundException,
+)
 from mangacollec.domain.repositories import IOfferRepository
 
 
