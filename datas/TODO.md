@@ -5,12 +5,14 @@
 Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter **TOUS** les critères suivants :
 
 ### 1. Documentation
+
 - [ ] Fichier `datas/{resource}/repository/repository.md` existe et documente toutes les méthodes
 - [ ] Tous les endpoints ont leur fichier `.md` dans `datas/{resource}/endpoints/`
 - [ ] Les use cases sont documentés dans `datas/{resource}/use_cases/`
 - [ ] Les réponses JSON brutes sont présentes dans `datas/_endpoints/{resource}/`
 
 ### 2. Architecture Clean Code
+
 - [ ] **Entity** : Entité du domaine créée avec tous les attributs
 - [ ] **Repository Interface** : Interface du repository avec UNIQUEMENT les méthodes supportées par l'API
 - [ ] **DTOs** : Tous les DTOs de réponse créés (GetAll, GetById, Create, etc.)
@@ -24,6 +26,7 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
 - [ ] **InMemory Repository** : Implémentation en mémoire pour les tests
 
 ### 3. Qualité du Code
+
 - [ ] **Type hints** : Partout (fonctions, méthodes, attributs)
 - [ ] **Docstrings** : Format Google style sur toutes les classes et méthodes publiques
 - [ ] **Formatage** : `ruff format` sans erreur
@@ -31,16 +34,18 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
 - [ ] **Imports** : Organisés et sans imports inutilisés
 
 ### 4. Tests
+
 - [ ] **Couverture** : ≥ 90% de couverture de code
 - [ ] **Tests unitaires** :
   - [ ] Entity Tests
-  - [ ] Mapper Tests (tous les from_* et to_*)
+  - [ ] Mapper Tests (tous les from*\* et to*\*)
   - [ ] Repository Tests (InMemory et API)
 - [ ] **Tests d'intégration** : Tous les use cases testés
 - [ ] **Assertions** : Tests pertinents avec assertions significatives
 - [ ] **Fixtures** : Utilisation de fixtures pytest pour réutilisabilité
 
 ### 5. Conformité aux Patterns
+
 - [ ] **Mapper** : Suit le pattern `AuthorMapper` (référence)
 - [ ] **Repository API** :
   - [ ] Utilise `IMangaCollecAPI` (pas `requests`)
@@ -50,6 +55,7 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
 - [ ] **Gestion des erreurs** : Exceptions personnalisées (`{Resource}NotFoundException`)
 
 ### 6. Validation Finale
+
 - [ ] **Build** : `pytest` passe sans erreur
 - [ ] **Documentation** : README à jour si nécessaire
 - [ ] **Cohérence** : Nommage cohérent avec les conventions du projet
@@ -58,6 +64,9 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
 ---
 
 ## Autors ✅ TERMINÉ (45/45 tests)
+
+<!-- VERIFIED by Gemini on 2025-12-12 -->
+
 - [x] Author Entity
 - [x] Author Repository
   - [x] InMemoryAuthorRepository
@@ -81,16 +90,17 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [x] InMemoryAuthorRepository Tests
       - [x] APIAuthorRepository Tests
     - [x] Author Mapper Tests
-        - [x] to_dict Tests
-        - [x] from_dict Tests
-        - [x] from_all_authors_v2_response Tests
-        - [x] from_author_detail_v2_response Tests
+      - [x] to_dict Tests
+      - [x] from_dict Tests
+      - [x] from_all_authors_v2_response Tests
+      - [x] from_author_detail_v2_response Tests
   - [x] Integration Tests
     - [x] GetAllAuthorsV2 Tests
     - [x] GetAuthorByIdV2 Tests
     - [x] GetListAuthors Tests
 
 ## Editions ✅ TERMINÉ (71/71 tests)
+
 - [x] Edition Entity
 - [x] Edition Repository
   - [x] InMemoryEditionRepository
@@ -110,13 +120,14 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [x] InMemoryEditionRepository Tests
       - [x] APIEditionRepository Tests
     - [x] Edition Mapper Tests
-        - [x] to_dict Tests
-        - [x] from_dict Tests
-        - [x] from_edition_detail_v2_response Tests
+      - [x] to_dict Tests
+      - [x] from_dict Tests
+      - [x] from_edition_detail_v2_response Tests
   - [x] Integration Tests
     - [x] GetEditionByIdV2 Tests
 
 ## jobs ✅ TERMINÉ (31/31 tests)
+
 - [x] Job Entity
 - [x] Job Repository
   - [x] InMemoryJobRepository
@@ -136,13 +147,14 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [x] InMemoryJobRepository Tests
       - [x] APIJobRepository Tests
     - [x] Job Mapper Tests
-        - [x] to_dict Tests
-        - [x] from_dict Tests
-        - [x] from_all_jobs_response Tests
+      - [x] to_dict Tests
+      - [x] from_dict Tests
+      - [x] from_all_jobs_response Tests
   - [x] Integration Tests
     - [x] GetAllJobsV1 Tests
 
 ## Publishers ✅ TERMINÉ (31/31 tests)
+
 - [x] Publisher Entity
 - [x] Publisher Repository
   - [x] InMemoryPublisherRepository
@@ -166,16 +178,17 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [x] InMemoryPublisherRepository Tests
       - [x] APIPublisherRepository Tests
     - [x] Publisher Mapper Tests
-        - [x] to_dict Tests
-        - [x] from_dict Tests
-        - [x] from_all_publishers_response Tests
-        - [x] from_publisher_detail_response Tests
+      - [x] to_dict Tests
+      - [x] from_dict Tests
+      - [x] from_all_publishers_response Tests
+      - [x] from_publisher_detail_response Tests
   - [x] Integration Tests
     - [x] GetAllPublishersV2 Tests
     - [x] GetPublisherByIdV2 Tests
     - [x] GetListPublishers Tests
 
 ## Follow Editions
+
 - [ ] FollowEdition Entity
 - [ ] FollowEdition Repository
   - [ ] InMemoryFollowEditionRepository
@@ -196,14 +209,15 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemoryFollowEditionRepository Tests
       - [ ] APIFollowEditionRepository Tests
     - [ ] FollowEdition Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_follow_edition_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_follow_edition_response Tests
   - [ ] Integration Tests
     - [ ] FollowEditionV1 Tests
     - [ ] UnfollowEditionV1 Tests
 
 ## Kinds
+
 - [ ] Kind Entity
 - [ ] Kind Repository
   - [ ] InMemoryKindRepository
@@ -223,14 +237,15 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemoryKindRepository Tests
       - [ ] APIKindRepository Tests
     - [ ] Kind Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_all_kinds_v2_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_all_kinds_v2_response Tests
   - [ ] Integration Tests
     - [ ] GetAllKindsV2 Tests
     - [ ] GetListKinds Tests
 
 ## Offers
+
 - [ ] AmazonOffer Entity
 - [ ] BDFugueOffer Entity
 - [ ] Offer Repository
@@ -255,15 +270,16 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemoryOfferRepository Tests
       - [ ] APIOfferRepository Tests
     - [ ] Offer Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_amazon_offer_response Tests
-        - [ ] from_bdfugue_offer_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_amazon_offer_response Tests
+      - [ ] from_bdfugue_offer_response Tests
   - [ ] Integration Tests
     - [ ] GetAmazonOfferV1 Tests
     - [ ] GetBDFugueOfferV1 Tests
 
 ## Planning
+
 - [ ] Planning Entity
 - [ ] Planning Repository
   - [ ] InMemoryPlanningRepository
@@ -283,13 +299,14 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemoryPlanningRepository Tests
       - [ ] APIPlanningRepository Tests
     - [ ] Planning Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_planning_v2_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_planning_v2_response Tests
   - [ ] Integration Tests
     - [ ] GetPlanningV2 Tests
 
 ## Possessions
+
 - [ ] Possession Entity
 - [ ] Possession Repository
   - [ ] InMemoryPossessionRepository
@@ -312,15 +329,16 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemoryPossessionRepository Tests
       - [ ] APIPossessionRepository Tests
     - [ ] Possession Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_add_possessions_response Tests
-        - [ ] from_delete_possessions_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_add_possessions_response Tests
+      - [ ] from_delete_possessions_response Tests
   - [ ] Integration Tests
     - [ ] AddPossessionsMultipleV1 Tests
     - [ ] DeletePossessionsMultipleV1 Tests
 
 ## Reads
+
 - [ ] Read Entity
 - [ ] Read Repository
   - [ ] InMemoryReadRepository
@@ -343,15 +361,16 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemoryReadRepository Tests
       - [ ] APIReadRepository Tests
     - [ ] Read Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_create_reads_response Tests
-        - [ ] from_delete_reads_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_create_reads_response Tests
+      - [ ] from_delete_reads_response Tests
   - [ ] Integration Tests
     - [ ] CreateReadsMultipleV1 Tests
     - [ ] DeleteReadsMultipleV1 Tests
 
 ## Series
+
 - [ ] Serie Entity
 - [ ] Serie Repository
   - [ ] InMemorySerieRepository
@@ -375,16 +394,17 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemorySerieRepository Tests
       - [ ] APISerieRepository Tests
     - [ ] Serie Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_all_series_v2_response Tests
-        - [ ] from_serie_detail_v2_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_all_series_v2_response Tests
+      - [ ] from_serie_detail_v2_response Tests
   - [ ] Integration Tests
     - [ ] GetAllSeriesV2 Tests
     - [ ] GetSerieByIdV2 Tests
     - [ ] GetListSeries Tests
 
 ## Types
+
 - [ ] TypeSerie Entity
 - [ ] TypeSerie Repository
   - [ ] InMemoryTypeSerieRepository
@@ -405,14 +425,15 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemoryTypeSerieRepository Tests
       - [ ] APITypeSerieRepository Tests
     - [ ] TypeSerie Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_all_types_v1_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_all_types_v1_response Tests
   - [ ] Integration Tests
     - [ ] GetAllTypesSerieV1 Tests
     - [ ] GetListTypesSerie Tests
 
 ## Users
+
 - [ ] User Entity
 - [ ] UserCollection Entity
 - [ ] User Repository
@@ -440,17 +461,18 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemoryUserRepository Tests
       - [ ] APIUserRepository Tests
     - [ ] User Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_user_collection_v2_response Tests
-        - [ ] from_me_collection_v2_response Tests
-        - [ ] from_me_recommendations_v1_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_user_collection_v2_response Tests
+      - [ ] from_me_collection_v2_response Tests
+      - [ ] from_me_recommendations_v1_response Tests
   - [ ] Integration Tests
     - [ ] GetUserCollectionByUsernameV2 Tests
     - [ ] GetMeCollectionV2 Tests
     - [ ] GetMeRecommendationsV1 Tests
 
 ## Volumes
+
 - [ ] Volume Entity
 - [ ] Volume Repository
   - [ ] InMemoryVolumeRepository
@@ -473,10 +495,10 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
       - [ ] InMemoryVolumeRepository Tests
       - [ ] APIVolumeRepository Tests
     - [ ] Volume Mapper Tests
-        - [ ] to_dict Tests
-        - [ ] from_dict Tests
-        - [ ] from_volume_detail_v2_response Tests
-        - [ ] from_volumes_news_v2_response Tests
+      - [ ] to_dict Tests
+      - [ ] from_dict Tests
+      - [ ] from_volume_detail_v2_response Tests
+      - [ ] from_volumes_news_v2_response Tests
   - [ ] Integration Tests
     - [ ] GetVolumeByIdV2 Tests
     - [ ] GetVolumesNewsV2 Tests
