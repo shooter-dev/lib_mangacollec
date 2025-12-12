@@ -1,0 +1,331 @@
+"""Tests pour les DTOs de réponse Serie."""
+
+import pytest
+
+from mangacollec.application.dto import (GetAllSeriesV2Response,
+                                         GetSerieByIdV2Response)
+from mangacollec.domain.entities import (Author, Box, BoxEdition, BoxVolume,
+                                         Edition, Job, Kind, Publisher, Serie,
+                                         Task, TypeSerie, Volume)
+
+
+class TestGetAllSeriesV2Response:
+    """Tests pour GetAllSeriesV2Response."""
+
+    @pytest.fixture
+    def sample_series(self):
+        """Fixture pour des séries de test."""
+        return [
+            Serie(
+                id="1",
+                title="Naruto",
+                type_id="type-1",
+                adult_content=False,
+                editions_count=10,
+                tasks_count=5,
+                kinds_ids=["kind-1"],
+            ),
+            Serie(
+                id="2",
+                title="One Piece",
+                type_id="type-1",
+                adult_content=False,
+                editions_count=15,
+                tasks_count=3,
+                kinds_ids=None,
+            ),
+        ]
+
+    @pytest.fixture
+    def sample_types(self):
+        """Fixture pour des types de test."""
+        return [
+            TypeSerie(id="type-1", title="Manga", to_display=True),
+        ]
+
+    def test_creation(self, sample_series, sample_types):
+        """Test la création d'un GetAllSeriesV2Response."""
+        response = GetAllSeriesV2Response(series=sample_series, types=sample_types)
+
+        assert isinstance(response, GetAllSeriesV2Response)
+        assert response.series == sample_series
+        assert response.types == sample_types
+        assert len(response.series) == 2
+        assert len(response.types) == 1
+
+    def test_immutability(self, sample_series, sample_types):
+        """Test que GetAllSeriesV2Response est immuable."""
+        response = GetAllSeriesV2Response(series=sample_series, types=sample_types)
+
+        with pytest.raises(AttributeError):
+            response.series = []  # type: ignore[misc]
+
+    def test_empty_lists(self):
+        """Test avec des listes vides."""
+        response = GetAllSeriesV2Response(series=[], types=[])
+
+        assert isinstance(response, GetAllSeriesV2Response)
+        assert len(response.series) == 0
+        assert len(response.types) == 0
+
+
+class TestGetSerieByIdV2Response:
+    """Tests pour GetSerieByIdV2Response."""
+
+    @pytest.fixture
+    def sample_serie(self):
+        """Fixture pour une série de test."""
+        return [
+            Serie(
+                id="1",
+                title="Naruto",
+                type_id="type-1",
+                adult_content=False,
+                editions_count=10,
+                tasks_count=5,
+                kinds_ids=["kind-1"],
+            ),
+        ]
+
+    @pytest.fixture
+    def sample_types(self):
+        """Fixture pour des types de test."""
+        return [TypeSerie(id="type-1", title="Manga", to_display=True)]
+
+    @pytest.fixture
+    def sample_kinds(self):
+        """Fixture pour des kinds de test."""
+        return [Kind(id="kind-1", name="Shonen", name_en="Shonen")]
+
+    @pytest.fixture
+    def sample_tasks(self):
+        """Fixture pour des tasks de test."""
+        return [Task(id="task-1", job_id="job-1", series_id="1", author_id="author-1")]
+
+    @pytest.fixture
+    def sample_jobs(self):
+        """Fixture pour des jobs de test."""
+        return [Job(id="job-1", title="Auteur")]
+
+    @pytest.fixture
+    def sample_authors(self):
+        """Fixture pour des auteurs de test."""
+        return [
+            Author(
+                id="author-1",
+                name="Kishimoto",
+                first_name="Masashi",
+                tasks_count=32,
+            )
+        ]
+
+    @pytest.fixture
+    def sample_editions(self):
+        """Fixture pour des éditions de test."""
+        return [
+            Edition(
+                id="edition-1",
+                title="Édition standard",
+                series_id="1",
+                publisher_id="publisher-1",
+                parent_edition_id=None,
+                volumes_count=72,
+                last_volume_number=72,
+                commercial_stop=False,
+                not_finished=False,
+                follow_editions_count=100,
+            )
+        ]
+
+    @pytest.fixture
+    def sample_publishers(self):
+        """Fixture pour des publishers de test."""
+        return [
+            Publisher(
+                id="publisher-1",
+                title="Kana",
+                closed=False,
+                editions_count=200,
+                no_amazon=False,
+            )
+        ]
+
+    @pytest.fixture
+    def sample_volumes(self):
+        """Fixture pour des volumes de test."""
+        return [
+            Volume(
+                id="volume-1",
+                title="Naruto, tome 1",
+                number=1,
+                release_date="2002-10-02",
+                isbn="978-2-505-00001-0",
+                asin="B00005XXXX",
+                edition_id="edition-1",
+                possessions_count=500,
+                not_sold=False,
+                image_url="https://example.com/image.jpg",
+                nb_pages=None,
+                content=None,
+            )
+        ]
+
+    @pytest.fixture
+    def sample_box_editions(self):
+        """Fixture pour des box editions de test."""
+        return [
+            BoxEdition(
+                id="box-edition-1",
+                title="Coffret Naruto",
+                publisher_id="publisher-1",
+                boxes_count=3,
+                adult_content=False,
+                box_follow_editions_count=50,
+            )
+        ]
+
+    @pytest.fixture
+    def sample_boxes(self):
+        """Fixture pour des boxes de test."""
+        return [
+            Box(
+                id="box-1",
+                title="Coffret 1",
+                number=1,
+                release_date="2020-01-01",
+                isbn="978-2-505-00002-0",
+                asin="B00006XXXX",
+                commercial_stop=False,
+                box_edition_id="box-edition-1",
+                box_possessions_count=30,
+                image_url="https://example.com/box.jpg",
+            )
+        ]
+
+    @pytest.fixture
+    def sample_box_volumes(self):
+        """Fixture pour des box volumes de test."""
+        return [
+            BoxVolume(
+                id="box-volume-1",
+                title="Box Volume 1",
+                number=1,
+                release_date="2024-01-01",
+                isbn=None,
+                asin=None,
+                edition_id="edition-1",
+                possessions_count=None,
+                not_sold=False,
+                image_url=None,
+            )
+        ]
+
+    def test_creation(
+        self,
+        sample_serie,
+        sample_types,
+        sample_kinds,
+        sample_tasks,
+        sample_jobs,
+        sample_authors,
+        sample_editions,
+        sample_publishers,
+        sample_volumes,
+        sample_box_editions,
+        sample_boxes,
+        sample_box_volumes,
+    ):
+        """Test la création d'un GetSerieByIdV2Response."""
+        response = GetSerieByIdV2Response(
+            series=sample_serie,
+            types=sample_types,
+            kinds=sample_kinds,
+            tasks=sample_tasks,
+            jobs=sample_jobs,
+            authors=sample_authors,
+            editions=sample_editions,
+            publishers=sample_publishers,
+            volumes=sample_volumes,
+            box_editions=sample_box_editions,
+            boxes=sample_boxes,
+            box_volumes=sample_box_volumes,
+        )
+
+        assert isinstance(response, GetSerieByIdV2Response)
+        assert response.series == sample_serie
+        assert response.types == sample_types
+        assert response.kinds == sample_kinds
+        assert response.tasks == sample_tasks
+        assert response.jobs == sample_jobs
+        assert response.authors == sample_authors
+        assert response.editions == sample_editions
+        assert response.publishers == sample_publishers
+        assert response.volumes == sample_volumes
+        assert response.box_editions == sample_box_editions
+        assert response.boxes == sample_boxes
+        assert response.box_volumes == sample_box_volumes
+
+    def test_immutability(
+        self,
+        sample_serie,
+        sample_types,
+        sample_kinds,
+        sample_tasks,
+        sample_jobs,
+        sample_authors,
+        sample_editions,
+        sample_publishers,
+        sample_volumes,
+        sample_box_editions,
+        sample_boxes,
+        sample_box_volumes,
+    ):
+        """Test que GetSerieByIdV2Response est immuable."""
+        response = GetSerieByIdV2Response(
+            series=sample_serie,
+            types=sample_types,
+            kinds=sample_kinds,
+            tasks=sample_tasks,
+            jobs=sample_jobs,
+            authors=sample_authors,
+            editions=sample_editions,
+            publishers=sample_publishers,
+            volumes=sample_volumes,
+            box_editions=sample_box_editions,
+            boxes=sample_boxes,
+            box_volumes=sample_box_volumes,
+        )
+
+        with pytest.raises(AttributeError):
+            response.series = []  # type: ignore[misc]
+
+    def test_empty_lists(self):
+        """Test avec des listes vides."""
+        response = GetSerieByIdV2Response(
+            series=[],
+            types=[],
+            kinds=[],
+            tasks=[],
+            jobs=[],
+            authors=[],
+            editions=[],
+            publishers=[],
+            volumes=[],
+            box_editions=[],
+            boxes=[],
+            box_volumes=[],
+        )
+
+        assert isinstance(response, GetSerieByIdV2Response)
+        assert len(response.series) == 0
+        assert len(response.types) == 0
+        assert len(response.kinds) == 0
+        assert len(response.tasks) == 0
+        assert len(response.jobs) == 0
+        assert len(response.authors) == 0
+        assert len(response.editions) == 0
+        assert len(response.publishers) == 0
+        assert len(response.volumes) == 0
+        assert len(response.box_editions) == 0
+        assert len(response.boxes) == 0
+        assert len(response.box_volumes) == 0

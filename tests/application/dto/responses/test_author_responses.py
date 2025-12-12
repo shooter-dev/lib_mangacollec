@@ -5,11 +5,10 @@ This module contains unit tests for Author response DTOs.
 
 import pytest
 
-from mangacollec.application.dto import (
-    GetAllAuthorsV2Response,
-    GetAuthorByIdV2Response,
-)
-from mangacollec.domain.entities import Author, Edition, Job, Serie, Task, Volume
+from mangacollec.application.dto import (GetAllAuthorsV2Response,
+                                         GetAuthorByIdV2Response)
+from mangacollec.domain.entities import (Author, Edition, Job, Serie, Task,
+                                         Volume)
 
 
 class TestGetAllAuthorsV2Response:

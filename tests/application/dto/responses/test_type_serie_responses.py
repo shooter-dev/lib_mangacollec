@@ -1,8 +1,6 @@
 """Tests for TypeSerie response DTOs."""
 
-from mangacollec.application.dto import (
-    GetAllTypesSerieV1Response,
-)
+from mangacollec.application.dto import GetAllTypesSerieV1Response
 from mangacollec.domain.entities import TypeSerie
 
 

@@ -18,3 +18,12 @@ class Serie:
     adult_content: bool
     editions_count: int
     tasks_count: int
+    kinds_ids: list[str] | None = None
+
+
+@dataclass(frozen=True)
+class SerieListItem:
+    """Représente une série pour affichage en liste."""
+
+    id: str
+    title: str

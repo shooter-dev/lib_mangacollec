@@ -18,12 +18,16 @@ __all__ = [
     "FollowEditionMapper",
     "JobMapper",
     "KindMapper",
+    "NativeAdVolumeHomeFirstMapper",
     "OfferMapper",
     "PlanningMapper",
+    "PossessionMapper",
     "PublisherMapper",
+    "ReadMapper",
     "SerieMapper",
     "TaskMapper",
     "TypeSerieMapper",
+    "UserMapper",
     "VolumeMapper",
 ]
 
@@ -36,10 +40,15 @@ from mangacollec.application.mappers.follow_edition_mapper import \
     FollowEditionMapper
 from mangacollec.application.mappers.job_mapper import JobMapper
 from mangacollec.application.mappers.kind_mapper import KindMapper
+from mangacollec.application.mappers.native_ad_volume_home_first_mapper import \
+    NativeAdVolumeHomeFirstMapper
 from mangacollec.application.mappers.offer_mapper import OfferMapper
 from mangacollec.application.mappers.planning_mapper import PlanningMapper
+from mangacollec.application.mappers.possession_mapper import PossessionMapper
 from mangacollec.application.mappers.publisher_mapper import PublisherMapper
+from mangacollec.application.mappers.read_mapper import ReadMapper
 from mangacollec.application.mappers.serie_mapper import SerieMapper
 from mangacollec.application.mappers.task_mapper import TaskMapper
-from mangacollec.application.mappers.type_mapper import TypeSerieMapper
+from mangacollec.application.mappers.type_serie_mapper import TypeSerieMapper
+from mangacollec.application.mappers.user_mapper import UserMapper
 from mangacollec.application.mappers.volume_mapper import VolumeMapper

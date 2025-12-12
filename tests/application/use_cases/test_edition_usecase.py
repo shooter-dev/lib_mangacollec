@@ -90,6 +90,8 @@ class TestGetEditionByIdV2UseCase:
             possessions_count=100,
             not_sold=False,
             image_url="https://example.com/image.jpg",
+            nb_pages=None,
+            content=None,
         )
 
     def test_get_edition_by_id_success(
@@ -234,6 +236,8 @@ class TestGetEditionByIdV2UseCase:
             possessions_count=100,
             not_sold=False,
             image_url="https://example.com/image.jpg",
+            nb_pages=None,
+            content=None,
         )
         volume2 = Volume(
             id="volume-002",
@@ -246,6 +250,8 @@ class TestGetEditionByIdV2UseCase:
             possessions_count=90,
             not_sold=False,
             image_url="https://example.com/image2.jpg",
+            nb_pages=None,
+            content=None,
         )
 
         mock_response = GetEditionByIdV2Response(

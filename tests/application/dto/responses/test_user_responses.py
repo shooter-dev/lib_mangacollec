@@ -5,12 +5,10 @@ This module contains unit tests for User response DTOs.
 
 import pytest
 
-from mangacollec.application.dto import (
-    GetMeCollectionV2Response,
-    GetMeRecommendationsV1Response,
-    GetUserCollectionByUsernameV2Response,
-)
-from mangacollec.domain.entities import Edition, Serie, User, UserCollection, Volume
+from mangacollec.application.dto import (GetMeCollectionV2Response,
+                                         GetMeRecommendationsV1Response,
+                                         GetUserCollectionByUsernameV2Response)
+from mangacollec.domain.entities import Edition, Serie, UserCollection, Volume
 
 
 class TestGetUserCollectionByUsernameV2Response:

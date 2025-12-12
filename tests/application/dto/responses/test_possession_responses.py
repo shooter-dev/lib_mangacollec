@@ -2,17 +2,11 @@
 
 from datetime import datetime
 
-from mangacollec.application.dto import (
-    AddPossessionsMultipleV1Response,
-    DeletePossessionsMultipleV1Response,
-)
-from mangacollec.domain.entities import (
-    FollowEdition,
-    FollowEditionDeleted,
-    LoanDeleted,
-    Possession,
-    PossessionDeleted,
-)
+from mangacollec.application.dto import (AddPossessionsMultipleV1Response,
+                                         DeletePossessionsMultipleV1Response)
+from mangacollec.domain.entities import (FollowEdition, FollowEditionDeleted,
+                                         LoanDeleted, Possession,
+                                         PossessionDeleted)
 
 
 class TestAddPossessionsMultipleV1Response:

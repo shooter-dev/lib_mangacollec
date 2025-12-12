@@ -1,13 +1,13 @@
 """Publisher mapper."""
 
+from typing import TYPE_CHECKING
+
 from mangacollec.application.dto.publisher_responses import (
     GetAllPublishersV2Response, GetPublisherByIdV2Response)
-from mangacollec.application.mappers.box_edition_mapper import BoxEditionMapper
-from mangacollec.application.mappers.box_mapper import BoxMapper
-from mangacollec.application.mappers.serie_mapper import SerieMapper
-from mangacollec.application.mappers.type_mapper import TypeSerieMapper
-from mangacollec.application.mappers.volume_mapper import VolumeMapper
 from mangacollec.domain.entities import Publisher, PublisherListItem
+
+if TYPE_CHECKING:
+    pass
 
 
 class PublisherMapper:
@@ -95,8 +95,15 @@ class PublisherMapper:
         Returns:
             A GetPublisherByIdV2Response.
         """
+        from mangacollec.application.mappers.box_edition_mapper import \
+            BoxEditionMapper
+        from mangacollec.application.mappers.box_mapper import BoxMapper
         from mangacollec.application.mappers.edition_mapper import \
             EditionMapper
+        from mangacollec.application.mappers.serie_mapper import SerieMapper
+        from mangacollec.application.mappers.type_serie_mapper import \
+            TypeSerieMapper
+        from mangacollec.application.mappers.volume_mapper import VolumeMapper
 
         return GetPublisherByIdV2Response(
             publishers=[PublisherMapper.from_dict(publisher) for publisher in response.get("publishers", [])],

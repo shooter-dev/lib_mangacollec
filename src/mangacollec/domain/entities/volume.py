@@ -22,3 +22,5 @@ class Volume:
     possessions_count: int | None
     not_sold: bool
     image_url: str | None
+    nb_pages: int | None
+    content: str | None

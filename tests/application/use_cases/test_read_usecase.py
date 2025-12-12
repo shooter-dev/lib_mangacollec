@@ -2,10 +2,8 @@
 
 import pytest
 
-from mangacollec.application.use_cases import (
-    CreateReadsMultipleV1UseCase,
-    DeleteReadsMultipleV1UseCase,
-)
+from mangacollec.application.use_cases import (CreateReadsMultipleV1UseCase,
+                                               DeleteReadsMultipleV1UseCase)
 from mangacollec.infrastructure.repositories import InMemoryReadRepository
 
 

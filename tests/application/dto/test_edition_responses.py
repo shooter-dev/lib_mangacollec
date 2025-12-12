@@ -75,6 +75,8 @@ class TestGetEditionByIdV2Response:
             possessions_count=100,
             not_sold=False,
             image_url="https://example.com/image.jpg",
+            nb_pages=None,
+            content=None,
         )
 
     def test_response_creation_with_all_entities(
@@ -175,6 +177,8 @@ class TestGetEditionByIdV2Response:
             possessions_count=90,
             not_sold=False,
             image_url="https://example.com/image2.jpg",
+            nb_pages=None,
+            content=None,
         )
 
         response = GetEditionByIdV2Response(

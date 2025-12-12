@@ -5,7 +5,8 @@ This module contains unit tests for the PlanningMapper.
 
 from mangacollec.application.dto import GetPlanningV2Response
 from mangacollec.application.mappers import PlanningMapper
-from mangacollec.domain.entities import Box, BoxEdition, BoxVolume, Edition, Serie, TypeSerie, Volume
+from mangacollec.domain.entities import (Box, BoxEdition, BoxVolume, Edition,
+                                         Serie, TypeSerie, Volume)
 
 
 class TestPlanningMapperFromPlanningV2Response:

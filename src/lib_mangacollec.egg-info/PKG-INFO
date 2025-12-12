@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: lib_mangacollec
+Version: 0.1.7
+Summary: Lib Python pour l'API MangaCollec
+Author-email: ShooterDev <vincentbleach@gmail.com.fr>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: mypy; extra == "dev"

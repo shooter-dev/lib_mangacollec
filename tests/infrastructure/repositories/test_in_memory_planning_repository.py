@@ -6,7 +6,8 @@ This module contains unit tests for the InMemoryPlanningRepository.
 import pytest
 
 from mangacollec.application.dto import GetPlanningV2Response
-from mangacollec.domain.entities import Box, BoxEdition, BoxVolume, Edition, Serie, TypeSerie, Volume
+from mangacollec.domain.entities import (Box, BoxEdition, BoxVolume, Edition,
+                                         Serie, TypeSerie, Volume)
 from mangacollec.infrastructure.repositories import InMemoryPlanningRepository
 
 

@@ -8,7 +8,7 @@ from mangacollec.application.dto import (GetAmazonOfferV1Response,
                                          GetBDFugueOfferV1Response)
 from mangacollec.domain.exceptions import (AmazonOfferNotFoundException,
                                            BDFugueOfferNotFoundException)
-from mangacollec.infrastructure.repositories.api import APIOfferRepository
+from mangacollec.infrastructure.repositories import APIOfferRepository
 
 
 class TestAPIOfferRepositoryAmazon:

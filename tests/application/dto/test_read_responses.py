@@ -4,16 +4,10 @@ from datetime import datetime, timezone
 
 import pytest
 
-from mangacollec.application.dto import (
-    CreateReadsMultipleV1Response,
-    DeleteReadsMultipleV1Response,
-)
-from mangacollec.domain.entities import (
-    Read,
-    ReadDeleted,
-    ReadEdition,
-    ReadEditionDeleted,
-)
+from mangacollec.application.dto import (CreateReadsMultipleV1Response,
+                                         DeleteReadsMultipleV1Response)
+from mangacollec.domain.entities import (Read, ReadDeleted, ReadEdition,
+                                         ReadEditionDeleted)
 
 
 class TestCreateReadsMultipleV1Response:

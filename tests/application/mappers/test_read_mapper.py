@@ -2,17 +2,11 @@
 
 from datetime import datetime, timezone
 
-from mangacollec.application.dto import (
-    CreateReadsMultipleV1Response,
-    DeleteReadsMultipleV1Response,
-)
+from mangacollec.application.dto import (CreateReadsMultipleV1Response,
+                                         DeleteReadsMultipleV1Response)
 from mangacollec.application.mappers import ReadMapper
-from mangacollec.domain.entities import (
-    Read,
-    ReadDeleted,
-    ReadEdition,
-    ReadEditionDeleted,
-)
+from mangacollec.domain.entities import (Read, ReadDeleted, ReadEdition,
+                                         ReadEditionDeleted)
 
 
 class TestReadMapperFromDict:

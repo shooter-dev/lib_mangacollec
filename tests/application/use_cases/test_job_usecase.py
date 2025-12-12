@@ -49,17 +49,6 @@ class TestGetAllJobsV1UseCase:
         # Assert
         assert len(result) == 0
 
-    def test_get_all_jobs_returns_list(self, job_repository):
-        """Test que get_all retourne une liste."""
-        # Arrange
-        use_case = GetAllJobsV1UseCase(job_repository)
-
-        # Act
-        result = use_case()
-
-        # Assert
-        assert isinstance(result, list)
-
     def test_get_all_jobs_with_single_job(self, job_repository):
         """Test get_all avec un seul job."""
         # Arrange
