@@ -1,5 +1,7 @@
 """Tests unitaires pour JobMapper."""
 
+from dataclasses import FrozenInstanceError
+
 import pytest
 
 from mangacollec.application.dto import GetAllJobsV1Response
@@ -32,7 +34,7 @@ class TestJobMapperFromDict:
         job = JobMapper.from_dict(data)
 
         # Assert
-        with pytest.raises(Exception):  # FrozenInstanceError
+        with pytest.raises(FrozenInstanceError):
             job.id = "2"
 
 
@@ -116,3 +118,79 @@ class TestJobMapperFromAllJobsResponse:
         assert result.jobs[0].title == "First"
         assert result.jobs[1].title == "Second"
         assert result.jobs[2].title == "Third"
+
+
+class TestJobMapperErrorHandling:
+    """Tests pour la gestion des erreurs dans le mapper."""
+
+    def test_from_dict_with_missing_id(self):
+        """Test from_dict avec un ID manquant."""
+        # Arrange
+        data = {"title": "Auteur"}  # ID manquant
+
+        # Act & Assert
+        with pytest.raises(KeyError, match="id"):
+            JobMapper.from_dict(data)
+
+    def test_from_dict_with_missing_title(self):
+        """Test from_dict avec un title manquant."""
+        # Arrange
+        data = {"id": "1"}  # title manquant
+
+        # Act & Assert
+        with pytest.raises(KeyError, match="title"):
+            JobMapper.from_dict(data)
+
+    def test_from_dict_with_empty_data(self):
+        """Test from_dict avec un dictionnaire vide."""
+        # Arrange
+        data = {}
+
+        # Act & Assert
+        with pytest.raises(KeyError):
+            JobMapper.from_dict(data)
+
+    def test_from_dict_with_invalid_data_type(self):
+        """Test from_dict avec un type de données invalide."""
+        # Arrange
+        data = "invalid_data"
+
+        # Act & Assert
+        with pytest.raises(TypeError):
+            JobMapper.from_dict(data)  # type: ignore
+
+    def test_to_dict_with_none(self):
+        """Test to_dict avec None."""
+        # Arrange
+        job = None
+
+        # Act & Assert
+        with pytest.raises(TypeError):
+            JobMapper.to_dict(job)  # type: ignore
+
+    def test_from_all_jobs_response_with_invalid_type(self):
+        """Test from_all_jobs_response avec un type invalide."""
+        # Arrange
+        response = "not_a_list"
+
+        # Act & Assert
+        with pytest.raises(TypeError):
+            JobMapper.from_all_jobs_response(response)  # type: ignore
+
+    def test_from_all_jobs_response_with_invalid_item_type(self):
+        """Test from_all_jobs_response avec des éléments invalides."""
+        # Arrange
+        response = [{"id": "1"}, {"not_a_dict": "invalid"}]
+
+        # Act & Assert
+        with pytest.raises(KeyError, match="title"):
+            JobMapper.from_all_jobs_response(response)
+
+    def test_from_all_jobs_response_with_none_item(self):
+        """Test from_all_jobs_response avec un élément None."""
+        # Arrange
+        response = [{"id": "1", "title": "Test"}, None]
+
+        # Act & Assert
+        with pytest.raises(TypeError):
+            JobMapper.from_all_jobs_response(response)  # type: ignore

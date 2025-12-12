@@ -31,6 +31,8 @@ def sample_volume() -> Volume:
         possessions_count=100,
         not_sold=False,
         image_url="http://example.com/vol1.jpg",
+        nb_pages=None,
+        content=None,
     )
 
 
@@ -201,6 +203,8 @@ class TestGetPlanningV2UseCase:
             possessions_count=95,
             not_sold=False,
             image_url="http://example.com/vol2.jpg",
+            nb_pages=None,
+            content=None,
         )
         repository.add_planning(month=month, volumes=[sample_volume, volume2])
         usecase = GetPlanningV2UseCase(repository)
@@ -231,6 +235,8 @@ class TestGetPlanningV2UseCase:
             possessions_count=95,
             not_sold=False,
             image_url="http://example.com/vol2.jpg",
+            nb_pages=None,
+            content=None,
         )
         repository.add_planning(month=month1, volumes=[sample_volume])
         repository.add_planning(month=month2, volumes=[volume2])
@@ -388,6 +394,8 @@ class TestGetPlanningV2UseCase:
             possessions_count=95,
             not_sold=False,
             image_url="http://example.com/vol2.jpg",
+            nb_pages=None,
+            content=None,
         )
         volume3 = Volume(
             id="vol-3",
@@ -400,6 +408,8 @@ class TestGetPlanningV2UseCase:
             possessions_count=90,
             not_sold=False,
             image_url="http://example.com/vol3.jpg",
+            nb_pages=None,
+            content=None,
         )
         repository.add_planning(month=month, volumes=[sample_volume, volume2, volume3])
         usecase = GetPlanningV2UseCase(repository)

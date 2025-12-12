@@ -2,13 +2,10 @@
 
 import pytest
 
-from mangacollec.application.dto import (GetAllKindsV1Response,
-                                         GetAllKindsV2Response)
-from mangacollec.application.use_cases import (GetAllKindsV1UseCase,
-                                               GetAllKindsV2UseCase)
+from mangacollec.application.dto import GetAllKindsV1Response, GetAllKindsV2Response
+from mangacollec.application.use_cases import GetAllKindsV1UseCase, GetAllKindsV2UseCase
 from mangacollec.domain.entities import Kind
-from mangacollec.infrastructure.repositories.memory.in_memory_kind_repository import \
-    InMemoryKindRepository
+from mangacollec.infrastructure.repositories import InMemoryKindRepository
 
 
 class TestGetAllKindsV1UseCase:

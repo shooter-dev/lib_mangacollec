@@ -35,6 +35,8 @@ class JobMapper:
         Returns:
             Dictionnaire représentant le job
         """
+        if job is None:
+            raise TypeError("job cannot be None")
         return {
             "id": job.id,
             "title": job.title,
