@@ -1,9 +1,7 @@
 """TypeSerie use cases."""
 
-from mangacollec.application.dto.type_serie_responses import GetAllTypesSerieV1Response
-from mangacollec.domain.repositories.type_serie_repository_interface import (
-    ITypeSerieRepository,
-)
+from mangacollec.domain.entities import TypeSerie
+from mangacollec.domain.repositories import ITypeSerieRepository
 
 
 class GetAllTypesSerieV1UseCase:
@@ -21,13 +19,14 @@ class GetAllTypesSerieV1UseCase:
         """
         self.repo = repo
 
-    def __call__(self) -> GetAllTypesSerieV1Response:
+    def __call__(self) -> list[TypeSerie]:
         """Exécute le use case.
 
         Returns:
-            GetAllTypesSerieV1Response contenant tous les types de séries
+            Liste des types de séries
 
         Raises:
             TypeSerieRetrievalException: Si la récupération échoue
         """
-        return self.repo.get_all_types_v1()
+        response = self.repo.get_all_types_v1()
+        return response.types

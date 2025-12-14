@@ -1,6 +1,6 @@
 """Use cases pour les Kinds."""
 
-from mangacollec.application.dto import GetAllKindsV1Response, GetAllKindsV2Response
+from mangacollec.domain.entities import Kind
 from mangacollec.domain.repositories import IKindRepository
 
 
@@ -15,13 +15,14 @@ class GetAllKindsV1UseCase:
         """
         self.repo = repo
 
-    def __call__(self) -> GetAllKindsV1Response:
+    def __call__(self) -> list[Kind]:
         """Récupère tous les kinds via l'API V1.
 
         Returns:
-            GetAllKindsV1Response contenant la liste des kinds
+            Liste des kinds
         """
-        return self.repo.get_all_kinds_v1()
+        response = self.repo.get_all_kinds_v1()
+        return response.kinds
 
 
 class GetAllKindsV2UseCase:
@@ -35,10 +36,11 @@ class GetAllKindsV2UseCase:
         """
         self.repo = repo
 
-    def __call__(self) -> GetAllKindsV2Response:
+    def __call__(self) -> list[Kind]:
         """Récupère tous les kinds via l'API V2.
 
         Returns:
-            GetAllKindsV2Response contenant la liste des kinds
+            Liste des kinds
         """
-        return self.repo.get_all_kinds_v2()
+        response = self.repo.get_all_kinds_v2()
+        return response.kinds
