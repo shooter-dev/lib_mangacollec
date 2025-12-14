@@ -4,14 +4,7 @@
 
 Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter **TOUS** les critères suivants :
 
-### 1. Documentation
-
-- [ ] Fichier `datas/{resource}/repository/repository.md` existe et documente toutes les méthodes
-- [ ] Tous les endpoints ont leur fichier `.md` dans `datas/{resource}/endpoints/`
-- [ ] Les use cases sont documentés dans `datas/{resource}/use_cases/`
-- [ ] Les réponses JSON brutes sont présentes dans `datas/_endpoints/{resource}/`
-
-### 2. Architecture Clean Code
+### 1. Architecture Clean Code
 
 - [ ] **Entity** : Entité du domaine créée avec tous les attributs
 - [ ] **Repository Interface** : Interface du repository avec UNIQUEMENT les méthodes supportées par l'API
@@ -25,7 +18,7 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
 - [ ] **API Repository** : Implémentation API avec `IMangaCollecAPI` et délégation aux mappers
 - [ ] **InMemory Repository** : Implémentation en mémoire pour les tests
 
-### 3. Qualité du Code
+### 2. Qualité du Code
 
 - [ ] **Type hints** : Partout (fonctions, méthodes, attributs)
 - [ ] **Docstrings** : Format Google style sur toutes les classes et méthodes publiques
@@ -33,7 +26,7 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
 - [ ] **Linting** : `ruff check` sans erreur
 - [ ] **Imports** : Organisés et sans imports inutilisés
 
-### 4. Tests
+### 3. Tests
 
 - [ ] **Couverture** : ≥ 90% de couverture de code
 - [ ] **Tests unitaires** :
@@ -44,17 +37,17 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
 - [ ] **Assertions** : Tests pertinents avec assertions significatives
 - [ ] **Fixtures** : Utilisation de fixtures pytest pour réutilisabilité
 
-### 5. Conformité aux Patterns
+### 4. Conformité aux Patterns
 
-- [ ] **Mapper** : Suit le pattern `AuthorMapper` (référence)
+- [ ] **Mapper** : Suit tous le meme pattern
 - [ ] **Repository API** :
-  - [ ] Utilise `IMangaCollecAPI` (pas `requests`)
+  - [ ] Utilise `IMangaCollecAPI` **Obligatoire** (pas `requests`)
   - [ ] Délègue toutes les conversions aux mappers
   - [ ] Gère les erreurs avec exceptions de domaine
 - [ ] **DTOs Response** : Utilise des listes (pluriel) pour les entités
 - [ ] **Gestion des erreurs** : Exceptions personnalisées (`{Resource}NotFoundException`)
 
-### 6. Validation Finale
+### 5. Validation Finale
 
 - [ ] **Build** : `pytest` passe sans erreur
 - [ ] **Documentation** : README à jour si nécessaire
@@ -63,9 +56,9 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
 
 ---
 
-## Autors ✅ TERMINÉ (45/45 tests)
-
-<!-- VERIFIED by Gemini on 2025-12-12 -->
+## Authors
+**notes**
+>
 
 - [x] Author Entity
 - [x] Author Repository
@@ -99,7 +92,9 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
     - [x] GetAuthorByIdV2 Tests
     - [x] GetListAuthors Tests
 
-## Editions ✅ TERMINÉ (71/71 tests)
+## Editions
+**notes**
+>
 
 - [x] Edition Entity
 - [x] Edition Repository
@@ -126,7 +121,9 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
   - [x] Integration Tests
     - [x] GetEditionByIdV2 Tests
 
-## jobs ✅ TERMINÉ (31/31 tests)
+## jobs
+**notes**
+>
 
 - [x] Job Entity
 - [x] Job Repository
@@ -153,7 +150,9 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
   - [x] Integration Tests
     - [x] GetAllJobsV1 Tests
 
-## Publishers ✅ TERMINÉ (31/31 tests)
+## Publishers
+**notes**
+>
 
 - [x] Publisher Entity
 - [x] Publisher Repository
@@ -188,188 +187,202 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
     - [x] GetListPublishers Tests
 
 ## Follow Editions
+**notes**
+>
 
-- [ ] FollowEdition Entity
-- [ ] FollowEdition Repository
-  - [ ] InMemoryFollowEditionRepository
-  - [ ] APIFollowEditionRepository
-- [ ] FollowEdition Mapper
-  - [ ] to_dict
-  - [ ] from_dict
-  - [ ] from_follow_edition_response
-- [ ] FollowEdition DTOs
-  - [ ] FollowEditionV1Response
-- [ ] FollowEdition Use Cases
-  - [ ] FollowEditionV1
-  - [ ] UnfollowEditionV1
-- [ ] Tests
-  - [ ] Unit Tests
-    - [ ] FollowEdition Entity Tests
-    - [ ] FollowEdition Repository Tests
-      - [ ] InMemoryFollowEditionRepository Tests
-      - [ ] APIFollowEditionRepository Tests
-    - [ ] FollowEdition Mapper Tests
-      - [ ] to_dict Tests
-      - [ ] from_dict Tests
-      - [ ] from_follow_edition_response Tests
-  - [ ] Integration Tests
-    - [ ] FollowEditionV1 Tests
-    - [ ] UnfollowEditionV1 Tests
+- [x] FollowEdition Entity
+- [x] FollowEdition Repository
+  - [x] InMemoryFollowEditionRepository
+  - [x] APIFollowEditionRepository
+- [x] FollowEdition Mapper
+  - [x] to_dict
+  - [x] from_dict
+  - [x] from_api_response
+- [x] FollowEdition DTOs
+  - [x] FollowEditionV1Response
+- [x] FollowEdition Use Cases
+  - [x] FollowEditionV1
+  - [x] UnfollowEditionV1
+- [x] Tests
+  - [x] Unit Tests
+    - [x] FollowEdition Entity Tests
+    - [x] FollowEdition Repository Tests
+      - [x] InMemoryFollowEditionRepository Tests
+      - [x] APIFollowEditionRepository Tests
+    - [x] FollowEdition Mapper Tests
+      - [x] to_dict Tests
+      - [x] from_dict Tests
+      - [x] from_api_response Tests
+  - [x] Integration Tests
+    - [x] FollowEditionV1 Tests
+    - [x] UnfollowEditionV1 Tests
 
 ## Kinds
+**notes**
+>
 
-- [ ] Kind Entity
-- [ ] Kind Repository
-  - [ ] InMemoryKindRepository
-  - [ ] APIKindRepository
-- [ ] Kind Mapper
-  - [ ] to_dict
-  - [ ] from_all_kinds_v2_response
-- [ ] Kind DTOs
-  - [ ] GetAllKindsV2Response
-- [ ] Kind Use Cases
-  - [ ] GetAllKindsV2
-  - [ ] GetListKinds
-- [ ] Tests
-  - [ ] Unit Tests
-    - [ ] Kind Entity Tests
-    - [ ] Kind Repository Tests
-      - [ ] InMemoryKindRepository Tests
-      - [ ] APIKindRepository Tests
-    - [ ] Kind Mapper Tests
-      - [ ] to_dict Tests
-      - [ ] from_dict Tests
-      - [ ] from_all_kinds_v2_response Tests
-  - [ ] Integration Tests
-    - [ ] GetAllKindsV2 Tests
-    - [ ] GetListKinds Tests
+- [x] Kind Entity
+- [x] Kind Repository
+  - [x] InMemoryKindRepository
+  - [x] APIKindRepository
+- [x] Kind Mapper
+  - [x] to_dict
+  - [x] from_dict
+  - [x] from_all_kinds_v1_response
+  - [x] from_all_kinds_v2_response
+- [x] Kind DTOs
+  - [x] GetAllKindsV1Response
+  - [x] GetAllKindsV2Response
+- [x] Kind Use Cases
+  - [x] GetAllKindsV1
+  - [x] GetAllKindsV2
+- [x] Tests
+  - [x] Unit Tests
+    - [x] Kind Entity Tests
+    - [x] Kind Repository Tests
+      - [x] InMemoryKindRepository Tests
+      - [x] APIKindRepository Tests
+    - [x] Kind Mapper Tests
+      - [x] to_dict Tests
+      - [x] from_dict Tests
+      - [x] from_all_kinds_v1_response Tests
+      - [x] from_all_kinds_v2_response Tests
+  - [x] Integration Tests
+    - [x] GetAllKindsV1 Tests
+    - [x] GetAllKindsV2 Tests
 
 ## Offers
+**notes**
+>
 
-- [ ] AmazonOffer Entity
-- [ ] BDFugueOffer Entity
-- [ ] Offer Repository
-  - [ ] InMemoryOfferRepository
-  - [ ] APIOfferRepository
-- [ ] Offer Mapper
-  - [ ] to_dict
-  - [ ] from_dict
-  - [ ] from_amazon_offer_response
-  - [ ] from_bdfugue_offer_response
-- [ ] Offer DTOs
-  - [ ] GetAmazonOfferV1Response
-  - [ ] GetBDFugueOfferV1Response
-- [ ] Offer Use Cases
-  - [ ] GetAmazonOfferV1
-  - [ ] GetBDFugueOfferV1
-- [ ] Tests
-  - [ ] Unit Tests
-    - [ ] AmazonOffer Entity Tests
-    - [ ] BDFugueOffer Entity Tests
-    - [ ] Offer Repository Tests
-      - [ ] InMemoryOfferRepository Tests
-      - [ ] APIOfferRepository Tests
-    - [ ] Offer Mapper Tests
-      - [ ] to_dict Tests
-      - [ ] from_dict Tests
-      - [ ] from_amazon_offer_response Tests
-      - [ ] from_bdfugue_offer_response Tests
-  - [ ] Integration Tests
-    - [ ] GetAmazonOfferV1 Tests
-    - [ ] GetBDFugueOfferV1 Tests
+- [x] AmazonOffer Entity
+- [x] BDFugueOffer Entity
+- [x] Offer Repository
+  - [x] InMemoryOfferRepository
+  - [x] APIOfferRepository
+- [x] Offer Mapper
+  - [x] to_dict_amazon
+  - [x] to_dict_bdfugue
+  - [x] from_dict_amazon
+  - [x] from_dict_bdfugue
+  - [x] from_amazon_offer_response
+  - [x] from_bdfugue_offer_response
+- [x] Offer DTOs
+  - [x] GetAmazonOfferV1Response
+  - [x] GetBDFugueOfferV1Response
+- [x] Offer Use Cases
+  - [x] GetAmazonOfferV1
+  - [x] GetBDFugueOfferV1
+- [x] Tests
+  - [x] Unit Tests
+    - [x] AmazonOffer Entity Tests
+    - [x] BDFugueOffer Entity Tests
+    - [x] Offer Repository Tests
+      - [x] InMemoryOfferRepository Tests
+      - [x] APIOfferRepository Tests
+    - [x] Offer Mapper Tests
+      - [x] to_dict Tests
+      - [x] from_dict Tests
+      - [x] from_amazon_offer_response Tests
+      - [x] from_bdfugue_offer_response Tests
+  - [x] Integration Tests
+    - [x] GetAmazonOfferV1 Tests
+    - [x] GetBDFugueOfferV1 Tests
 
 ## Planning
+**notes**
+>
 
-- [ ] Planning Entity
-- [ ] Planning Repository
-  - [ ] InMemoryPlanningRepository
-  - [ ] APIPlanningRepository
-- [ ] Planning Mapper
-  - [ ] to_dict
-  - [ ] from_dict
-  - [ ] from_planning_v2_response
-- [ ] Planning DTOs
-  - [ ] GetPlanningV2Response
-- [ ] Planning Use Cases
-  - [ ] GetPlanningV2
-- [ ] Tests
-  - [ ] Unit Tests
-    - [ ] Planning Entity Tests
-    - [ ] Planning Repository Tests
-      - [ ] InMemoryPlanningRepository Tests
-      - [ ] APIPlanningRepository Tests
-    - [ ] Planning Mapper Tests
-      - [ ] to_dict Tests
-      - [ ] from_dict Tests
-      - [ ] from_planning_v2_response Tests
-  - [ ] Integration Tests
-    - [ ] GetPlanningV2 Tests
+- [x] Planning Repository
+  - [x] InMemoryPlanningRepository
+  - [x] APIPlanningRepository
+- [x] Planning Mapper
+  - [x] from_planning_v2_response
+- [x] Planning DTOs
+  - [x] GetPlanningV2Response
+- [x] Planning Use Cases
+  - [x] GetPlanningV2
+- [x] Tests
+  - [x] Unit Tests
+    - [x] Planning Repository Tests
+      - [x] InMemoryPlanningRepository Tests (via use cases)
+      - [x] APIPlanningRepository Tests
+    - [x] Planning Mapper Tests
+      - [x] from_planning_v2_response Tests
+  - [x] Integration Tests
+    - [x] GetPlanningV2 Tests
 
 ## Possessions
+**notes**
+>
 
-- [ ] Possession Entity
-- [ ] Possession Repository
-  - [ ] InMemoryPossessionRepository
-  - [ ] APIPossessionRepository
-- [ ] Possession Mapper
-  - [ ] to_dict
-  - [ ] from_dict
-  - [ ] from_add_possessions_response
-  - [ ] from_delete_possessions_response
-- [ ] Possession DTOs
-  - [ ] AddPossessionsMultipleV1Response
-  - [ ] DeletePossessionsMultipleV1Response
-- [ ] Possession Use Cases
-  - [ ] AddPossessionsMultipleV1
-  - [ ] DeletePossessionsMultipleV1
-- [ ] Tests
-  - [ ] Unit Tests
-    - [ ] Possession Entity Tests
-    - [ ] Possession Repository Tests
-      - [ ] InMemoryPossessionRepository Tests
-      - [ ] APIPossessionRepository Tests
-    - [ ] Possession Mapper Tests
-      - [ ] to_dict Tests
-      - [ ] from_dict Tests
-      - [ ] from_add_possessions_response Tests
-      - [ ] from_delete_possessions_response Tests
-  - [ ] Integration Tests
-    - [ ] AddPossessionsMultipleV1 Tests
-    - [ ] DeletePossessionsMultipleV1 Tests
+- [x] Possession Entity
+- [x] Possession Repository
+  - [x] InMemoryPossessionRepository
+  - [x] APIPossessionRepository
+- [x] Possession Mapper
+  - [x] to_dict
+  - [x] from_dict
+  - [x] from_add_possessions_response
+  - [x] from_delete_possessions_response
+- [x] Possession DTOs
+  - [x] AddPossessionsMultipleV1Response
+  - [x] DeletePossessionsMultipleV1Response
+- [x] Possession Use Cases
+  - [x] AddPossessionsMultipleV1
+  - [x] DeletePossessionsMultipleV1
+- [x] Tests
+  - [x] Unit Tests
+    - [x] Possession Entity Tests
+    - [x] Possession Repository Tests
+      - [x] InMemoryPossessionRepository Tests
+      - [x] APIPossessionRepository Tests
+    - [x] Possession Mapper Tests
+      - [x] to_dict Tests
+      - [x] from_dict Tests
+      - [x] from_add_possessions_response Tests
+      - [x] from_delete_possessions_response Tests
+  - [x] Integration Tests
+    - [x] AddPossessionsMultipleV1 Tests
+    - [x] DeletePossessionsMultipleV1 Tests
 
 ## Reads
+**notes**
+>
 
-- [ ] Read Entity
-- [ ] Read Repository
-  - [ ] InMemoryReadRepository
-  - [ ] APIReadRepository
-- [ ] Read Mapper
-  - [ ] to_dict
-  - [ ] from_dict
-  - [ ] from_create_reads_response
-  - [ ] from_delete_reads_response
-- [ ] Read DTOs
-  - [ ] CreateReadsMultipleV1Response
-  - [ ] DeleteReadsMultipleV1Response
-- [ ] Read Use Cases
-  - [ ] CreateReadsMultipleV1
-  - [ ] DeleteReadsMultipleV1
-- [ ] Tests
-  - [ ] Unit Tests
-    - [ ] Read Entity Tests
-    - [ ] Read Repository Tests
-      - [ ] InMemoryReadRepository Tests
-      - [ ] APIReadRepository Tests
-    - [ ] Read Mapper Tests
-      - [ ] to_dict Tests
-      - [ ] from_dict Tests
-      - [ ] from_create_reads_response Tests
-      - [ ] from_delete_reads_response Tests
-  - [ ] Integration Tests
-    - [ ] CreateReadsMultipleV1 Tests
-    - [ ] DeleteReadsMultipleV1 Tests
+- [x] Read Entity
+- [x] Read Repository
+  - [x] InMemoryReadRepository
+  - [x] APIReadRepository
+- [x] Read Mapper
+  - [x] to_read_dict
+  - [x] from_read_dict
+  - [x] from_create_reads_response
+  - [x] from_delete_reads_response
+- [x] Read DTOs
+  - [x] CreateReadsMultipleV1Response
+  - [x] DeleteReadsMultipleV1Response
+- [x] Read Use Cases
+  - [x] CreateReadsMultipleV1
+  - [x] DeleteReadsMultipleV1
+- [x] Tests
+  - [x] Unit Tests
+    - [x] Read Entity Tests
+    - [x] Read Repository Tests
+      - [x] InMemoryReadRepository Tests
+      - [x] APIReadRepository Tests
+    - [x] Read Mapper Tests
+      - [x] to_dict Tests
+      - [x] from_dict Tests
+      - [x] from_create_reads_response Tests
+      - [x] from_delete_reads_response Tests
+  - [x] Integration Tests
+    - [x] CreateReadsMultipleV1 Tests
+    - [x] DeleteReadsMultipleV1 Tests
 
 ## Series
+**notes**
+>
 
 - [ ] Serie Entity
 - [ ] Serie Repository
@@ -404,6 +417,8 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
     - [ ] GetListSeries Tests
 
 ## Types
+**notes**
+>
 
 - [ ] TypeSerie Entity
 - [ ] TypeSerie Repository
@@ -433,6 +448,8 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
     - [ ] GetListTypesSerie Tests
 
 ## Users
+**notes**
+>
 
 - [ ] User Entity
 - [ ] UserCollection Entity
@@ -472,6 +489,8 @@ Pour qu'une ressource soit considérée comme **TERMINÉE**, elle doit respecter
     - [ ] GetMeRecommendationsV1 Tests
 
 ## Volumes
+**notes**
+>
 
 - [ ] Volume Entity
 - [ ] Volume Repository

@@ -1,10 +1,15 @@
 """Publisher use cases."""
 
-from mangacollec.application.dto.publisher_responses import (
-    GetAllPublishersV2Response,
-    GetPublisherByIdV2Response,
+from mangacollec.domain.entities import (
+    Box,
+    BoxEdition,
+    Edition,
+    Publisher,
+    PublisherListItem,
+    Serie,
+    TypeSerie,
+    Volume,
 )
-from mangacollec.domain.entities.publisher import PublisherListItem
 from mangacollec.domain.repositories.publisher_repository_interface import (
     IPublisherRepository,
 )
@@ -22,14 +27,15 @@ class GetAllPublishersV2UseCase:
         """
         self.repository = repository
 
-    def __call__(self) -> GetAllPublishersV2Response:
+    def __call__(self) -> list[Publisher]:
         """
         Execute the use case.
 
         Returns:
-            A GetAllPublishersV2Response.
+            Liste des éditeurs.
         """
-        return self.repository.get_all_v2()
+        response = self.repository.get_all_v2()
+        return response.publishers
 
 
 class GetPublisherByIdV2UseCase:
@@ -44,7 +50,9 @@ class GetPublisherByIdV2UseCase:
         """
         self.repository = repository
 
-    def __call__(self, publisher_id: str) -> GetPublisherByIdV2Response:
+    def __call__(
+        self, publisher_id: str
+    ) -> (tuple)[Publisher, list[Edition], list[BoxEdition], list[Serie], list[TypeSerie], list[Volume], list[Box]]:
         """
         Execute the use case.
 
@@ -52,9 +60,28 @@ class GetPublisherByIdV2UseCase:
             publisher_id: The id of the publisher.
 
         Returns:
-            A GetPublisherByIdV2Response.
+            Tuple contenant:
+                - Publisher: L'éditeur
+                - list[Edition]: Liste des éditions
+                - list[BoxEdition]: Liste des éditions de coffrets
+                - list[Serie]: Liste des séries
+                - list[TypeSerie]: Liste des types de séries
+                - list[Volume]: Liste des volumes
+                - list[Box]: Liste des coffrets
+
+        Raises:
+            PublisherNotFoundException: Si l'éditeur n'existe pas
         """
-        return self.repository.get_by_id_v2(publisher_id)
+        response = self.repository.get_by_id_v2(publisher_id)
+        return (
+            response.publishers[0],
+            response.editions,
+            response.box_editions,
+            response.series,
+            response.types,
+            response.volumes,
+            response.boxes,
+        )
 
 
 class GetListPublishersUseCase:
