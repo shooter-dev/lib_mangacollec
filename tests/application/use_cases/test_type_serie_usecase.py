@@ -1,6 +1,5 @@
 """Tests for TypeSerie use cases."""
 
-from mangacollec.application.dto import GetAllTypesSerieV1Response
 from mangacollec.application.use_cases import GetAllTypesSerieV1UseCase
 from mangacollec.domain.entities import TypeSerie
 from mangacollec.infrastructure.repositories import InMemoryTypeSerieRepository
@@ -21,10 +20,10 @@ def test_get_all_types_serie_v1_usecase():
     result = usecase()
 
     # Assert
-    assert isinstance(result, GetAllTypesSerieV1Response)
-    assert len(result.types) == 2
-    assert type1 in result.types
-    assert type2 in result.types
+    assert isinstance(result, list)
+    assert len(result) == 2
+    assert type1 in result
+    assert type2 in result
 
 
 def test_get_all_types_serie_v1_usecase_empty():
@@ -37,5 +36,5 @@ def test_get_all_types_serie_v1_usecase_empty():
     result = usecase()
 
     # Assert
-    assert isinstance(result, GetAllTypesSerieV1Response)
-    assert len(result.types) == 0
+    assert isinstance(result, list)
+    assert len(result) == 0

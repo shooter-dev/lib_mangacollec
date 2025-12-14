@@ -2,7 +2,6 @@
 
 import pytest
 
-from mangacollec.application.dto import GetAllKindsV1Response, GetAllKindsV2Response
 from mangacollec.application.use_cases import GetAllKindsV1UseCase, GetAllKindsV2UseCase
 from mangacollec.domain.entities import Kind
 from mangacollec.infrastructure.repositories import InMemoryKindRepository
@@ -34,8 +33,8 @@ class TestGetAllKindsV1UseCase:
         """Test get_all_kinds_v1 avec un repository vide."""
         result = use_case()
 
-        assert isinstance(result, GetAllKindsV1Response)
-        assert len(result.kinds) == 0
+        assert isinstance(result, list)
+        assert len(result) == 0
 
     def test_get_all_kinds_v1_with_data(self, use_case, repo, sample_kinds):
         """Test get_all_kinds_v1 avec des données."""
@@ -44,9 +43,9 @@ class TestGetAllKindsV1UseCase:
 
         result = use_case()
 
-        assert isinstance(result, GetAllKindsV1Response)
-        assert len(result.kinds) == 3
-        assert all(isinstance(kind, Kind) for kind in result.kinds)
+        assert isinstance(result, list)
+        assert len(result) == 3
+        assert all(isinstance(kind, Kind) for kind in result)
 
     def test_get_all_kinds_v1_returns_all_kinds(self, use_case, repo, sample_kinds):
         """Test que get_all_kinds_v1 retourne tous les kinds."""
@@ -55,7 +54,7 @@ class TestGetAllKindsV1UseCase:
 
         result = use_case()
 
-        kind_ids = [kind.id for kind in result.kinds]
+        kind_ids = [kind.id for kind in result]
         assert "1" in kind_ids
         assert "2" in kind_ids
         assert "3" in kind_ids
@@ -87,8 +86,8 @@ class TestGetAllKindsV2UseCase:
         """Test get_all_kinds_v2 avec un repository vide."""
         result = use_case()
 
-        assert isinstance(result, GetAllKindsV2Response)
-        assert len(result.kinds) == 0
+        assert isinstance(result, list)
+        assert len(result) == 0
 
     def test_get_all_kinds_v2_with_data(self, use_case, repo, sample_kinds):
         """Test get_all_kinds_v2 avec des données."""
@@ -97,9 +96,9 @@ class TestGetAllKindsV2UseCase:
 
         result = use_case()
 
-        assert isinstance(result, GetAllKindsV2Response)
-        assert len(result.kinds) == 3
-        assert all(isinstance(kind, Kind) for kind in result.kinds)
+        assert isinstance(result, list)
+        assert len(result) == 3
+        assert all(isinstance(kind, Kind) for kind in result)
 
     def test_get_all_kinds_v2_returns_all_kinds(self, use_case, repo, sample_kinds):
         """Test que get_all_kinds_v2 retourne tous les kinds."""
@@ -108,7 +107,7 @@ class TestGetAllKindsV2UseCase:
 
         result = use_case()
 
-        kind_ids = [kind.id for kind in result.kinds]
+        kind_ids = [kind.id for kind in result]
         assert "1" in kind_ids
         assert "2" in kind_ids
         assert "3" in kind_ids
@@ -124,4 +123,4 @@ class TestGetAllKindsV2UseCase:
         result_v1 = use_case_v1()
         result_v2 = use_case_v2()
 
-        assert result_v1.kinds == result_v2.kinds
+        assert result_v1 == result_v2
